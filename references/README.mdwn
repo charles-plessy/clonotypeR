@@ -24,4 +24,5 @@ degapseq TRAV-C.fa stdout | sponge TRAV-C.fa
 </pre>
 
 A BWA index is provided for the V segments trunkated after the conserved
-cysteine, in the ‘V’ directory.
+cysteine, in the ‘V’ directory, and can be refreshed with the command
+<code>make bwa-index</command>.

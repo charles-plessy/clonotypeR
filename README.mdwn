@@ -6,6 +6,8 @@ Requirements
 
  * To manipulate the reference sequences, the [EMBOSS][] package needs to be installled.
  * The <code>sponge</code> command can be installed from the [moreutils][] package.
+ * To index the trimmed V segments, the Burrows-Wheeler Aligner ([BWA][]) is neeeded.
 
 [EMBOSS]:	http://www.emboss.org	"The European Molecular Biology Open Software Suite"
 [moreutils]:	http://kitenet.net/~joey/code/moreutils/	"a growing collection of the unix tools that nobody thought to write long ago when unix was young."
+[BWA]:		http://bio-bwa.sourceforge.net/	"Burrows-Wheeler Aligner"
