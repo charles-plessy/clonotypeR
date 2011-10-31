@@ -6,8 +6,10 @@ The references sequences are TRA@.gb, TRB@.gb and TRG@.gb, from GenBank.
 <code>extractfeat</code> command of the EMBOSS package. 
 
 This directory contains V and J segments aligned on conserved motifs in the
-files V.fa and J.fa.  These alignments may need to be revised when the
-reference sequences change.
+files V.fa and J.fa.  These alignments were made by hand using [SeaView][] and
+may need to be revised when the reference sequences change.
+
+[SeaView]:	http://pbil.univ-lyon1.fr/software/seaview	"multiplatform, graphical user interface for multiple sequence alignment and molecular phylogeny."
 
 Identical V segments need to be collated together.  The problem is that wich
 ones are indentical depend on how the PCR primers used to amplfiy them
