@@ -1,0 +1,9 @@
+To do
+=====
+
+Reference sequences
+-------------------
+
+ * Add B cell receptors.
+
+ * Add a make target to refresh the reference sequences from RefSeq.
