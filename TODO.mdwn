@@ -9,3 +9,5 @@ Reference sequences
  * Add a make target to refresh the reference sequences from RefSeq.
 
  * Support multiple organisms.
+
+ * Define a versionned CDR3 file format and test it before reading in [[R/read.clonotypes.R]]
