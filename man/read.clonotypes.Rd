@@ -48,6 +48,7 @@ multiple of 3, or if it contains a stop codon.
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
+\code{\link{clonotype.table}},
 \code{\link{read.table}}
 }
 
