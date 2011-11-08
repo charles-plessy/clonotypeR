@@ -1,27 +1,34 @@
 \name{read.clonotypes}
 \alias{read.clonotypes}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
 Reads a clonotype table and returns a data frame.
 }
+
 \description{
 Reads a clonotype table and returns a data frame.  The clonotype table
-is in a TAB-separated format, and the returned data frame has seven
-columns: lib, V, J, read, dna, qual, pep for library name, V and J
+is in a TAB-separated format, and the returned data frame has eight
+columns: lib, V, J, read, dna, qual, pep, improductive for library name, V and J
 segments names, sequence read identifier, DNA, sequence quality and
-aminoacid sequence of the CDR3 region respectively
+aminoacid sequence of the CDR3 region, and mark for improductive recombinations respectively
 }
+
 \usage{
-read.clonotypes("File Name")
+read.clonotypes("File Name", ...)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
+  \item{"File Name"}{
+Path to the tabulation-delimited text file containing the extracted clonotypes.
+}
   \item{...}{
-The rest of the arguments are passed to teh read.table() function
+The rest of the arguments are passed to the read.table() function
 }
 }
+
 \details{
-%%  ~~ If necessary, more details than the description above ~~
+Clonotypes are marked improductive if the length of their DNA sequence is not a
+multiple of 3, or if it contains a stop codon.
 }
 \value{
 %%  ~Describe the value returned
@@ -33,9 +40,7 @@ The rest of the arguments are passed to teh read.table() function
 \references{
 %% ~put references to the literature/web site here ~
 }
-\author{
-%%  ~~who you are~~
-}
+\author{Charles Plessy}
 \note{
 %%  ~~further notes~~
 }
@@ -43,13 +48,11 @@ The rest of the arguments are passed to teh read.table() function
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
-read.table()
+\code{\link{read.table}}
 }
+
 \examples{
 cdr3 <- read.clonotypes(system.file("clonotypes.txt"))
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line
+
+\keyword{clonotypes}
