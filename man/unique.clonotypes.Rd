@@ -12,13 +12,13 @@ unique.clonotypes is the original row name order.
 
 }
 
-\usage{unique.clonotypes(libs, using=clonotypes)}
+\usage{unique.clonotypes(libs, from=clonotypes)}
 
 \arguments{
   \item{libs}{
 A character vector contain clonotype library names
 }
-  \item{using}{
+  \item{from}{
 The name of the clonotype table where the data is stored.
 }
 }
