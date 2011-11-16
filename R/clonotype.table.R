@@ -1,47 +1,57 @@
-clonotype.table <- function (clonotypes, libs=levels(clonotypes$lib), ...) {
+clonotype.table <- function (libs, feats=c("V","pep","J"), from=clonotypes, ...) {
 
-countsreshape <- function (LONGTABLE) {
-        reshape(
-                LONGTABLE,
-                direction="wide",
-                idvar="name",
-                timevar="lib"   )}
+if ( ! is.character(libs) ) {
+        stop ("Include list of libraries as first argument.")
+}
 
-feat.freq <- function (LIBNAME, FEATS="J", FILTER=cdr$improductive, CDR=cdr) {
-    if ( ! is.character(LIBNAME) ) {
+if ( ! length(libs) == length(unique(libs)) ) {
+	stop ("Redundant list of libraries")
+}
+
+# The following function counts, for a single library, the occurrences of
+# segments, CDR3s or combinations of them, and return them as a simple data
+# frame of tuples describing in which library, which combination was found how
+# many times.  By default it looks for the libraries in the ‘clonotypes’ table
+# and discards the improductive rearrangements.
+
+feat.freq <- function (lib, filter=from$improductive) {
+    if ( ! is.character(lib) ) {
         stop ("Must receive a library name (character vector)")
     }
-    keep <- CDR$lib == LIBNAME & ! FILTER
-    if (length(FEATS) == 1) {
-        feat <- CDR[keep,FEATS]
+    keep <- from$lib == lib & ! filter
+    if (length(feats) == 1) {
+        feat <- from[keep,feats]
     } else {
-        feat <- apply(CDR[keep,FEATS], 1, paste, collapse=" ")
+        feat <- apply(from[keep,feats], 1, paste, collapse=" ")
     }
     feat <- table(as.character(feat))
     data.frame(
-        lib   =  LIBNAME,
+        lib   =  lib,
         name  =  rownames(feat),
         count =  as.numeric(feat)
     )
 }
 
-
-if ( ! is.character(libs) ) {
-	libs <- levels(clonotypes$lib)
-}
+# For each library, produce tables of tuples (see above), and append them to a
+# data frame.
 
 ff <- data.frame()
 for (libname in libs) {
-	ff <- rbind(
-		ff,
-		feat.freq(libname, ...)
-	)
+    ff <- rbind(
+        ff,
+        feat.freq(libname, ...)
+    )
 }
 
-ff <- countsreshape(ff)
+ff <- reshape(
+    ff,
+    direction="wide",
+    idvar="name",
+    timevar="lib"
+)
 rownames(ff) <- ff$name
 colnames(ff) <- c("name",libs)
-ff <- ff[,libs]
+ff <- ff[, libs, drop=FALSE]
 ff[is.na(ff)] <- 0
 return(ff)
 }
