@@ -4,10 +4,95 @@ clonotypeR
 Requirements
 ------------
 
- * To manipulate the reference sequences, the [EMBOSS][] package needs to be installled.
- * The <code>sponge</code> command can be installed from the [moreutils][] package.
- * To index the trimmed V segments, the Burrows-Wheeler Aligner ([BWA][]) is neeeded.
+ * [sff_extract][], to convert the 454 SFF files to FASTQ format.
+ * [EMBOSS][], to manipulate the reference sequences.
+ * [moreutils][], for the the <code>sponge</code> command.
+ * [BWA][] (Burrows-Wheeler Aligner), to identify the trimmed V segments.
+ * [BioPerl][] (> 1.6.9), to translate the CDRs.  Lower versions differ on how they translate incomplete last codons.
 
+[sff_extract]:	http://bioinf.comav.upv.es/sff_extract/download
 [EMBOSS]:	http://www.emboss.org	"The European Molecular Biology Open Software Suite"
 [moreutils]:	http://kitenet.net/~joey/code/moreutils/	"a growing collection of the unix tools that nobody thought to write long ago when unix was young."
 [BWA]:		http://bio-bwa.sourceforge.net/	"Burrows-Wheeler Aligner"
+
+
+Conversions to FASTQ
+--------------------
+
+### From AB1 files
+
+This create a single FASTQ file from a directory containing individual AB1
+trace files.
+
+<pre>
+function abi2fastq {
+  for ABI in *ab1
+  do
+    seqret -filter abi::$ABI fastq-sanger::stdout |
+    descseq -filter fastq-sanger::stdin fastq-sanger::stdout -name $(basename $ABI .ab1)
+  done
+}
+
+[ -d fastq ]            || mkdir fastq
+( cd example/library1/ && abi2fastq > ../fastq/library1.fastq )
+</pre>
+
+### From SFF files
+
+<code>sff_extract</code> converts the sff file to FASTQ format.  As it is used
+here, it does not clip adaptor sequence nor low-quality parts.
+
+<pre>
+[ -d extraction_files ] || mkdir extraction_files
+[ -d fastq ]            || mkdir fastq
+
+sff_extract sff/example-library1.sff -x /dev/null --out_basename=fastq/example-library1.fastq -Q
+</pre>
+
+
+### Alignment on V segments and clonotype detection
+
+Collecting information
+
+  for LIB in $(ls fastq/*.fastq) ; do echo -ne "$(basename $LIB .fastq)\t" ; infoseq --filter --noheading $LIB | wc -l ; done
+
+The BAM files (see below) contain the full sequence information, so in theory,
+the FASTQ files can be discared.  The command ‘samtools bam2fq’ can produce
+FASTQ files from the BAM files, but beware that some sequences will be
+duplicated, as they contained more than one V segment, and threfore appear more
+than once in the BAM file.
+
+<pre>
+for LIB in example1
+do
+  bwa bwasw -t6 ../references/V/index fastq/$LIB.fastq |
+    samtools view -Su - | samtools sort - extraction_files/$LIB
+  samtools index extraction_files/$LIB.bam
+  ./VJsplit.sh $LIB
+done
+</pre>
+
+For libraries where the forward PCR primer is closer to the end of the V
+setments, the alignment scores are always lower and the cutoff used in
+VJsplit.sh may need to be adjusted
+
+  AS_CUTOFF=0 ./VJsplit.sh <replace_by_library_name>
+
+The stringency of vectorstrip can also be modified, for instance of 10% mismatches:
+
+  VS_MISMATCH=10 ././VJsplit.sh <replace_by_library_name>
+
+The clonotypes file can be refreshed with the command:
+
+  cat clonotypes/*tsv > clonotypes.tsv
+
+(this erases any previous change).
+
+To count the number of sequences per library using the alignment files:
+
+  for BAM in extraction_files/*.bam ; do echo -ne "$(basename $BAM .bam)\t" ; samtools view $BAM | cut -f1 | sort -u | wc -l ; done
+
+To count the number of clonotypes (one per line) in each clonotype file, use
+the following command.
+
+  for LIB in $(ls clonotypes/*.tsv) ; do echo -ne "$(basename $LIB .tsv)\t" ; wc -l $LIB | cut -f1 -d' '; done
