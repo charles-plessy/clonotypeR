@@ -11,3 +11,18 @@ Reference sequences
  * Support multiple organisms.
 
  * Define a versionned CDR3 file format and test it before reading in [[R/read.clonotypes.R]]
+
+read.clonotypes: do not hardcode column classe, but infer them from the name, that is inferred from the OSC header, or hardcoded as a fallback.
+
+
+Define
+##ProtocolREF = CP-Custom-v1.0
+
+Correct in OSC file
+##ParameterValue[qual] = Illumina
+Is it correct to have same name for ParameterValue and ColumnName ?
+
+Do we need ?
+##NameSpace = genomic_coordinate
+
+

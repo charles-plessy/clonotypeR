@@ -1,3 +1,19 @@
+##FileFormat = OSCtable
+##ContactName = Charles Plessy
+##ContactEmail = plessy@riken.jp
+##Date = Wed Dec  7 20:18:04 JST 2011
+##ProtocolREF = OP-Clonotype-1.0
+#
+##ColumnVariable[lib] = Name of the sequence library.
+##ColumnVariable[V] = Name of the V segment detected in that read.
+##ColumnVariable[J] = Name of the J segment detected in that read.
+##ColumnVariable[read] = Unique read identifier.
+##ColumnVariable[dna] = DNA sequence of the CDR3 region.
+##ColumnVariable[qual] = Sequence quality of the DNA sequence.
+##ParameterValue[qual] = 454
+##ColumnVariable[pep] = Translation of the DNA sequence.
+#
+lib	V	J	read	dna	qual	pep
 A	TRBV2	TRBJ1-1	GINGMWQ03GY0II	GCCAGCAGCCCTCAGGGGGACAGAAGTCTTC	IIIIIID?000545-----4=CHFFEIIIII	ASSPQGDRSL
 A	TRBV2	TRBJ1-1	GINGMWQ03GU532	GCCAGCAGCCAGAGACCGGGACAGGGGGCTTACACAGAAGTCTTC	IIIIIIIIIIIIIIIIICCCIII:::::IIIIIIIIIIHHHDCCD	ASSQRPGQGAYTEVF
 A	TRBV2	TRBJ1-1	GINGMWQ03FTOO9	GCCAGCAGCCCAGAGGGGCGTGCAAAACACAGAAGTCTTC	IIIIIIIIHHHIID<999E8GEB4445C8IIIEEEIIEEE	ASSPEGRAKHRSL
