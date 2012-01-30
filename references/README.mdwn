@@ -15,14 +15,13 @@ Identical V segments need to be collated together.  The problem is that wich
 ones are indentical depend on how the PCR primers used to amplfiy them
 were designed.
 
-The files V-C.fa, and J-FGxG.fa are derived from the manually edited files
-described above by removing everything after (for V) or before (for C) their
-conserved motif.  They must be degapped by a command such as:
+The files V-C.fa, V_after_C.fa, J-FGxG.fa, J_before_FGxG.fa are derived from
+the manually edited files V.fa and J.fa described above, by removing everything
+after or before their conserved motif, followed by degapping by a command such
+as:
 
-<pre>
-degapseq TRAV-C.fa stdout | sponge TRAV-C.fa
-</pre>
+  degapseq TRAV-C.fa stdout | sponge TRAV-C.fa
 
 A BWA index is provided for the V segments trunkated after the conserved
 cysteine, in the ‘V’ directory, and can be refreshed with the command
-<code>make bwa-index</command>.
+<code>make bwa-index</code>.
