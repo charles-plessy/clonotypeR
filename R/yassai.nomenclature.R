@@ -25,7 +25,9 @@ pep <- clonotype[[7]]
 is.somatic <- function (V, dna) {
 	V <- substr(V,1,3)
 	dna <- substr(dna,1,3)
-	tolower(V) == tolower(dna)
+	answer <- tolower(V) == tolower(dna)
+	answer[is.na(answer)] <- FALSE  # Replace NA per FALSE; is.somatic is used in a while loop.
+	return(answer)
 }
 
 V_somatic <- 0
