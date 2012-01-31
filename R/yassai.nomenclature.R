@@ -1,11 +1,5 @@
 yassai.nomenclature <- function (clonotype) {
 
-# ff <- readFASTA("references/J_before_FGxG.fa", strip.descs=TRUE)
-
-# V_after_C <- data.frame(row.names=sapply(ff, function(X) X$desc), seq=sapply(ff, function(X) X$seq), stringsAsFactors=FALSE)
-
-# J_before_FGxG <- data.frame(row.names=sapply(ff, function(X) X$desc), seq=sapply(ff, function(X) X$seq), stringsAsFactors=FALSE)
-
 # Following function is from ?strsplit help page:
 strReverse <- function(x)
 	sapply(lapply(strsplit(x, NULL), rev), paste, collapse="")
