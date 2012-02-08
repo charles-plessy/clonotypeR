@@ -25,4 +25,4 @@ Is it correct to have same name for ParameterValue and ColumnName ?
 Do we need ?
 ##NameSpace = genomic_coordinate
 
-
+ * Provide example AB1 and SFF files.
