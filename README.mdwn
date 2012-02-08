@@ -14,6 +14,7 @@ Requirements
 [EMBOSS]:	http://www.emboss.org	"The European Molecular Biology Open Software Suite"
 [moreutils]:	http://kitenet.net/~joey/code/moreutils/	"a growing collection of the unix tools that nobody thought to write long ago when unix was young."
 [BWA]:		http://bio-bwa.sourceforge.net/	"Burrows-Wheeler Aligner"
+[BioPerl]:	http://bio.perl.org/ "BioPerl"
 
 
 Conversions to FASTQ
