@@ -55,7 +55,9 @@ sff_extract sff/example-library1.sff -x /dev/null --out_basename=fastq/example-l
 
 Collecting information
 
-  for LIB in $(ls fastq/*.fastq) ; do echo -ne "$(basename $LIB .fastq)\t" ; infoseq --filter --noheading $LIB | wc -l ; done
+<pre>
+for LIB in $(ls fastq/*.fastq) ; do echo -ne "$(basename $LIB .fastq)\t" ; infoseq --filter --noheading $LIB | wc -l ; done
+</pre>
 
 The BAM files (see below) contain the full sequence information, so in theory,
 the FASTQ files can be discared.  The command ‘samtools bam2fq’ can produce
@@ -77,23 +79,33 @@ For libraries where the forward PCR primer is closer to the end of the V
 setments, the alignment scores are always lower and the cutoff used in
 VJsplit.sh may need to be adjusted
 
-  AS_CUTOFF=0 ./VJsplit.sh <replace_by_library_name>
+<pre>
+AS_CUTOFF=0 ./VJsplit.sh <replace_by_library_name>
+</pre>
 
 The stringency of vectorstrip can also be modified, for instance of 10% mismatches:
 
-  VS_MISMATCH=10 ././VJsplit.sh <replace_by_library_name>
+<pre>
+VS_MISMATCH=10 ././VJsplit.sh <replace_by_library_name>
+</pre>
 
 The clonotypes file can be refreshed with the command:
 
-  cat clonotypes/*tsv > clonotypes.tsv
+<pre>
+cat clonotypes/*tsv > clonotypes.tsv
+</pre>
 
 (this erases any previous change).
 
 To count the number of sequences per library using the alignment files:
 
-  for BAM in extraction_files/*.bam ; do echo -ne "$(basename $BAM .bam)\t" ; samtools view $BAM | cut -f1 | sort -u | wc -l ; done
+<pre>
+for BAM in extraction_files/*.bam ; do echo -ne "$(basename $BAM .bam)\t" ; samtools view $BAM | cut -f1 | sort -u | wc -l ; done
+</pre>
 
 To count the number of clonotypes (one per line) in each clonotype file, use
 the following command.
 
-  for LIB in $(ls clonotypes/*.tsv) ; do echo -ne "$(basename $LIB .tsv)\t" ; wc -l $LIB | cut -f1 -d' '; done
+<pre>
+for LIB in $(ls clonotypes/*.tsv) ; do echo -ne "$(basename $LIB .tsv)\t" ; wc -l $LIB | cut -f1 -d' '; done
+</pre>
