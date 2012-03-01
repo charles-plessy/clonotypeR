@@ -1,0 +1,39 @@
+#!/bin/bash
+
+set -ex
+
+CLONOTYPER_REFERENCE=${CLONOTYPER_REFERENCE:-../references}
+CLONOTYPER_SCRIPTS=${CLONOTYPER_SCRIPTS:-../scripts}
+THREADS=$([ -e /proc/cpuinfo ] && cat /proc/cpuinfo | grep -c processor)
+
+case $1 in
+	convert)
+	;;
+	detect)
+		shift
+		for FASTQ_FILE in "$*"
+		do
+			LIBRARY=$(basename $FASTQ_FILE .fq)
+			LIBRARY=$(basename $FASTQ_FILE .fastq)
+			bwa bwasw -t${THREADS:-1} $CLONOTYPER_REFERENCE/V/index $FASTQ_FILE |
+				samtools view -Su - |
+				samtools sort - $LIBRARY
+			samtools index $LIBRARY.bam
+		done
+	;;
+	extract)
+		shift
+		for BAM_FILE in "$*"
+		do
+			LIBRARY=$(basename $BAM_FILE .bam)
+			$CLONOTYPER_SCRIPTS/VJsplit $LIBRARY
+		done
+	;;
+	*)
+		echo "Usage: clonotypeR convert file1.ab1 file2.ab1 ..."
+		echo "       clonotypeR convert file1.sff file2.sff ..."
+		echo "       clonotypeR detect  file1.fastq file2.fastq ..."
+		echo "       clonotypeR extract file1.bam file2.bam ..."
+		exit 1
+	;;
+esac
