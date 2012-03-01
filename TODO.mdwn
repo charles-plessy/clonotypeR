@@ -26,3 +26,5 @@ Do we need ?
 ##NameSpace = genomic_coordinate
 
  * Provide example AB1 and SFF files.
+
+Get good default for CLONOTYPER_REFERENCE and other variables.
