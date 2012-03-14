@@ -1,10 +1,17 @@
-#!/bin/bash 
+#!/bin/bash
 
 LIBRARY=$1
 V_LIB=${2-V}
 J_LIB=${3-J}
 
+# Path to the reference V and J segments defaults to ../../../references.
 CLONOTYPER_REFERENCE=${CLONOTYPER_REFERENCE:-../../../references}
+
+# Path to the BAM and temporary files defaults to extraction_files.
+EXTRACT_DIR=${EXTRACT_DIR:-extraction_files}
+
+# Path to clonotypes directory defaults to clonotypes.
+CLONOTYPES=${CLONOTYPES:-clonotypes}
 
 VS_MISMATCH=${VS_MISMATCH-0}
 MAPQ_CUTOFF=${MAPQ_CUTOFF-1}
@@ -15,19 +22,16 @@ AS_CUTOFF=${AS_CUTOFF-170}
 # ${V_NAME//\//} will remove all slashes in V_NAME.
 # samtools idxstats allows to find which V segments were detected.
 
-INDIR=$(pwd)
-OUTDIR=$(pwd)
+rm -rf $EXTRACT_DIR/$LIBRARY.tmp ; mkdir $EXTRACT_DIR/$LIBRARY.tmp
+rm -f $EXTRACT_DIR/$LIBRARY.tsv
+cd $EXTRACT_DIR/$LIBRARY.tmp
 
-rm -rf $LIBRARY.tmp ; mkdir $LIBRARY.tmp
-rm -f $LIBRARY.tsv
-cd $LIBRARY.tmp
-
-for V_NAME in $(samtools idxstats $INDIR/$LIBRARY.bam | awk '{if ($3 > 0) print $1}')
+for V_NAME in $(samtools idxstats ../$LIBRARY.bam | awk '{if ($3 > 0) print $1}')
 do
   echo -ne "$V_NAME\t" 1>&2
   V_SEQ=$(seqret -filter $CLONOTYPER_REFERENCE/${V_LIB}-C.fa:$V_NAME[-20:] raw:stdout)
   echo -ne "$V_SEQ\t" 1>&2
-  samtools view -q $MAPQ_CUTOFF $INDIR/$LIBRARY.bam $V_NAME |
+  samtools view -q $MAPQ_CUTOFF ../$LIBRARY.bam $V_NAME |
     perl -ne "(\$score) = /AS:i:(\d+)\t/ ; print if \$score >= $AS_CUTOFF" > $LIBRARY-${V_NAME//\//}-filtered.sam
   [ -s $LIBRARY-${V_NAME//\//}-filtered.sam ] && vectorstrip -auto \
         -readfile N \
@@ -60,9 +64,8 @@ do
           $trans = new Bio::Seq(-seq => $seq )->translate->seq ;
           say join ("\t", @ARGV[0], @ARGV[1], @ARGV[2], $name, $seq, $qual, $trans) ;
         } ' $LIBRARY $V_NAME $J_NAME |
-      tee -a $OUTDIR/$LIBRARY.tsv |
+      tee -a ../../$CLONOTYPES/$LIBRARY.tsv |
       wc -l - | cut -f1 -d' ' 1>&2
-echo $OUTDIR/$LIBRARY.tsv
   done
   echo
 done

@@ -2,8 +2,16 @@
 
 set -ex
 
+# Path to the reference V and J segments defaults to ../references.
 CLONOTYPER_REFERENCE=${CLONOTYPER_REFERENCE:-../references}
+
+# Path to VJsplit defaults to ../scripts.
 CLONOTYPER_SCRIPTS=${CLONOTYPER_SCRIPTS:-../scripts}
+
+# Path to the BAM and temporary files defaults to extraction_files.
+EXTRACT_DIR=${EXTRACT_DIR:-extraction_files}
+
+# Auto-detect number of threads.
 THREADS=$([ -e /proc/cpuinfo ] && cat /proc/cpuinfo | grep -c processor)
 
 case $1 in
@@ -17,8 +25,8 @@ case $1 in
 			LIBRARY=$(basename $FASTQ_FILE .fastq)
 			bwa bwasw -t${THREADS:-1} $CLONOTYPER_REFERENCE/V/index $FASTQ_FILE |
 				samtools view -Su - |
-				samtools sort - $LIBRARY
-			samtools index $LIBRARY.bam
+				samtools sort - $EXTRACT_DIR/$LIBRARY
+			samtools index $EXTRACT_DIR/$LIBRARY.bam
 		done
 	;;
 	extract)
