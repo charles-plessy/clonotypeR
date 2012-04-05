@@ -5,7 +5,7 @@ Reads a clonotype table and returns a data frame.
 }
 
 \description{
-Reads a clonotype table is in a TAB-separated format, and returns a data frame
+Reads a clonotype table in a TAB-separated or OSCT format, and returns a data frame
 that has eight columns, for library name, V and J segments names, sequence read
 identifier, DNA, sequence quality, aminoacid sequence of the CDR3 region, mark
 for improductive recombinations.
@@ -45,11 +45,12 @@ the fly.
 
 \seealso{
 \code{\link{clonotype.table}},
-\code{\link{read.table}}
+\code{\link{read.table}},
+Order Switchable Column Table (OSCT, http://sourceforge.net/projects/osctf/)
 }
 
 \examples{
-cdr3 <- read.clonotypes(system.file("clonotypes.txt"))
+clonotypes <- read.clonotypes(system.file("data/clonotypes.txt", package = "clonotypeR"))
 }
 
 \keyword{clonotypes}
