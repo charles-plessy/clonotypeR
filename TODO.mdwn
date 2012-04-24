@@ -28,3 +28,6 @@ Do we need ?
  * Provide example AB1 and SFF files.
 
 Get good default for CLONOTYPER_REFERENCE and other variables.
+
+Regression tests: make sure that the example data has a sharp sign in the FASTQ sequence (if valid), and
+compare the number of lines to what is expected.
