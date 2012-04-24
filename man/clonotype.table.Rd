@@ -52,7 +52,7 @@ of times each feature was found in each library.
 \examples{
 clonotypes <- read.clonotypes(system.file("data/clonotypes.txt", package = "clonotypeR"))
 j <- clonotype.table(levels(clonotypes$lib), "J")
-J <- apply(j, 2, function (X) { 1000000 * X / sum(X, na.rm = T) })
+J <- apply(j, 2, function (X) { 1000000 * X / sum(X, na.rm = TRUE) })
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
