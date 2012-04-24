@@ -37,7 +37,7 @@ order of the clonotype table.
 
 \examples{
 # Load example data
-clonotypes.long <- read.clonotypes(system.file("clonotypes.txt"))
+clonotypes.long <- read.clonotypes(system.file("data/clonotypes.txt", package = "clonotypeR"))
 clonotypes <- clonotypes.table(clonotypes.long)
 summary(clonotypes)
 

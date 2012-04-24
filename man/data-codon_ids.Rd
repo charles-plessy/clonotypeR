@@ -32,7 +32,7 @@ Yassai et al., 2009
 \code{\link{yassai.nomenclature}}
 }
 \examples{
-%cdr3 <- read.clonotypes(system.file("clonotypes.txt"))
+clonotypes <- read.clonotypes(system.file("data/clonotypes.txt", package = "clonotypeR"))
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
