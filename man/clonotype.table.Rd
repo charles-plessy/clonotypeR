@@ -9,7 +9,7 @@ Using a clonotype data frame loaded with \code{\link{read.clonotypes}},
 clonotypes have been seen in each libraries.
 }
 \usage{
-clonotype.table(libs, feat=c("V","pep","J"), from=clonotypes, feat=c("V","pep","J"))
+clonotype.table(libs, feat=c("V","pep","J"), from=clonotypes, ...)
 }
 
 \arguments{
@@ -17,13 +17,13 @@ clonotype.table(libs, feat=c("V","pep","J"), from=clonotypes, feat=c("V","pep","
   A character vector containing the name of one or many libraries.  Same names
   must not appear twice.
 }
-  \item{from}{
-  This is a data frame as loaded by \code{\link{read.clonotypes}}.  By default,
-  \code{clonotype.table} will use a data frame called clonotypes.
-}
   \item{feat}{
   What to count.  By default, it counts clonotypes, defined as c("V","pep","J").
   But it can also count single features, such as the V or J segments.
+}
+  \item{from}{
+  This is a data frame as loaded by \code{\link{read.clonotypes}}.  By default,
+  \code{clonotype.table} will use a data frame called clonotypes.
 }
 }
 
@@ -50,7 +50,7 @@ of times each feature was found in each library.
 \code{\link{read.clonotypes}}
 }
 \examples{
-clonotypes <- read.clonotypes(system.file("clonotypes.txt"))
+clonotypes <- read.clonotypes(system.file("data/clonotypes.txt", package = "clonotypeR"))
 j <- clonotype.table(levels(clonotypes$lib), "J")
 J <- apply(j, 2, function (X) { 1000000 * X / sum(X, na.rm = T) })
 }
