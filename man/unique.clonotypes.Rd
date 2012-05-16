@@ -29,7 +29,7 @@ order of the clonotype table.
 
 
 \seealso{
-\code{\link{conotype.table.R}}, ~~~
+\code{\link{clonotype.table}}, ~~~
 }
 
 \examples{

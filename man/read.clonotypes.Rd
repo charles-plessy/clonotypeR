@@ -1,4 +1,5 @@
 \name{read.clonotypes}
+\alias{read.clonotypes}
 
 \title{
 Reads a clonotype table and returns a data frame.

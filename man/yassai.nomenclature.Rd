@@ -50,7 +50,7 @@ The name consists of five segments:
 %% ~Make other sections like Warning with \section{Warning }{....} ~
 
 \seealso{
-\link{data-clonotypes}
+\link{clonotypes}
 }
 \examples{
 
