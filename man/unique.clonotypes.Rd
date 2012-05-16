@@ -12,11 +12,8 @@ clonotype table.
 \usage{unique.clonotypes(libs, from=clonotypes)}
 
 \arguments{
-  \item{libs}
-{A character vector contain clonotype library names}
-
-  \item{from}
-{The name of the clonotype table where the data is stored.}
+  \item{libs}{A character vector contain clonotype library names}
+  \item{from}{The name of the clonotype table where the data is stored.}
 }
 
 \details{
@@ -32,7 +29,7 @@ order of the clonotype table.
 
 
 \seealso{
-\code{\link{conotype.table.R}, ~~~
+\code{\link{conotype.table.R}}, ~~~
 }
 
 \examples{

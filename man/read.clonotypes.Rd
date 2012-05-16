@@ -17,11 +17,9 @@ read.clonotypes("File Name", ...)
 
 \arguments{
 
-\item{"File Name"}
-{Path to the tabulation-delimited text file containing the extracted clonotypes.}
+\item{"File Name"}{Path to the tabulation-delimited text file containing the extracted clonotypes.}
 
-\item{...}
-{The rest of the arguments are passed to the read.table() function.}
+\item{...}{The rest of the arguments are passed to the read.table() function.}
 }
 
 \details{

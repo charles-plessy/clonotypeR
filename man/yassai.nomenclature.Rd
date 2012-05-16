@@ -55,7 +55,7 @@ The name consists of five segments:
 \examples{
 
 # Should return: qETRGg.226302-121L13
-yassai.nomenclature(c("C", "TRBV2", "TRBJ1-2", "GINGMWQ04IYGTQ", "GCCAGCAGCCAAGAGACCAGGGGAGGCTCCGACTACACC", "IIIIIIIIIIIIIIIIIIIBBBBIFFI>>>IIIIIIIHH", "ASSQETRGGSDYT"))
+#yassai.nomenclature(c("C", "TRBV2", "TRBJ1-2", "GINGMWQ04IYGTQ", "GCCAGCAGCCAAGAGACCAGGGGAGGCTCCGACTACACC", "IIIIIIIIIIIIIIIIIIIBBBBIFFI>>>IIIIIIIHH", "ASSQETRGGSDYT"))
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
