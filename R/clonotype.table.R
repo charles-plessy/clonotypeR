@@ -6,7 +6,7 @@ if ( ! is.character(libs) )
 if ( ! length(libs) == length(unique(libs)) )
 	stop ("Redundant list of libraries")
 
-if ( ! is.logical(clonotypes$improductive) )
+if ( ! is.logical(from$improductive) )
 	stop ("Input missing Improductive column.")
 
 # The following function counts, for a single library, the occurrences of
