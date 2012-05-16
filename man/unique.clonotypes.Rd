@@ -35,7 +35,7 @@ order of the clonotype table.
 \examples{
 # Load example data
 clonotypes.long <- read.clonotypes(system.file("data/clonotypes.txt", package = "clonotypeR"))
-clonotypes <- clonotypes.table(clonotypes.long)
+clonotypes <- clonotype.table(levels(clonotypes.long$lib), from=clonotypes.long)
 summary(clonotypes)
 
 # List clonotypes found in library A.
