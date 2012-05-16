@@ -5,6 +5,8 @@ read.clonotypes <- function (filename, ...) {
 # This currently skips the header entirely, but in a later version,
 # this function could make use of a generic OSCTable parser package.
 
+if (filename == "") stop ("Empty file name.")
+
 cdr.file <- file(filename)
 open(cdr.file)
 cur_line <- '#'
