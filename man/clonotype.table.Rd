@@ -9,7 +9,7 @@ Using a clonotype data frame loaded with \code{\link{read.clonotypes}},
 clonotypes have been seen in each libraries.
 }
 \usage{
-clonotype.table(libs, feat=c("V","pep","J"), from=clonotypes, ...)
+clonotype.table(libs, feat=c("V","pep","J"), from=clonotypes, filter=from$improductive)
 }
 
 \arguments{
@@ -24,6 +24,11 @@ clonotype.table(libs, feat=c("V","pep","J"), from=clonotypes, ...)
   \item{from}{
   This is a data frame as loaded by \code{\link{read.clonotypes}}.  By default,
   \code{clonotype.table} will use a data frame called clonotypes.
+}
+  \item{filter}{
+  Boolean vector to filter out clonotypes.  By default it relies on the clonotypes
+  data frame to provide a "improductive" column, that indicates clonotypes with a
+  stop codon or a frame shift.
 }
 }
 
