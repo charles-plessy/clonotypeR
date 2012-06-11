@@ -1,4 +1,4 @@
-clonotype.table <- function (libs, feats=c("V","pep","J"), from=clonotypes, ...) {
+clonotype.table <- function (libs, feats=c("V","pep","J"), from=clonotypes, filter=from$improductive) {
 
 if ( ! is.character(libs) )
         stop ("Include list of libraries as first argument.")
@@ -15,7 +15,7 @@ if ( ! is.logical(from$improductive) )
 # many times.  By default it looks for the libraries in the ‘clonotypes’ table
 # and discards the improductive rearrangements.
 
-feat.freq <- function (lib, filter=from$improductive) {
+feat.freq <- function (lib, filter) {
     if ( ! is.character(lib) ) {
         stop ("Must receive a library name (character vector)")
     }
@@ -40,7 +40,7 @@ ff <- data.frame()
 for (libname in libs) {
     ff <- rbind(
         ff,
-        feat.freq(libname, ...)
+        feat.freq(libname, filter)
     )
 }
 

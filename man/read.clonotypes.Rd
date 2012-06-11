@@ -13,12 +13,12 @@ for improductive recombinations.
 }
 
 \usage{
-read.clonotypes("File Name", ...)
+read.clonotypes(filename, ...)
 }
 
 \arguments{
 
-\item{"File Name"}{Path to the tabulation-delimited text file containing the extracted clonotypes.}
+\item{filename}{Path to the tabulation-delimited text file containing the extracted clonotypes.}
 
 \item{...}{The rest of the arguments are passed to the read.table() function.}
 }

@@ -9,7 +9,7 @@ Using a clonotype data frame loaded with \code{\link{read.clonotypes}},
 clonotypes have been seen in each libraries.
 }
 \usage{
-clonotype.table(libs, feat=c("V","pep","J"), from=clonotypes, filter=from$improductive)
+clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$improductive)
 }
 
 \arguments{
@@ -17,7 +17,7 @@ clonotype.table(libs, feat=c("V","pep","J"), from=clonotypes, filter=from$improd
   A character vector containing the name of one or many libraries.  Same names
   must not appear twice.
 }
-  \item{feat}{
+  \item{feats}{
   What to count.  By default, it counts clonotypes, defined as c("V","pep","J").
   But it can also count single features, such as the V or J segments.
 }
