@@ -13,9 +13,9 @@ data(codon_ids)
 The rest of the arguments are passed to teh read.table() function
 }
 }
-\details{
+%%\details{
 %%  ~~ If necessary, more details than the description above ~~
-}
+%%}
 \value{
 \item{codon}{character}
 \item{aminoacid}{character}

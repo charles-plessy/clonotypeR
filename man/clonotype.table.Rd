@@ -40,10 +40,6 @@ clonotype.table(libs, feat=c("V","pep","J"), from=clonotypes, ...)
 of times each feature was found in each library.
 }
 
-\references{
-%% ~put references to the literature/web site here ~
-}
-
 \author{Charles Plessy}
 
 \seealso{

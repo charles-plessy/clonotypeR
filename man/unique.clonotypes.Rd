@@ -17,7 +17,7 @@ clonotype table.
 }
 
 \details{
-Uses the table called “clonotypes” by default.
+Uses the table called "clonotypes" by default.
 }
 
 \value{
