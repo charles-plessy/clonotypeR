@@ -5,7 +5,7 @@
 From Table 1 of Yassai et al., 2009, to construct clonotype names.
 }
 \usage{
-data(codon-ids)
+data(codon_ids)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
