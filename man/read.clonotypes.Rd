@@ -20,7 +20,7 @@ read.clonotypes(filename, ...)
 
 \item{filename}{Path to the tabulation-delimited text file containing the extracted clonotypes.}
 
-\item{...}{The rest of the arguments are passed to the read.table() function.}
+\item{...}{The rest of the arguments are passed to the \code{read.table()} function.}
 }
 
 \details{
@@ -45,11 +45,11 @@ the fly.
 \seealso{
 \code{\link{clonotype.table}},
 \code{\link{read.table}},
-Order Switchable Column Table (OSCT, http://sourceforge.net/projects/osctf/)
+Order Switchable Column Table (OSCT, \url{http://sourceforge.net/projects/osctf/})
 }
 
 \examples{
-clonotypes <- read.clonotypes(system.file("data/clonotypes.txt", package = "clonotypeR"))
+clonotypes <- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
 }
 
 \keyword{clonotypes}

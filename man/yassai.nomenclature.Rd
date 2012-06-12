@@ -5,7 +5,7 @@
 \description{
 
 The clonotype nomenclature defined by Yassai et al.
-in DOI 10.1007/s00251-009-0383-x.
+in \url{http://dx.doi.org/10.1007/s00251-009-0383-x}.
 
 }
 
@@ -50,10 +50,14 @@ The name consists of five segments:
 \examples{
 
 # Should return: qETRGg.226302-121L13
-#yassai.nomenclature(c("C", "TRBV2", "TRBJ1-2", "GINGMWQ04IYGTQ", "GCCAGCAGCCAAGAGACCAGGGGAGGCTCCGACTACACC", "IIIIIIIIIIIIIIIIIIIBBBBIFFI>>>IIIIIIIHH", "ASSQETRGGSDYT"))
+clonotype <- c("C", "TRBV2", "TRBJ1-2", "GINGMWQ04IYGTQ",
+  "GCCAGCAGCCAAGAGACCAGGGGAGGCTCCGACTACACC",
+  "IIIIIIIIIIIIIIIIIIIBBBBIFFI>>>IIIIIIIHH", "ASSQETRGGSDYT")
+yassai.nomenclature(clonotype)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
 
-\keyword{ ~clonotype }% __ONLY ONE__ keyword per line
-\keyword{ ~nomenclature }% __ONLY ONE__ keyword per line
+\keyword{ Yassai }% __ONLY ONE__ keyword per line
+\keyword{ clonotype }% __ONLY ONE__ keyword per line
+\keyword{ nomenclature }% __ONLY ONE__ keyword per line

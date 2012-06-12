@@ -1,41 +1,30 @@
-\name{Codon IDs}
+\name{codon_ids}
 \docType{data}
 \title{Codon ID numbers in Yassai et al.'s nomenclature.}
 \description{
-From Table 1 of Yassai et al., 2009, to construct clonotype names.
+Data frame derived from Table 1 of Yassai et al., 2009, to construct clonotype names.
 }
 \usage{
 data(codon_ids)
-}
-%- maybe also 'usage' for other objects documented here.
-\arguments{
-  \item{...}{
-The rest of the arguments are passed to teh read.table() function
-}
 }
 %%\details{
 %%  ~~ If necessary, more details than the description above ~~
 %%}
 \value{
-\item{codon}{character}
-\item{aminoacid}{character}
-\item{id}{character}
+\item{codon}{Nucleotide triplet.}
+\item{aminoacid}{Single-letter amino acid abbreviation (\dQuote{O} for stop).}
+\item{id}{ID numbers assigned to the codons for each amino acids.}
 }
 \references{
-Yassai et al., 2009
-}
-\author{
-Yassai et al., 2009
+A clonotype nomenclature for T cell receptors.
+Maryam B. Yassai, Yuri N. Naumov, Elena N. Naumova and Jack Gorski
+Immunogenetics, 2009, Volume 61, Number 7, Pages 493-502
 }
 
 \seealso{
 \code{\link{yassai.nomenclature}}
 }
-\examples{
-clonotypes <- read.clonotypes(system.file("data/clonotypes.txt", package = "clonotypeR"))
-}
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~clonotype }
-\keyword{ ~nomenclature }
-\keyword{ ~yassai }
+
+\keyword{ clonotype }
+\keyword{ nomenclature }
+\keyword{ Yassai }
