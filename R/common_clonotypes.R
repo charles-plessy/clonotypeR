@@ -23,7 +23,7 @@ found <- function (group) {
 	)
 }
 
-selector <- found(group2) & found(group2)
+selector <- found(group1) & found(group2)
 
 return ( rownames(data)[selector])
 }
