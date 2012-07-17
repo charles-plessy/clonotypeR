@@ -12,6 +12,12 @@ if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
 if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
 	data(J_before_FGxG)
 
+if ( ! ( exists("codon_ids") && class(J_before_FGxG) == "codon_ids" ) )
+	if ( file.exists("data/codon_ids.txt.gz") )
+		codon_ids <- read.table("data/codon_ids.txt.gz", head=TRUE, row.names=1)
+if ( ! ( exists("codon_ids") && class(J_before_FGxG) == "codon_ids" ) )
+	data(codon_ids)
+
 ## Then, declare the function.
 
 yassai.nomenclature <- function (clonotype) {
