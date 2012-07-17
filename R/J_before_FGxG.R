@@ -1,4 +1,4 @@
-J_before_FGx <- function () {
+J_before_FGxG <- function () {
 	# Load references/J_before_FGxG.fa, depend on Biostrings
 #	J_after_C <- readFASTA("references/J_before_FGxG.fa", strip.descs=TRUE)
 #	J_names <- sapply(J_after_C, function(X) X$desc)
