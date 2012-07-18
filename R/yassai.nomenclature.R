@@ -1,3 +1,25 @@
+## First, load accessory data if necessary.
+
+if ( ! ( exists("V_after_C") && class(V_after_C) == "data.frame" ) )
+	if ( file.exists("data/V_after_C.R") )
+		source("data/V_after_C.R")
+if ( ! ( exists("V_after_C") && class(V_after_C) == "data.frame" ) )
+	data(V_after_C)
+
+if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
+	if ( file.exists("data/J_before_FGxG") )
+		source("data/J_before_FGxG.R")
+if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
+	data(J_before_FGxG)
+
+if ( ! ( exists("codon_ids") && class(J_before_FGxG) == "codon_ids" ) )
+	if ( file.exists("data/codon_ids.txt.gz") )
+		codon_ids <- read.table("data/codon_ids.txt.gz", head=TRUE, row.names=1)
+if ( ! ( exists("codon_ids") && class(J_before_FGxG) == "codon_ids" ) )
+	data(codon_ids)
+
+## Then, declare the function.
+
 yassai.nomenclature <- function (clonotype) {
 
 # Following function is from ?strsplit help page:
