@@ -1,0 +1,27 @@
+clontoypeR
+==========
+
+Quantitative analysis of antigen receptor sequences
+---------------------------------------------------
+
+**clontotypeR** is a R pacakge and accompaniying scripts to identify
+and analyse clonotypes from high-throughput immunoglobulin sequence libraries.
+clontotypeR is suited to process and organise very large number of clonotypes,
+in the order of millions, typically produced by Roche 454 instruments, and to
+prepare these sequences for differential expression analysis with the typical
+transcriptomics tools.
+
+clonotypeR is developed in the [RIKEN Yokohama institute][RIKEN-Yokohama] by
+the [Functional Genomics Technology Team][FGTT] of the [Omics Science
+Center][OSC], in collaboration with the [Research Unit for Immune
+Homeostasis][RUIH] of the [Research Center for Allergy and Immunology][RCAI]. 
+
+[RIKEN-Yokohama]:	http://www.yokohama.riken.jp/
+[FGTT]:			http://genome.gsc.riken.jp/osc/english/teams/FunctionalGenomicsTechnology.html
+[OSC]:			http://www.osc.riken.jp/
+[RUIH]:			http://web.rcai.riken.jp/en/labo/home/index.htm
+[RCAI]:			http://www.rcai.riken.jp
+
+ - To install clonotypeR, see the [[README]].
+
+ - To participate to the development, see the [[TODO]] and [[Bugs]] pages.
