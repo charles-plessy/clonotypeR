@@ -25,3 +25,5 @@ Homeostasis][RUIH] of the [Research Center for Allergy and Immunology][RCAI].
  - To install clonotypeR, see the [[README]].
 
  - To participate to the development, see the [[TODO]] and [[Bugs]] pages.
+
+*clontypeR* is placed in the [public domain](http://creativecommons.org/publicdomain/zero/1.0/).
