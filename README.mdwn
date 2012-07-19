@@ -60,9 +60,9 @@ for LIB in $(ls fastq/*.fastq) ; do echo -ne "$(basename $LIB .fastq)\t" ; infos
 </pre>
 
 The BAM files (see below) contain the full sequence information, so in theory,
-the FASTQ files can be discared.  The command ‘samtools bam2fq’ can produce
+the FASTQ files can be discarded.  The command ‘samtools bam2fq’ can produce
 FASTQ files from the BAM files, but beware that some sequences will be
-duplicated, as they contained more than one V segment, and threfore appear more
+duplicated, as they contained more than one V segment, and therefore appear more
 than once in the BAM file.
 
 <pre>
@@ -76,7 +76,7 @@ done
 </pre>
 
 For libraries where the forward PCR primer is closer to the end of the V
-setments, the alignment scores are always lower and the cutoff used in
+segments, the alignment scores are always lower and the cutoff used in
 VJsplit.sh may need to be adjusted
 
 <pre>
