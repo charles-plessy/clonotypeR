@@ -1,0 +1,9 @@
+<pre>
+> ?yassai.nomenclature
+> clonotype <- c("C", "TRBV2", "TRBJ1-2", "GINGMWQ04IYGTQ",
++        "GCCAGCAGCCAAGAGACCAGGGGAGGCTCCGACTACACC",
++        "IIIIIIIIIIIIIIIIIIIBBBBIFFI>>>IIIIIIIHH", "ASSQETRGGSDYT")
+>      yassai.nomenclature(clonotype)
+[1] "qETRGg.2263TRBV2TRBJ1-2L13"
+</pre>
+This should have been `qETRGg.226302-121L13`.
