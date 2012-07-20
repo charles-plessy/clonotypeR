@@ -4,14 +4,14 @@ clontoypeR
 Quantitative analysis of antigen receptor sequences
 ---------------------------------------------------
 
-**clontotypeR** is a R package and accompaniying scripts to identify
+*clontotypeR* is a R package and accompanying scripts to identify
 and analyse clonotypes from high-throughput T cell receptors sequence libraries.
-`clonotypeR` is suited to process and organise very large number of clonotypes,
+*clonotypeR* is suited to process and organise very large number of clonotypes,
 in the order of millions, typically produced by Roche 454 instruments, and to
 prepare these sequences for differential expression analysis with the typical
 transcriptomics tools as well as for statistical analysis using existing R packages.
 
-`clonotypeR` is developed in the [RIKEN Yokohama institute][RIKEN-Yokohama] by
+*clonotypeR* is developed in the [RIKEN Yokohama institute][RIKEN-Yokohama] by
 the [Functional Genomics Technology Team][FGTT] of the [Omics Science
 Center][OSC], in collaboration with the [Research Unit for Immune
 Homeostasis][RUIH] of the [Research Center for Allergy and Immunology][RCAI]. 
@@ -22,12 +22,12 @@ Homeostasis][RUIH] of the [Research Center for Allergy and Immunology][RCAI].
 [RUIH]:			http://web.rcai.riken.jp/en/labo/home/index.htm
 [RCAI]:			http://www.rcai.riken.jp
 
- - To install `clonotypeR`, see the [[README]].
+ - To **install** *clonotypeR*, see the [[README]].
 
- - To use `clontotypeR`, see the [[workflow]].
+ - To **use** *clontotypeR*, see the [[workflow]].
 
- - To participate to the development: browse the [source code][], see the [[TODO]] and [[Bugs]] pages.
+ - To **participate** to the development: browse the [source code][], see the [[TODO]] and [[Bugs]] pages.
 
 [source code]:		http://source.clonotyper.branchable.com/?p=source.git;a=tree;h=refs/heads/master;hb=refs/heads/master
 
-`clonotypeR` is placed in the [public domain](http://creativecommons.org/publicdomain/zero/1.0/).
+*clonotypeR* is placed in the [public domain](http://creativecommons.org/publicdomain/zero/1.0/).
