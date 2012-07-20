@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: lists unique clonotypes in libraries.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for unique_clonotypes {clonotypeR}"><tr><td>unique_clonotypes {clonotypeR}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>lists unique clonotypes in libraries.</h2>
+
+<h3>Description</h3>
+
+
+<p>Finds all the clonotypes expressed in one or more libraries, and returns a
+vector where they are listed once.  This vector can be used to subset a
+clonotype table.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>unique_clonotypes(libs, from=clonotypes)</pre>
+
+
+<h3>Arguments</h3>
+
+
+<table summary="R argblock">
+<tr valign="top"><td><code>libs</code></td>
+<td>
+<p>A character vector contain clonotype library names</p>
+</td></tr>
+<tr valign="top"><td><code>from</code></td>
+<td>
+<p>The name of the clonotype table where the data is stored.</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+
+<p>Uses the table called &ldquo;clonotypes&rdquo; by default.
+</p>
+
+
+<h3>Value</h3>
+
+
+<p>Character vector of clontoype names.  Their order follows the original row name
+order of the clonotype table.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Charles Plessy</p>
+
+
+<h3>See Also</h3>
+
+
+<p><code><a href="clonotype.table.html">clonotype.table</a></code>, <code><a href="common_clonotypes.html">common_clonotypes</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+# Load example data
+clonotypes.long &lt;- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+clonotypes &lt;- clonotype.table(levels(clonotypes.long$lib), from=clonotypes.long)
+summary(clonotypes)
+
+# List clonotypes found in library A.
+unique_clonotypes("A")
+
+# List clonotypes found in library A or B.
+unique_clonotypes(c("A","B"))
+</pre>
+
+<hr><div align="center">[Package <em>clonotypeR</em> version 0.1 <a href="00Index.html">Index</a>]</div>
+</body></html>

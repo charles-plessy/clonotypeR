@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: TCR clonotype nomenclature (Yassai et al.).</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for yassai.nomenclature {clonotypeR}"><tr><td>yassai.nomenclature {clonotypeR}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>TCR clonotype nomenclature (Yassai et al.).</h2>
+
+<h3>Description</h3>
+
+
+<p>The clonotype nomenclature defined by Yassai et al.
+in <a href="http://dx.doi.org/10.1007/s00251-009-0383-x">http://dx.doi.org/10.1007/s00251-009-0383-x</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>yassai.nomenclature(clonotype)</pre>
+
+
+<h3>Arguments</h3>
+
+
+<table summary="R argblock">
+<tr valign="top"><td><code>clonotype</code></td>
+<td>
+
+<p>A character vector containing a clonotype.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+
+<p>The name consists of five segments:
+</p>
+<p>(1) CDR3 amino acid identifier,
+</p>
+<p>(2) CDR3 nucleotide sequence identifier,
+</p>
+<p>(3) variable (V) segment identifier,
+</p>
+<p>(4) joining (J) segment identifier,
+</p>
+<p>(5) CDR3 length identifier.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Charles Plessy</p>
+
+
+<h3>See Also</h3>
+
+
+<p><a href="data-clonotypes.html">clonotypes</a>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+
+# Should return: qETRGg.226302-121L13
+clonotype &lt;- c("C", "TRBV2", "TRBJ1-2", "GINGMWQ04IYGTQ",
+  "GCCAGCAGCCAAGAGACCAGGGGAGGCTCCGACTACACC",
+  "IIIIIIIIIIIIIIIIIIIBBBBIFFI&gt;&gt;&gt;IIIIIIIHH", "ASSQETRGGSDYT")
+yassai.nomenclature(clonotype)
+</pre>
+
+<hr><div align="center">[Package <em>clonotypeR</em> version 0.1 <a href="00Index.html">Index</a>]</div>
+</body></html>
