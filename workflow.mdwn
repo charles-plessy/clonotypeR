@@ -1,0 +1,29 @@
+clonotypeR's workflow
+=====================
+
+*(draft)*
+
+Data preparation in the command line
+------------------------------------
+
+*clonotypeR* is ran with three commands.
+
+ - `clonotyper convert` transfroms sequencer ouptut files, currently in *ab1* (Sanger chromatograms) or *sff* (454 sequencer ouptut) format, to the stardard [[!wikipedia Fastq desc="FASTQ"]] format.
+
+ - `clonotyper detect` compares the sequences to a reference database of V segments.
+
+ - `clonotyper extract` searches for J segments in sequences where a V segment was found, extracts the CDR3s and reports the results in a table ready to be loaded in R by the [[`read.clonotypes()`|html/read.clonotypes.html]] function.
+
+See the [[manual page|scripts/clonotyper]] for more details.
+
+
+Data analysis in R
+------------------
+
+The R module can be loaded with the following command.
+
+<pre>
+library(clonotypeR)
+</pre>
+
+See the [[list of functions|html/00Index.html]] for more information.
