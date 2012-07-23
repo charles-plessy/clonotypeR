@@ -30,7 +30,6 @@ for V_NAME in $(samtools idxstats ../$LIBRARY.bam | awk '{if ($3 > 0) print $1}'
 do
   echo -ne "$V_NAME\t" 1>&2
   V_SEQ=$(seqret -filter $CLONOTYPER_REFERENCE/${V_LIB}-C.fa:$V_NAME[-20:] raw:stdout)
-  echo -ne "$V_SEQ\t" 1>&2
   samtools view -q $MAPQ_CUTOFF ../$LIBRARY.bam $V_NAME |
     perl -ne "(\$score) = /AS:i:(\d+)\t/ ; print if \$score >= $AS_CUTOFF" > $LIBRARY-${V_NAME//\//}-filtered.sam
   [ -s $LIBRARY-${V_NAME//\//}-filtered.sam ] && vectorstrip -auto \
@@ -46,7 +45,6 @@ do
   do
     echo -ne "\t$J_NAME\t" 1>&2
     J_SEQ=$(seqret -filter $CLONOTYPER_REFERENCE/${J_LIB}-FGxG.fa:$J_NAME[:20] raw:stdout)
-    echo -ne "\t$J_SEQ\t" 1>&2
     vectorstrip -auto \
         -readfile N \
         -mismatch $VS_MISMATCH \
