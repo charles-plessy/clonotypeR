@@ -1,0 +1,32 @@
+Tips
+====
+
+Collecting information on the FASTQ files.
+------------------------------------------
+
+<pre>
+for LIB in $(ls fastq/*.fastq) ; do echo -ne "$(basename $LIB .fastq)\t" ; infoseq --filter --noheading $LIB | wc -l ; done
+</pre>
+
+Keeping one of the FASTQ sequence file or BAM alignment files.
+--------------------------------------------------------------
+
+The BAM files (see below) contain the full sequence information, so in theory,
+the FASTQ files can be discarded.  The command ‘samtools bam2fq’ can produce
+FASTQ files from the BAM files, but beware that some sequences will be
+duplicated, as they contained more than one V segment, and therefore appear more
+than once in the BAM file.
+
+Count the number of sequences per library using the alignment files.
+--------------------------------------------------------------------
+
+<pre>
+for BAM in extraction_files/*.bam ; do echo -ne "$(basename $BAM .bam)\t" ; samtools view $BAM | cut -f1 | sort -u | wc -l ; done
+</pre>
+
+Count the number of clonotypes (one per line) in each clonotype file.
+---------------------------------------------------------------------
+
+<pre>
+for LIB in $(ls clonotypes/*.tsv) ; do echo -ne "$(basename $LIB .tsv)\t" ; wc -l $LIB | cut -f1 -d' '; done
+</pre>
