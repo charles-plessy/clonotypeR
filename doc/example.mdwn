@@ -1,0 +1,94 @@
+Example analysis
+================
+
+Example data
+------------
+
+The data provided in <a href="../../example_data">example_data</a>  is a
+sub-sample of three sequence librairies (2,000 reads each) made on the 454
+Titanium or the 454 junior platforms.  The original libraries will be deposited
+in public databanks after publication in a peer-reviewed journal.
+
+These example libraries are called `A`, `B` and `C`, and are in FASTQ format,
+with entries like the following.
+
+<pre>
+@HKTLYLP01B0MTM
+gactGTCCATCTTCCTTTTATCGGACACTGAAGTATGGATATCAGAAGTGCAgggccttcccacgggaacgtgttggtaccgactgggagtagttaaagtagctgtcctcataactgcaggtcagaactgtggttcctccttcccagactgtcagagattggagtcgtgggaggcaaggcacacagggggatagg
++
+IIIIIIIIIIIHHFF::::G&gt;IIIGGGIIIIIIIIIGGIIIIIIFEBDCDC&lt;//-5522----------1.511511/5-----5------1:::;;;&lt;=8@DD@87443&lt;&gt;EE@&lt;&lt;&lt;EEECCCCCCBBBGGGGIIIIGGGIGGGGGIIIGGGGGGGGGIGGGGIIGGGGGGEEGGEDADD???811///9&lt;&gt;&gt;&gt;
+</pre>
+
+Detection of V segments
+-----------------------
+
+Run the command `clonotyper detect A.fastq` in the same directory as a copy of
+the file `A.fastq`.
+
+The result is stored in a temporary directory called `extraction_files`, that
+can be created with the command `mkdir extraction_files`.
+
+`clonotyper detect` compares the sequences to the reference V segments using
+BWA, and produces output like the following.
+
+<pre>
+[bsw2_aln] read 2000 sequences/pairs (843395 bp)...
+[samopen] SAM header is present: 167 sequences.
+[main] Version: 0.6.2-r126
+[main] CMD: bwa bwasw -t8 /usr/share/clonotypeR/references/V/index A.fastq
+[main] Real time: 1.099 sec; CPU: 8.225 sec
+</pre>
+
+This indicates that 2,000 reads have been processed, representing 843,395 base
+pairs in total.  There were 167 reference V segments, and the version number of
+BWA was `0.6.2-r126`.  The whole process took less than 10 seconds.
+
+The result is stored in a temporary directory called extraction_files, that
+
+Process the example libraries `B` and `C` similarly with the commands
+`clonotyper detect C.fastq` and `clonotyper detect C.fastq`.
+
+Extraction of CDR3 regions
+--------------------------
+
+Run the command `clonotyper extract A` in the same directory as where you ran
+`clonotyper detect A.fastq`.  The result is a table stored in a directory
+called `clonotypes`, that can be created with the command `mkdir clonotypes`.
+
+The output is quite voluminous, and indicates which *V* / *J* combinations are
+being found, like on the following.
+
+<pre>
+TRAV14-3	233
+	TRAJ61	0
+	TRAJ60	0
+	TRAJ59	0
+	TRAJ58	1
+	TRAJ57	39
+	TRAJ56	2
+	TRAJ55	0
+</pre>
+
+The format of the table is explained in the [manual
+page](../../html/read.clonotypes.html) of the function `read.clonotypes()` of the
+R package.
+
+For each library (`A`, `B` and `C`), one file is available in the `clonotypes`
+directory.  With BWA 0.6.2-r126, the following numbers of clonotypes are found.
+
+<pre>
+  1072 clonotypes/A.tsv
+   924 clonotypes/B.tsv
+   689 clonotypes/C.tsv
+</pre>
+
+The files need to be concatenated before analysis in `R`, with the following command.
+
+<pre>
+find clonotypes/ -name '*tsv' | xargs cat > clonotypes.tsv
+</pre>
+
+Data analysis in R
+------------------
+
+*in construction*
