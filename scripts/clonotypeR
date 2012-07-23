@@ -2,11 +2,11 @@
 
 set -ex
 
-# Path to the reference V and J segments defaults to ../references.
-CLONOTYPER_REFERENCE=${CLONOTYPER_REFERENCE:-../references}
+# Path to the reference V and J segments defaults to /etc/clonotyper/references.
+CLONOTYPER_REFERENCE=${CLONOTYPER_REFERENCE:-/etc/clonotyper/references}
 
-# Path to VJsplit defaults to ../scripts.
-CLONOTYPER_SCRIPTS=${CLONOTYPER_SCRIPTS:-../scripts}
+# Path to VJsplit defaults to /usr/share/clonotyper.
+CLONOTYPER_SCRIPTS=${CLONOTYPER_SCRIPTS:-/usr/share/clonotyper}
 
 # Path to the BAM and temporary files defaults to extraction_files.
 EXTRACT_DIR=${EXTRACT_DIR:-extraction_files}
