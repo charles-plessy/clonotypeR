@@ -1,0 +1,53 @@
+% CLONOTYPER(1) clonotypeR User Manual
+
+# NAME
+
+clonotyper - Quantitative analysis of antigen receptor sequences
+
+# SYNOPSIS
+
+clonotypeR convert file1.sff file2.sff ...
+
+clonotypeR detect  file1.fastq file2.fastq ...
+
+clonotypeR extract file1.bam file2.bam ...
+
+# DESCRIPTION
+
+## clonotypeR convert
+
+## clonotypeR detect
+
+## clonotypeR extract
+
+# OPTIONS
+
+*ClonotypeR*'s options are passed as environment variables.
+
+## CLONOTYPER_REFERENCE
+
+Default: /etc/clonotyper/references
+
+## CLONOTYPER_SCRIPTS
+
+Path to *clonotypeR*'s accessory scripts.
+
+Default: /usr/share/clonotyper
+
+## EXTRACT_DIR
+
+Path to the BAM and temporary files.  Default: ./extraction_files
+
+## THREADS
+
+Number of threads for the alignment 
+
+# FILES
+
+# LICENSE
+
+Public domain: http://creativecommons.org/publicdomain/zero/1.0/
+
+# SEE ALSO
+
+ClonotypeR's home page: http://clonotyper.branchable.com/
