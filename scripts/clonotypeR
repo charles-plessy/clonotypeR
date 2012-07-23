@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -ex
+set -e
 
 # Path to the reference V and J segments defaults to /etc/clonotyper/references.
 CLONOTYPER_REFERENCE=${CLONOTYPER_REFERENCE:-/etc/clonotyper/references}
