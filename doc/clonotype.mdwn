@@ -1,0 +1,27 @@
+# Clonotypes
+
+The adaptive immune system cells recognize their targets by producing
+a large number of variable receptors, where the sequence diversity,
+not encoded directly in the germ line, originates through
+*somatic recombination*.  Each B or T lymphocyte express only one
+receptor variant, and the collection of all the different receptors in
+a cell population is called a *repertoire*.  Once the somatic
+recombination is done, the receptor is transmitted to daughter cells
+across divisions, and the collection of cells expressing the same
+receptor, and by extension the receptor itself, is called a
+*clonotype*.
+
+The processus of somatic recombination assembles a mature gene from
+arrays of *segments* on the genome.  The junction between the N-terminal *V* and
+the downstream *J* segments, with the possible inclusion of a
+*D* segment in the case of the T cell receptor beta chain and the
+immunoglobulin heavy chain, is called the *complementarity
+determining region 3* (*CDR3*) and is one of the key contact points
+with the antigen.  The somatic recombination is imprecise and
+therefore the sequence of the CDR3 has to be determined
+experimentally.  Flanking the CDR3, there are two structural motifs
+that are essential for the receptor's function and therefore strongly
+conserved: a *cysteine* at the end of the *V* segment and a *FGxG* motif
+(\cite{Lefranc1999}) in the *J* segment.  Characterizing the receptor
+clonotype diversity requires the identification of the *V*, *(D)* and *J*
+segments as well as sequencing the *CDR3* region.
