@@ -4,3 +4,7 @@ html-doc:
 
 manpage: doc/clonotyper.mdwn
 	pandoc -s -w man doc/clonotyper.mdwn -o scripts/clonotyper.1
+
+r-check:
+	$(RM) --recursive ..Rcheck
+	R CMD check .
