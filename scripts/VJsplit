@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -e
+
 LIBRARY=$1
 V_LIB=${2-V}
 J_LIB=${3-J}
