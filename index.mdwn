@@ -1,8 +1,5 @@
-clontoypeR
-==========
-
-Quantitative analysis of antigen receptor sequences
----------------------------------------------------
+clontoypeR – Quantitative analysis of antigen receptor sequences
+================================================================
 
 *clontotypeR* is a R package and accompanying scripts to identify
 and analyse clonotypes from high-throughput T cell receptors sequence libraries.
