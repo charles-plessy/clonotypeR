@@ -8,3 +8,6 @@ manpage: doc/clonotyper.mdwn
 r-check:
 	$(RM) --recursive ..Rcheck
 	R CMD check .
+
+r-build:
+	SOURCEDIR=$$(pwd) && cd .. && R CMD build $$SOURCEDIR
