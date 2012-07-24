@@ -17,8 +17,7 @@ THREADS=$([ -e /proc/cpuinfo ] && cat /proc/cpuinfo | grep -c processor)
 function test_extract_dir {
 	if ! [ -d $EXTRACT_DIR ]
 	then
-	  echo "Error: could not find the directory '$EXTRACT_DIR'. $?"
-	  exit 1
+		mkdir $EXTRACT_DIR
 	fi
 }
 
