@@ -1,6 +1,8 @@
 Example analysis
 ================
 
+*This example analysis assumes a [[!wikipedia Operating_system#UNIX_and_UNIX-like_operating_systems desc="Unix"]] system (Linux, Mac OS, …)*
+
 Example data
 ------------
 
@@ -91,4 +93,83 @@ find clonotypes/ -name '*tsv' | xargs cat > clonotypes.tsv
 Data analysis in R
 ------------------
 
-*in construction*
+Start the `R` statistical analysis software with the command “`R`”.  The commands entered after this are executed by `R`.
+
+Load the clonotypeR library: `library(clonotyper)`
+
+Load the data in a R object called *clonotypes*: `clonotypes <- read.clonotypes('clonotypes.tsv')`
+
+The command `summary(clonotypes)` already provides useful information.
+
+<pre>
+> summary(clonotypes)
+ lib                    V             J            read          
+ A:1072   TRAV14-1       :944   TRAJ31 : 380   Length:2684       
+ B: 924   TRAV14-2       :237   TRAJ23 : 270   Class :character  
+ C: 688   TRAV14-3       :251   TRAJ22 : 257   Mode  :character  
+          TRAV14D-3/DV8  :242   TRAJ37 : 156                     
+          TRAV14N-1_14D-1:604   TRAJ34 : 141                     
+          TRAV14N-2_14D-2:235   TRAJ40 : 104                     
+          TRAV14N-3      :171   (Other):1376                     
+     dna                qual               pep            improductive   
+ Length:2684        Length:2684        Length:2684        Mode :logical  
+ Class :character   Class :character   Class :character   FALSE:2130     
+ Mode  :character   Mode  :character   Mode  :character   TRUE :554      
+                                                          NA's :0        
+
+</pre>
+
+Identify unique clonotypes, count their sequences in the libraries `A`, `B` and `C`, and store the result as a table arbitrarly named `abc`. 
+
+<pre>
+> abc <- clonotype.table(c('A','B','C'))
+
+> head(abc)
+                            A B C
+TRAV14-1 AAASSGSWQLI TRAJ22 1 0 0
+TRAV14-1 AACNNRIF TRAJ31    1 0 0
+TRAV14-1 AAGAKLT TRAJ39     3 0 0
+TRAV14-1 AAGGSWQLI TRAJ22   1 0 0
+TRAV14-1 AAGTNTGKLT TRAJ27  1 0 0
+TRAV14-1 AAHDTNAYKVI TRAJ30 1 0 0
+
+> summary(abc)
+       A                 B                 C           
+ Min.   : 0.0000   Min.   : 0.0000   Min.   :  0.0000  
+ 1st Qu.: 0.0000   1st Qu.: 0.0000   1st Qu.:  0.0000  
+ Median : 0.0000   Median : 0.0000   Median :  0.0000  
+ Mean   : 0.7599   Mean   : 0.6606   Mean   :  0.5018  
+ 3rd Qu.: 1.0000   3rd Qu.: 1.0000   3rd Qu.:  0.0000  
+ Max.   :18.0000   Max.   :22.0000   Max.   :121.0000
+</pre>
+
+The summary shows that the most frequent clonotype is in `C`. Using `R` [[index vectors|http://cran.r-project.org/doc/manuals/R-intro.html#Index-vectors]], we can see that its CDR3 sequence is AASDSNNRIF and that it was not found in the other libraries.
+
+<pre>
+> abc[C == 121,]
+                                  A B   C
+TRAV14N-1_14D-1 AASDSNNRIF TRAJ31 0 0 121
+</pre>
+
+The `clonotype.table` function can also produce a count table for and combination of *V*, *CDR3* or *J* segments.
+
+<pre>
+> clonotype.table(c('A','B','C'), "V")
+                  A   B   C
+TRAV14-1        239 493   0
+TRAV14-2        131  61   0
+TRAV14-3         79   9 113
+TRAV14D-3/DV8   140  50   4
+TRAV14N-1_14D-1  78  24 388
+TRAV14N-2_14D-2  81  61  49
+TRAV14N-3        94  34   2
+
+> head(clonotype.table(c('A','B','C'), c("V","J")))
+                 A  B C
+TRAV14-1 TRAJ11  1  1 0
+TRAV14-1 TRAJ12  2  2 0
+TRAV14-1 TRAJ13  2  1 0
+TRAV14-1 TRAJ15 10 11 0
+TRAV14-1 TRAJ16  4  3 0
+TRAV14-1 TRAJ18  1 21 0
+</pre>
