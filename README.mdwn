@@ -10,13 +10,15 @@ Requirements
  * [BWA][] (Burrows-Wheeler Aligner), to identify the trimmed V segments.
  * [BioPerl][] (> 1.6.9), to translate the CDRs.  Lower versions differ on how they translate incomplete last codons.
  * [Pandoc][] is needed for building the manual page of `clonotypeR`.
+ * [Biostrings][] is needed to load the `clonotypeR` module in `R`.
 
 [sff_extract]:	http://bioinf.comav.upv.es/sff_extract/download
 [EMBOSS]:	http://www.emboss.org	"The European Molecular Biology Open Software Suite"
 [moreutils]:	http://kitenet.net/~joey/code/moreutils/	"a growing collection of the unix tools that nobody thought to write long ago when unix was young."
 [BWA]:		http://bio-bwa.sourceforge.net/	"Burrows-Wheeler Aligner"
-[BioPerl]:	http://bio.perl.org/ "BioPerl"
-[Pandoc]:	http://johnmacfarlane.net/pandoc/
+[BioPerl]:		http://bio.perl.org/ "BioPerl"
+[Pandoc]:		http://johnmacfarlane.net/pandoc/
+[Biostrings]:	http://bioconductor.org/packages/release/bioc/html/Biostrings.html
 
 
 Conversions to FASTQ
