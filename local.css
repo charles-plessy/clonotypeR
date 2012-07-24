@@ -12,3 +12,7 @@
 	color		:	grey;
 	text-decoration	:	none;
 }
+
+code, pre {
+	background	:	#eee;
+}
