@@ -3,12 +3,12 @@
 }
 
 
-.actions {
+.pageheader {
 	font-family	:	sans;
 	font-size	:	smaller;
 }
 
-.actions a	{
+.pageheader a	{
 	color		:	grey;
 	text-decoration	:	none;
 }
