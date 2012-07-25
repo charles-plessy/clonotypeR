@@ -1,27 +1,28 @@
 Reference sequences
 ===================
 
-The references sequences are TRA@.gb, TRB@.gb and TRG@.gb, from GenBank.
-<code>make gb2fa</code> will extract V, (D), J and C segments with the
-<code>extractfeat</code> command of the EMBOSS package. 
+The references sequences are TRA@.gb, TRB@.gb and TRG@.gb, from GenBank.  The
+*V*, *(D)*, *J* and *C* segments were extracted with the command `make gb2fa`,
+wich uses the the [extractfeat][] program of the EMBOSS package. 
 
-This directory contains V and J segments aligned on conserved motifs in the
-files V.fa and J.fa.  These alignments were made by hand using [SeaView][] and
+This directory contains *V* and *J* segments aligned on conserved motifs in the
+files [[V.fa]] and [[J.fa]].  These alignments were made by hand using [SeaView][] and
 may need to be revised when the reference sequences change.
 
 [SeaView]:	http://pbil.univ-lyon1.fr/software/seaview	"multiplatform, graphical user interface for multiple sequence alignment and molecular phylogeny."
+[extractfeat]:	http://emboss.open-bio.org/wiki/Appdoc:Extractfeat	"extractfeat documentation on the EMBOSS wiki".
 
-Identical V segments need to be collated together.  The problem is that wich
-ones are indentical depend on how the PCR primers used to amplfiy them
-were designed.
+Identical *V* segments need to be collated together.  One problem is that which
+ones are indentical depends on how the PCR primers used to amplfiy them were
+designed.  You may need to adjust the reference files accordingly.
 
-The files V-C.fa, V_after_C.fa, J-FGxG.fa, J_before_FGxG.fa are derived from
-the manually edited files V.fa and J.fa described above, by removing everything
-after or before their conserved motif, followed by degapping by a command such
-as:
+The files [[V-C.fa]], [[V_after_C.fa]], [[J-FGxG.fa]], [[J_before_FGxG.fa]] are
+derived from the manually edited files [[V.fa]] and [[J.fa]] described above,
+by removing everything after or before their conserved motif, followed by
+degapping by a command such as:
 
-  degapseq V-C.fa V-C.fa.degapped && mv V-C.fa.degapped V-C.fa
+`degapseq V-C.fa V-C.fa.degapped && mv V-C.fa.degapped V-C.fa`
 
-A BWA index is provided for the V segments trunkated after the conserved
-cysteine, in the ‘V’ directory, and can be refreshed with the command
-<code>make bwa-index</code>.
+A BWA index is provided for the *V* segments trunkated after the conserved
+cysteine, in the `V` directory, and can be refreshed with the command `make
+bwa-index`.  It is used by the command `clonotypeR detect`.
