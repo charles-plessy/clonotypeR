@@ -20,7 +20,7 @@ the manually edited files V.fa and J.fa described above, by removing everything
 after or before their conserved motif, followed by degapping by a command such
 as:
 
-  degapseq TRAV-C.fa stdout | sponge TRAV-C.fa
+  degapseq V-C.fa V-C.fa.degapped && mv V-C.fa.degapped V-C.fa
 
 A BWA index is provided for the V segments trunkated after the conserved
 cysteine, in the ‘V’ directory, and can be refreshed with the command

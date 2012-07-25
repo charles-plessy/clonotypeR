@@ -3,7 +3,6 @@ Requirements
 
  * [sff_extract][], to convert the 454 SFF files to FASTQ format with `clonotypeR convert`.
  * [EMBOSS][], to manipulate the reference sequences.
- * [moreutils][], for the the <code>sponge</code> command.
  * [BWA][] (Burrows-Wheeler Aligner), to identify the trimmed V segments.
  * [BioPerl][] (> 1.6.9), to translate the CDRs.  Lower versions differ on how they translate incomplete last codons.
  * [Pandoc][] is needed for building the manual page of `clonotypeR`.
