@@ -1,10 +1,7 @@
-clonotypeR
-==========
-
 Requirements
 ------------
 
- * [sff_extract][], to convert the 454 SFF files to FASTQ format.
+ * [sff_extract][], to convert the 454 SFF files to FASTQ format with `clonotypeR convert`.
  * [EMBOSS][], to manipulate the reference sequences.
  * [moreutils][], for the the <code>sponge</code> command.
  * [BWA][] (Burrows-Wheeler Aligner), to identify the trimmed V segments.
@@ -21,35 +18,13 @@ Requirements
 [Biostrings]:	http://bioconductor.org/packages/release/bioc/html/Biostrings.html
 
 
-Conversions to FASTQ
---------------------
+Installation
+------------
 
-### From AB1 files
+### From source
 
-This create a single FASTQ file from a directory containing individual AB1
-trace files.
+*Under construction*
 
-<pre>
-function abi2fastq {
-  for ABI in *ab1
-  do
-    seqret -filter abi::$ABI fastq-sanger::stdout |
-    descseq -filter fastq-sanger::stdin fastq-sanger::stdout -name $(basename $ABI .ab1)
-  done
-}
+### From archive
 
-[ -d fastq ]            || mkdir fastq
-( cd example/library1/ && abi2fastq > ../fastq/library1.fastq )
-</pre>
-
-### From SFF files
-
-<code>sff_extract</code> converts the sff file to FASTQ format.  As it is used
-here, it does not clip adaptor sequence nor low-quality parts.
-
-<pre>
-[ -d extraction_files ] || mkdir extraction_files
-[ -d fastq ]            || mkdir fastq
-
-sff_extract sff/example-library1.sff -x /dev/null --out_basename=fastq/example-library1.fastq -Q
-</pre>
+*Under construction*

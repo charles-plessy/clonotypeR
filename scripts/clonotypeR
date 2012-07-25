@@ -21,8 +21,25 @@ function test_extract_dir {
 	fi
 }
 
+function abi2fastq {
+	for ABI in *ab1
+	do
+		seqret -filter abi::$ABI fastq-sanger::stdout |
+			descseq -filter fastq-sanger::stdin fastq-sanger::stdout -name $(basename $ABI .ab1)
+	done
+}
+
+
 case $1 in
 	convert)
+		shift
+		# Need to stop with error if sff and fastq files are found together
+		# need to recurse if a directory is found
+		#[ -d fastq ]            || mkdir fastq
+		#( cd example/library1/ && abi2fastq > ../fastq/library1.fastq )
+		# If SFF format
+		# Not satisfactory ; needs to give a correct name for the FASTQ file.
+		sff_extract $* -x /dev/null 
 	;;
 	detect)
 		shift
