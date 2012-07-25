@@ -1,26 +1,28 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><title>R: Lists clonotypes common to two groups of samples.</title>
+<html><head><title>R: Reports clonotypes common between samples.</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="R.css">
 </head><body>
 
 <table width="100%" summary="page for common_clonotypes {clonotypeR}"><tr><td>common_clonotypes {clonotypeR}</td><td align="right">R Documentation</td></tr></table>
 
-<h2>Lists clonotypes common to two groups of samples.</h2>
+<h2>Reports clonotypes common between samples.</h2>
 
 <h3>Description</h3>
 
 
-<p>Considering two groups of samples, lists the clonotypes that have been
+<p>When given two groups of samples, lists the clonotypes that have been
 observed at least in one library of each group.  The returned list can
-be used to subset a data frame produced by
-<code><a href="clonotype.table.html">clonotype.table</a></code>.
+be used to subset a data frame produced by <code><a href="clonotype.table.html">clonotype.table</a></code>.
+</p>
+<p>When given a table of clonotypes, produces a matrix in which each cell reports
+the number of clonotypes found in a pair of libraries.
 </p>
 
 
 <h3>Usage</h3>
 
-<pre>common_clonotypes(group1, group2, data=clonotypes)</pre>
+<pre>common_clonotypes(group1, group2, mode="groups", data=clonotypes)</pre>
 
 
 <h3>Arguments</h3>
@@ -35,6 +37,10 @@ be used to subset a data frame produced by
 <td>
 <p>A character vector containing clonotype library names</p>
 </td></tr>
+<tr valign="top"><td><code>mode</code></td>
+<td>
+<p>By default, &ldquo;groups&rdquo; when &ldquo;group1&rdquo; or &ldquo;group2&rdquo; is provided, &ldquo;matrix&rdquo; mode otherwise.</p>
+</td></tr>
 <tr valign="top"><td><code>data</code></td>
 <td>
 <p>A clonotype table where the data is stored.  Default: &ldquo;clonotypes&rdquo;.</p>
@@ -45,8 +51,11 @@ be used to subset a data frame produced by
 <h3>Value</h3>
 
 
-<p>Character vector of clontoype names.  Their order follows the original row name
-order of the clonotype table.
+<p>In &ldquo;groups&rdquo; mode, a character vector of clontoype names.  Their order
+follows the original row name order of the clonotype table.
+</p>
+<p>In &ldquo;matric&rdquo; mode, a symmetric matrix of numbers, with the same row and
+column names as the row names of the clonotype table used.
 </p>
 
 
@@ -72,6 +81,9 @@ summary(clonotypes)
 
 # List clonotypes found in library A, and B or C.
 common_clonotypes(group1="A", group2=c("B","C"))
+
+# Matrix of numbers of common clonotypes
+common_clonotypes()
 </pre>
 
 <hr><div align="center">[Package <em>clonotypeR</em> version 0.1 <a href="00Index.html">Index</a>]</div>
