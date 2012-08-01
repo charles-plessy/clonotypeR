@@ -52,6 +52,12 @@ Path to the directory where the clonotypes are to be extracted.
 
 Default: `./clonotypes`
 
+## DEBUG
+
+Save intermediate files (`vectorstrip` output) for troubleshooting.
+
+Default: unset
+
 ## EXTRACT_DIR
 
 Path to the BAM and temporary files.  Default: `./extraction_files`
