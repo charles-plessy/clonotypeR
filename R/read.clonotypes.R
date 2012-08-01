@@ -9,13 +9,20 @@ if (filename == "") stop ("Empty file name.")
 
 cdr.file <- file(filename)
 open(cdr.file)
-cur_line <- '#'
+cur_line <- readLines(cdr.file, n=1)
 lines_to_skip <- 0
 while( grepl("^#", cur_line) ) {
   cur_line <- readLines(cdr.file, n=1)
   lines_to_skip <- lines_to_skip + 1
 }
 close(cdr.file)
+
+# If it has lines to skip, then it is an OSCTable file, and therefore it has a header.
+if (lines_to_skip ==  0) {
+	has_header <- FALSE
+} else {
+	has_header <- TRUE
+}
 
 # Load the clonotypes in a data frame.
 
@@ -41,7 +48,7 @@ cdr <- read.table(
 				),
 	comment.ch	=	'',
 	quote		=	'',
-	header		=	FALSE,
+	header		=	has_header,
 	skip		=	lines_to_skip,
 	...
 )
