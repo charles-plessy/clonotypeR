@@ -48,6 +48,7 @@ cdr <- read.table(
 				),
 	comment.ch	=	'',
 	quote		=	'',
+	sep		=	'\t',
 	header		=	has_header,
 	skip		=	lines_to_skip,
 	...
