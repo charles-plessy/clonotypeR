@@ -24,6 +24,16 @@ Count the number of sequences per library using the alignment files.
 for BAM in extraction_files/*.bam ; do echo -ne "$(basename $BAM .bam)\t" ; samtools view $BAM | cut -f1 | sort -u | wc -l ; done
 </pre>
 
+Before CDR3 extraction, count the number of V segments detected
+---------------------------------------------------------------
+
+If the sequence file name was `foo.fastq`.
+
+<pre>
+samtools idxstats extraction_files/foo.bam
+</pre>
+
+
 Count the number of clonotypes (one per line) in each clonotype file.
 ---------------------------------------------------------------------
 
