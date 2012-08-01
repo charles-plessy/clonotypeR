@@ -98,7 +98,7 @@ do
   done
   if [ -z $DEBUG ]
   then
-    rm $LIBRARY-${V_NAME//\//}-filtered.sam $LIBRARY.${V_NAME//\//}-found.sam
+    rm --force $LIBRARY-${V_NAME//\//}-filtered.sam $LIBRARY.${V_NAME//\//}-found.sam
   fi
   echo
 done
