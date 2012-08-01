@@ -32,7 +32,7 @@ AS_CUTOFF=${AS_CUTOFF-170}
 #AS_CUTOFF=50 #for the TRAV6-6-TRAJ52 Sanger sequences.
 
 rm -rf $EXTRACT_DIR/$LIBRARY.tmp ; mkdir $EXTRACT_DIR/$LIBRARY.tmp
-rm -f $EXTRACT_DIR/$LIBRARY.tsv
+rm -f $CLONOTYPES/$LIBRARY.tsv
 cd $EXTRACT_DIR/$LIBRARY.tmp
 
 # ${V_NAME//\//} will remove all slashes in V_NAME.
