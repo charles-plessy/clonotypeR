@@ -11,14 +11,22 @@ CLONOTYPER_REFERENCE=${CLONOTYPER_REFERENCE:-/usr/share/clonotper/references}
 
 case $CLONOTYPER_REFERENCE in
 	/*) ;;
-	*) CLONOTYPER_REFERENCE=../../$CLONOTYPER_REFERENCE ;;
+	*) CLONOTYPER_REFERENCE=$(pwd)/$CLONOTYPER_REFERENCE ;;
 esac
 
 # Path to the BAM and temporary files defaults to extraction_files.
-EXTRACT_DIR=${EXTRACT_DIR:-extraction_files}
+if [ -z $DEBUG ]
+then
+  EXTRACT_DIR=$(pwd)/extraction_files
+fi
+
+TMPDIR=${TMPDIR:-extraction_files}
 
 # Path to clonotypes directory defaults to clonotypes.
-CLONOTYPES=${CLONOTYPES:-clonotypes}
+if [ -z $CLONOTYPES ]
+then
+  CLONOTYPES=$(pwd)/clonotypes
+fi
 
 if ! [ -d $CLONOTYPES ]
 then
@@ -31,13 +39,13 @@ MAPQ_CUTOFF=${MAPQ_CUTOFF-1}
 AS_CUTOFF=${AS_CUTOFF-170}
 #AS_CUTOFF=50 #for the TRAV6-6-TRAJ52 Sanger sequences.
 
-rm -rf $EXTRACT_DIR/$LIBRARY.tmp ; mkdir $EXTRACT_DIR/$LIBRARY.tmp
+rm -rf $TMPDIR/$LIBRARY.tmp ; mkdir $TMPDIR/$LIBRARY.tmp
 rm -f $CLONOTYPES/$LIBRARY.tsv
-cd $EXTRACT_DIR/$LIBRARY.tmp
+cd $TMPDIR/$LIBRARY.tmp
 
 # ${V_NAME//\//} will remove all slashes in V_NAME.
 
-for V_NAME in $(samtools idxstats ../$LIBRARY.bam | awk '{if ($3 > 0) print $1}')
+for V_NAME in $(samtools idxstats $EXTRACT_DIR/$LIBRARY.bam | awk '{if ($3 > 0) print $1}')
 do
   if [ -z $DEBUG ]
   then
@@ -47,7 +55,7 @@ do
   fi	
   echo -ne "$V_NAME\t" 1>&2
   V_SEQ=$(seqret -filter $CLONOTYPER_REFERENCE/${V_LIB}-C.fa:$V_NAME[-20:] raw:stdout)
-  samtools view -q $MAPQ_CUTOFF ../$LIBRARY.bam $V_NAME |
+  samtools view -q $MAPQ_CUTOFF $EXTRACT_DIR/$LIBRARY.bam $V_NAME |
     perl -ne "(\$score) = /AS:i:(\d+)\t/ ; print if \$score >= $AS_CUTOFF" > $LIBRARY-${V_NAME//\//}-filtered.sam
   [ -s $LIBRARY-${V_NAME//\//}-filtered.sam ] && vectorstrip -auto \
         -readfile N \
@@ -85,7 +93,7 @@ do
           $trans = new Bio::Seq(-seq => $seq )->translate->seq ;
           say join ("\t", @ARGV[0], @ARGV[1], @ARGV[2], $name, $seq, $qual, $trans) ;
         } ' $LIBRARY $V_NAME $J_NAME |
-      tee -a ../../$CLONOTYPES/$LIBRARY.tsv |
+      tee -a $CLONOTYPES/$LIBRARY.tsv |
       wc -l - | cut -f1 -d' ' 1>&2
   done
   if [ -z $DEBUG ]

@@ -69,6 +69,10 @@ that it is not possible to discriminate between at least two V segments.
 
 Default: 1
 
+## TMPDIR
+
+Use the directory indicated by `TMPDIR` to store temporary files.
+
 ## THREADS
 
 Number of threads for the alignment 
