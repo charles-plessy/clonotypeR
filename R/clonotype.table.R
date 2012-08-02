@@ -1,10 +1,16 @@
 clonotype.table <- function (libs, feats=c("V","pep","J"), from=clonotypes, filter=from$improductive) {
 
+if ( missing (libs) )
+	libs <- levels(from$lib)
+
 if ( ! is.character(libs) )
         stop ("Include list of libraries as first argument.")
 
 if ( ! length(libs) == length(unique(libs)) )
-	stop ("Redundant list of libraries")
+	stop ("Redundant list of libraries.")
+
+if ( ! is.data.frame(from) )
+	stop ("Input clonotypes must be in a data frame.")
 
 if ( ! is.logical(from$improductive) )
 	stop ("Input missing Improductive column.")
@@ -16,9 +22,6 @@ if ( ! is.logical(from$improductive) )
 # and discards the improductive rearrangements.
 
 feat.freq <- function (lib, filter) {
-    if ( ! is.character(lib) ) {
-        stop ("Must receive a library name (character vector)")
-    }
     keep <- from$lib == lib & ! filter
     if (length(feats) == 1) {
         feat <- from[keep,feats]

@@ -16,7 +16,8 @@ clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$impro
 \arguments{
   \item{libs}{
   A character vector containing the name of one or many libraries.  Same names
-  must not appear twice.
+  must not appear twice.  If no library names are provided, all the libraries
+  present in the clonotypes data frame will be used.
 }
   \item{feats}{
   What to count.  By default, it counts clonotypes, defined as \code{c("V","pep","J")}.
