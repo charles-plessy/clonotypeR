@@ -44,6 +44,9 @@ summary(clonotypes)
 # List clonotypes found in library A, and B or C.
 common_clonotypes(group1="A", group2=c("B","C"))
 
+# Count clonotypes found in library A, and B or C.
+length(common_clonotypes(group1="A", group2=c("B","C")))
+
 # Matrix of numbers of common clonotypes
 common_clonotypes()
 }
