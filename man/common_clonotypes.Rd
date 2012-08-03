@@ -25,7 +25,7 @@ the number of clonotypes found in a pair of libraries.
 In \dQuote{groups} mode, a character vector of clontoype names.  Their order
 follows the original row name order of the clonotype table.
 
-In \dQuote{matric} mode, a symmetric matrix of numbers, with the same row and
+In \dQuote{matrix} mode, a symmetric matrix of numbers, with the same row and
 column names as the row names of the clonotype table used.
 }
 
