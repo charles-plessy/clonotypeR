@@ -4,12 +4,16 @@
 \title{Reports clonotypes common between samples.}
 
 \description{
-When given two groups of samples, lists the clonotypes that have been
-observed at least in one library of each group.  The returned list can
-be used to subset a data frame produced by \code{\link{clonotype.table}}.
+When given one group of samples, lists the clonotypes that have been observed
+at least in one sample.  The returned list can be used to subset a data frame
+produced by \code{\link{clonotype.table}}.
+
+When given two groups of samples, lists the clonotypes that have been observed
+at least in one sample of each group.  Groups can contain a single sample, in
+which case the returned list is simply the clonotypes found in both samples.
 
 When given a table of clonotypes, produces a matrix in which each cell reports
-the number of clonotypes found in a pair of libraries.
+the number of clonotypes found in each pair of samples.
 }
 
 \usage{common_clonotypes(group1, group2, mode="groups", data=clonotypes)}
