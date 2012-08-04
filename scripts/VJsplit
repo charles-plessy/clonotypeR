@@ -6,8 +6,7 @@ LIBRARY=$1
 V_LIB=${2-V}
 J_LIB=${3-J}
 
-# Path to the reference V and J segments defaults to /usr/share/clonotper/references
-CLONOTYPER_REFERENCE=${CLONOTYPER_REFERENCE:-/usr/share/clonotper/references}
+# Adjust path to the reference V and J segments if it is relative.
 
 case $CLONOTYPER_REFERENCE in
 	/*) ;;
