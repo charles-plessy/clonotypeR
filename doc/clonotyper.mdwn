@@ -38,13 +38,11 @@ Default: 170
 
 ## CLONOTYPER_REFERENCE
 
-Default: /etc/clonotyper/references
+Path to reference alignments.  If not set, a `references` directory is searched in `/etc`, `/usr/share/clontyper`, and then in the parent directory.
 
 ## CLONOTYPER_SCRIPTS
 
-Path to *clonotypeR*'s accessory scripts.
-
-Default: /usr/share/clonotyper
+Path to *clonotypeR*'s accessory scripts.  If not set, a `scripts` directory is searched in `/usr/share/clontyper`, and then in the parent directory.
 
 ## CLONOTYPES
 
