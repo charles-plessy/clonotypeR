@@ -22,6 +22,14 @@ Install the programs needed by clonotypeR and for other analysis steps.
 sudo apt-get install bioperl bwa emboss pandoc
 </pre>
 
+Install [git](http://git-scm.com) and download *clonotypeR*. On this cloud instance, the temporary storage is in `/mnt/`.
+
+<pre>
+sudo apt-get install git
+sudo install -d /mnt/clonotyper -o ubuntu -g ubuntu
+git clone git://clonotyper.branchable.com/ clonotyper/
+</pre>
+
 Install the package for the [NCBI SRA toolkit](http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software), to convert the sequences downloaded from the Gene Expression Omnibus.
 
 <pre>
@@ -30,11 +38,11 @@ sudo apt-get install sra-toolkit
 
 ### Data download
 
-On this cloud isntance, the temporary storage is in `/mnt/`. The files are larger than gigabytes, so the download and conversion to FASTQ format will take time.
+On this cloud isntance, the temporary storage is in `/mnt/`. The files are larger than gigabytes, so the download and conversion to FASTQ format will take roughly one hour.
 
 <pre>
-sudo install -d /mnt/GSE35626 -o ubuntu -g ubuntu
-cd /mnt/GSE35626
+install -d /mnt/clonotyper/GSE35626 -o ubuntu -g ubuntu
+cd /mnt/clonotyper/GSE35626
 wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP010%2FSRP010815/SRR407172/SRR407172.sra
 wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP010%2FSRP010815/SRR407173/SRR407173.sra
 fastq-dump SRR407172.sra 
