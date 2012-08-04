@@ -36,6 +36,8 @@ sudo install -d /mnt/GSE35626 -o ubuntu -g ubuntu
 cd /mnt/GSE35626
 wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP010%2FSRP010815/SRR407172/SRR407172.sra
 wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP010%2FSRP010815/SRR407173/SRR407173.sra
+fastq-dump SRR407172.sra 
+fastq-dump SRR407173.sra
 </pre>
 
 *To be continued.*
