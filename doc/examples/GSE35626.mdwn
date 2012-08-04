@@ -1,3 +1,40 @@
 # Example analysis using the GSE35626 public dataset
 
 The [GSE35626](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35626) dataset is a TCRα repertoire analysis of CD8<sup>+</sup>, in duplicates.
+
+## Preparation
+
+This example was ran in a [Ubuntu Precise LTS virtual machine](http://alestic.com/) in the [Amazon Elastic Compute Cloud](http://aws.amazon.com/ec2).
+
+### Software installation
+
+Update the package repostitory to Quantal.
+
+<pre>
+sudo sed -i 's/precise/quantal/g' /etc/apt/sources.list
+sudo apt-get update
+</pre>
+
+Install the programs needed by clonotypeR and for other analysis steps.
+
+<pre>
+sudo apt-get install bioperl bwa emboss pandoc
+</pre>
+
+Install the package for the [NCBI SRA toolkit](http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software), to convert the sequences downloaded from the Gene Expression Omnibus.
+
+<pre>
+sudo apt-get install sra-toolkit
+</pre>
+
+### Data download
+
+On this cloud isntance, the temporary storage is in `/mnt/`. The files are larger than gigabytes, so the download and conversion to FASTQ format will take time.
+
+<pre>
+cd /mnt
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP010%2FSRP010815/SRR407172/SRR407172.sra
+wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP010%2FSRP010815/SRR407173/SRR407173.sra
+</pre>
+
+*To be continued.*
