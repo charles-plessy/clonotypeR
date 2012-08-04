@@ -91,7 +91,7 @@ case $1 in
 		for BAM_FILE in "$*"
 		do
 			LIBRARY=$(basename $BAM_FILE .bam)
-			$CLONOTYPER_SCRIPTS/VJsplit $LIBRARY
+			CLONOTYPER_REFERENCE=$CLONOTYPER_REFERENCE $CLONOTYPER_SCRIPTS/VJsplit $LIBRARY
 		done
 	;;
 	*)
