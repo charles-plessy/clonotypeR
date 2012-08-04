@@ -24,18 +24,6 @@ clonotypeR extract file1.bam file2.bam ...
 
 *ClonotypeR*'s options are passed as environment variables.
 
-## AS_CUTOFF=${AS_CUTOFF-170}
-
-Cut-off for the alignment score, given by the `AS` field set by BWA.  This
-score depends on the length of the alignment so this value may need adjustment
-for different primer designes.  The lowset scores may correspond to reads with
-many sequencing errors, in which case it may be difficult to discriminate
-between very similar V segments.  Errors at that step can be rescued at the
-CDR3 extraction step (see VS_MISMATCH), if the V segments differ in the last 20
-bases before the conserved cysteine.
-
-Default: 170
-
 ## CLONOTYPER_REFERENCE
 
 Path to reference alignments.  If not set, a `references` directory is searched in `/etc`, `/usr/share/clontyper`, and then in the parent directory.
@@ -59,13 +47,6 @@ Default: unset
 ## EXTRACT_DIR
 
 Path to the BAM and temporary files.  Default: `./extraction_files`
-
-## MAPQ_CUTOFF
-
-Cutoff for the mapping quality, as reported by BWA.  A value of 0 indicates
-that it is not possible to discriminate between at least two V segments.
-
-Default: 1
 
 ## TMPDIR
 

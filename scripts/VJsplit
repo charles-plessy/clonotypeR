@@ -33,10 +33,6 @@ then
 fi
 
 VS_MISMATCH=${VS_MISMATCH-0}
-MAPQ_CUTOFF=${MAPQ_CUTOFF-1}
-
-AS_CUTOFF=${AS_CUTOFF-170}
-#AS_CUTOFF=50 #for the TRAV6-6-TRAJ52 Sanger sequences.
 
 rm -rf $TMPDIR/$LIBRARY.tmp ; mkdir $TMPDIR/$LIBRARY.tmp
 rm -f $CLONOTYPES/$LIBRARY.tsv
@@ -54,8 +50,9 @@ do
   fi	
   echo -ne "$V_NAME\t" 1>&2
   V_SEQ=$(seqret -filter $CLONOTYPER_REFERENCE/${V_LIB}-C.fa:$V_NAME[-20:] raw:stdout)
-  samtools view -q $MAPQ_CUTOFF $EXTRACT_DIR/$LIBRARY.bam $V_NAME |
-    perl -ne "(\$score) = /AS:i:(\d+)\t/ ; print if \$score >= $AS_CUTOFF" > $LIBRARY-${V_NAME//\//}-filtered.sam
+  # Encode the mapping quality and alignment score in the sequence name
+  samtools view $EXTRACT_DIR/$LIBRARY.bam $V_NAME |
+    perl -ne '($score) = /AS:i:(\d+)\t/ ; ($mapq) = (split)[4] ; print "AS_${score}_MQ_${mapq}_$_"' > $LIBRARY-${V_NAME//\//}-filtered.sam
   [ -s $LIBRARY-${V_NAME//\//}-filtered.sam ] && vectorstrip -auto \
         -readfile N \
         -mismatch $VS_MISMATCH \
@@ -92,6 +89,7 @@ do
           $trans = new Bio::Seq(-seq => $seq )->translate->seq ;
           say join ("\t", @ARGV[0], @ARGV[1], @ARGV[2], $name, $seq, $qual, $trans) ;
         } ' $LIBRARY $V_NAME $J_NAME |
+      perl -pe 's/AS_(\d*)_/$1\t/ ; s/MQ_(\d*)_/$1\t/' |
       tee -a $CLONOTYPES/$LIBRARY.tsv |
       wc -l - | cut -f1 -d' ' 1>&2
   done
