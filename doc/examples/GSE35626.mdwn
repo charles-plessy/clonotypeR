@@ -1,4 +1,5 @@
 # Example analysis using the GSE35626 public dataset
+[[!toc levels=4 startlevel=2 ]]
 
 The [GSE35626](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35626) dataset is a TCRα repertoire analysis of CD8<sup>+</sup>, in duplicates.
 
