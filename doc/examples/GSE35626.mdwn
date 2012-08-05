@@ -49,4 +49,17 @@ fastq-dump SRR407172.sra
 fastq-dump SRR407173.sra
 </pre>
 
+## Data analysis
+
+The sequence are already in FASTQ format, no need to run `clonotyper convert`.
+
+<pre>
+touch timestamp1
+../scripts/clonotypeR detect SRR407172.fastq
+../scripts/clonotypeR detect SRR407173.fastq
+../scripts/clonotypeR extract SRR407172
+../scripts/clonotypeR extract SRR407173
+touch timestamp2
+</pre>
+
 *To be continued.*
