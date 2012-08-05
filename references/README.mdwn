@@ -15,9 +15,7 @@ may need to be revised when the reference sequences change.
 The files [[V-C.fa]], [[V_after_C.fa]], [[J-FGxG.fa]], [[J_before_FGxG.fa]] are
 derived from the manually edited files [[V.fa]] and [[J.fa]] described above,
 by removing everything after or before their conserved motif, followed by
-degapping by a command such as:
-
-`degapseq V-C.fa V-C.fa.degapped && mv V-C.fa.degapped V-C.fa`
+degapping with `make degap`.
 
 A BWA index is provided for the *V* segments trunkated after the conserved
 cysteine, in the `V` directory, and can be refreshed with the command `make
