@@ -22,7 +22,13 @@ Installation
 
 ### From source
 
-*Under construction*
+Clone *clonotypeR* with [git](http://git-scm.com/).
+
+<pre>
+git clone git://clonotyper.branchable.com/
+</pre>
+
+*to be completed*
 
 ### From archive
 
