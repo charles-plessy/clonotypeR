@@ -12,10 +12,6 @@ may need to be revised when the reference sequences change.
 [SeaView]:	http://pbil.univ-lyon1.fr/software/seaview	"multiplatform, graphical user interface for multiple sequence alignment and molecular phylogeny."
 [extractfeat]:	http://emboss.open-bio.org/wiki/Appdoc:Extractfeat	"extractfeat documentation on the EMBOSS wiki".
 
-Identical *V* segments need to be collated together.  One problem is that which
-ones are indentical depends on how the PCR primers used to amplfiy them were
-designed.  You may need to adjust the reference files accordingly.
-
 The files [[V-C.fa]], [[V_after_C.fa]], [[J-FGxG.fa]], [[J_before_FGxG.fa]] are
 derived from the manually edited files [[V.fa]] and [[J.fa]] described above,
 by removing everything after or before their conserved motif, followed by
@@ -26,3 +22,29 @@ degapping by a command such as:
 A BWA index is provided for the *V* segments trunkated after the conserved
 cysteine, in the `V` directory, and can be refreshed with the command `make
 bwa-index`.  It is used by the command `clonotypeR detect`.
+
+
+Redundant sequences
+-------------------
+
+Some *V* segments have identical sequences.  This is incompatible with
+*clonotypeR*'s detection strategy, based on *mapping qualities*.
+
+[Mapping qualities](http://maq.sourceforge.net/qual.shtml#mapQ) are an
+estimation of the probability that a genomic alignment is incorrect.  If two
+*V* segments are identical, a read can align to both with equal probability,
+and therefore the mapping quality will be low, in the sense that it is
+impossible to know precisely from which *V* segment the RNA was transcribed.
+*ClonotypeR* uses mapping quality scores to distinguish between closely related
+*V* segments, and by default discards reads where the mapping quality is too
+low.  Therefore, redundant references sequences were removed from the `V.fa`
+alignment.
+
+Removed redundant *V* segments are recorded in the file [[V.removed]] and were
+detected with the command ` export SEQ_LIST=$(infoseq V.fa -filter -only -usa
+-noheading) ; for SEQ1 in $SEQ_LIST ; do for SEQ2 in $SEQ_LIST ; do if ! [
+$SEQ1 = $SEQ2 ]; then needle --filter $SEQ1 $SEQ2 2> /dev/null | grep -B10
+'100.0' ; fi; done; done`.  Note that with some PCR designs, more *V* segments
+appear identical.  You may need to correct `V.fa` and `V.removed`  accordingly,
+or turn off the use of mapping qualities in the `R` command `clonotype.table`.
+
