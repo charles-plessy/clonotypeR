@@ -31,16 +31,16 @@ tocodons <- function (dna)
 	unlist(strsplit(dna, "(?<=...)", perl=TRUE))
 
 # Split the reference V segment and the CDR3 nucleotidic sequence in codons.
-V_name <- as.character(clonotype[[2]])
+V_name <- as.character(clonotype$V)
 V <- tocodons(V_after_C[V_name,]) # do sanity checks !
-dna <- tocodons(clonotype[[5]])
+dna <- tocodons(clonotype$dna)
 
 # Split the reversed reference J segment and CDR3 in codons.
-J_name <- as.character(clonotype[[3]])
+J_name <- as.character(clonotype$J)
 J <- tocodons(strReverse(J_before_FGxG[J_name,])) # do sanity checks !
-dnarev <- tocodons(strReverse(clonotype[[5]]))
+dnarev <- tocodons(strReverse(clonotype$dna))
 
-pep <- clonotype[[7]]
+pep <- clonotype$pep
 
 # True if the reference and CDR3 codons are identical.
 is.germline <- function (V, dna) {
