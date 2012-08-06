@@ -68,8 +68,18 @@ CDR3aa <- substring(CDR3aa,V_germline)
 substring(CDR3aa, nchar(CDR3aa) - J_germline, nchar(CDR3aa)) <- tolower(substring(CDR3aa, nchar(CDR3aa) - J_germline, nchar(CDR3aa)))
 CDR3aa <- substring(CDR3aa, 1, nchar(CDR3aa) - J_germline)
 
-# Convert the TRAV and TRAJ names
-# To Do !
+# Convert the V and J names
+V_name <- sub("TRAV","A",V_name)
+V_name <- sub("N-",  "N",V_name)
+V_name <- sub("D-",  "D",V_name)
+V_name <- sub("/.*", "" ,V_name)
+V_name <- sub("TRBV","B",V_name)
+V_name <- sub("TRGV","G",V_name)
+V_name <- sub("TRDV","D",V_name)
+J_name <- sub("TRAJ","A",J_name)
+J_name <- sub("TRBJ","B",J_name)
+J_name <- sub("TRGJ","G",J_name)
+J_name <- sub("TRDJ","D",J_name)
 
 # Determine the ID for the remaining codons.
 IDs <- paste(codon_ids[dna[(V_germline +1) : (nchar(pep) - J_germline -1)],"id"], collapse="")
