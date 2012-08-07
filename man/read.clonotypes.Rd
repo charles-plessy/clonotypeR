@@ -33,6 +33,8 @@ the fly.
 \item{lib}{Library name (factor).}
 \item{V}{V segment name (factor).}
 \item{J}{J segment name (factor).}
+\item{score}{Alignment score (numeric).}
+\item{mapq}{Mapping quality (numeric).  A sequence with a good alignment score will still have a low mapping quality if there are good alternative alignments to other V segments.}
 \item{read}{Sequence read identifier (character).}
 \item{dna}{DNA sequence of the CDR3 region (character).}
 \item{qual}{Quality values for the DNA sequence (character).}

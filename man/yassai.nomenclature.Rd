@@ -12,25 +12,19 @@ in \url{http://dx.doi.org/10.1007/s00251-009-0383-x}.
 \usage{yassai.nomenclature(clonotype)}
 
 \arguments{
-  \item{clonotype}{
-A character vector containing a clonotype.
-}
+  \item{clonotype}{A character vector containing a clonotype.}
 }
 
 \details{
 
-The name consists of five segments:
-
-(1) CDR3 amino acid identifier,
-
-(2) CDR3 nucleotide sequence identifier,
-
-(3) variable (V) segment identifier,
-
-(4) joining (J) segment identifier,
-
-(5) CDR3 length identifier.
-
+The name (for instance sIRSSy.1456B19S1B27L11) consists of five segments:
+  \enumerate{
+    \item CDR3 amino acid identifier (ex. sIRSSy), followed by a dot ;
+    \item CDR3 nucleotide sequence identifier (ex. 1456) ;
+    \item variable (V) segment identifier (ex. BV19S1) ;
+    \item joining (J) segment identifier (ex. BJ2S7) ;
+    \item CDR3 length identifier (ex. L11).
+  }
 }
 
 %%\value{
@@ -45,7 +39,7 @@ The name consists of five segments:
 
 
 \seealso{
-\link{clonotypes}
+\code{\link{clonotypes}}
 }
 \examples{
 

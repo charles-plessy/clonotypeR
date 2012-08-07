@@ -11,12 +11,16 @@
 <h3>Description</h3>
 
 
-<p>When given two groups of samples, lists the clonotypes that have been
-observed at least in one library of each group.  The returned list can
-be used to subset a data frame produced by <code><a href="clonotype.table.html">clonotype.table</a></code>.
+<p>When given one group of samples, lists the clonotypes that have been observed
+at least in one sample.  The returned list can be used to subset a data frame
+produced by <code><a href="clonotype.table.html">clonotype.table</a></code>.
+</p>
+<p>When given two groups of samples, lists the clonotypes that have been observed
+at least in one sample of each group.  Groups can contain a single sample, in
+which case the returned list is simply the clonotypes found in both samples.
 </p>
 <p>When given a table of clonotypes, produces a matrix in which each cell reports
-the number of clonotypes found in a pair of libraries.
+the number of clonotypes found in each pair of samples.
 </p>
 
 
@@ -54,7 +58,7 @@ the number of clonotypes found in a pair of libraries.
 <p>In &ldquo;groups&rdquo; mode, a character vector of clontoype names.  Their order
 follows the original row name order of the clonotype table.
 </p>
-<p>In &ldquo;matric&rdquo; mode, a symmetric matrix of numbers, with the same row and
+<p>In &ldquo;matrix&rdquo; mode, a symmetric matrix of numbers, with the same row and
 column names as the row names of the clonotype table used.
 </p>
 
