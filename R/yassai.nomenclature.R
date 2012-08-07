@@ -12,10 +12,10 @@ if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
 if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
 	data(J_before_FGxG)
 
-if ( ! ( exists("codon_ids") && class(J_before_FGxG) == "codon_ids" ) )
+if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 	if ( file.exists("data/codon_ids.txt.gz") )
 		codon_ids <- read.table("data/codon_ids.txt.gz", head=TRUE, row.names=1)
-if ( ! ( exists("codon_ids") && class(J_before_FGxG) == "codon_ids" ) )
+if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 	data(codon_ids)
 
 ## Then, declare the function.
@@ -26,47 +26,67 @@ yassai.nomenclature <- function (clonotype) {
 strReverse <- function(x)
 	sapply(lapply(strsplit(x, NULL), rev), paste, collapse="")
 
-# Splits a string in blocks of three.
-tocodons <- function (dna)
-	unlist(strsplit(dna, "(?<=...)", perl=TRUE))
-
-# Split the reference V segment and the CDR3 nucleotidic sequence in codons.
 V_name <- as.character(clonotype$V)
-V <- tocodons(V_after_C[V_name,]) # do sanity checks !
-dna <- tocodons(clonotype$dna)
+V      <- V_after_C[V_name,]
+dna    <- clonotype$dna
 
-# Split the reversed reference J segment and CDR3 in codons.
 J_name <- as.character(clonotype$J)
-J <- tocodons(strReverse(J_before_FGxG[J_name,])) # do sanity checks !
-dnarev <- tocodons(strReverse(clonotype$dna))
+J      <- strReverse(J_before_FGxG[J_name,])
+dnarev <- strReverse(clonotype$dna)
 
 pep <- clonotype$pep
 
 # True if the reference and CDR3 codons are identical.
-is.germline <- function (V, dna) {
-	V <- substr(V,1,3)
-	dna <- substr(dna,1,3)
-	answer <- tolower(V) == tolower(dna)
+is.germline <- function (ref,dna,pos) {
+	answer <- toupper(substr(ref, 1, pos)) == toupper(substr(dna, 1, pos))
 	answer[is.na(answer)] <- FALSE  # Replace NA per FALSE; is.germline is used in a while loop.
 	return(answer)
 }
 
-# Counts how many consecutive codons are germlineally encoded from ends to center.
-V_germline <- 0
-while( is.germline(V[V_germline + 1],dna[V_germline + 1]) )
-	V_germline <- V_germline + 1
+germline <- function (ref, dna) {
+	pos <- 1
+	while( is.germline(ref,dna,pos) )
+		pos <- pos + 1
+	pos
+}
 
-J_germline <- 0
-while( is.germline(J[J_germline + 1],dnarev[J_germline + 1]) )
-        J_germline <- J_germline + 1
+# Example
+# 
+# Germline-encoded sequence stops at codon 2 (V_germline).
+#             T   T  |
+#            GCA GCA AGT G
+#   TRAV14-1 GCA GCA TCT TAT AAC CAG GGG AAG CTT ATC TRAJ23 nchar = 30
+#                  G AAT TAT AAC CAG GGG AAG CTT ATC
+#                     |   T   T   T   T   T   T   T
+# Germline-encoded sequence restarts at codon 4 (J_germline).
+
+V_germline <- ceiling(                apply(cbind(V,dna),    1, function(X) germline(X[1], X[2]))      / 3 ) - 1
+J_germline <- ceiling( ( nchar(dna) - apply(cbind(J,dnarev), 1, function(X) germline(X[1], X[2])) + 1) / 3 ) + 1
+
+tocodons <- function (sequences)
+	strsplit(sequences, "(?<=...)", perl=TRUE)
+
+codon2id <- function (codons)
+	sapply(codons, function(X) codon_ids[X,"id"])
+
+###################
+
+
+#Remains to do: 
+#
+# - Convert to lowercase where applicable
+# - get codon ids for remaining residues
+# Return something for improductive clonotypes
+
+##################
+
 
 # Convert to lower case and remove all but the most central germlineally encoded codons.
 CDR3aa <- toupper(pep) # Just in case
-substr(CDR3aa,1,V_germline) <- tolower(substr(CDR3aa,1,V_germline))
-CDR3aa <- substring(CDR3aa,V_germline)
-
-substring(CDR3aa, nchar(CDR3aa) - J_germline, nchar(CDR3aa)) <- tolower(substring(CDR3aa, nchar(CDR3aa) - J_germline, nchar(CDR3aa)))
-CDR3aa <- substring(CDR3aa, 1, nchar(CDR3aa) - J_germline)
+substr(CDR3aa, 1, V_germline)              <- tolower(substr(CDR3aa, 1, V_germline))
+substr(CDR3aa, J_germline, nchar(CDR3aa))  <- tolower(substr(CDR3aa, J_germline, nchar(CDR3aa)))
+CDR3aa <- substring(CDR3aa, 1, J_germline)
+CDR3aa <- substring(CDR3aa, V_germline, nchar(CDR3aa))
 
 # Convert the V and J names
 V_name <- sub("TRAV","A",V_name)
@@ -82,8 +102,7 @@ J_name <- sub("TRGJ","G",J_name)
 J_name <- sub("TRDJ","D",J_name)
 
 # Determine the ID for the remaining codons.
-IDs <- paste(codon_ids[dna[(V_germline +1) : (nchar(pep) - J_germline -1)],"id"], collapse="")
-if ( (V_germline +1) > (nchar(pep) - J_germline -1) ) IDs <- ""
+IDs <- sapply(codon2id(tocodons(substr(dna,(V_germline * 3) + 1 , (J_germline -1) * 3 ))), paste, collapse='')
 
 # Construct and return the CDR3 in Yassai et al's nomenclature.
 return( paste(CDR3aa, ".", IDs, V_name, J_name, "L", nchar(pep), sep=""))
