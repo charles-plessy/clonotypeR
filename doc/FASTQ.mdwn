@@ -4,6 +4,11 @@ FASTQ format
 Conversion from 454 sequencer output 
 ====================================
 
+Download and use [sff_extract](http://bioinf.comav.upv.es/sff_extract/download), to convert the 454 SFF files to FASTQ format.
+
+<pre>
+sff_extract *.sff -x /dev/null
+</pre>
 
 Conversion from AB1 chromatograms (Sanger)
 ==========================================
