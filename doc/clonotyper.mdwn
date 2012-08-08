@@ -6,15 +6,11 @@ clonotyper - Quantitative analysis of antigen receptor sequences
 
 # SYNOPSIS
 
-clonotypeR convert file1.sff file2.sff ...
-
 clonotypeR detect  file1.fastq file2.fastq ...
 
 clonotypeR extract file1.bam file2.bam ...
 
 # DESCRIPTION
-
-## clonotypeR convert
 
 ## clonotypeR detect
 
