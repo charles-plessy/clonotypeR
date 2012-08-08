@@ -75,7 +75,7 @@ case $1 in
 	detect)
 		shift
 		test_extract_dir
-		for FASTQ_FILE in "$*"
+		for FASTQ_FILE in $*
 		do
 			LIBRARY=$(basename $FASTQ_FILE .fq)
 			LIBRARY=$(basename $FASTQ_FILE .fastq)
@@ -88,7 +88,7 @@ case $1 in
 	extract)
 		shift
 		test_extract_dir
-		for BAM_FILE in "$*"
+		for BAM_FILE in $*
 		do
 			LIBRARY=$(basename $BAM_FILE .bam)
 			CLONOTYPER_REFERENCE=$CLONOTYPER_REFERENCE $CLONOTYPER_SCRIPTS/VJsplit $LIBRARY
