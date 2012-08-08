@@ -8,6 +8,8 @@ Requirements
  * [Pandoc][] is needed for building the manual page of `clonotypeR`.
  * [Biostrings][] is needed to load the `clonotypeR` module in `R`.
 
+[sff_extract][] is also recommended, to [[convert|doc/FASTQ]] the 454 SFF files to FASTQ format.
+
 [sff_extract]:	http://bioinf.comav.upv.es/sff_extract/download
 [EMBOSS]:	http://www.emboss.org	"The European Molecular Biology Open Software Suite"
 [moreutils]:	http://kitenet.net/~joey/code/moreutils/	"a growing collection of the unix tools that nobody thought to write long ago when unix was young."
