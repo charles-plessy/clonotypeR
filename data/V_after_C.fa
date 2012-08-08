@@ -34,13 +34,10 @@ gctgtgagc
 gttctgggtga
 >TRAV10D
 gcagcaagca
->TRAV6D-6 | TRAV6D-6 and TRAV6N-6 removed as they are pseudogenes.
->TRAV11D | redundant with TRAV11
->TRAV7D-5 | redundant with TRAV7N-5
->TRAV12D-1 | redundant with TRAV12N-1
+>TRAV6D-6
+gctctgggtga
 >TRAV13D-1
 gctatggaac
->TRAV14D-1 | redundant with TRAV14N-1
 >TRAV15D-1/DV6D-1
 gctctctgggagc
 >TRAV3D-2
@@ -55,16 +52,10 @@ aagtg
 gctttgagtga
 >TRAV9D-3
 gctgtgag
->TRAV5D-3
-agaaa
 >TRAV12D-3
 gctctgagtga
->TRAV13D-2 | redundant with TRAV13N-2
->TRAV14D-2 | redundant with TRAV14N-2
 >TRAV15D-2/DV6-2
 gctctctcggaactga
->TRAV3D-3 | redundant with TRAV3N-3
->TRAV9D-4
 >TRAV4D-4
 gctgctgagg
 >TRAV5D-4
@@ -83,7 +74,6 @@ gctatgagagaggg
 gctatggaacc
 >TRAV14D-3/DV8
 gcagcaagtg
->TRAV15D-3
 >TRAV7N-4
 gcagttagtgagca
 >TRAV9N-1
@@ -92,25 +82,24 @@ acttctgtgctgtgagcg
 gctctgggtga
 >TRAV10N
 gcagcaagcac
->TRAV6N-6 | TRAV6D-6 and TRAV6N-6 removed as they are pseudogenes.
+>TRAV6N-6
+gctctgagtga
 >TRAV11N
 gtggtgggcg
->TRAV7N-5_7D-5
+>TRAV7N-5
 gcagtgagca
->TRAV12N-1_12D-1
+>TRAV12N-1
 gctctgagtga
 >TRAV13N-1
 gctatggaac
->TRAV14N-1_14D-1
+>TRAV14N-1
 gcagcaagtg
 >TRAV15N-1
 gctctctgggagctgg
 >TRAV3N-2
 gcagcaagtg
->TRAV9N-2
 >TRAV4N-3
 gctgctgagg
->TRAV5N-2
 >TRAV12N-2
 gctttgagtga
 >TRAV9N-3
@@ -119,13 +108,13 @@ gctgtgagca
 gccacaagtg
 >TRAV12N-3
 gctctgagtga
->TRAV13N-2_13D-2
+>TRAV13N-2
 gctatagatc
->TRAV14N-2_14D-2
+>TRAV14N-2
 gcagcaagtg
 >TRAV15N-2
 gctctctcggaactga
->TRAV3N-3_3D-3
+>TRAV3N-3
 gcagtcagtg
 >TRAV9N-4
 gctctgagca
@@ -148,7 +137,7 @@ gctatggaac
 >TRAV14N-3
 gcagcaagtg
 >TRAV15N-3
-gctttctggga
+tggga
 >TRAV7-2
 gca
 >TRAV4-2
@@ -171,7 +160,7 @@ gctctgagtga
 gcagcaagca
 >TRAV6-6
 gctctgggtga
->TRAV11_11D
+>TRAV11
 gtggtgggcg
 >TRAV7-5
 gcagtgagca
@@ -185,7 +174,6 @@ gcagcaagtg
 gctctctgggagctgg
 >TRAV3-2
 gcagcaagtg
->TRAV9-2
 >TRAV4-3
 gctgctgagg
 >TRAV5-2
@@ -226,7 +214,6 @@ gcagcaagtg
 gctttctggga
 >TRAV3-4
 gcagtcagtg
->TRAV12-4
 >TRAV13-5
 gttctgagta
 >TRAV17
@@ -254,7 +241,7 @@ gccagcagctaaga
 >TRBV5
 gccagcagccaaga
 >TRBV6
-ccagcagcttggc
+gccagcagcttggc
 >TRBV7
 g
 >TRBV8
@@ -308,16 +295,16 @@ gctagcagtttatc
 >TRBV30
 agttctagaga
 >TRBV31
-gccctaacctctactggtactggcaggccacaggaggcaccctccagcaactcttctact
-ctattactgttggccaggtagagtcggtggtgcaactgaacctctcagcttccaggccga
-aggacgaccaattcatcctaagcacggagaagctgcttctcagccactctggcttctacc
-tctgtgcctggagtct
+ccataaaggggaaatcaagccctaacctctactggtactggcaggccacaggaggcaccc
+tccagcaactcttctactctattactgttggccaggtagagtcggtggtgcaactgaacc
+tctcagcttccaggccgaaggacgaccaattcatcctaagcacggagaagctgcttctca
+gccactctggcttctacctctgtgcctggagtct
 >TRGV7
 gcctcctgggctgg
 >TRGV4
 tcctacggctaaag
 >TRGV6
-tgtgcatgctgggata
+gcatgctgggata
 >TRGV5
 gcctgctgggatct
 >TRGV3
@@ -336,4 +323,3 @@ gctctcatggagcgc
 cttcggggaga
 >TRDV4
 gggtcagatatc
->TRDV5
