@@ -22,6 +22,9 @@ if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 
 yassai.nomenclature <- function (clonotype) {
 
+if ( ! class(clonotype) == "data.frame" )
+	stop ("Input must be a data frame.")
+
 # Following function is from ?strsplit help page:
 strReverse <- function(x)
 	sapply(lapply(strsplit(x, NULL), rev), paste, collapse="")
