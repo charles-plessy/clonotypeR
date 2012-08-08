@@ -6,13 +6,13 @@ This workflow summarises the different commands to run.  Step-by-step examples u
 Data preparation in the command line
 ------------------------------------
 
-*clonotypeR* is ran with three commands.
+[[Convert|FASTQ]] sequencer ouptut files from Sanger or 454 sequencers.  Single-end Illumina sequence output can be used directly.  Paired-end sequences need to be merged.
 
- - `clonotypeR convert` transfroms sequencer ouptut files, currently in *ab1* (Sanger chromatograms) or *sff* (454 sequencer ouptut) format, to the stardard [[!wikipedia Fastq desc="FASTQ"]] format.
+*ClonotypeR* is ran in two steps.
 
  - `clonotypeR detect` compares the sequences to a [[reference|references/README]] database of *V* segments.
 
- - `clonotypeR extract` searches for J segments in sequences where a V segment was found, extracts the CDR3s and reports the results in a table ready to be loaded in R by the [[`read.clonotypes()`|html/read.clonotypes.html]] function.
+ - `clonotypeR extract` searches for *J* segments in sequences where a *V* segment was found, extracts the *CDR3s* and reports the results in a table ready to be loaded in R.
 
 See the [[manual page|clonotyper]] of `clonotypeR` for more details.
 
@@ -25,5 +25,7 @@ The R module can be loaded with the following command.
 <pre>
 library(clonotypeR)
 </pre>
+
+The file produced by `clonotypeR extract` is loaded by the [[`read.clonotypes()`|html/read.clonotypes.html]].  Expression tables are calculated by the [[`clonotype.table()`|html/clonotype.table.html]].  These tables are the basis for the analysis, to compare clonotype profiles, cluster the samples, calculate overlaps, etc.
 
 See the [[list of functions|html/00Index.html]] for more information.
