@@ -1,0 +1,19 @@
+FASTQ format
+============
+
+Conversion from 454 sequencer output 
+====================================
+
+
+Conversion from AB1 chromatograms (Sanger)
+==========================================
+
+Sequence files in AB1 format can be batch-converted with the following command using [[EMBOSS|http://emboss.sourceforge.net/]] tools.
+
+<pre>
+for ABI in *ab1
+do
+       seqret -filter abi::$ABI fastq-sanger::stdout |
+               descseq -filter fastq-sanger::stdin fastq-sanger::stdout -name $(basename $ABI .ab1)
+done
+</pre>
