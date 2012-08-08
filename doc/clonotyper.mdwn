@@ -6,15 +6,19 @@ clonotyper - Quantitative analysis of antigen receptor sequences
 
 # SYNOPSIS
 
-clonotypeR detect  file1.fastq file2.fastq ...
+clonotypeR detect  library1.fastq library2.fastq ...
 
-clonotypeR extract file1.bam file2.bam ...
-
+clonotypeR extract library1 library2 ...
 # DESCRIPTION
 
 ## clonotypeR detect
 
+Detects the *V* segments using the `bwa bwasw`.  This command uses by default as many threads as possible (see `THREADS`).
+
 ## clonotypeR extract
+
+Extracts the CDR3s and records the clonotypes in one file per library.  This command is not running threaded programs, so
+there may be a benefit running multiple extractions in parallel. 
 
 # OPTIONS
 
@@ -65,5 +69,7 @@ Default: 0
 Public domain: http://creativecommons.org/publicdomain/zero/1.0/
 
 # SEE ALSO
+
+bwa(1), samtools(1), R(1)
 
 ClonotypeR's home page: http://clonotyper.branchable.com/
