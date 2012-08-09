@@ -19,7 +19,7 @@ sudo apt-get update
 Install the programs needed by clonotypeR and for other analysis steps.
 
 <pre>
-sudo apt-get install bioperl bwa emboss pandoc
+sudo apt-get install bioperl bwa emboss pandoc r-base
 </pre>
 
 Install [git](http://git-scm.com) and download *clonotypeR*. On this cloud instance, the temporary storage is in `/mnt/`.
@@ -28,6 +28,13 @@ Install [git](http://git-scm.com) and download *clonotypeR*. On this cloud insta
 sudo apt-get install git
 sudo install -d /mnt/clonotyper -o ubuntu -g ubuntu
 git clone git://clonotyper.branchable.com/ clonotyper/
+</pre>
+
+Build and install the R module of *clonotypeR*.
+
+<pre>
+R CMD build clonotyper/
+#Installation instructions to be added later
 </pre>
 
 Install the package for the [NCBI SRA toolkit](http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software), to convert the sequences downloaded from the Gene Expression Omnibus.
