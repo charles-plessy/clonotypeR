@@ -1,14 +1,14 @@
 ## First, load accessory data if necessary.
 
 if ( ! ( exists("V_after_C") && class(V_after_C) == "data.frame" ) )
-	if ( file.exists("data/V_after_C.R") )
-		source("data/V_after_C.R")
+	if ( file.exists("data/V_after_C.txt.gz") )
+		V_after_C <- read.table("data/V_after_C.txt.gz", head=TRUE, row.names=1, stringsAsFactors=FALSE)
 if ( ! ( exists("V_after_C") && class(V_after_C) == "data.frame" ) )
 	data(V_after_C)
 
 if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
-	if ( file.exists("data/J_before_FGxG") )
-		source("data/J_before_FGxG.R")
+	if ( file.exists("data/J_before_FGxG.txt.gz") )
+		J_before_FGxG <- read.table("data/J_before_FGxG.txt.gz", head=TRUE, row.names=1, stringsAsFactors=FALSE)
 if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
 	data(J_before_FGxG)
 
