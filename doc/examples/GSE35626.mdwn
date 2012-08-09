@@ -30,7 +30,7 @@ sudo install -d /mnt/clonotyper -o ubuntu -g ubuntu
 git clone git://clonotyper.branchable.com/ clonotyper/
 </pre>
 
-Build and install the R module of *clonotypeR*.
+Build and install the R package of *clonotypeR*.
 
 <pre>
 R CMD build clonotyper/

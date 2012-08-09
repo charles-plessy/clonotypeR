@@ -20,7 +20,7 @@ See the [[manual page|clonotyper]] of `clonotypeR` for more details.
 Data analysis in R
 ------------------
 
-The R module can be loaded with the following command.
+The R package can be loaded with the following command.
 
 <pre>
 library(clonotypeR)
