@@ -1,26 +1,32 @@
 Requirements
-------------
+============
 
- * [sff_extract][], to convert the 454 SFF files to FASTQ format with `clonotypeR convert`.
+Run-time requirements
+---------------------
+
  * [EMBOSS][], to manipulate the reference sequences.
  * [BWA][] (Burrows-Wheeler Aligner), to identify the trimmed V segments.
  * [BioPerl][] (> 1.6.9), to translate the CDRs.  Lower versions differ on how they translate incomplete last codons.
- * [Pandoc][] is needed for building the manual page of `clonotypeR`.
- * [Biostrings][] is needed to load the `clonotypeR` module in `R`.
+ * [R][] for creating expression tables and analysing them.
 
-[sff_extract][] is also recommended, to [[convert|doc/FASTQ]] the 454 SFF files to FASTQ format.
+Other requirements
+------------------
+
+ * [sff_extract][], to [[convert|doc/FASTQ]] the 454 SFF files to FASTQ format.
+ * [Biostrings][], to refresh the R tables containging the *V* and *J* segment sequence boundaries.
+ * [Pandoc][] is needed for building the manual page of `clonotypeR`.
+
 
 [sff_extract]:	http://bioinf.comav.upv.es/sff_extract/download
 [EMBOSS]:	http://www.emboss.org	"The European Molecular Biology Open Software Suite"
-[moreutils]:	http://kitenet.net/~joey/code/moreutils/	"a growing collection of the unix tools that nobody thought to write long ago when unix was young."
 [BWA]:		http://bio-bwa.sourceforge.net/	"Burrows-Wheeler Aligner"
-[BioPerl]:		http://bio.perl.org/ "BioPerl"
-[Pandoc]:		http://johnmacfarlane.net/pandoc/
+[BioPerl]:	http://bio.perl.org/ "BioPerl"
+[R]:		http://www.r-project.org/	"The R Project for Statistical Computing"
+[Pandoc]:	http://johnmacfarlane.net/pandoc/
 [Biostrings]:	http://bioconductor.org/packages/release/bioc/html/Biostrings.html
 
-
 Installation
-------------
+============
 
 ### From source
 

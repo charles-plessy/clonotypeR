@@ -5,7 +5,6 @@ Version: 0.1
 Date: 2011-11-01
 Author: Charles Plessy <plessy@riken.jp>
 Maintainer: Charles Plessy <plessy@riken.jp>
-Depends: Biostrings
 Description: Identify and analyse B and T cell receptors at a high throughput.
  The genes encoding T cell receptors and B cell receptors (the antibodies) are created
  by somatic recombination, generating an immense combination of V, (D) and J segments.
