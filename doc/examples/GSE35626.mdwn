@@ -19,10 +19,10 @@ sudo apt-get update
 Install the programs needed by clonotypeR and for other analysis steps.
 
 <pre>
-sudo apt-get install bioperl bwa emboss pandoc r-base
+sudo apt-get install bioperl bwa emboss r-base
 </pre>
 
-Install [git](http://git-scm.com), download *clonotypeR*, build the R package and install it. Note that on this cloud instance, the temporary storage is in `/mnt/`.
+Install [git](http://git-scm.com), download *clonotypeR*, build the R package and install it. Note that on this cloud instance, the temporary storage area for large files is in `/mnt/`.
 
 <pre>
 sudo apt-get install git
@@ -41,7 +41,7 @@ sudo apt-get install sra-toolkit
 
 ### Data download
 
-On this cloud isntance, the temporary storage is in `/mnt/`. The files are larger than gigabytes, so the download and conversion to FASTQ format will take roughly one hour.
+The files are larger than gigabytes, so the download and conversion to FASTQ format will take roughly one hour.
 
 <pre>
 install -d /mnt/clonotyper/GSE35626 -o ubuntu -g ubuntu
@@ -57,12 +57,10 @@ fastq-dump SRR407173.sra
 The sequence are already in FASTQ format, no need to run `clonotyper convert`.
 
 <pre>
-touch timestamp1
 ../scripts/clonotypeR detect SRR407172.fastq
 ../scripts/clonotypeR detect SRR407173.fastq
 ../scripts/clonotypeR extract SRR407172
 ../scripts/clonotypeR extract SRR407173
-touch timestamp2
 </pre>
 
 *To be continued.*
