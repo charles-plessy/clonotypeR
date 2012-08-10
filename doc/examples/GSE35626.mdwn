@@ -1,13 +1,15 @@
 # Example analysis using the GSE35626 public dataset
 [[!toc levels=4 startlevel=2 ]]
 
-The [GSE35626](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35626) dataset is a TCRα repertoire analysis of CD8<sup>+</sup>, in duplicates.
+The [GSE35626](http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35626) dataset is a TCRα repertoire analysis of CD8<sup>+</sup> cells, in duplicates.
 
 ## Preparation
 
 This example was ran in a [Ubuntu Precise LTS virtual machine](http://alestic.com/) in the [Amazon Elastic Compute Cloud](http://aws.amazon.com/ec2).
 
 ### Software installation
+
+Since this is run in a virtual machine that can be erased after use, some steps of the installation are not recommended on local systems.  See the [[README]] for more precise installation instructions.
 
 Update the package repostitory to Quantal.
 
@@ -16,7 +18,7 @@ sudo sed -i 's/precise/quantal/g' /etc/apt/sources.list
 sudo apt-get update
 </pre>
 
-Install the programs needed by clonotypeR and for other analysis steps.
+Install the programs needed by *clonotypeR* and for other analysis steps.
 
 <pre>
 sudo apt-get install bioperl bwa emboss r-base
@@ -27,7 +29,7 @@ Install [git](http://git-scm.com), download *clonotypeR*, build the R package an
 <pre>
 sudo apt-get install git
 sudo install -d /mnt/clonotyper -o ubuntu -g ubuntu
-cd /mnt/
+ln -s /mnt/clonotyper .
 git clone git://clonotyper.branchable.com/ clonotyper/
 R CMD build clonotyper/
 sudo R CMD INSTALL clonotypeR_0.1.tar.gz
