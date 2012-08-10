@@ -46,8 +46,8 @@ sudo apt-get install sra-toolkit
 The files are larger than gigabytes, so the download and conversion to FASTQ format will take roughly one hour.
 
 <pre>
-install -d /mnt/clonotyper/GSE35626 -o ubuntu -g ubuntu
-cd /mnt/clonotyper/GSE35626
+mkdir clonotyper/GSE35626
+cd clonotyper/GSE35626
 wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP010%2FSRP010815/SRR407172/SRR407172.sra
 wget ftp://ftp-trace.ncbi.nlm.nih.gov/sra/sra-instant/reads/ByStudy/sra/SRP%2FSRP010%2FSRP010815/SRR407173/SRR407173.sra
 fastq-dump SRR407172.sra 
