@@ -22,7 +22,7 @@ rearrangements are filtered out.
 <h3>Usage</h3>
 
 <pre>
-clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$improductive)
+clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$improductive, minscore=0, minqual=1)
 </pre>
 
 
@@ -60,6 +60,20 @@ data frame to provide a &ldquo;improductive&rdquo; column, that indicates clonot
 stop codon or a frame shift.
 </p>
 </td></tr>
+<tr valign="top"><td><code>minscore</code></td>
+<td>
+
+<p>Minimum alignment score.  Clonotypes with an alignment score lower than this value are
+discarded.
+</p>
+</td></tr>
+<tr valign="top"><td><code>minqual</code></td>
+<td>
+
+<p>Minimum mapping quality.  Clonotypes with a mapping quality lower than this value are
+discarded.
+</p>
+</td></tr>
 </table>
 
 
@@ -89,6 +103,9 @@ of times each feature was found in each library.
 <pre>
 # Read the package's example data
 clonotypes &lt;- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+
+# Inspect the alignment scores
+## Not run: hist(clonotypes$score)
 
 # Count J segments
 j &lt;- clonotype.table(levels(clonotypes$lib), "J")

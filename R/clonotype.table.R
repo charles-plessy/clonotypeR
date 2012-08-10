@@ -1,4 +1,4 @@
-clonotype.table <- function (libs, feats=c("V","pep","J"), from=clonotypes, filter=from$improductive) {
+clonotype.table <- function (libs, feats=c("V","pep","J"), from=clonotypes, filter=from$improductive, minscore=0, minqual=1) {
 
 if ( missing (libs) )
 	libs <- levels(from$lib)
@@ -22,7 +22,7 @@ if ( ! is.logical(from$improductive) )
 # and discards the improductive rearrangements.
 
 feat.freq <- function (lib, filter) {
-    keep <- from$lib == lib & ! filter
+    keep <- from$lib == lib & (! filter) & from$score >= minscore & from$mapq >= minqual
     if (length(feats) == 1) {
         feat <- from[keep,feats]
     } else {

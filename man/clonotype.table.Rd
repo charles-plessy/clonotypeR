@@ -10,7 +10,7 @@ rearrangements are filtered out.
 }
 
 \usage{
-clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$improductive)
+clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$improductive, minscore=0, minqual=1)
 }
 
 \arguments{
@@ -32,6 +32,14 @@ clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$impro
   data frame to provide a \dQuote{improductive} column, that indicates clonotypes with a
   stop codon or a frame shift.
 }
+  \item{minscore}{
+  Minimum alignment score.  Clonotypes with an alignment score lower than this value are
+  discarded.
+}
+  \item{minqual}{
+  Minimum mapping quality.  Clonotypes with a mapping quality lower than this value are
+  discarded.
+}
 }
 
 \value{
@@ -49,6 +57,9 @@ of times each feature was found in each library.
 \examples{
 # Read the package's example data
 clonotypes <- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+
+# Inspect the alignment scores
+\dontrun{hist(clonotypes$score)}
 
 # Count J segments
 j <- clonotype.table(levels(clonotypes$lib), "J")
