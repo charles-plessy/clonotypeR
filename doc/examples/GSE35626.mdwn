@@ -56,8 +56,6 @@ fastq-dump SRR407173.sra
 
 ## Data analysis
 
-The sequence are already in FASTQ format, no need to run `clonotyper convert`.
-
 <pre>
 ../scripts/clonotypeR detect SRR407172.fastq
 ../scripts/clonotypeR detect SRR407173.fastq
