@@ -56,11 +56,30 @@ fastq-dump SRR407173.sra
 
 ## Data analysis
 
+### In shell
+
 <pre>
 ../scripts/clonotypeR detect SRR407172.fastq
 ../scripts/clonotypeR detect SRR407173.fastq
 ../scripts/clonotypeR extract SRR407172
 ../scripts/clonotypeR extract SRR407173
+
+cat clonotypes/*tsv > clonotypes.tsv
+
+R
 </pre>
 
-*To be continued.*
+This prepares a large (3.2 Gb) [[table of clonotypes|html/data-clonotypes.html]], and starts R.
+
+### In R
+
+<pre>
+library(clonotypeR)
+clonotypes <- read.clonotypes('clonotypes.tsv')
+a <- clonotype.table(from=clonotypes, feat=c("V","J"))
+colSums(a > 0)
+# SRR407172 SRR407173 
+#     3653      3677 
+</pre>
+
+3,653 V–J pairs were detected in SRR407172.
