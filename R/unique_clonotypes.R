@@ -9,7 +9,7 @@ if ( ! is.data.frame(from) ) stop (
 )
 
 if ( FALSE %in% ( libs %in% colnames(from) ) ) stop (
-	"Unknown library."
+	paste("Unknown library: ", libs[ ! libs %in% colnames(from) ],".", sep='', collapse=' ')
 )
 
 clonotypenames <- rownames(from)
