@@ -42,4 +42,5 @@ See the example analysisi of [[doc/examples/GSE35626]] for a more detailed walkt
 
 ### From archive
 
-*Under construction*
+Download _clonotypeR_ as a [source archive](http://source.clonotyper.branchable.com/?p=source.git;a=tree;h=refs/heads/release;hb=refs/heads/release)
+and install it as explained above.
