@@ -33,9 +33,9 @@ Installation
 Install the requirements above, and then clone *clonotypeR* with [git](http://git-scm.com/), then build and install the R module
 
 <pre>
-git clone git://clonotyper.branchable.com/
-R CMD build clonotyper/
-R CMD INSTALL clonotypeR_0.1.tar.gz
+git clone git://clonotyper.branchable.com/ clonotyper
+R CMD build clonotyper
+R CMD INSTALL clonotypeR_0.9.tar.gz  # Adjust for the correct version number
 </pre>
 
 See the example analysisi of [[doc/examples/GSE35626]] for a more detailed walkthrough.
