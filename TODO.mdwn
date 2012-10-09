@@ -42,3 +42,5 @@ Regression tests: make sure that the example data has a sharp sign in the FASTQ 
 compare the number of lines to what is expected.
 
 Support extraction of barcoded reads.
+
+Report the number of V segments found after `clonotypeR detect`.
