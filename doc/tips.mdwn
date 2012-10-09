@@ -40,3 +40,14 @@ Count the number of clonotypes (one per line) in each clonotype file.
 <pre>
 for LIB in $(ls clonotypes/*.tsv) ; do echo -ne "$(basename $LIB .tsv)\t" ; wc -l $LIB | cut -f1 -d' '; done
 </pre>
+
+Reverse-complement and append mate-pair sequence to the first read
+------------------------------------------------------------------
+
+If the first read is `RCms10001_R1.fastq` and the mate pair is `RCms10001_R2.fastq`
+
+<pre>
+revseq fastq-sanger::RCms10001_R2.fastq fastq-sanger::stdout | sed -e '1~4s/.*//' -e '3~4s/.*//' | paste -d '' RCms10001_R1.fastq - > RCms10001.fastq
+</pre>
+
+`revseq` is an [EMBOSS](http://www.emboss.org) command.
