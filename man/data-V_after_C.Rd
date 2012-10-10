@@ -2,7 +2,7 @@
 \alias{V_after_C}
 \docType{data}
 
-\title{Sequence of the V segments after their conserved cystein}
+\title{Sequence of the V segments after their conserved cystein.}
 
 \description{
 Table intended for internal use in the \code{yassai.nomenclature}

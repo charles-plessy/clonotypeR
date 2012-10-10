@@ -1,7 +1,7 @@
 \name{unique_clonotypes}
 \alias{unique_clonotypes}
 
-\title{lists unique clonotypes in libraries.}
+\title{Lists unique clonotypes in libraries.}
 
 \description{
 Finds all the clonotypes expressed in one or more libraries, and returns a
