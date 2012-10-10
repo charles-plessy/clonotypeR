@@ -38,7 +38,7 @@ R CMD build clonotyper
 R CMD INSTALL clonotypeR_0.9.tar.gz  # Adjust for the correct version number
 </pre>
 
-See the example analysisi of [[doc/examples/GSE35626]] for a more detailed walkthrough.
+See the example analysis of [[doc/examples/GSE35626]] for a more detailed walkthrough.
 
 ### From archive
 
