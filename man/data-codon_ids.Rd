@@ -1,5 +1,6 @@
 \name{codon_ids}
 \docType{data}
+\alias{codon_ids}
 \title{Codon ID numbers in Yassai et al.'s nomenclature.}
 \description{
 Data frame derived from Table 1 of Yassai et al., 2009, to construct clonotype names.
