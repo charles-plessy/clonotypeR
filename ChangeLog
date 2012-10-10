@@ -1,0 +1,9 @@
+2012-10-10  Charles Plessy <plessy@riken.jp>
+
+	* Corrected Frenglish “improductive” with “unproductive”. 
+	  This can break backwards compatibility.
+
+
+2012-09-06  Charles Plessy <plessy@riken.jp>
+
+	* Initial release
