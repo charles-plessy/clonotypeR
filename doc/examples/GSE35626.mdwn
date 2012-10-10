@@ -69,7 +69,7 @@ cat clonotypes/*tsv > clonotypes.tsv
 R
 </pre>
 
-This prepares a large (3.2 Gb) [[table of clonotypes|html/data-clonotypes.html]], and starts R.
+This prepares a large (3.2 Gb) [[table of clonotypes|html_doc/data-clonotypes.html]], and starts R.
 
 ### In R
 

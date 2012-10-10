@@ -72,7 +72,7 @@ TRAV14-3	233
 </pre>
 
 The format of the table is explained in the [manual
-page](../../html/read.clonotypes.html) of the function `read.clonotypes()` of the
+page](../../html_doc/read.clonotypes.html) of the function `read.clonotypes()` of the
 R package.
 
 For each library (`A`, `B` and `C`), one file is available in the `clonotypes`
