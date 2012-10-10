@@ -6,7 +6,7 @@ Example analysis
 Example data
 ------------
 
-The data provided in <a href="../../example_data">example_data</a>  is a
+The data provided on-line in <a href="../../example_data">example_data</a>  is a
 sub-sample of three sequence librairies (2,000 reads each) made on the 454
 Titanium or the 454 junior platforms.  The original libraries will be deposited
 in public databanks after publication in a peer-reviewed journal.
