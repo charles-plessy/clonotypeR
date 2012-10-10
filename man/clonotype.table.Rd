@@ -5,12 +5,12 @@
 \description{
 Using a clonotype data frame loaded with \code{\link{read.clonotypes}},
 \code{clonotype.table} will create a table counting how many times each
-clonotypes have been seen in each libraries.  By default, the improductive
+clonotypes have been seen in each libraries.  By default, the unproductive
 rearrangements are filtered out.
 }
 
 \usage{
-clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$improductive, minscore=0, minqual=1)
+clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$unproductive, minscore=0, minqual=1)
 }
 
 \arguments{
@@ -29,7 +29,7 @@ clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$impro
 }
   \item{filter}{
   Logical vector to filter out clonotypes.  By default it relies on the clonotypes
-  data frame to provide a \dQuote{improductive} column, that indicates clonotypes with a
+  data frame to provide a \dQuote{unproductive} column, that indicates clonotypes with a
   stop codon or a frame shift.
 }
   \item{minscore}{

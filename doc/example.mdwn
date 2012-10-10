@@ -111,7 +111,7 @@ The command `summary(clonotypes)` already provides useful information.
           TRAV14N-1_14D-1:604   TRAJ34 : 141                     
           TRAV14N-2_14D-2:235   TRAJ40 : 104                     
           TRAV14N-3      :171   (Other):1376                     
-     dna                qual               pep            improductive   
+     dna                qual               pep            unproductive   
  Length:2684        Length:2684        Length:2684        Mode :logical  
  Class :character   Class :character   Class :character   FALSE:2130     
  Mode  :character   Mode  :character   Mode  :character   TRUE :554      

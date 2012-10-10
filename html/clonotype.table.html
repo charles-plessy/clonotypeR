@@ -14,7 +14,7 @@
 
 <p>Using a clonotype data frame loaded with <code><a href="read.clonotypes.html">read.clonotypes</a></code>,
 <code>clonotype.table</code> will create a table counting how many times each
-clonotypes have been seen in each libraries.  By default, the improductive
+clonotypes have been seen in each libraries.  By default, the unproductive
 rearrangements are filtered out.
 </p>
 
@@ -22,7 +22,7 @@ rearrangements are filtered out.
 <h3>Usage</h3>
 
 <pre>
-clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$improductive, minscore=0, minqual=1)
+clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$unproductive, minscore=0, minqual=1)
 </pre>
 
 
@@ -56,7 +56,7 @@ But it can also count single features, such as the V or J segments.
 <td>
 
 <p>Logical vector to filter out clonotypes.  By default it relies on the clonotypes
-data frame to provide a &ldquo;improductive&rdquo; column, that indicates clonotypes with a
+data frame to provide a &ldquo;unproductive&rdquo; column, that indicates clonotypes with a
 stop codon or a frame shift.
 </p>
 </td></tr>

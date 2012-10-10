@@ -88,7 +88,7 @@ codon2id <- function (codons)
 #
 # - Convert to lowercase where applicable
 # - get codon ids for remaining residues
-# Return something for improductive clonotypes
+# Return something for unproductive clonotypes
 
 ##################
 

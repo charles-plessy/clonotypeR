@@ -16,7 +16,7 @@ Reads a clonotype table and returns a data frame.
 <p>Reads a clonotype table in a TAB-separated or OSCT format, and returns a data frame
 that has eight columns, for library name, V and J segments names, sequence read
 identifier, DNA, sequence quality, aminoacid sequence of the CDR3 region, mark
-for improductive recombinations.
+for unproductive recombinations.
 </p>
 
 
@@ -45,7 +45,7 @@ read.clonotypes(filename, ...)
 <h3>Details</h3>
 
 
-<p>Clonotypes are marked improductive if the length of their DNA sequence is not
+<p>Clonotypes are marked unproductive if the length of their DNA sequence is not
 a multiple of 3, or if it contains a stop codon.  This column is calculated on
 the fly.
 </p>
@@ -91,7 +91,7 @@ the fly.
 <td>
 <p>Translation of the DNA sequence (character).</p>
 </td></tr>
-<tr valign="top"><td><code>improductive</code></td>
+<tr valign="top"><td><code>unproductive</code></td>
 <td>
 <p>Flag indicating stop codons or frame shifts (logical).</p>
 </td></tr>

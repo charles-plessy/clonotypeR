@@ -9,7 +9,7 @@ Reads a clonotype table and returns a data frame.
 Reads a clonotype table in a TAB-separated or OSCT format, and returns a data frame
 that has eight columns, for library name, V and J segments names, sequence read
 identifier, DNA, sequence quality, aminoacid sequence of the CDR3 region, mark
-for improductive recombinations.
+for unproductive recombinations.
 }
 
 \usage{
@@ -24,7 +24,7 @@ read.clonotypes(filename, ...)
 }
 
 \details{
-Clonotypes are marked improductive if the length of their DNA sequence is not
+Clonotypes are marked unproductive if the length of their DNA sequence is not
 a multiple of 3, or if it contains a stop codon.  This column is calculated on
 the fly.
 }
@@ -39,7 +39,7 @@ the fly.
 \item{dna}{DNA sequence of the CDR3 region (character).}
 \item{qual}{Quality values for the DNA sequence (character).}
 \item{pep}{Translation of the DNA sequence (character).}
-\item{improductive}{Flag indicating stop codons or frame shifts (logical).}
+\item{unproductive}{Flag indicating stop codons or frame shifts (logical).}
 }
 
 \author{Charles Plessy}
