@@ -39,7 +39,7 @@ The name (for instance sIRSSy.1456B19S1B27L11) consists of five segments:
 
 
 \seealso{
-\code{\link{clonotypes}}, \code{\link{codon_ids}}
+\code{\link{clonotypes}}, \code{\link{codon_ids}}, \code{\link{J_before_FGxG}}, \code{\link{V_after_C}}
 }
 \examples{
 clonotypes <- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
