@@ -21,7 +21,7 @@ Homeostasis][RUIH] of the [Research Center for Allergy and Immunology][RCAI].
 
  - To **install** *clonotypeR*, see the [[README]].
 
- - To **use** *clontotypeR*, see the [[doc/workflow]].
+ - To **use** *clontotypeR*, see the [[doc/workflow]] and the [[doc/tips]].
 
  - To **participate** to the development: browse the [source code][], see the [[TODO]] and [[Bugs]] pages.
 
