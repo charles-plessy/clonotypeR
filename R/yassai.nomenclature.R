@@ -22,6 +22,12 @@ if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 
 yassai.nomenclature <- function (data=clonotypes) {
 
+if ( ! all( c("V", "J", "dna","pep") %in% names(data) ) )
+  stop ("Missing V or J segment(s), or DNA or peptides sequence(s) in the data.")
+
+if ( class(data) == 'character' )
+  data <- data.frame(t(data), stringsAsFactors=F)
+
 if ( ! class(data) == "data.frame" )
 	stop ("Input must be a data frame.")
 
