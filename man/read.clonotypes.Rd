@@ -23,12 +23,6 @@ read.clonotypes(filename, ...)
 \item{...}{The rest of the arguments are passed to the \code{read.table()} function.}
 }
 
-\details{
-Clonotypes are marked unproductive if the length of their DNA sequence is not
-a multiple of 3, or if it contains a stop codon.  This column is calculated on
-the fly.
-}
-
 \value{
 \item{lib}{Library name (factor).}
 \item{V}{V segment name (factor).}
@@ -45,7 +39,7 @@ the fly.
 \author{Charles Plessy}
 
 \seealso{
-\code{\link{clonotype.table}},
+\code{\link{clonotype.table}}, \code{\link{is_unproductive}},
 \code{\link{read.table}},
 Order Switchable Column Table (OSCT, \url{http://sourceforge.net/projects/osctf/})
 }

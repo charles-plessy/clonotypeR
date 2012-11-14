@@ -60,9 +60,7 @@ cdr <- read.table(
 
 # Add a new column marking unproductive recombinations.
 
-unproductive_length     <- nchar(cdr$dna) %% 3 > 0
-unproductive_stop       <- grepl ('\\*', cdr$pep)
-cdr$unproductive        <- unproductive_length | unproductive_stop
+cdr$unproductive        <- is_unproductive(cdr)
 
 return(cdr)
 }
