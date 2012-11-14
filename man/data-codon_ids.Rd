@@ -23,7 +23,7 @@ Immunogenetics, 2009, Volume 61, Number 7, Pages 493-502
 }
 
 \seealso{
-\code{\link{yassai.nomenclature}}
+\code{\link{yassai.identifier}}
 }
 
 \keyword{ clonotype }

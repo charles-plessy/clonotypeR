@@ -5,7 +5,7 @@
 \title{Sequence of the V segments after their conserved cystein.}
 
 \description{
-Table intended for internal use in the \code{yassai.nomenclature}
+Table intended for internal use in the \code{yassai.identifier}
 function, generated from the reference data with the
 command: \code{make refresh-data}.
 }
@@ -20,7 +20,7 @@ data(V_after_C)
 }
 
 \seealso{
-\code{\link{yassai.nomenclature}}
+\code{\link{yassai.identifier}}
 }
 
 \keyword{ clonotype }

@@ -1,7 +1,7 @@
-\name{yassai.nomenclature}
-\alias{yassai.nomenclature}
+\name{yassai.identifier}
+\alias{yassai.identifier}
 
-\title{TCR clonotype nomenclature (Yassai et al.).}
+\title{TCR clonotype identifier (Yassai et al.).}
 \description{
 
 The clonotype nomenclature defined by Yassai et al.
@@ -9,7 +9,7 @@ in \url{http://dx.doi.org/10.1007/s00251-009-0383-x}.
 
 }
 
-\usage{yassai.nomenclature(data=clonotypes)}
+\usage{yassai.identifier(data=clonotypes)}
 
 \arguments{
   \item{data}{A data frame or a character vector containing a clonotype(s) with proper row or element names.}
@@ -43,7 +43,7 @@ The name (for instance sIRSSy.1456B19S1B27L11) consists of five segments:
 }
 \examples{
 data(clonotypes)
-head(yassai.nomenclature(clonotypes))
+head(yassai.identifier(clonotypes))
 ## [1] "aAYt.22A14N2A49L10"     "aYt.2A14N2A49L10"       "aGRt.34A14N1A40L11"    
 ## [4] "aADTIt.1221A14N1A27L11" "AEMn.411A14N1A23L11"    "sAHy.11A14-2A32L14"    
 }
