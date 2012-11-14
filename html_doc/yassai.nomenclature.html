@@ -18,16 +18,16 @@ in <a href="http://dx.doi.org/10.1007/s00251-009-0383-x">http://dx.doi.org/10.10
 
 <h3>Usage</h3>
 
-<pre>yassai.nomenclature(clonotype)</pre>
+<pre>yassai.nomenclature(data=clonotypes)</pre>
 
 
 <h3>Arguments</h3>
 
 
 <table summary="R argblock">
-<tr valign="top"><td><code>clonotype</code></td>
+<tr valign="top"><td><code>data</code></td>
 <td>
-<p>A character vector containing a clonotype.</p>
+<p>A data frame or a character vector containing a clonotype(s) with proper row or element names.</p>
 </td></tr>
 </table>
 
@@ -72,7 +72,7 @@ in <a href="http://dx.doi.org/10.1007/s00251-009-0383-x">http://dx.doi.org/10.10
 <h3>Examples</h3>
 
 <pre>
-clonotypes &lt;- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+data(clonotypes)
 head(yassai.nomenclature(clonotypes))
 ## [1] "aAYt.22A14N2A49L10"     "aYt.2A14N2A49L10"       "aGRt.34A14N1A40L11"    
 ## [4] "aADTIt.1221A14N1A27L11" "AEMn.411A14N1A23L11"    "sAHy.11A14-2A32L14"    
