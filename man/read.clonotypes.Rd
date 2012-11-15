@@ -13,12 +13,14 @@ for unproductive recombinations.
 }
 
 \usage{
-read.clonotypes(filename, ...)
+read.clonotypes(filename, scores=TRUE, ...)
 }
 
 \arguments{
 
 \item{filename}{Path to the tabulation-delimited text file containing the extracted clonotypes.}
+
+\item{scores}{Set to false to load legacy data that did not contain \dQuote{score} and \dQuote{mapq} columns.}
 
 \item{...}{The rest of the arguments are passed to the \code{read.table()} function.}
 }

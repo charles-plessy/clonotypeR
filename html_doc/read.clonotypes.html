@@ -23,7 +23,7 @@ for unproductive recombinations.
 <h3>Usage</h3>
 
 <pre>
-read.clonotypes(filename, ...)
+read.clonotypes(filename, scores=TRUE, ...)
 </pre>
 
 
@@ -34,6 +34,10 @@ read.clonotypes(filename, ...)
 <tr valign="top"><td><code>filename</code></td>
 <td>
 <p>Path to the tabulation-delimited text file containing the extracted clonotypes.</p>
+</td></tr>
+<tr valign="top"><td><code>scores</code></td>
+<td>
+<p>Set to false to load legacy data that did not contain &ldquo;score&rdquo; and &ldquo;mapq&rdquo; columns.</p>
 </td></tr>
 <tr valign="top"><td><code>...</code></td>
 <td>

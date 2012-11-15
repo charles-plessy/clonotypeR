@@ -1,4 +1,4 @@
-read.clonotypes <- function (filename, ...) {
+read.clonotypes <- function (filename, scores=TRUE, ...) {
 
 # Inspect the file to see how many header lines it contains.
 # Because of the sequence quality scores, comment.char can not be set.
@@ -24,32 +24,20 @@ if (lines_to_skip ==  0) {
 	has_header <- TRUE
 }
 
+if (scores == TRUE) {
+  cdr.col.names <- c( "lib",     "V",      "J",      "score",   "mapq",    "read",      "dna",       "qual",      "pep"      )
+  cdr.col.class <- c( "factor",  "factor", "factor", "numeric", "numeric", "character", "character", "character", "character")
+} else {
+  cdr.col.names <- c( "lib",     "V",      "J",                            "read",      "dna",       "qual",      "pep"      )
+  cdr.col.class <- c( "factor",  "factor", "factor",                       "character", "character", "character", "character")
+}
+
 # Load the clonotypes in a data frame.
 
 cdr <- read.table(
 	filename,
-	col.names	=	c(
-					"lib",
-					"V",
-					"J",
-					"score",
-					"mapq",
-					"read",
-					"dna",
-					"qual",
-					"pep"
-				),
-	colClasses	=	c(
-					"factor",
-					"factor",
-					"factor",
-					"numeric",
-					"numeric",
-					"character",
-					"character",
-					"character",
-					"character"
-				),
+	col.names	=	cdr.col.names,
+	colClasses	=	cdr.col.class,
 	comment.ch	=	'',
 	quote		=	'',
 	sep		=	'\t',
