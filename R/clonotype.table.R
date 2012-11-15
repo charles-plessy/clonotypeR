@@ -22,7 +22,11 @@ if ( ! is.logical(from$unproductive) )
 # and discards the unproductive rearrangements.
 
 feat.freq <- function (lib, filter) {
-    keep <- from$lib == lib & (! filter) & from$score >= minscore & from$mapq >= minqual
+    if ( all(c('score', 'mapq') %in% colnames(from) ) ) {
+      keep <- from$lib == lib & (! filter) & from$score >= minscore & from$mapq >= minqual
+    } else {
+      keep <- from$lib == lib & (! filter)
+    }
     if (length(feats) == 1) {
         feat <- from[keep,feats]
     } else {
