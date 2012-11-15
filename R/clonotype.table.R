@@ -13,7 +13,7 @@ if ( ! is.data.frame(from) )
 	stop ("Input clonotypes must be in a data frame.")
 
 if ( ! is.logical(from$unproductive) )
-	stop ("Input missing Improductive column.")
+	stop ("Input missing \dQuote{unproductive} column.")
 
 # The following function counts, for a single library, the occurrences of
 # segments, CDR3s or combinations of them, and return them as a simple data
