@@ -30,3 +30,12 @@ This function can be used with commands such as the following example, to be run
 <pre>
 abi2fastq > library.fastq
 </pre>
+
+Conversion from SRA format (NCBI)
+=================================
+
+Download and use the [SRA Toolkit](http://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software) (available as a [[!debpkg sra-toolkit desc="Debian package"]]), to convert SRA files to FASTQ format.  Example with a file called `sequencefile.sra`:
+
+<pre>
+fastq-dump sequencefile.sra
+</pre>
