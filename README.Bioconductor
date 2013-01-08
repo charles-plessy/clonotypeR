@@ -1,0 +1,5 @@
+Tested against 2.15.2 (latest version packaged in Debian).
+
+NOTE: "no visible binding for global variable ‘clonotypes’"
+  The goal here is to have the functions work by default of a
+  data frame called ‘clonotypes’ when no data frame is passed.
