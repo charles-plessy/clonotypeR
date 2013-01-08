@@ -1,7 +1,9 @@
-clonotype.table <- function (libs, feats=c("V","pep","J"), from=clonotypes, filter=from$unproductive, minscore=0, minqual=1) {
+clonotype.variants <- function (libs, feats=c("V","pep","J"), data=clonotypes) {
+
+# TODO: check if "variant" has a precise meaning that differs.
 
 if ( missing (libs) )
-	libs <- levels(from$lib)
+	libs <- levels(data$lib)
 
 if ( ! is.character(libs) )
         stop ("Include list of libraries as first argument.")
@@ -9,11 +11,8 @@ if ( ! is.character(libs) )
 if ( ! length(libs) == length(unique(libs)) )
 	stop ("Redundant list of libraries.")
 
-if ( ! is.data.frame(from) )
+if ( ! is.data.frame(data) )
 	stop ("Input clonotypes must be in a data frame.")
-
-if ( ! is.logical(from$unproductive) )
-	stop ("Input missing Improductive column.")
 
 # The following function counts, for a single library, the occurrences of
 # segments, CDR3s or combinations of them, and return them as a simple data
