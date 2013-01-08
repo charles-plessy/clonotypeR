@@ -1,7 +1,7 @@
 Package: clonotypeR
 Type: Package
 Title: Identify and analyse B and T cell receptors at a high throughput.
-Version: 0.99.0
+Version: 0.99.1
 Date: 2012-12-16
 Author: Charles Plessy <plessy@riken.jp>
 Maintainer: Charles Plessy <plessy@riken.jp>
