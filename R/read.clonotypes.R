@@ -38,7 +38,7 @@ cdr <- read.table(
 	filename,
 	col.names	=	cdr.col.names,
 	colClasses	=	cdr.col.class,
-	comment.ch	=	'',
+	comment.char	=	'',
 	quote		=	'',
 	sep		=	'\t',
 	header		=	has_header,
