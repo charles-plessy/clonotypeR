@@ -95,7 +95,7 @@ Data analysis in R
 
 Start the `R` statistical analysis software with the command “`R`”.  The commands entered after this are executed by `R`.
 
-Load the clonotypeR library: `library(clonotyper)`
+Load the clonotypeR library: `library(clonotypeR)`
 
 Load the data in a R object called *clonotypes*: `clonotypes <- read.clonotypes('clonotypes.tsv')`
 

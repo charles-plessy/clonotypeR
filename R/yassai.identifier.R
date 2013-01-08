@@ -38,21 +38,13 @@ strReverse <- function(x)
 V_name <- as.character(data$V)
 V      <- V_after_C[V_name,]
 
-if ( class(data$dna) == "character" ) {
-	dna    <- data$dna
-} else {
-	dna    <- as.character(data$dna)
-}
+dna    <- as.character(data$dna)
 
 J_name <- as.character(data$J)
 J      <- strReverse(J_before_FGxG[J_name,])
 dnarev <- strReverse(dna)
 
-if ( class(data$pep) == "character" ) {
-	pep    <- data$pep
-} else {
-	pep    <- as.character(data$pep)
-}
+pep    <- as.character(data$pep)
 
 # True if the reference and CDR3 codons are identical.
 is.germline <- function (ref,dna,pos) {
