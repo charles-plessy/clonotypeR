@@ -1,1 +1,4 @@
-.gitignore
+.ikiwiki
+.git
+example_data
+doc
