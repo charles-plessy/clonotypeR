@@ -31,6 +31,6 @@ The file produced by `clonotypeR extract` is loaded by the [[`read.clonotypes()`
 [[!img gallery/histogram.png link="gallery" alt="Alignment score histogram" size=150x150 ]]
 [[!img gallery/powerlaw.png link="gallery" alt="Scale-free distribution of the data"  size=150x150 ]]
 [[!img gallery/clustering.png link="gallery" alt="Similar libraries group together" size=150x150 ]]
-[[!img gallery/DGE.png link="gallery" alt="Differential clontoype expression analysis" size=150x150 ]]
+[[!img gallery/DGE.png link="gallery" alt="Differential clonotype expression analysis" size=150x150 ]]
 
 See the [[list of functions|html_doc/00Index.html]] for more information.

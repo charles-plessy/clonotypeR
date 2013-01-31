@@ -62,4 +62,4 @@ a.dge.com <- exactTest(a.dge)
 plotSmear(a.dge.dedup, allCol="grey", lowCol="grey", deCol="black", de.tags=detags(a.dge.com))
 </pre>
 
-[[!img DGE.png link="DGE.svg" alt="Differential clontoype expression analysis"]]
+[[!img DGE.png link="DGE.svg" alt="Differential clonotype expression analysis"]]

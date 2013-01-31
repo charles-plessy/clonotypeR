@@ -26,7 +26,7 @@ the number of clonotypes found in each pair of samples.
 }
 
 \value{
-In \dQuote{groups} mode, a character vector of clontoype names.  Their order
+In \dQuote{groups} mode, a character vector of clonotype names.  Their order
 follows the original row name order of the clonotype table.
 
 In \dQuote{matrix} mode, a symmetric matrix of numbers, with the same row and

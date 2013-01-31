@@ -21,7 +21,7 @@ Uses the table called \dQuote{clonotypes} by default.
 }
 
 \value{
-Character vector of clontoype names.  Their order follows the original row name
+Character vector of clonotype names.  Their order follows the original row name
 order of the clonotype table.
 }
 

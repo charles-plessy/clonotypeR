@@ -1,7 +1,7 @@
-clontoypeR – Quantitative analysis of antigen receptor sequences
+clonotypeR – Quantitative analysis of antigen receptor sequences
 ================================================================
 
-*clontotypeR* is a R package and accompanying scripts to identify
+*clonotypeR* is a R package and accompanying scripts to identify
 and analyse [[clonotypes|doc/clonotype]] from high-throughput T cell receptors sequence libraries.
 *clonotypeR* is suited to process and organise very large number of clonotypes,
 in the order of millions, typically produced by Roche 454 instruments, and to
@@ -19,9 +19,9 @@ Homeostasis][RUIH] of the [Research Center for Allergy and Immunology][RCAI].
 [RUIH]:			http://web.rcai.riken.jp/en/labo/home/index.htm
 [RCAI]:			http://www.rcai.riken.jp
 
- - To **install** *clonotypeR*, see the [[README]].
+ - To **install** *clonotypeR*, see the [[instructions|install]].
 
- - To **use** *clontotypeR*, see the [[doc/workflow]] and the [[doc/tips]].
+ - To **use** *clonotypeR*, see the [[doc/workflow]] and the [[doc/tips]].
 
  - To **participate** to the development: browse the [source code][], see the [[TODO]] and [[Bugs]] pages.
 
