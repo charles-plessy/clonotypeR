@@ -1,3 +1,5 @@
+*.mdwn
+*.css
 Bugs*
 doc
 example_data
@@ -5,6 +7,5 @@ example_data
 html_doc/
 .ikiwiki
 Makefile
-README.mdwn
 references/
 scripts/
