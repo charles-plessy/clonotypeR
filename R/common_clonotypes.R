@@ -1,4 +1,4 @@
-common_clonotypes <- function (group1, group2, mode="groups", data=clonotypes) {
+common_clonotypes <- function (group1, group2, mode="groups", data) {
 
 # Test if arguments are correct.
 

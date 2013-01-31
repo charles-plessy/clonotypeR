@@ -16,13 +16,13 @@ When given a table of clonotypes, produces a matrix in which each cell reports
 the number of clonotypes found in each pair of samples.
 }
 
-\usage{common_clonotypes(group1, group2, mode="groups", data=clonotypes)}
+\usage{common_clonotypes(group1, group2, mode="groups", data)}
 
 \arguments{
   \item{group1}{A character vector containing clonotype library names}
   \item{group2}{A character vector containing clonotype library names}
   \item{mode}{By default, \dQuote{groups} when \dQuote{group1} or \dQuote{group2} is provided, \dQuote{matrix} mode otherwise.}
-  \item{data}{A clonotype table where the data is stored.  Default: \dQuote{clonotypes}.}
+  \item{data}{A clonotype table where the data is stored.}
 }
 
 \value{
@@ -46,13 +46,13 @@ clonotypes <- clonotype.table(levels(clonotypes.long$lib), from=clonotypes.long)
 summary(clonotypes)
 
 # List clonotypes found in library A, and B or C.
-common_clonotypes(group1="A", group2=c("B","C"))
+common_clonotypes(group1="A", group2=c("B","C"), data=clonotypes)
 
 # Count clonotypes found in library A, and B or C.
-length(common_clonotypes(group1="A", group2=c("B","C")))
+length(common_clonotypes(group1="A", group2=c("B","C"), data=clonotypes))
 
 # Matrix of numbers of common clonotypes
-common_clonotypes()
+common_clonotypes(data=clonotypes)
 }
 
 \keyword{ clonotype }% __ONLY ONE__ keyword per line

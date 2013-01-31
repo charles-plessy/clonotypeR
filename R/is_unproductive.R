@@ -1,4 +1,4 @@
-is_unproductive <- function (data=clonotypes) {
+is_unproductive <- function (data) {
 
 if ( ! all( c("dna","pep") %in% names(data) ) )
   stop ("Missing DNA or peptides sequence(s) in the data.")

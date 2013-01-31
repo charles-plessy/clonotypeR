@@ -12,7 +12,7 @@ sequence is in frame and has no stop codon.
 }
 
 \usage{
-is_unproductive(data=clonotypes)
+is_unproductive(data)
 }
 
 \arguments{

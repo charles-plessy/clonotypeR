@@ -1,4 +1,4 @@
-unique_clonotypes <- function (libs, from=clonotypes) {
+unique_clonotypes <- function (libs, from) {
 
 if ( ! is.character(libs) ) stop (
 	"First argument must be a character vector of library names."

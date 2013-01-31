@@ -20,7 +20,7 @@ if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 
 ## Then, declare the function.
 
-yassai.identifier <- function (data=clonotypes) {
+yassai.identifier <- function (data) {
 
 if ( ! all( c("V", "J", "dna","pep") %in% names(data) ) )
   stop ("Missing V or J segment(s), or DNA or peptides sequence(s) in the data.")

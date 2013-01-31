@@ -3,11 +3,7 @@ and reference data, available at http://clonotyper.branchable.com/.
 
 Tested against 2.15.2 (latest version packaged in Debian).
 
-NOTE: "no visible binding for global variable ‘clonotypes’"
-  The goal here is to have the functions work by default of a data frame called
-  ‘clonotypes’ when no data frame is passed.
-
 Version starting from 0.99.1 because I already released 0.99.0 with errors
 accidentally.
 
-  -- Charles Plessy <plessy@riken.jp>  Tue, 08 Jan 2013 20:15:18 +0900
+  -- Charles Plessy <plessy@riken.jp>  Thu, 31 Jan 2013 14:43:56 +0900

@@ -10,7 +10,7 @@ rearrangements are filtered out.
 }
 
 \usage{
-clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$unproductive, minscore=0, minqual=1)
+clonotype.table(libs, feats=c("V","pep","J"), from, filter=from$unproductive, minscore=0, minqual=1)
 }
 
 \arguments{
@@ -24,8 +24,7 @@ clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$unpro
   But it can also count single features, such as the V or J segments.
 }
   \item{from}{
-  Data frame as loaded by \code{\link{read.clonotypes}}.  By default,
-  \code{clonotype.table} will use a data frame called \sQuote{clonotypes}.
+  Data frame as loaded by \code{\link{read.clonotypes}}.
 }
   \item{filter}{
   Logical vector to filter out clonotypes.  By default it relies on the clonotypes
@@ -62,7 +61,7 @@ clonotypes <- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "c
 \dontrun{hist(clonotypes$score)}
 
 # Count J segments
-j <- clonotype.table(levels(clonotypes$lib), "J")
+j <- clonotype.table(levels(clonotypes$lib), "J", from=clonotypes)
 
 # Normalise counts in parts per million
 J <- data.frame(prop.table(as.matrix(j),2) * 1000000)

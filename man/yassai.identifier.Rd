@@ -9,7 +9,7 @@ in \url{http://dx.doi.org/10.1007/s00251-009-0383-x}.
 
 }
 
-\usage{yassai.identifier(data=clonotypes)}
+\usage{yassai.identifier(data)}
 
 \arguments{
   \item{data}{A data frame or a character vector containing a clonotype(s) with proper row or element names.}
