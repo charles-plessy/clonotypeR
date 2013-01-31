@@ -1,9 +1,0 @@
-The work submitted here is part of a larger package comprising shell scripts
-and reference data, available at http://clonotyper.branchable.com/.
-
-Tested against 2.15.2 (latest version packaged in Debian).
-
-Version starting from 0.99.1 because I already released 0.99.0 with errors
-accidentally.
-
-  -- Charles Plessy <plessy@riken.jp>  Thu, 31 Jan 2013 14:43:56 +0900
