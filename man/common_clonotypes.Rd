@@ -42,7 +42,7 @@ column names as the row names of the clonotype table used.
 \examples{
 # Load example data
 clonotypes.long <- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
-clonotypes <- clonotype.table(levels(clonotypes.long$lib), from=clonotypes.long)
+clonotypes <- clonotype.table(levels(clonotypes.long$lib), data=clonotypes.long)
 summary(clonotypes)
 
 # List clonotypes found in library A, and B or C.

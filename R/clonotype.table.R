@@ -1,7 +1,7 @@
-clonotype.table <- function (libs, feats=c("V","pep","J"), from, filter=from$unproductive, minscore=0, minqual=1) {
+clonotype.table <- function (libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1) {
 
 if ( missing (libs) )
-	libs <- levels(from$lib)
+	libs <- levels(data$lib)
 
 if ( ! is.character(libs) )
         stop ("Include list of libraries as first argument.")
@@ -9,10 +9,10 @@ if ( ! is.character(libs) )
 if ( ! length(libs) == length(unique(libs)) )
 	stop ("Redundant list of libraries.")
 
-if ( ! is.data.frame(from) )
+if ( ! is.data.frame(data) )
 	stop ("Input clonotypes must be in a data frame.")
 
-if ( ! is.logical(from$unproductive) )
+if ( ! is.logical(data$unproductive) )
 	stop ('Input missing "unproductive" column.')
 
 # The following function counts, for a single library, the occurrences of
@@ -22,15 +22,15 @@ if ( ! is.logical(from$unproductive) )
 # and discards the unproductive rearrangements.
 
 feat.freq <- function (lib, filter) {
-    if ( all(c('score', 'mapq') %in% colnames(from) ) ) {
-      keep <- from$lib == lib & (! filter) & from$score >= minscore & from$mapq >= minqual
+    if ( all(c('score', 'mapq') %in% colnames(data) ) ) {
+      keep <- data$lib == lib & (! filter) & data$score >= minscore & data$mapq >= minqual
     } else {
-      keep <- from$lib == lib & (! filter)
+      keep <- data$lib == lib & (! filter)
     }
     if (length(feats) == 1) {
-        feat <- from[keep,feats]
+        feat <- data[keep,feats]
     } else {
-        feat <- apply(from[keep,feats], 1, paste, collapse=" ")
+        feat <- apply(data[keep,feats], 1, paste, collapse=" ")
     }
     feat <- table(as.character(feat))
     data.frame(

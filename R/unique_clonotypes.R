@@ -1,23 +1,23 @@
-unique_clonotypes <- function (libs, from) {
+unique_clonotypes <- function (libs, data) {
 
 if ( ! is.character(libs) ) stop (
 	"First argument must be a character vector of library names."
 )
 
-if ( ! is.data.frame(from) ) stop (
+if ( ! is.data.frame(data) ) stop (
 	"Second argument must be a data frame of clonotypes."
 )
 
-if ( FALSE %in% ( libs %in% colnames(from) ) ) stop (
-	paste("Unknown library: ", libs[ ! libs %in% colnames(from) ],".", sep='', collapse=' ')
+if ( FALSE %in% ( libs %in% colnames(data) ) ) stop (
+	paste("Unknown library: ", libs[ ! libs %in% colnames(data) ],".", sep='', collapse=' ')
 )
 
-clonotypenames <- rownames(from)
+clonotypenames <- rownames(data)
 
 if ( length(libs) == 1) (
-	selector <- from[,libs] > 0
+	selector <- data[,libs] > 0
 ) else (
-	selector <- rowSums( from[, libs] ) > 0
+	selector <- rowSums( data[, libs] ) > 0
 )
 
 return(

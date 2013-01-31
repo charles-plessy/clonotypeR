@@ -31,7 +31,7 @@ if ( class(data) == 'character' )
 if ( ! class(data) == "data.frame" )
 	stop ("Input must be a data frame.")
 
-# Following function is from ?strsplit help page:
+# Following function is data ?strsplit help page:
 strReverse <- function(x)
 	sapply(lapply(strsplit(x, NULL), rev), paste, collapse="")
 
