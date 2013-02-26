@@ -1,4 +1,4 @@
-## First, load accessory data if necessary.
+yassai_identifier <- function (data) {
 
 if ( ! ( exists("V_after_C") && class(V_after_C) == "data.frame" ) )
 	if ( file.exists("data/V_after_C.txt") )
@@ -18,10 +18,6 @@ if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 	data(codon_ids)
 
-## Then, declare the function.
-
-yassai_identifier <- function (data) {
-
 if ( ! all( c("V", "J", "dna","pep") %in% names(data) ) )
   stop ("Missing V or J segment(s), or DNA or peptides sequence(s) in the data.")
 
@@ -36,12 +32,12 @@ strReverse <- function(x)
 	sapply(lapply(strsplit(x, NULL), rev), paste, collapse="")
 
 V_name <- as.character(data$V)
-V      <- V_after_C[V_name,]
+V      <- as.character(V_after_C[V_name,])
 
 dna    <- as.character(data$dna)
 
 J_name <- as.character(data$J)
-J      <- strReverse(J_before_FGxG[J_name,])
+J      <- strReverse(as.character(J_before_FGxG[J_name,]))
 dnarev <- strReverse(dna)
 
 pep    <- as.character(data$pep)
