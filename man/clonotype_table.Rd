@@ -58,7 +58,7 @@ of times each feature was found in each library.
 clonotypes <- read_clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
 
 # Inspect the alignment scores
-\dontrun{hist(clonotypes$score)}
+hist(clonotypes$score)
 
 # Count J segments
 j <- clonotype_table(levels(clonotypes$lib), "J", data=clonotypes)
