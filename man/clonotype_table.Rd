@@ -55,7 +55,7 @@ of times each feature was found in each library.
 
 \examples{
 # Read the package's example data
-clonotypes <- read_clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+clonotypes <- read_clonotypes(system.file("data/clonotypes.txt", package = "clonotypeR"))
 
 # Inspect the alignment scores
 hist(clonotypes$score)

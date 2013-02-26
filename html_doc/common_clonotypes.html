@@ -79,7 +79,7 @@ column names as the row names of the clonotype table used.
 
 <pre>
 # Load example data
-clonotypes.long &lt;- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+clonotypes.long &lt;- read.clonotypes(system.file("data/clonotypes.txt", package = "clonotypeR"))
 clonotypes &lt;- clonotype.table(levels(clonotypes.long$lib), from=clonotypes.long)
 summary(clonotypes)
 
