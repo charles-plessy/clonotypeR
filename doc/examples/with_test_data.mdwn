@@ -72,7 +72,7 @@ TRAV14-3	233
 </pre>
 
 The format of the table is explained in the [manual
-page](../../html_doc/read.clonotypes.html) of the function `read.clonotypes()` of the
+page](../../html_doc/read_clonotypes.html) of the function `read_clonotypes()` of the
 R package.
 
 For each library (`A`, `B` and `C`), one file is available in the `clonotypes`
@@ -97,7 +97,7 @@ Start the `R` statistical analysis software with the command “`R`”.  The com
 
 Load the clonotypeR library: `library(clonotypeR)`
 
-Load the data in a R object called *clonotypes*: `clonotypes <- read.clonotypes('clonotypes.tsv')`
+Load the data in a R object called *clonotypes*: `clonotypes <- read_clonotypes('clonotypes.tsv')`
 
 The command `summary(clonotypes)` already provides useful information.
 
@@ -122,7 +122,7 @@ The command `summary(clonotypes)` already provides useful information.
 Identify unique clonotypes, count their sequences in the libraries `A`, `B` and `C`, and store the result as a table arbitrarly named `abc`. 
 
 <pre>
-> abc <- clonotype.table(c('A','B','C'))
+> abc <- clonotype_table(c('A','B','C'))
 
 > head(abc)
                             A B C
@@ -151,10 +151,10 @@ The summary shows that the most frequent clonotype is in `C`. Using `R` [[index 
 TRAV14N-1_14D-1 AASDSNNRIF TRAJ31 0 0 121
 </pre>
 
-The `clonotype.table` function can also produce a count table for and combination of *V*, *CDR3* or *J* segments.
+The `clonotype_table` function can also produce a count table for and combination of *V*, *CDR3* or *J* segments.
 
 <pre>
-> clonotype.table(c('A','B','C'), "V")
+> clonotype_table(c('A','B','C'), "V")
                   A   B   C
 TRAV14-1        239 493   0
 TRAV14-2        131  61   0
@@ -164,7 +164,7 @@ TRAV14N-1_14D-1  78  24 388
 TRAV14N-2_14D-2  81  61  49
 TRAV14N-3        94  34   2
 
-> head(clonotype.table(c('A','B','C'), c("V","J")))
+> head(clonotype_table(c('A','B','C'), c("V","J")))
                  A  B C
 TRAV14-1 TRAJ11  1  1 0
 TRAV14-1 TRAJ12  2  2 0

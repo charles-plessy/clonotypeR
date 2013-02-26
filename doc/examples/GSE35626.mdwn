@@ -75,8 +75,8 @@ This prepares a large (3.2 Gb) [[table of clonotypes|html_doc/data-clonotypes.ht
 
 <pre>
 library(clonotypeR)
-clonotypes <- read.clonotypes('clonotypes.tsv')
-a <- clonotype.table(from=clonotypes, feat=c("V","J"))
+clonotypes <- read_clonotypes('clonotypes.tsv')
+a <- clonotype_table(from=clonotypes, feat=c("V","J"))
 colSums(a > 0)
 # SRR407172 SRR407173 
 #     3653      3677 

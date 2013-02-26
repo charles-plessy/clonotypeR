@@ -32,7 +32,7 @@ asterisk in the translated sequence.}
 \author{Charles Plessy}
 
 \seealso{
-\code{\link{read.clonotypes}}
+\code{\link{read_clonotypes}}
 }
 
 \examples{

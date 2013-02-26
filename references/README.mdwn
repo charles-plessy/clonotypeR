@@ -44,5 +44,5 @@ detected with the command ` export SEQ_LIST=$(infoseq V.fa -filter -only -usa
 $SEQ1 = $SEQ2 ]; then needle --filter $SEQ1 $SEQ2 2> /dev/null | grep -B10
 '100.0' ; fi; done; done`.  Note that with some PCR designs, more *V* segments
 appear identical.  You may need to correct `V.fa` and `V.removed`  accordingly,
-or turn off the use of mapping qualities in the `R` command `clonotype.table`.
+or turn off the use of mapping qualities in the `R` command `clonotype_table`.
 

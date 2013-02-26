@@ -3,7 +3,7 @@ Gallery
 
 ### Histogram of alignment scores ###
 
-Assuming a single library loaded in a data frame called _clonotypes_ with the [[`read.clonotypes()`|html_doc/read.clonotypes.html]] function:
+Assuming a single library loaded in a data frame called _clonotypes_ with the [[`read_clonotypes()`|html_doc/read_clonotypes.html]] function:
 
 <pre>
 hist(log(clonotypes$score)
@@ -13,7 +13,7 @@ hist(log(clonotypes$score)
 
 ### Scale-free distribution of the clonotype expression levels ###
 
-Assuming table _a_ of clonotype counts produced with the [[`clonotype.table()`|html_doc/clonotype.table.html]] function, the following
+Assuming table _a_ of clonotype counts produced with the [[`clonotype_table()`|html_doc/clonotype_table.html]] function, the following
 commands study the first library in that table.
 
 <pre>
@@ -25,7 +25,7 @@ plot(radfit(a[[1]]), log="xy")
 
 ### Grouping libraries by bootstraped hierarchical clustering ###
 
-Assuming table _a_ of clonotype counts produced with the [[`clonotype.table()`|html_doc/clonotype.table.html]] function, containing six libraries (for instance two biological triplicates).
+Assuming table _a_ of clonotype counts produced with the [[`clonotype_table()`|html_doc/clonotype_table.html]] function, containing six libraries (for instance two biological triplicates).
 
 [[!img clustering.png link="clustering.svg" alt="Similar libraries group together"]]
 
@@ -36,7 +36,7 @@ plot(pvclust(a, n=1000))
 
 ### Differential expression analysis ###
 
-Assuming table _a_ of clonotype counts produced with the [[`clonotype.table()`|html_doc/clonotype.table.html]] function, containing six libraries (for instance two biological triplicates).
+Assuming table _a_ of clonotype counts produced with the [[`clonotype_table()`|html_doc/clonotype_table.html]] function, containing six libraries (for instance two biological triplicates).
 
 This representation is similar to _MA plots_ used in microarray and digital expression analysis, where the _x_ axis represents the average expression strength, and the _y_ axis represents the fold change (both on a logarithmic scale). Black dots represent clonotypes over-represented in one population compared to the other.
 

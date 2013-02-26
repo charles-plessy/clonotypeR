@@ -1,4 +1,4 @@
-read.clonotypes <- function (filename, scores=TRUE, ...) {
+read_clonotypes <- function (filename, scores=TRUE, ...) {
 
 # Inspect the file to see how many header lines it contains.
 # Because of the sequence quality scores, comment.char can not be set.

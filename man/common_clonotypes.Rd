@@ -6,7 +6,7 @@
 \description{
 When given one group of samples, lists the clonotypes that have been observed
 at least in one sample.  The returned list can be used to subset a data frame
-produced by \code{\link{clonotype.table}}.
+produced by \code{\link{clonotype_table}}.
 
 When given two groups of samples, lists the clonotypes that have been observed
 at least in one sample of each group.  Groups can contain a single sample, in
@@ -22,27 +22,27 @@ the number of clonotypes found in each pair of samples.
   \item{group1}{A character vector containing clonotype library names}
   \item{group2}{A character vector containing clonotype library names}
   \item{mode}{By default, \dQuote{groups} when \dQuote{group1} or \dQuote{group2} is provided, \dQuote{matrix} mode otherwise.}
-  \item{data}{A clonotype table where the data is stored.}
+  \item{data}{A clonotype_table where the data is stored.}
 }
 
 \value{
 In \dQuote{groups} mode, a character vector of clonotype names.  Their order
-follows the original row name order of the clonotype table.
+follows the original row name order of the clonotype_table.
 
 In \dQuote{matrix} mode, a symmetric matrix of numbers, with the same row and
-column names as the row names of the clonotype table used.
+column names as the row names of the clonotype_table used.
 }
 
 \author{Charles Plessy}
 
 \seealso{
-\code{\link{clonotype.table}}, \code{\link{unique_clonotypes}}
+\code{\link{clonotype_table}}, \code{\link{unique_clonotypes}}
 }
 
 \examples{
 # Load example data
-clonotypes.long <- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
-clonotypes <- clonotype.table(levels(clonotypes.long$lib), data=clonotypes.long)
+clonotypes.long <- read_clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+clonotypes <- clonotype_table(levels(clonotypes.long$lib), data=clonotypes.long)
 summary(clonotypes)
 
 # List clonotypes found in library A, and B or C.

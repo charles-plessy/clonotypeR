@@ -26,7 +26,7 @@ The R package can be loaded with the following command.
 library(clonotypeR)
 </pre>
 
-The file produced by `clonotypeR extract` is loaded by the [[`read.clonotypes()`|html_doc/read.clonotypes.html]].  Expression tables are calculated by the [[`clonotype.table()`|html_doc/clonotype.table.html]].  These tables are the basis for the analysis, to compare clonotype profiles, cluster the samples, calculate overlaps, etc.
+The file produced by `clonotypeR extract` is loaded by the [[`read_clonotypes()`|html_doc/read_clonotypes.html]].  Expression tables are calculated by the [[`clonotype_table()`|html_doc/clonotype_table.html]].  These tables are the basis for the analysis, to compare clonotype profiles, cluster the samples, calculate overlaps, etc.
 
 [[!img gallery/histogram.png link="gallery" alt="Alignment score histogram" size=150x150 ]]
 [[!img gallery/powerlaw.png link="gallery" alt="Scale-free distribution of the data"  size=150x150 ]]

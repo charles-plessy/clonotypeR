@@ -6,14 +6,14 @@
 \description{
 Finds all the clonotypes expressed in one or more libraries, and returns a
 vector where they are listed once.  This vector can be used to subset a
-clonotype table.
+clonotype_table.
 }
 
 \usage{unique_clonotypes(libs, data)}
 
 \arguments{
   \item{libs}{A character vector contain clonotype library names}
-  \item{data}{The name of the clonotype table where the data is stored.}
+  \item{data}{The name of the clonotype_table where the data is stored.}
 }
 
 \details{
@@ -22,20 +22,20 @@ Uses the table called \dQuote{clonotypes} by default.
 
 \value{
 Character vector of clonotype names.  Their order follows the original row name
-order of the clonotype table.
+order of the clonotype_table.
 }
 
 \author{Charles Plessy}
 
 
 \seealso{
-\code{\link{clonotype.table}}, \code{\link{common_clonotypes}}
+\code{\link{clonotype_table}}, \code{\link{common_clonotypes}}
 }
 
 \examples{
 # Load example data
-clonotypes.long <- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
-clonotypes <- clonotype.table(levels(clonotypes.long$lib), data=clonotypes.long)
+clonotypes.long <- read_clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+clonotypes <- clonotype_table(levels(clonotypes.long$lib), data=clonotypes.long)
 summary(clonotypes)
 
 # List clonotypes found in library A.

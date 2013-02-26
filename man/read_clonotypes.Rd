@@ -1,19 +1,19 @@
-\name{read.clonotypes}
-\alias{read.clonotypes}
+\name{read_clonotypes}
+\alias{read_clonotypes}
 
 \title{
-Reads a clonotype table and returns a data frame.
+Reads a clonotype_table and returns a data frame.
 }
 
 \description{
-Reads a clonotype table in a TAB-separated or OSCT format, and returns a data frame
+Reads a clonotype_table in a TAB-separated or OSCT format, and returns a data frame
 that has eight columns, for library name, V and J segments names, sequence read
 identifier, DNA, sequence quality, aminoacid sequence of the CDR3 region, mark
 for unproductive recombinations.
 }
 
 \usage{
-read.clonotypes(filename, scores=TRUE, ...)
+read_clonotypes(filename, scores=TRUE, ...)
 }
 
 \arguments{
@@ -41,13 +41,13 @@ read.clonotypes(filename, scores=TRUE, ...)
 \author{Charles Plessy}
 
 \seealso{
-\code{\link{clonotype.table}}, \code{\link{is_unproductive}},
+\code{\link{clonotype_table}}, \code{\link{is_unproductive}},
 \code{\link{read.table}},
 Order Switchable Column Table (OSCT, \url{http://sourceforge.net/projects/osctf/})
 }
 
 \examples{
-clonotypes <- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+clonotypes <- read_clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
 }
 
 \keyword{clonotypes}

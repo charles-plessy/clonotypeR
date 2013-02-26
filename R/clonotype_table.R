@@ -1,4 +1,4 @@
-clonotype.table <- function (libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1) {
+clonotype_table <- function (libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1) {
 
 if ( missing (libs) )
 	libs <- levels(data$lib)

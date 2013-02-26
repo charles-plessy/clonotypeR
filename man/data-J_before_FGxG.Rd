@@ -5,7 +5,7 @@
 \title{Sequence of the J segments before their conserved FGxG motif.}
 
 \description{
-Table intended for internal use in the \code{yassai.identifier}
+Table intended for internal use in the \code{yassai_identifier}
 function, generated from the reference data with the
 command: \code{make refresh-data}.
 }
@@ -20,7 +20,7 @@ data(J_before_FGxG)
 }
 
 \seealso{
-\code{\link{yassai.identifier}}
+\code{\link{yassai_identifier}}
 }
 
 \keyword{ clonotype }

@@ -10,9 +10,9 @@ Reference sequences
 
  * Support multiple organisms.
 
- * Define a versionned CDR3 file format and test it before reading in [[R/read.clonotypes.R]]
+ * Define a versionned CDR3 file format and test it before reading in [[R/read_clonotypes.R]]
 
-read.clonotypes: do not hardcode column classe, but infer them from the name, that is inferred from the OSC header, or hardcoded as a fallback.
+read_clonotypes: do not hardcode column classe, but infer them from the name, that is inferred from the OSC header, or hardcoded as a fallback.
 
 OSCTable support
 ----------------

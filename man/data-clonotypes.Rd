@@ -5,7 +5,7 @@
 
 \description{
 Sample TCR clonotypes extracted from 454 reads and stored as a TAB-separated
-file, to be loaded with the \code{\link{read.clonotypes}} function.
+file, to be loaded with the \code{\link{read_clonotypes}} function.
 }
 
 \usage{
@@ -29,7 +29,7 @@ data(clonotypes)
 }
 
 \seealso{
-\code{\link{read.clonotypes}}
+\code{\link{read_clonotypes}}
 }
 
 \keyword{ clonotypes }
