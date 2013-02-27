@@ -2,19 +2,19 @@ yassai_identifier <- function (data) {
 
 if ( ! ( exists("V_after_C") && class(V_after_C) == "data.frame" ) )
 	if ( file.exists("data/V_after_C.txt") )
-		V_after_C <- read.table("data/V_after_C.txt", head=TRUE, row.names=1, stringsAsFactors=FALSE)
+		V_after_C <- read.table("data/V_after_C.txt", header=TRUE, row.names=1, stringsAsFactors=FALSE)
 if ( ! ( exists("V_after_C") && class(V_after_C) == "data.frame" ) )
 	data(V_after_C)
 
 if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
 	if ( file.exists("data/J_before_FGxG.txt") )
-		J_before_FGxG <- read.table("data/J_before_FGxG.txt", head=TRUE, row.names=1, stringsAsFactors=FALSE)
+		J_before_FGxG <- read.table("data/J_before_FGxG.txt", header=TRUE, row.names=1, stringsAsFactors=FALSE)
 if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
 	data(J_before_FGxG)
 
 if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 	if ( file.exists("data/codon_ids.txt") )
-		codon_ids <- read.table("data/codon_ids.txt", head=TRUE, row.names=1)
+		codon_ids <- read.table("data/codon_ids.txt", header=TRUE, row.names=1)
 if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 	data(codon_ids)
 
