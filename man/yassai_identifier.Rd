@@ -44,8 +44,6 @@ The name (for instance sIRSSy.1456B19S1B27L11) consists of five segments:
 \examples{
 data(clonotypes)
 head(yassai_identifier(clonotypes))
-## [1] "aAYt.22A14N2A49L10"     "aYt.2A14N2A49L10"       "aGRt.34A14N1A40L11"    
-## [4] "aADTIt.1221A14N1A27L11" "AEMn.411A14N1A23L11"    "sAHy.11A14-2A32L14"    
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.
