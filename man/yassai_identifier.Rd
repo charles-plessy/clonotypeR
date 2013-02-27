@@ -39,10 +39,10 @@ The name (for instance sIRSSy.1456B19S1B27L11) consists of five segments:
 
 
 \seealso{
-\code{\link{clonotypes}}, \code{\link{codon_ids}}, \code{\link{J_before_FGxG}}, \code{\link{V_after_C}}
+\code{\link{codon_ids}}, \code{\link{J_before_FGxG}}, \code{\link{V_after_C}}
 }
 \examples{
-data(clonotypes)
+clonotypes <- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
 head(yassai_identifier(clonotypes))
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

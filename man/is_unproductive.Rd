@@ -36,7 +36,7 @@ asterisk in the translated sequence.}
 }
 
 \examples{
-data(clonotypes)
+clonotypes <- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
 is_unproductive(clonotypes)
 }
 

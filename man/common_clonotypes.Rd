@@ -41,7 +41,7 @@ column names as the row names of the clonotype_table used.
 
 \examples{
 # Load example data
-clonotypes.long <- read_clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+clonotypes.long <- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
 clonotypes <- clonotype_table(levels(clonotypes.long$lib), data=clonotypes.long)
 summary(clonotypes)
 

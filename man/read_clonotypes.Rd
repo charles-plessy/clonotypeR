@@ -47,7 +47,7 @@ Order Switchable Column Table (OSCT, \url{http://sourceforge.net/projects/osctf/
 }
 
 \examples{
-clonotypes <- read_clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+clonotypes <- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
 }
 
 \keyword{clonotypes}
