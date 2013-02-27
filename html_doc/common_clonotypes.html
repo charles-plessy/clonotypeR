@@ -10,10 +10,9 @@
 
 <h3>Description</h3>
 
-
 <p>When given one group of samples, lists the clonotypes that have been observed
 at least in one sample.  The returned list can be used to subset a data frame
-produced by <code><a href="clonotype.table.html">clonotype.table</a></code>.
+produced by <code><a href="clonotype_table.html">clonotype_table</a></code>.
 </p>
 <p>When given two groups of samples, lists the clonotypes that have been observed
 at least in one sample of each group.  Groups can contain a single sample, in
@@ -26,11 +25,10 @@ the number of clonotypes found in each pair of samples.
 
 <h3>Usage</h3>
 
-<pre>common_clonotypes(group1, group2, mode="groups", data=clonotypes)</pre>
+<pre>common_clonotypes(group1, group2, mode="groups", data)</pre>
 
 
 <h3>Arguments</h3>
-
 
 <table summary="R argblock">
 <tr valign="top"><td><code>group1</code></td>
@@ -47,19 +45,18 @@ the number of clonotypes found in each pair of samples.
 </td></tr>
 <tr valign="top"><td><code>data</code></td>
 <td>
-<p>A clonotype table where the data is stored.  Default: &ldquo;clonotypes&rdquo;.</p>
+<p>A clonotype_table where the data is stored.</p>
 </td></tr>
 </table>
 
 
 <h3>Value</h3>
 
-
 <p>In &ldquo;groups&rdquo; mode, a character vector of clonotype names.  Their order
-follows the original row name order of the clonotype table.
+follows the original row name order of the clonotype_table.
 </p>
 <p>In &ldquo;matrix&rdquo; mode, a symmetric matrix of numbers, with the same row and
-column names as the row names of the clonotype table used.
+column names as the row names of the clonotype_table used.
 </p>
 
 
@@ -70,8 +67,7 @@ column names as the row names of the clonotype table used.
 
 <h3>See Also</h3>
 
-
-<p><code><a href="clonotype.table.html">clonotype.table</a></code>, <code><a href="unique_clonotypes.html">unique_clonotypes</a></code>
+<p><code><a href="clonotype_table.html">clonotype_table</a></code>, <code><a href="unique_clonotypes.html">unique_clonotypes</a></code>
 </p>
 
 
@@ -79,19 +75,19 @@ column names as the row names of the clonotype table used.
 
 <pre>
 # Load example data
-clonotypes.long &lt;- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
-clonotypes &lt;- clonotype.table(levels(clonotypes.long$lib), from=clonotypes.long)
+clonotypes.long &lt;- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
+clonotypes &lt;- clonotype_table(levels(clonotypes.long$lib), data=clonotypes.long)
 summary(clonotypes)
 
 # List clonotypes found in library A, and B or C.
-common_clonotypes(group1="A", group2=c("B","C"))
+common_clonotypes(group1="A", group2=c("B","C"), data=clonotypes)
 
 # Count clonotypes found in library A, and B or C.
-length(common_clonotypes(group1="A", group2=c("B","C")))
+length(common_clonotypes(group1="A", group2=c("B","C"), data=clonotypes))
 
 # Matrix of numbers of common clonotypes
-common_clonotypes()
+common_clonotypes(data=clonotypes)
 </pre>
 
-<hr><div align="center">[Package <em>clonotypeR</em> version 0.9 <a href="00Index.html">Index</a>]</div>
+<hr><div align="center">[Package <em>clonotypeR</em> version 0.99.1 <a href="00Index.html">Index</a>]</div>
 </body></html>

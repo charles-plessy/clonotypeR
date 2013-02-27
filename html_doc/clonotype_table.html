@@ -4,16 +4,15 @@
 <link rel="stylesheet" type="text/css" href="R.css">
 </head><body>
 
-<table width="100%" summary="page for clonotype.table {clonotypeR}"><tr><td>clonotype.table {clonotypeR}</td><td align="right">R Documentation</td></tr></table>
+<table width="100%" summary="page for clonotype_table {clonotypeR}"><tr><td>clonotype_table {clonotypeR}</td><td align="right">R Documentation</td></tr></table>
 
 <h2>Create a table count of clonotypes or other features.
 </h2>
 
 <h3>Description</h3>
 
-
-<p>Using a clonotype data frame loaded with <code><a href="read.clonotypes.html">read.clonotypes</a></code>,
-<code>clonotype.table</code> will create a table counting how many times each
+<p>Using a clonotype data frame loaded with <code><a href="read_clonotypes.html">read_clonotypes</a></code>,
+<code>clonotype_table</code> will create a table counting how many times each
 clonotypes have been seen in each libraries.  By default, the unproductive
 rearrangements are filtered out.
 </p>
@@ -22,12 +21,11 @@ rearrangements are filtered out.
 <h3>Usage</h3>
 
 <pre>
-clonotype.table(libs, feats=c("V","pep","J"), from=clonotypes, filter=from$unproductive, minscore=0, minqual=1)
+clonotype_table(libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1)
 </pre>
 
 
 <h3>Arguments</h3>
-
 
 <table summary="R argblock">
 <tr valign="top"><td><code>libs</code></td>
@@ -45,11 +43,10 @@ present in the clonotypes data frame will be used.
 But it can also count single features, such as the V or J segments.
 </p>
 </td></tr>
-<tr valign="top"><td><code>from</code></td>
+<tr valign="top"><td><code>data</code></td>
 <td>
 
-<p>Data frame as loaded by <code><a href="read.clonotypes.html">read.clonotypes</a></code>.  By default,
-<code>clonotype.table</code> will use a data frame called &lsquo;clonotypes&rsquo;.
+<p>Data frame as loaded by <code><a href="read_clonotypes.html">read_clonotypes</a></code>.
 </p>
 </td></tr>
 <tr valign="top"><td><code>filter</code></td>
@@ -79,8 +76,7 @@ discarded.
 
 <h3>Value</h3>
 
-
-<p><code><a href="clonotype.table.html">clonotype.table</a></code> returns a data frame, where row names are features
+<p><code><a href="clonotype_table.html">clonotype_table</a></code> returns a data frame, where row names are features
 (clonotypes, segment names, ...), column names are libraries, and values are number
 of times each feature was found in each library.
 </p>
@@ -93,8 +89,7 @@ of times each feature was found in each library.
 
 <h3>See Also</h3>
 
-
-<p><code><a href="read.clonotypes.html">read.clonotypes</a></code>
+<p><code><a href="read_clonotypes.html">read_clonotypes</a></code>
 </p>
 
 
@@ -102,17 +97,17 @@ of times each feature was found in each library.
 
 <pre>
 # Read the package's example data
-clonotypes &lt;- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+clonotypes &lt;- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
 
 # Inspect the alignment scores
-## Not run: hist(clonotypes$score)
+hist(clonotypes$score)
 
 # Count J segments
-j &lt;- clonotype.table(levels(clonotypes$lib), "J")
+j &lt;- clonotype_table(levels(clonotypes$lib), "J", data=clonotypes)
 
 # Normalise counts in parts per million
 J &lt;- data.frame(prop.table(as.matrix(j),2) * 1000000)
 </pre>
 
-<hr><div align="center">[Package <em>clonotypeR</em> version 0.9 <a href="00Index.html">Index</a>]</div>
+<hr><div align="center">[Package <em>clonotypeR</em> version 0.99.1 <a href="00Index.html">Index</a>]</div>
 </body></html>

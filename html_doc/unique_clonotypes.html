@@ -10,35 +10,32 @@
 
 <h3>Description</h3>
 
-
 <p>Finds all the clonotypes expressed in one or more libraries, and returns a
 vector where they are listed once.  This vector can be used to subset a
-clonotype table.
+clonotype_table.
 </p>
 
 
 <h3>Usage</h3>
 
-<pre>unique_clonotypes(libs, from=clonotypes)</pre>
+<pre>unique_clonotypes(libs, data)</pre>
 
 
 <h3>Arguments</h3>
-
 
 <table summary="R argblock">
 <tr valign="top"><td><code>libs</code></td>
 <td>
 <p>A character vector contain clonotype library names</p>
 </td></tr>
-<tr valign="top"><td><code>from</code></td>
+<tr valign="top"><td><code>data</code></td>
 <td>
-<p>The name of the clonotype table where the data is stored.</p>
+<p>The name of the clonotype_table where the data is stored.</p>
 </td></tr>
 </table>
 
 
 <h3>Details</h3>
-
 
 <p>Uses the table called &ldquo;clonotypes&rdquo; by default.
 </p>
@@ -46,9 +43,8 @@ clonotype table.
 
 <h3>Value</h3>
 
-
 <p>Character vector of clonotype names.  Their order follows the original row name
-order of the clonotype table.
+order of the clonotype_table.
 </p>
 
 
@@ -59,8 +55,7 @@ order of the clonotype table.
 
 <h3>See Also</h3>
 
-
-<p><code><a href="clonotype.table.html">clonotype.table</a></code>, <code><a href="common_clonotypes.html">common_clonotypes</a></code>
+<p><code><a href="clonotype_table.html">clonotype_table</a></code>, <code><a href="common_clonotypes.html">common_clonotypes</a></code>
 </p>
 
 
@@ -68,16 +63,16 @@ order of the clonotype table.
 
 <pre>
 # Load example data
-clonotypes.long &lt;- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
-clonotypes &lt;- clonotype.table(levels(clonotypes.long$lib), from=clonotypes.long)
+clonotypes.long &lt;- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
+clonotypes &lt;- clonotype_table(levels(clonotypes.long$lib), data=clonotypes.long)
 summary(clonotypes)
 
 # List clonotypes found in library A.
-unique_clonotypes("A")
+unique_clonotypes("A", data=clonotypes)
 
 # List clonotypes found in library A or B.
-unique_clonotypes(c("A","B"))
+unique_clonotypes(c("A","B"), data=clonotypes)
 </pre>
 
-<hr><div align="center">[Package <em>clonotypeR</em> version 0.9 <a href="00Index.html">Index</a>]</div>
+<hr><div align="center">[Package <em>clonotypeR</em> version 0.99.1 <a href="00Index.html">Index</a>]</div>
 </body></html>

@@ -1,19 +1,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html><head><title>R: Reads a clonotype table and returns a data frame.</title>
+<html><head><title>R: Reads a clonotype_table and returns a data frame.</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="R.css">
 </head><body>
 
-<table width="100%" summary="page for read.clonotypes {clonotypeR}"><tr><td>read.clonotypes {clonotypeR}</td><td align="right">R Documentation</td></tr></table>
+<table width="100%" summary="page for read_clonotypes {clonotypeR}"><tr><td>read_clonotypes {clonotypeR}</td><td align="right">R Documentation</td></tr></table>
 
 <h2>
-Reads a clonotype table and returns a data frame.
+Reads a clonotype_table and returns a data frame.
 </h2>
 
 <h3>Description</h3>
 
-
-<p>Reads a clonotype table in a TAB-separated or OSCT format, and returns a data frame
+<p>Reads a clonotype_table in a TAB-separated or OSCT format, and returns a data frame
 that has eight columns, for library name, V and J segments names, sequence read
 identifier, DNA, sequence quality, aminoacid sequence of the CDR3 region, mark
 for unproductive recombinations.
@@ -23,12 +22,11 @@ for unproductive recombinations.
 <h3>Usage</h3>
 
 <pre>
-read.clonotypes(filename, scores=TRUE, ...)
+read_clonotypes(filename, scores=TRUE, ...)
 </pre>
 
 
 <h3>Arguments</h3>
-
 
 <table summary="R argblock">
 <tr valign="top"><td><code>filename</code></td>
@@ -47,7 +45,6 @@ read.clonotypes(filename, scores=TRUE, ...)
 
 
 <h3>Value</h3>
-
 
 <table summary="R valueblock">
 <tr valign="top"><td><code>lib</code></td>
@@ -100,8 +97,7 @@ read.clonotypes(filename, scores=TRUE, ...)
 
 <h3>See Also</h3>
 
-
-<p><code><a href="clonotype.table.html">clonotype.table</a></code>, <code><a href="is_unproductive.html">is_unproductive</a></code>,
+<p><code><a href="clonotype_table.html">clonotype_table</a></code>, <code><a href="is_unproductive.html">is_unproductive</a></code>,
 <code><a href="../../utils/html/read.table.html">read.table</a></code>,
 Order Switchable Column Table (OSCT, <a href="http://sourceforge.net/projects/osctf/">http://sourceforge.net/projects/osctf/</a>)
 </p>
@@ -110,8 +106,8 @@ Order Switchable Column Table (OSCT, <a href="http://sourceforge.net/projects/os
 <h3>Examples</h3>
 
 <pre>
-clonotypes &lt;- read.clonotypes(system.file("data/clonotypes.txt.gz", package = "clonotypeR"))
+clonotypes &lt;- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
 </pre>
 
-<hr><div align="center">[Package <em>clonotypeR</em> version 0.9 <a href="00Index.html">Index</a>]</div>
+<hr><div align="center">[Package <em>clonotypeR</em> version 0.99.1 <a href="00Index.html">Index</a>]</div>
 </body></html>

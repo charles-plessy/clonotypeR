@@ -12,7 +12,6 @@ Determines if clonotype sequences are productive.
 
 <h3>Description</h3>
 
-
 <p>ClonotypeR identifies V and J segments, isolates the DNA sequence between the conserved
 cystein and the FGxG motifs, and translates it.  This functions verifies that this
 sequence is in frame and has no stop codon.
@@ -22,12 +21,11 @@ sequence is in frame and has no stop codon.
 <h3>Usage</h3>
 
 <pre>
-is_unproductive(data=clonotypes)
+is_unproductive(data)
 </pre>
 
 
 <h3>Arguments</h3>
-
 
 <table summary="R argblock">
 <tr valign="top"><td><code>data</code></td>
@@ -48,7 +46,6 @@ asterisk in the translated sequence.</p>
 
 <h3>Value</h3>
 
-
 <p>Returns a logical vector, with one value per row in the original data.
 </p>
 
@@ -60,17 +57,16 @@ asterisk in the translated sequence.</p>
 
 <h3>See Also</h3>
 
-
-<p><code><a href="read.clonotypes.html">read.clonotypes</a></code>
+<p><code><a href="read_clonotypes.html">read_clonotypes</a></code>
 </p>
 
 
 <h3>Examples</h3>
 
 <pre>
-data(clonotypes)
+clonotypes &lt;- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
 is_unproductive(clonotypes)
 </pre>
 
-<hr><div align="center">[Package <em>clonotypeR</em> version 0.9 <a href="00Index.html">Index</a>]</div>
+<hr><div align="center">[Package <em>clonotypeR</em> version 0.99.1 <a href="00Index.html">Index</a>]</div>
 </body></html>

@@ -4,12 +4,11 @@
 <link rel="stylesheet" type="text/css" href="R.css">
 </head><body>
 
-<table width="100%" summary="page for yassai.identifier {clonotypeR}"><tr><td>yassai.identifier {clonotypeR}</td><td align="right">R Documentation</td></tr></table>
+<table width="100%" summary="page for yassai_identifier {clonotypeR}"><tr><td>yassai_identifier {clonotypeR}</td><td align="right">R Documentation</td></tr></table>
 
 <h2>TCR clonotype identifier (Yassai et al.).</h2>
 
 <h3>Description</h3>
-
 
 <p>The clonotype nomenclature defined by Yassai et al.
 in <a href="http://dx.doi.org/10.1007/s00251-009-0383-x">http://dx.doi.org/10.1007/s00251-009-0383-x</a>.
@@ -18,11 +17,10 @@ in <a href="http://dx.doi.org/10.1007/s00251-009-0383-x">http://dx.doi.org/10.10
 
 <h3>Usage</h3>
 
-<pre>yassai.identifier(data=clonotypes)</pre>
+<pre>yassai_identifier(data)</pre>
 
 
 <h3>Arguments</h3>
-
 
 <table summary="R argblock">
 <tr valign="top"><td><code>data</code></td>
@@ -33,7 +31,6 @@ in <a href="http://dx.doi.org/10.1007/s00251-009-0383-x">http://dx.doi.org/10.10
 
 
 <h3>Details</h3>
-
 
 <p>The name (for instance sIRSSy.1456B19S1B27L11) consists of five segments:
 </p>
@@ -64,19 +61,16 @@ in <a href="http://dx.doi.org/10.1007/s00251-009-0383-x">http://dx.doi.org/10.10
 
 <h3>See Also</h3>
 
-
-<p><code><a href="data-clonotypes.html">clonotypes</a></code>, <code><a href="data-codon_ids.html">codon_ids</a></code>, <code><a href="data-J_before_FGxG.html">J_before_FGxG</a></code>, <code><a href="data-V_after_C.html">V_after_C</a></code>
+<p><code><a href="data-codon_ids.html">codon_ids</a></code>, <code><a href="data-J_before_FGxG.html">J_before_FGxG</a></code>, <code><a href="data-V_after_C.html">V_after_C</a></code>
 </p>
 
 
 <h3>Examples</h3>
 
 <pre>
-data(clonotypes)
-head(yassai.identifier(clonotypes))
-## [1] "aAYt.22A14N2A49L10"     "aYt.2A14N2A49L10"       "aGRt.34A14N1A40L11"    
-## [4] "aADTIt.1221A14N1A27L11" "AEMn.411A14N1A23L11"    "sAHy.11A14-2A32L14"    
+clonotypes &lt;- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
+head(yassai_identifier(clonotypes))
 </pre>
 
-<hr><div align="center">[Package <em>clonotypeR</em> version 0.9 <a href="00Index.html">Index</a>]</div>
+<hr><div align="center">[Package <em>clonotypeR</em> version 0.99.1 <a href="00Index.html">Index</a>]</div>
 </body></html>
