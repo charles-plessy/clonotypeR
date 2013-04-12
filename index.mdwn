@@ -8,16 +8,16 @@ in the order of millions, typically produced by Roche 454 instruments, and to
 prepare these sequences for differential expression analysis with the typical
 transcriptomics tools as well as for statistical analysis using existing R packages.
 
-*clonotypeR* is developed in the [RIKEN Yokohama institute][RIKEN-Yokohama] by
-the [Functional Genomics Technology Team][FGTT] of the [Omics Science
-Center][OSC], in collaboration with the [Research Unit for Immune
-Homeostasis][RUIH] of the [Research Center for Allergy and Immunology][RCAI]. 
+*clonotypeR* is developed in the [RIKEN Yokohama Campus][RIKEN-Yokohama] by the
+[Division for Genomics Technologies][DGT] of the [Center for Life Science
+Technologies][CLST], in collaboration with the [Laboratory for Immune
+Homeostasis][LIH] of the [Center for Integrative Medical Sciences][IMS]. 
 
-[RIKEN-Yokohama]:	http://www.yokohama.riken.jp/
-[FGTT]:			http://genome.gsc.riken.jp/osc/english/teams/FunctionalGenomicsTechnology.html
-[OSC]:			http://www.osc.riken.jp/
-[RUIH]:			http://web.rcai.riken.jp/en/labo/home/index.htm
-[RCAI]:			http://www.rcai.riken.jp
+[RIKEN-Yokohama]:	http://www.yokohama.riken.jp/english/
+[DGT]:			http://www.riken.jp/en/research/labs/clst/genom_tech/
+[CLST]:			http://www.riken.jp/en/research/labs/clst/
+[LIH]:			http://www.riken.jp/en/research/labs/ims/
+[IMS]:			http://www.riken.jp/en/research/labs/ims/
 
  - To **install** *clonotypeR*, see the [[instructions|install]].
 
