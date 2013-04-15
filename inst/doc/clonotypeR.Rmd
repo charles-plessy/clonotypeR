@@ -27,8 +27,14 @@ Typically, the user receives the output of a next-generation sequencer and runs
 some shell commands that are not part of the *clonotypeR* R package, but that are 
 distributed with it on <http://clonotyper.branchable.com/>.
 
-This workflow summarises the different commands to run.  Other examples are
-available on line at <http://clonotyper.branchable.com/doc/workflow/>.
+Currently, *clonotypeR* provides only support for mouse sequences, by providing
+pre-formatted sequences from `V` and `J` segments.  Support of human sequences
+is in preparation.  See <http://clonotyper.branchable.com/references/README>
+for more information.
+
+The workflow presented here summarises the different commands to run.  Other
+examples are available on line at
+<http://clonotyper.branchable.com/doc/workflow/>.
 
 *This example analysis assumes a
 [unix](https://en.wikipedia.org/wiki/Operating%5Fsystem%23UNIX%5Fand%5FUNIX%2Dlike%5Foperating%5Fsystems)
@@ -39,9 +45,10 @@ Example data
 ------------
 
 The data provided on-line at <http://clonotyper.branchable.com/example_data/>
-is a sub-sample of three sequence librairies (2,000 reads each) made on the 454
-Titanium or the 454 junior platforms.  The original libraries will be deposited
-in public databanks after publication in a peer-reviewed journal.
+is a sub-sample of three sequence librairies of mouse T cell receptors α (2,000
+reads each) made on the 454 Titanium or the 454 junior platforms.  The original
+libraries will be deposited in public databanks after publication in a
+peer-reviewed journal.
 
 These example libraries are called `A`, `B` and `C`, and are in FASTQ format,
 with entries like the following (the sequence was truncated for the convenience
