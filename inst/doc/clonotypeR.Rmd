@@ -7,7 +7,7 @@ clonotypeR: Identify and analyse B and T cell receptors at a high throughput
 ============================================================================
 
     Author: Charles Plessy <plessy@riken.jp>
-    Date:   16 Dec 2012
+    Date:   15 Apr 2013
 
 *clonotypeR* is a R package and accompanying scripts to identify and
 analyse clonotypes from high-throughput T cell receptors sequence
