@@ -1,5 +1,8 @@
 \name{yassai_identifier}
 \alias{yassai_identifier}
+\alias{yassai_identifier,ANY,missing,missing-method}
+\alias{yassai_identifier,character,data.frame,data.frame-method}
+\alias{yassai_identifier,data.frame,data.frame,data.frame-method}
 
 \title{TCR clonotype identifier (Yassai et al.).}
 \description{
