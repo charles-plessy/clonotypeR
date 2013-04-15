@@ -9,14 +9,23 @@ in \url{http://dx.doi.org/10.1007/s00251-009-0383-x}.
 
 }
 
-\usage{yassai_identifier(data)}
+\usage{yassai_identifier(data, V_after_C, J_before_FGxG)}
 
 \arguments{
   \item{data}{A data frame or a character vector containing a clonotype(s) with proper row or element names.}
+  \item{V_after_C}{(optional) A data frame indicating the aminoacids following the conserved cystein for each V segment.}
+  \item{J_before_FGxG}{(optional) A data frame indicating the aminoacids preceding the conserved FGxG motif for each V segment.}
 }
 
 \details{
+  By default, code{yassai_identifier()} assume mouse sequences and will load
+  the V_after_C and J_before_FGxG tables distributed in this package.  It is
+  possible to provide alternative tables either by passing them directly as
+  argument, or by installing them as \dQuote{./data/V_after_C.txt.gz} and
+  \dQuote{./data/J_before_FGxG.txt.gz}.
+}
 
+\value{
 The name (for instance sIRSSy.1456B19S1B27L11) consists of five segments:
   \enumerate{
     \item CDR3 amino acid identifier (ex. sIRSSy), followed by a dot ;
@@ -26,14 +35,6 @@ The name (for instance sIRSSy.1456B19S1B27L11) consists of five segments:
     \item CDR3 length identifier (ex. L11).
   }
 }
-
-%%\value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-%%}
 
 \author{Charles Plessy}
 
