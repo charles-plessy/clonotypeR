@@ -1,3 +1,7 @@
+2013-04-15  Charles Plessy <plessy@riken.jp>
+
+	* Resubmission after correcting yassai_identifier() and other warnings.
+
 2013-01-08  Charles Plessy <plessy@riken.jp>
 
 	* Leaner Bioconductor package, without the wiki documentation.
