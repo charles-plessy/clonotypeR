@@ -45,8 +45,6 @@ This indicates that 2,000 reads have been processed, representing 843,395 base
 pairs in total.  There were 167 reference V segments, and the version number of
 BWA was `0.6.2-r126`.  The whole process took less than 10 seconds.
 
-The result is stored in a temporary directory called extraction_files, that
-
 Process the example libraries `B` and `C` similarly with the commands
 `clonotyper detect C.fastq` and `clonotyper detect C.fastq`.
 
