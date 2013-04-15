@@ -1,16 +1,49 @@
-yassai_identifier <- function (data) {
+setGeneric("yassai_identifier",
+            signature=c("data", "V_after_C", "J_before_FGxG"),
+            function(data, V_after_C, J_before_FGxG)
+                standardGeneric("yassai_identifier")
+)
 
+setMethod(yassai_identifier,
+          c(data="data.frame", V_after_C="data.frame", J_before_FGxG="data.frame"),
+          function(data, V_after_C, J_before_FGxG)
+              .doCommonThings(data, V_after_C, J_before_FGxG)
+)
+
+# Case of a single clonotype
+setMethod(yassai_identifier,
+          c(data="character", V_after_C="data.frame", J_before_FGxG="data.frame"),
+          function(data, V_after_C, J_before_FGxG) {
+               data <- data.frame(t(data), stringsAsFactors=F)
+              .doCommonThings(data, V_after_C, J_before_FGxG) }
+)
+
+setMethod(yassai_identifier,
+          c(data="ANY", V_after_C="missing", J_before_FGxG="missing"),
+          function(data) {
+              .loadSegmentJunctionData()
+              yassai_identifier(data, V_after_C, J_before_FGxG)
+})
+
+.loadSegmentJunctionData <- function() {
 if ( ! ( exists("V_after_C") && class(V_after_C) == "data.frame" ) )
-	if ( file.exists("data/V_after_C.txt.gz") )
+	if ( file.exists("data/V_after_C.txt.gz") ) {
 		V_after_C <- read.table("data/V_after_C.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
-if ( ! ( exists("V_after_C") && class(V_after_C) == "data.frame" ) )
+                warning("Loading custom data from 'data/V_after_C.txt.gz'.") }
+if ( ! ( exists("V_after_C") && class(V_after_C) == "data.frame" ) ) {
 	data(V_after_C)
+        warning("Loading default mouse data for V segment junctions.") }
 
 if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
-	if ( file.exists("data/J_before_FGxG.txt.gz") )
+	if ( file.exists("data/J_before_FGxG.txt.gz") ) {
 		J_before_FGxG <- read.table("data/J_before_FGxG.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
-if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
+                warning("Loading custom data from 'data/J_before_FGxG.txt.gz'.") }
+if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) ) {
 	data(J_before_FGxG)
+        warning("Loading default mouse data for J segment junctions.") }
+}
+
+.doCommonThings <- function (data, V_after_C, J_before_FGxG) {
 
 if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 	if ( file.exists("data/codon_ids.txt.gz") )
@@ -20,12 +53,6 @@ if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 
 if ( ! all( c("V", "J", "dna","pep") %in% names(data) ) )
   stop ("Missing V or J segment(s), or DNA or peptides sequence(s) in the data.")
-
-if ( class(data) == 'character' )
-  data <- data.frame(t(data), stringsAsFactors=F)
-
-if ( ! class(data) == "data.frame" )
-	stop ("Input must be a data frame.")
 
 # Following function is data ?strsplit help page:
 strReverse <- function(x)
