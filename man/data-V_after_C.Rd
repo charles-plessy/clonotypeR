@@ -6,7 +6,7 @@
 
 \description{
 Table intended for internal use in the \code{yassai_identifier}
-function, generated from the reference data with the
+function, generated from the mouse reference data with the
 command: \code{make refresh-data}.
 }
 
