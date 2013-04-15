@@ -4,20 +4,15 @@ setGeneric("yassai_identifier",
                 standardGeneric("yassai_identifier")
 )
 
-setMethod(yassai_identifier,
-          c(data="data.frame", V_after_C="data.frame", J_before_FGxG="data.frame"),
-          function(data, V_after_C, J_before_FGxG)
-              .doCommonThings(data, V_after_C, J_before_FGxG)
-)
-
 # Case of a single clonotype
 setMethod(yassai_identifier,
           c(data="character", V_after_C="data.frame", J_before_FGxG="data.frame"),
           function(data, V_after_C, J_before_FGxG) {
-               data <- data.frame(t(data), stringsAsFactors=F)
-              .doCommonThings(data, V_after_C, J_before_FGxG) }
+              data <- data.frame(t(data), stringsAsFactors=F)
+              yassai_identifier(data, V_after_C, J_before_FGxG) }
 )
 
+# Load default or custom data.
 setMethod(yassai_identifier,
           c(data="ANY", V_after_C="missing", J_before_FGxG="missing"),
           function(data) {
@@ -35,7 +30,9 @@ setMethod(yassai_identifier,
   yassai_identifier(data, V_after_C, J_before_FGxG)
 })
 
-.doCommonThings <- function (data, V_after_C, J_before_FGxG) {
+setMethod(yassai_identifier,
+          c(data="data.frame", V_after_C="data.frame", J_before_FGxG="data.frame"),
+          function(data, V_after_C, J_before_FGxG) {
 
 if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 	if ( file.exists("data/codon_ids.txt.gz") )
@@ -131,4 +128,4 @@ IDs <- sapply(codon2id(tocodons(substr(dna,(V_germline * 3) + 1 , (J_germline -1
 
 # Construct and return the CDR3 in Yassai et al's nomenclature.
 return( paste(CDR3aa, ".", IDs, V_name, J_name, "L", nchar(pep), sep=""))
-}
+})
