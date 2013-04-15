@@ -41,7 +41,7 @@ if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 	if ( file.exists("data/codon_ids.txt.gz") )
 		codon_ids <- read.table("data/codon_ids.txt.gz", header=TRUE, row.names=1)
 if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
-	data(codon_ids)
+	codon_ids <- read.table(system.file('data', 'codon_ids.txt.gz', package = "clonotypeR"), header=TRUE, row.names=1)
 
 if ( ! all( c("V", "J", "dna","pep") %in% names(data) ) )
   stop ("Missing V or J segment(s), or DNA or peptides sequence(s) in the data.")
