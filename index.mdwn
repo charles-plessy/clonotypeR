@@ -27,6 +27,13 @@ Homeostasis][LIH] of the [Center for Integrative Medical Sciences][IMS].
 
 [source code]:		http://source.clonotyper.branchable.com/?p=source.git;a=tree;h=refs/heads/master;hb=refs/heads/master
 
-We hope that *clonotypeR* will be useful for you.  Please do not hesitate to report [[bugs]] or contact [[Charles Plessy|http://genome.gsc.riken.jp/osc/english/members/Charles_Plessy.html]] at RIKEN about shortcomings, limitations, or possible developments.  If you need to try alternative solutions, you can have a look at [[IMGTHighV-QUEST|http://www.imgt.org/IMGTindex/IMGTHighV-QUEST.html]].
+We hope that *clonotypeR* will be useful for you.  Please do not hesitate to
+report [[bugs]] or contact [[Charles
+Plessy|http://genome.gsc.riken.jp/osc/english/members/Charles_Plessy.html]] at
+RIKEN about shortcomings, limitations, or possible developments.  If you need
+to try alternative solutions, you can have a look at
+[[IMGTHighV-QUEST|http://www.imgt.org/IMGTindex/IMGTHighV-QUEST.html]], or
+[Decombinator](http://dx.doi.com/10.1093/bioinformatics/btt004 "Bioinformatics.
+2013 Mar 1;29(5):542-50").
 
 *clonotypeR* is placed in the [public domain](http://creativecommons.org/publicdomain/zero/1.0/).
