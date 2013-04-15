@@ -1,13 +1,21 @@
 Reference sequences
 ===================
 
-The references sequences are TRA@.gb, TRB@.gb and TRG@.gb, from GenBank.  The
-*V*, *(D)*, *J* and *C* segments were extracted with the command `make gb2fa`,
-wich uses the the [extractfeat][] program of the EMBOSS package. 
+Human
+-----
+
+The references sequences are [TRA@.gb][Hsap_TRA], [TRB@.gb][Hsap_TRB] and
+[TRG@.gb][Hsap_TRC], from GenBank.  The *V*, *(D)*, *J* and *C* segments were
+extracted with the command `make gb2fa`, wich uses the the [extractfeat][]
+program of the EMBOSS package. 
 
 This directory contains *V* and *J* segments aligned on conserved motifs in the
 files [[V.fa]] and [[J.fa]].  These alignments were made by hand using [SeaView][] and
 may need to be revised when the reference sequences change.
+
+[Hsap_TRA]: http://www.ncbi.nlm.nih.gov/nuccore/NG_007044 (NG_007044)
+[Hsap_TRB]: http://www.ncbi.nlm.nih.gov/nuccore/NG_006980 (NG_006980)
+[Hsap_TRC]: http://www.ncbi.nlm.nih.gov/nuccore/NG_007033 (NG_007033)
 
 [SeaView]:	http://pbil.univ-lyon1.fr/software/seaview	"multiplatform, graphical user interface for multiple sequence alignment and molecular phylogeny."
 [extractfeat]:	http://emboss.open-bio.org/wiki/Appdoc:Extractfeat	"extractfeat documentation on the EMBOSS wiki".
@@ -20,6 +28,15 @@ degapping with `make degap`.
 A BWA index is provided for the *V* segments trunkated after the conserved
 cysteine, in the `V` directory, and can be refreshed with the command `make
 bwa-index`.  It is used by the command `clonotypeR detect`.
+
+
+Other organisms
+---------------
+
+Work to support the analysis of repertoires from other species is under way.
+The current workaround is to download reference loci from GenBank, overwrite
+the files `TRA@.gb`, `TRB@.gb` and `TRG@.gb`, and repeat the process described
+above for human sequences.
 
 
 Redundant sequences
