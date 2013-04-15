@@ -142,7 +142,7 @@ Identify unique clonotypes, count their sequences in the libraries `A`, `B` and 
     > abc <- clonotype_table(c('A','B','C'))
 
     > head(abc)
-    			    A B C
+                                A B C
     TRAV14-1 AAASSGSWQLI TRAJ22 1 0 0
     TRAV14-1 AACNNRIF TRAJ31    1 0 0
     TRAV14-1 AAGAKLT TRAJ39     3 0 0
@@ -168,7 +168,7 @@ The summary shows that the most frequent clonotype is in `C`. Using `R` [index v
 The `clonotype_table` function can also produce a count table for and combination of *V*, *CDR3* or *J* segments.
 
     > clonotype_table(c('A','B','C'), "V")
-    		  A   B   C
+                      A   B   C
     TRAV14-1        239 493   0
     TRAV14-2        131  61   0
     TRAV14-3         79   9 113
@@ -178,7 +178,7 @@ The `clonotype_table` function can also produce a count table for and combinatio
     TRAV14N-3        94  34   2
 
     > head(clonotype_table(c('A','B','C'), c("V","J")))
-    		 A  B C
+                     A  B C
     TRAV14-1 TRAJ11  1  1 0
     TRAV14-1 TRAJ12  2  2 0
     TRAV14-1 TRAJ13  2  1 0
