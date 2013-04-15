@@ -30,6 +30,7 @@ setMethod(yassai_identifier,
   yassai_identifier(data, V_after_C, J_before_FGxG)
 })
 
+# Main function.
 setMethod(yassai_identifier,
           c(data="data.frame", V_after_C="data.frame", J_before_FGxG="data.frame"),
           function(data, V_after_C, J_before_FGxG) {
@@ -43,8 +44,7 @@ if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 if ( ! all( c("V", "J", "dna","pep") %in% names(data) ) )
   stop ("Missing V or J segment(s), or DNA or peptides sequence(s) in the data.")
 
-# Following function is data ?strsplit help page:
-strReverse <- function(x)
+strReverse <- function(x)   # From ?strsplit help page.
 	sapply(lapply(strsplit(x, NULL), rev), paste, collapse="")
 
 V_name <- as.character(data$V)
@@ -69,7 +69,7 @@ germline <- function (ref, dna) {
 	pos <- 1
 	while( is.germline(ref,dna,pos) )
 		pos <- pos + 1
-	pos
+	return(pos)
 }
 
 # Example
@@ -124,8 +124,15 @@ J_name <- sub("TRGJ","G",J_name)
 J_name <- sub("TRDJ","D",J_name)
 
 # Determine the ID for the remaining codons.
-IDs <- sapply(codon2id(tocodons(substr(dna,(V_germline * 3) + 1 , (J_germline -1) * 3 ))), paste, collapse='')
+IDs <- codon2id(tocodons(substr(dna,(V_germline * 3) + 1 , (J_germline -1) * 3 )))
+
+if ( class(IDs) == 'character' )  # When input was a single clonotype
+  IDs <- paste(IDs, collapse='')
+  
+if ( class(IDs) == 'list' ) # When input was multiple clonotypes
+  IDs <- sapply(IDs, paste, collapse='')
 
 # Construct and return the CDR3 in Yassai et al's nomenclature.
 return( paste(CDR3aa, ".", IDs, V_name, J_name, "L", nchar(pep), sep=""))
+
 })
