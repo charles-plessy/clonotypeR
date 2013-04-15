@@ -1,35 +1,20 @@
-\documentclass[12pt]{article}
-
-\topmargin 0in
-\headheight 0in
-\headsep 0in
-\oddsidemargin 0in
-\evensidemargin 0in
-\textwidth 176mm
-\textheight 215mm
-\usepackage{natbib}
-\usepackage{Sweave}
-\usepackage{url}
-\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
-\newcommand{\clonotypeR}{\textsf{clonotypeR}}
-
-\begin{document}
-
+<!--
+%\VignetteEngine{knitr}
 %\VignetteIndexEntry{clonotypeR User's Guide}
+-->
 
-\title{\texttt{clonotypeR}: Identify and analyse B and T cell receptors at a high throughput}
-\author{Charles Plessy \\ \texttt{plessy@riken.jp}}
-\date{16 Dec 2012}
-\maketitle
+clonotypeR: Identify and analyse B and T cell receptors at a high throughput
+============================================================================
 
-\texttt{clonotypeR} is a R package and accompanying scripts to identify and
+    Author: Charles Plessy <plessy@riken.jp>
+    Date:   16 Dec 2012
+
+*clonotypeR* is a R package and accompanying scripts to identify and
 analyse clonotypes from high-throughput T cell receptors sequence
-libraries. \texttt{clonotypeR} is suited to process and organise very large
+libraries. *clonotypeR* is suited to process and organise very large
 number of clonotypes, in the order of millions, typically produced by
 Roche 454 instruments, and to prepare these sequences for differential
 expression analysis with the typical transcriptomics tools as well as
 for statistical analysis using existing R packages.
 
-\texttt{clonotypeR} is documented on line at http://clonotyper.branchable.com/
-
-\end{document}
+*clonotypeR* is documented on line at [http://clonotyper.branchable.com/]()
