@@ -21,27 +21,19 @@ setMethod(yassai_identifier,
 setMethod(yassai_identifier,
           c(data="ANY", V_after_C="missing", J_before_FGxG="missing"),
           function(data) {
-              .loadSegmentJunctionData()
-              yassai_identifier(data, V_after_C, J_before_FGxG)
+  if ( file.exists("data/V_after_C.txt.gz") ) {
+    V_after_C <- read.table("data/V_after_C.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
+    warning("Loading custom data from 'data/V_after_C.txt.gz'.")
+  } else {
+    V_after_C <- read.table(system.file('data', 'V_after_C.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE) }
+
+  if ( file.exists("data/J_before_FGxG.txt.gz") ) {
+    J_before_FGxG <- read.table("data/J_before_FGxG.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
+    warning("Loading custom data from 'data/J_before_FGxG.txt.gz'.")
+  } else {
+    J_before_FGxG <- read.table(system.file('data', 'J_before_FGxG.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE) }
+  yassai_identifier(data, V_after_C, J_before_FGxG)
 })
-
-.loadSegmentJunctionData <- function() {
-if ( ! ( exists("V_after_C") && class(V_after_C) == "data.frame" ) )
-	if ( file.exists("data/V_after_C.txt.gz") ) {
-		V_after_C <- read.table("data/V_after_C.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
-                warning("Loading custom data from 'data/V_after_C.txt.gz'.") }
-if ( ! ( exists("V_after_C") && class(V_after_C) == "data.frame" ) ) {
-	data(V_after_C)
-        warning("Loading default mouse data for V segment junctions.") }
-
-if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) )
-	if ( file.exists("data/J_before_FGxG.txt.gz") ) {
-		J_before_FGxG <- read.table("data/J_before_FGxG.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
-                warning("Loading custom data from 'data/J_before_FGxG.txt.gz'.") }
-if ( ! ( exists("J_before_FGxG") && class(J_before_FGxG) == "data.frame" ) ) {
-	data(J_before_FGxG)
-        warning("Loading default mouse data for J segment junctions.") }
-}
 
 .doCommonThings <- function (data, V_after_C, J_before_FGxG) {
 
