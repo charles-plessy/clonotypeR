@@ -14,5 +14,6 @@ Description: Identify and analyse B and T cell receptors at a high throughput.
  The purpose of this package is to process and quantitatively analyse millions of
  V-CDR3-J combination, called clonotypes, from multiple libraries.
 License: CC0
-Suggests: edgeR, pvclust, vegan
+Suggests: edgeR, pvclust, vegan, knitr
+VignetteBuilder: knitr
 biocViews: Bioinformatics, HighThroughputSequencing
