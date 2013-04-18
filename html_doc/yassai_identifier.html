@@ -17,7 +17,7 @@ in <a href="http://dx.doi.org/10.1007/s00251-009-0383-x">http://dx.doi.org/10.10
 
 <h3>Usage</h3>
 
-<pre>yassai_identifier(data)</pre>
+<pre>yassai_identifier(data, V_after_C, J_before_FGxG)</pre>
 
 
 <h3>Arguments</h3>
@@ -27,10 +27,28 @@ in <a href="http://dx.doi.org/10.1007/s00251-009-0383-x">http://dx.doi.org/10.10
 <td>
 <p>A data frame or a character vector containing a clonotype(s) with proper row or element names.</p>
 </td></tr>
+<tr valign="top"><td><code>V_after_C</code></td>
+<td>
+<p>(optional) A data frame indicating the aminoacids following the conserved cystein for each V segment.</p>
+</td></tr>
+<tr valign="top"><td><code>J_before_FGxG</code></td>
+<td>
+<p>(optional) A data frame indicating the aminoacids preceding the conserved FGxG motif for each V segment.</p>
+</td></tr>
 </table>
 
 
 <h3>Details</h3>
+
+<p>By default, codeyassai_identifier() assume mouse sequences and will load
+the V_after_C and J_before_FGxG tables distributed in this package.  It is
+possible to provide alternative tables either by passing them directly as
+argument, or by installing them as &ldquo;./data/V_after_C.txt.gz&rdquo; and
+&ldquo;./data/J_before_FGxG.txt.gz&rdquo;.
+</p>
+
+
+<h3>Value</h3>
 
 <p>The name (for instance sIRSSy.1456B19S1B27L11) consists of five segments:
 </p>
@@ -72,5 +90,5 @@ clonotypes &lt;- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', pac
 head(yassai_identifier(clonotypes))
 </pre>
 
-<hr><div align="center">[Package <em>clonotypeR</em> version 0.99.1 <a href="00Index.html">Index</a>]</div>
+<hr><div align="center">[Package <em>clonotypeR</em> version 0.99.2 <a href="00Index.html">Index</a>]</div>
 </body></html>
