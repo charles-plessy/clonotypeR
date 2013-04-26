@@ -8,4 +8,4 @@ x <- as.character(x)
 
 x <- data.frame(sequence=x, stringsAsFactors=FALSE)
 
-write.table(x, file="../data/J_before_FGxG.txt.gz")
+write.table(x, file="../inst/extdata/J_before_FGxG.txt.gz")

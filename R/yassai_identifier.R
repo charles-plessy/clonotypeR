@@ -16,17 +16,17 @@ setMethod(yassai_identifier,
 setMethod(yassai_identifier,
           c(data="ANY", V_after_C="missing", J_before_FGxG="missing"),
           function(data) {
-  if ( file.exists("data/V_after_C.txt.gz") ) {
-    V_after_C <- read.table("data/V_after_C.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
-    warning("Loading custom data from 'data/V_after_C.txt.gz'.")
+  if ( file.exists("inst/extdata/V_after_C.txt.gz") ) {
+    V_after_C <- read.table("inst/extdata/V_after_C.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
+    warning("Loading custom data from 'inst/extdata/V_after_C.txt.gz'.")
   } else {
-    V_after_C <- read.table(system.file('data', 'V_after_C.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE) }
+    V_after_C <- read.table(system.file('extdata', 'V_after_C.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE) }
 
-  if ( file.exists("data/J_before_FGxG.txt.gz") ) {
-    J_before_FGxG <- read.table("data/J_before_FGxG.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
-    warning("Loading custom data from 'data/J_before_FGxG.txt.gz'.")
+  if ( file.exists("inst/extdata/J_before_FGxG.txt.gz") ) {
+    J_before_FGxG <- read.table("inst/extdata/J_before_FGxG.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
+    warning("Loading custom data from 'inst/extdata/J_before_FGxG.txt.gz'.")
   } else {
-    J_before_FGxG <- read.table(system.file('data', 'J_before_FGxG.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE) }
+    J_before_FGxG <- read.table(system.file('extdata', 'J_before_FGxG.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE) }
   yassai_identifier(data, V_after_C, J_before_FGxG)
 })
 
@@ -36,10 +36,10 @@ setMethod(yassai_identifier,
           function(data, V_after_C, J_before_FGxG) {
 
 if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
-	if ( file.exists("data/codon_ids.txt.gz") )
-		codon_ids <- read.table("data/codon_ids.txt.gz", header=TRUE, row.names=1)
+	if ( file.exists("inst/extdata/codon_ids.txt.gz") )
+		codon_ids <- read.table("inst/extdata/codon_ids.txt.gz", header=TRUE, row.names=1)
 if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
-	codon_ids <- read.table(system.file('data', 'codon_ids.txt.gz', package = "clonotypeR"), header=TRUE, row.names=1)
+	codon_ids <- read.table(system.file('extdata', 'codon_ids.txt.gz', package = "clonotypeR"), header=TRUE, row.names=1)
 
 if ( ! all( c("V", "J", "dna","pep") %in% names(data) ) )
   stop ("Missing V or J segment(s), or DNA or peptides sequence(s) in the data.")
