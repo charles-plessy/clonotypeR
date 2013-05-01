@@ -1,3 +1,9 @@
+2013-05-01  Charles Plessy <plessy@riken.jp>
+
+	* Resubmitted 0.99.4 to Bioconductor
+	* Moved the Markdown vignette to '/vignettes'.
+	* Added executable example with test data to the vignette.
+
 2013-04-26  Charles Plessy <plessy@riken.jp>
 
 	* Resubmitted 0.99.3 to Bioconductor

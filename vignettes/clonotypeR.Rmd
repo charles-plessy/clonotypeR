@@ -8,7 +8,7 @@ clonotypeR: Identify and analyse B and T cell receptors at a high throughput
 ============================================================================
 
     Author: Charles Plessy <plessy@riken.jp>
-    Date:   15 Apr 2013
+    Date:   1 May 2013
 
 *clonotypeR* is a R package and accompanying scripts to identify and
 analyse clonotypes from high-throughput T cell receptors sequence
@@ -42,8 +42,71 @@ examples are available on line at
 system (Linux, Mac OS, …)*
 
 
-Example data
-------------
+Test data
+---------
+
+ClonotypeR come with test data in the `R` package.  While it is not deep enough
+to discuss about biology, you can use it to familiarise yourself with the
+commands or test them.
+
+The R package is loaded as usual.
+
+```{r load_package}
+library(clonotypeR)
+````
+
+The data is a table of 120 clonotypes in the `extdata` folder of the package.
+The command `read_clonotypes` will parse it in a data frame.  The clonotypes
+are arbitrarly assigned to three libraries called `A`, `B`, and `C`.  The
+`read_clonotypes` comments determines at load time if the peptidic sequence has
+a stop codon or is frame-shifted, and records the information in the
+`unproductive` column.
+
+```{r load_data}
+clonotypes <- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
+summary(clonotypes)
+```
+
+The `clonotype_table` command counts how many times a given clonotype is found
+in each library.  It can also count simpler features, in particular `V` and `J`
+segments, or any combination of them.
+
+```{r clonotype_table}
+head(clonotype_table(levels(clonotypes$lib), data=clonotypes))
+head(clonotype_table(levels(clonotypes$lib), "V", data=clonotypes))
+head(clonotype_table(levels(clonotypes$lib), "J", data=clonotypes))
+```
+
+ClonotypeR provides other functions for further analysis.  `yassai_identifier`
+calculates a unique indentifier using the `V`, `J`, peptidic and nucleotidic
+information, following the work of [Yassai et al](http://dx.doi.org/10.1007/s00251-009-0383-x).
+
+```{r yassai_identifier}
+# Unique identifier
+head(yassai_identifier(clonotypes))
+```
+
+`unique_clonotypes` and `common_clonotypes` are typically used when comparing libraries.
+
+```{r other_functions}
+clonotypes <- clonotype_table(levels(clonotypes$lib), data=clonotypes)
+
+# First six clonotypes of library C
+head(unique_clonotypes("C", data=clonotypes))
+# Count clonotypes found in library A, and B or C.
+length(common_clonotypes(group1="A", group2=c("B","C"), data=clonotypes))
+# Matrix of numbers of common clonotypes
+common_clonotypes(data=clonotypes)
+```
+
+With deeper data, a typical follow-up would be to identify differentially
+represnted clonotypes between libraries, for instance with the `edgeR` package,
+or to calculate distance between libraries, for instance with the
+`vegan` package.
+
+
+Example data (3 × 2,000 reads)
+------------------------------
 
 The data provided on-line at <http://clonotyper.branchable.com/example_data/>
 is a sub-sample of three sequence librairies of mouse T cell receptors α (2,000
@@ -61,8 +124,7 @@ of the display).
     IIIIIIIIIIIHHFF::::G&gt;IIIGGGIIIIIIIIIGGIIIIIIFEBDCDC&lt;//-5522------
 
 
-Detection of V segments
------------------------
+### Detection of V segments
 
 Run the command `clonotyper detect A.fastq` in the same directory as a copy of
 the file `A.fastq`.
@@ -87,8 +149,7 @@ Process the example libraries `B` and `C` similarly with the commands
 `clonotyper detect C.fastq` and `clonotyper detect C.fastq`.
 
 
-Extraction of CDR3 regions
---------------------------
+### Extraction of CDR3 regions
 
 Run the command `clonotyper extract A` in the same directory as where you ran
 `clonotyper detect A.fastq`.  The result is a table stored in a directory
@@ -121,8 +182,7 @@ The files need to be concatenated before analysis in `R`, with the following com
     find clonotypes/ -name '*tsv' | xargs cat > clonotypes.tsv
 
 
-Data analysis in R
-------------------
+### Data analysis in R
 
 Load the clonotypeR library: `library(clonotypeR)`
 
