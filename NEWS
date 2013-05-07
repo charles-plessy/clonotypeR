@@ -1,3 +1,8 @@
+2013-05-07  Charles Plessy <plessy@riken.jp>
+	* Resubmitted 0.99.5 to Bioconductor.
+	* Distribute a copy of the clonotypes extracted from example_data.
+	* Execute all examples in the vignette.
+
 2013-05-01  Charles Plessy <plessy@riken.jp>
 
 	* Resubmitted 0.99.4 to Bioconductor
