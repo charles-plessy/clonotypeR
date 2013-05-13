@@ -1,0 +1,24 @@
+clonotypeR is distributed as a R package, as a full source archive that
+contains more example data and the source of the website, or as a Git
+repository.
+
+If you do not see directories such as `doc` (containing a wiki documentation)
+or `example_data` (containing 6,000 sequences in FASTQ format for testing
+purposes), then you can get them from the full source archive or the Git
+repository.
+
+clonotypeR is developed in the RIKEN Yokohama institute by the Functional
+Genomics Technology Team of the Omics Science Center, and by the Division of
+Genomics Technologies of the Center for Life Science Technologies, in
+collaboration with the Research Unit for Immune Homeostasis of the Research
+Center for Allergy and Immunology.  It was supported by a research grant from
+the Japanese Ministry of Education, Culture, Sports, Science and Technology
+(MEXT) for the RIKEN Omics Science Center to Yoshihide Hayashizaki, and and by
+a research grant from MEXT to the RIKEN Center for Life Science Technologies.
+
+clonotypeR is distributed under the Creative Commons Public Domain Dedication
+CC0 1.0 Universal (CC0 1.0), see http://creativecommons.org/publicdomain/zero/1.0/
+
+For more information, see http://clonotyper.branchable.com
+
+  -- Charles Plessy <plessy@riken.jp>  Mon, 08 Apr 2013 13:41:35 +0900

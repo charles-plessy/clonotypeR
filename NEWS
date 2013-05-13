@@ -1,0 +1,37 @@
+2013-05-07  Charles Plessy <plessy@riken.jp>
+	* Resubmitted 0.99.5 to Bioconductor.
+	* Distribute a copy of the clonotypes extracted from example_data.
+	* Execute all examples in the vignette.
+
+2013-05-01  Charles Plessy <plessy@riken.jp>
+
+	* Resubmitted 0.99.4 to Bioconductor
+	* Moved the Markdown vignette to '/vignettes'.
+	* Added executable example with test data to the vignette.
+
+2013-04-26  Charles Plessy <plessy@riken.jp>
+
+	* Resubmitted 0.99.3 to Bioconductor
+	* Moved extra data to 'inst/extdata'.
+	* Moved the Markdown vignette to 'inst/vignettes'.
+
+2013-04-15  Charles Plessy <plessy@riken.jp>
+
+	* Resubmission after correcting yassai_identifier() and other warnings.
+
+2013-01-08  Charles Plessy <plessy@riken.jp>
+
+	* Leaner Bioconductor package, without the wiki documentation.
+
+2012-.....  Charles Plessy <plessy@riken.jp>
+
+	* Many entries missing.
+
+2012-10-10  Charles Plessy <plessy@riken.jp>
+
+	* Corrected Frenglish “improductive” with “unproductive”. 
+	  This can break backwards compatibility.
+
+2012-09-06  Charles Plessy <plessy@riken.jp>
+
+	* Initial release
