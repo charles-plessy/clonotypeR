@@ -3,10 +3,11 @@ Installation
 
 ### R package
 
-(Sumbmitted to a package archive)
-
-The R package only contains the R code, and lacks the scripts for processing the
-raw sequences, and some of the example data.
+The `R` package is also distributed on
+[Bioconductor](http://www.bioconductor.org/packages/devel/bioc/html/clonotypeR.html).
+It only contains the `R` code to analyse the clonotypes extracted by the
+scripts for processing the raw sequences, which are to be downloaded as
+explained below.
 
 
 ### From file archive
