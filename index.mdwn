@@ -1,7 +1,7 @@
 clonotypeR – Quantitative analysis of antigen receptor sequences
 ================================================================
 
-*clonotypeR* is a [Bioconductor]() package and accompanying scripts to identify
+*clonotypeR* is a [Bioconductor][] package and accompanying scripts to identify
 and analyse [[clonotypes|doc/clonotype]] from high-throughput T cell receptors sequence libraries.
 *clonotypeR* is suited to process and organise very large number of clonotypes,
 in the order of millions, typically produced by Roche 454 instruments, and to
