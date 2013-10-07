@@ -21,7 +21,7 @@ in \url{http://dx.doi.org/10.1007/s00251-009-0383-x}.
 }
 
 \details{
-  By default, code{yassai_identifier()} assume mouse sequences and will load
+  By default, \code{yassai_identifier()} assume mouse sequences and will load
   the V_after_C and J_before_FGxG tables distributed in this package.  It is
   possible to provide alternative tables either by passing them directly as
   argument, or by installing them as \dQuote{./inst/extdata/V_after_C.txt.gz} and
