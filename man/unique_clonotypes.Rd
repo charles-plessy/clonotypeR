@@ -9,10 +9,10 @@ vector where they are listed once.  This vector can be used to subset a
 clonotype_table.
 }
 
-\usage{unique_clonotypes(libs, data)}
+\usage{unique_clonotypes(..., data)}
 
 \arguments{
-  \item{libs}{A character vector contain clonotype library names}
+  \item{...}{One or more character vectors contain clonotype library names}
   \item{data}{The name of the clonotype_table where the data is stored.}
 }
 
@@ -42,7 +42,7 @@ summary(clonotypes)
 unique_clonotypes("A", data=clonotypes)
 
 # List clonotypes found in library A or B.
-unique_clonotypes(c("A","B"), data=clonotypes)
+unique_clonotypes("A","B", data=clonotypes)
 }
 
 \keyword{ clonotype }% __ONLY ONE__ keyword per line

@@ -1,3 +1,10 @@
+2013-10-07  Charles Plessy <plessy@riken.jp>
+	* Commited 0.99.6 to Bioconductor.
+	* Added unit tests for yassai_identifier(). 
+
+2013-08-01  Charles Plessy <plessy@riken.jp>
+	* Unified the syntax of common_clonotypes and unique_clonotypes.
+
 2013-05-07  Charles Plessy <plessy@riken.jp>
 	* Resubmitted 0.99.5 to Bioconductor.
 	* Distribute a copy of the clonotypes extracted from example_data.
