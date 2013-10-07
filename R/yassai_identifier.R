@@ -126,11 +126,13 @@ J_name <- sub("TRDJ","D",J_name)
 # Determine the ID for the remaining codons.
 IDs <- codon2id(tocodons(substr(dna,(V_germline * 3) + 1 , (J_germline -1) * 3 )))
 
-if ( class(IDs) == 'character' )  # When input was a single clonotype
+## Different paste commands are needed if the input is one or multiple clonotypes.
+
+if ( nrow(data) == 1 )  {
   IDs <- paste(IDs, collapse='')
-  
-if ( class(IDs) == 'list' ) # When input was multiple clonotypes
+} else {
   IDs <- sapply(IDs, paste, collapse='')
+}
 
 # Construct and return the CDR3 in Yassai et al's nomenclature.
 return( paste(CDR3aa, ".", IDs, V_name, J_name, "L", nchar(pep), sep=""))
