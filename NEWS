@@ -1,3 +1,6 @@
+2013-10-07  Charles Plessy <plessy@riken.jp>
+	* Added unit tests for yassai_identifier(). 
+
 2013-08-01  Charles Plessy <plessy@riken.jp>
 	* Unified the syntax of common_clonotypes and unique_clonotypes.
 

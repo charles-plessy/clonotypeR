@@ -15,6 +15,11 @@ Description: Identify and analyse B and T cell receptors at a high throughput.
  V-CDR3-J combination, called clonotypes, from multiple libraries.
 License: file LICENSE
 Depends: methods
-Suggests: edgeR, pvclust, vegan, knitr
+Suggests: BiocGenerics,
+          edgeR,
+          knitr,
+          pvclust,
+          RUnit,
+          vegan
 VignetteBuilder: knitr
 biocViews: Bioinformatics, HighThroughputSequencing
