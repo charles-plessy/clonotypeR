@@ -18,15 +18,15 @@ clonotype_table.
 
 <h3>Usage</h3>
 
-<pre>unique_clonotypes(libs, data)</pre>
+<pre>unique_clonotypes(..., data)</pre>
 
 
 <h3>Arguments</h3>
 
 <table summary="R argblock">
-<tr valign="top"><td><code>libs</code></td>
+<tr valign="top"><td><code>...</code></td>
 <td>
-<p>A character vector contain clonotype library names</p>
+<p>One or more character vectors contain clonotype library names</p>
 </td></tr>
 <tr valign="top"><td><code>data</code></td>
 <td>
@@ -71,8 +71,8 @@ summary(clonotypes)
 unique_clonotypes("A", data=clonotypes)
 
 # List clonotypes found in library A or B.
-unique_clonotypes(c("A","B"), data=clonotypes)
+unique_clonotypes("A","B", data=clonotypes)
 </pre>
 
-<hr><div align="center">[Package <em>clonotypeR</em> version 0.99.4 <a href="00Index.html">Index</a>]</div>
+<hr><div align="center">[Package <em>clonotypeR</em> version 0.99.6 <a href="00Index.html">Index</a>]</div>
 </body></html>
