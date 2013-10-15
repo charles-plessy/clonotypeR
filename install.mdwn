@@ -4,7 +4,7 @@ Installation
 ### R package
 
 The `R` package is also distributed on
-[Bioconductor](http://www.bioconductor.org/packages/devel/bioc/html/clonotypeR.html).
+[Bioconductor](http://www.bioconductor.org/packages/release/bioc/html/clonotypeR.html).
 It only contains the `R` code to analyse the clonotypes extracted by the
 scripts for processing the raw sequences, which are to be downloaded as
 explained below.
