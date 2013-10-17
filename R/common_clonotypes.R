@@ -57,12 +57,13 @@ setMethod(
 
     # Fill the matrix
     for (i in 1:numberOfLibs) {
-        for (j in 1:numberOfLibs) {
+        for (j in i:numberOfLibs) {
             m[i,j] <- length(common_clonotypes(
                                  group1=colnames(data)[i],
                                  group2=colnames(data)[j],
                                  data=data)
                             )
+            m[j,i] <- m[i,j]
         }
     }
 
