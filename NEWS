@@ -1,3 +1,8 @@
+2013-10-17  Charles Plessy <plessy@riken.jp>
+	* Commited 1.1.1 to Bioconductor.
+	* common_clonotypes: new mode to calculate the "abundance" relatively
+	  to one library.
+
 2013-10-07  Charles Plessy <plessy@riken.jp>
 	* Commited 0.99.6 to Bioconductor.
 	* Added unit tests for yassai_identifier(). 

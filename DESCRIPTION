@@ -1,8 +1,8 @@
 Package: clonotypeR
 Type: Package
 Title: High throughput analysis of T cell antigen receptor sequences
-Version: 1.1.0
-Date: 2013-10-07
+Version: 1.1.1
+Date: 2013-10-17
 Author: Charles Plessy <plessy@riken.jp>
 Maintainer: Charles Plessy <plessy@riken.jp>
 Description: High throughput analysis of T cell antigen receptor sequences
@@ -12,11 +12,11 @@ Description: High throughput analysis of T cell antigen receptor sequences
  V an J segments.  Collectively, this hyper-variable region is called the CDR3
  loop.
  .
-  The purpose of this package is to process and quantitatively analyse millions of
+   The purpose of this package is to process and quantitatively analyse millions of
  V-CDR3-J combination, called clonotypes, from multiple sequence libraries.
 License: file LICENSE
 Depends: methods
 Suggests: BiocGenerics, edgeR, knitr, pvclust, RUnit, vegan
 VignetteBuilder: knitr
 biocViews: Bioinformatics, HighThroughputSequencing
-Packaged: 2013-10-07 11:32:24 UTC; charles
+Packaged: 2013-10-17 09:57:08 UTC; charles
