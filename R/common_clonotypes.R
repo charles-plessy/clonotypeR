@@ -36,8 +36,8 @@ setMethod(
         stop ("Unknown library.")
 
     intersect(
-        common_clonotypes(group1=group1, data=clonotypes),
-        common_clonotypes(group1=group2, data=clonotypes)
+        common_clonotypes(group1=group1, data=data),
+        common_clonotypes(group1=group2, data=data)
     )
 })    
 
@@ -45,8 +45,14 @@ setMethod(
 
 setMethod(
     common_clonotypes,
-    c(group1="missing", group2="missing", mode="missing", data="data.frame"),
-    function(data) {
+    c(group1="missing", group2="missing", mode="ANY", data="data.frame"),
+    function(mode="count", data) {
+
+    if(missing(mode))
+        mode <- "count"
+
+    if ( ! (mode == "count" | mode == "abundance") )
+        stop (paste (sep='', dQuote("mode"), " argument must be ", dQuote("count"), " or ", dQuote("abundance"), "."))
 
     numberOfLibs = dim(data)[2]
 
@@ -58,12 +64,18 @@ setMethod(
     # Fill the matrix
     for (i in 1:numberOfLibs) {
         for (j in i:numberOfLibs) {
-            m[i,j] <- length(common_clonotypes(
-                                 group1=colnames(data)[i],
-                                 group2=colnames(data)[j],
-                                 data=data)
-                            )
-            m[j,i] <- m[i,j]
+            commonIJ <- common_clonotypes(
+                            group1=colnames(data)[i],
+                            group2=colnames(data)[j],
+                            data=data)
+            if (mode == "count") {
+                m[i,j] <- length(commonIJ)
+                m[j,i] <- m[i,j]
+            }
+            if (mode == "abundance") {
+                m[i,j] <- sum(data[commonIJ,i])
+                m[j,i] <- sum(data[commonIJ,j])
+            }
         }
     }
 
@@ -74,8 +86,11 @@ setMethod(
 
 setMethod(
     common_clonotypes,
-    c(group1="missing", group2="missing", mode="missing", data="matrix"),
-    function(data)
+    c(group1="missing", group2="missing", mode="ANY", data="matrix"),
+    function(mode, data) {
 
-    common_clonotypes(data=as.data.frame(data))
-)
+    if(missing(mode))
+        mode <- "count"
+
+    common_clonotypes(mode=mode, data=as.data.frame(data))
+})
