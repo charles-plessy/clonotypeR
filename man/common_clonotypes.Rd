@@ -1,5 +1,10 @@
 \name{common_clonotypes}
 \alias{common_clonotypes}
+\alias{common_clonotypes,missing,missing,missing,data.frame-method}
+\alias{common_clonotypes,character,missing,missing,data.frame-method}
+\alias{common_clonotypes,character,character,missing,data.frame-method}
+\alias{common_clonotypes,missing,missing,character,data.frame-method}
+\alias{common_clonotypes,missing,missing,missing,matrix-method}
 
 \title{Reports clonotypes common between samples.}
 
@@ -16,12 +21,12 @@ When given a table of clonotypes, produces a matrix in which each cell reports
 the number of clonotypes found in each pair of samples.
 }
 
-\usage{common_clonotypes(group1, group2, mode="groups", data)}
+\usage{common_clonotypes(group1, group2, mode, data)}
 
 \arguments{
-  \item{group1}{A character vector containing clonotype library names}
-  \item{group2}{A character vector containing clonotype library names}
-  \item{mode}{By default, \dQuote{groups} when \dQuote{group1} or \dQuote{group2} is provided, \dQuote{matrix} mode otherwise.}
+  \item{group1}{A character vector containing clonotype library names.}
+  \item{group2}{A character vector containing clonotype library names.}
+  \item{mode}{Deprecated argument that was used internally.}
   \item{data}{A clonotype_table where the data is stored.}
 }
 

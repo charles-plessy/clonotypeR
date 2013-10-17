@@ -25,7 +25,7 @@ the number of clonotypes found in each pair of samples.
 
 <h3>Usage</h3>
 
-<pre>common_clonotypes(group1, group2, mode="groups", data)</pre>
+<pre>common_clonotypes(group1, group2, mode, data)</pre>
 
 
 <h3>Arguments</h3>
@@ -33,15 +33,15 @@ the number of clonotypes found in each pair of samples.
 <table summary="R argblock">
 <tr valign="top"><td><code>group1</code></td>
 <td>
-<p>A character vector containing clonotype library names</p>
+<p>A character vector containing clonotype library names.</p>
 </td></tr>
 <tr valign="top"><td><code>group2</code></td>
 <td>
-<p>A character vector containing clonotype library names</p>
+<p>A character vector containing clonotype library names.</p>
 </td></tr>
 <tr valign="top"><td><code>mode</code></td>
 <td>
-<p>By default, &ldquo;groups&rdquo; when &ldquo;group1&rdquo; or &ldquo;group2&rdquo; is provided, &ldquo;matrix&rdquo; mode otherwise.</p>
+<p>Deprecated argument that was used internally.</p>
 </td></tr>
 <tr valign="top"><td><code>data</code></td>
 <td>
@@ -89,5 +89,5 @@ length(common_clonotypes(group1="A", group2=c("B","C"), data=clonotypes))
 common_clonotypes(data=clonotypes)
 </pre>
 
-<hr><div align="center">[Package <em>clonotypeR</em> version 0.99.6 <a href="00Index.html">Index</a>]</div>
+<hr><div align="center">[Package <em>clonotypeR</em> version 1.1.0 <a href="00Index.html">Index</a>]</div>
 </body></html>
