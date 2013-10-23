@@ -1,4 +1,4 @@
-clonotype_table <- function (libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1) {
+clonotype_table <- function (libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1, sample=FALSE) {
 
 if ( missing (libs) )
 	libs <- levels(data$lib)
@@ -18,8 +18,7 @@ if ( ! is.logical(data$unproductive) )
 # The following function counts, for a single library, the occurrences of
 # segments, CDR3s or combinations of them, and return them as a simple data
 # frame of tuples describing in which library, which combination was found how
-# many times.  By default it looks for the libraries in the ‘clonotypes’ table
-# and discards the unproductive rearrangements.
+# many times.  By default it discards the unproductive rearrangements.
 
 feat.freq <- function (lib, filter) {
     if ( all(c('score', 'mapq') %in% colnames(data) ) ) {
@@ -31,6 +30,9 @@ feat.freq <- function (lib, filter) {
         feat <- data[keep,feats]
     } else {
         feat <- apply(data[keep,feats], 1, paste, collapse=" ")
+    }
+    if (sample) {
+        feat <- sample(feat, sample)
     }
     feat <- table(as.character(feat))
     data.frame(

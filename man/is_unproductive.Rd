@@ -18,7 +18,7 @@ is_unproductive(data)
 \arguments{
 \item{data}{Data frame of clonotype sequences, or character vector
 describing a single clonotype, where the DNA sequence is available under the
-name dQuote("dna") and its translation available under the name dQuote("pep").}
+name \dQuote{dna} and its translation available under the name \dQuote{pep}.}
 }
 
 \details{Clonotypes are marked unproductive if the length of their DNA sequence

@@ -1,3 +1,7 @@
+2013-10-23  Charles Plessy <plessy@riken.jp>
+	* Commited 1.1.2 to Bioconductor.
+	* clonotype_table: new option to randomly "sample" libraries.
+
 2013-10-17  Charles Plessy <plessy@riken.jp>
 	* Commited 1.1.1 to Bioconductor.
 	* common_clonotypes: new mode to calculate the "abundance" relatively
