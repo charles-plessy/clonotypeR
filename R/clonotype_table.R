@@ -18,8 +18,7 @@ if ( ! is.logical(data$unproductive) )
 # The following function counts, for a single library, the occurrences of
 # segments, CDR3s or combinations of them, and return them as a simple data
 # frame of tuples describing in which library, which combination was found how
-# many times.  By default it looks for the libraries in the ‘clonotypes’ table
-# and discards the unproductive rearrangements.
+# many times.  By default it discards the unproductive rearrangements.
 
 feat.freq <- function (lib, filter) {
     if ( all(c('score', 'mapq') %in% colnames(data) ) ) {
