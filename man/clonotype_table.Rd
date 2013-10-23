@@ -10,7 +10,7 @@ rearrangements are filtered out.
 }
 
 \usage{
-clonotype_table(libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1)
+clonotype_table(libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1, sample=FALSE)
 }
 
 \arguments{
@@ -38,6 +38,10 @@ clonotype_table(libs, feats=c("V","pep","J"), data, filter=data$unproductive, mi
   \item{minqual}{
   Minimum mapping quality.  Clonotypes with a mapping quality lower than this value are
   discarded.
+}
+  \item{sample}{
+  Indicate the number of clonotypes to randombly sample from the library (no
+  replacement).  Default: no subsampling.
 }
 }
 

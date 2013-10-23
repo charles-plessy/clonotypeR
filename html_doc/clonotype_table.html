@@ -21,7 +21,7 @@ rearrangements are filtered out.
 <h3>Usage</h3>
 
 <pre>
-clonotype_table(libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1)
+clonotype_table(libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1, sample=FALSE)
 </pre>
 
 
@@ -69,6 +69,13 @@ discarded.
 
 <p>Minimum mapping quality.  Clonotypes with a mapping quality lower than this value are
 discarded.
+</p>
+</td></tr>
+<tr valign="top"><td><code>sample</code></td>
+<td>
+
+<p>Indicate the number of clonotypes to randombly sample from the library (no
+replacement).  Default: no subsampling.
 </p>
 </td></tr>
 </table>

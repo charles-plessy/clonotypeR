@@ -1,4 +1,4 @@
-clonotype_table <- function (libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1) {
+clonotype_table <- function (libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1, sample=FALSE) {
 
 if ( missing (libs) )
 	libs <- levels(data$lib)
@@ -30,6 +30,9 @@ feat.freq <- function (lib, filter) {
         feat <- data[keep,feats]
     } else {
         feat <- apply(data[keep,feats], 1, paste, collapse=" ")
+    }
+    if (sample) {
+        feat <- sample(feat, sample)
     }
     feat <- table(as.character(feat))
     data.frame(
