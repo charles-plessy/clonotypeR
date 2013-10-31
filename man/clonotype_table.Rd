@@ -40,7 +40,7 @@ clonotype_table(libs, feats=c("V","pep","J"), data, filter=data$unproductive, mi
   discarded.
 }
   \item{sample}{
-  Indicate the number of clonotypes to randombly sample from the library (no
+  Indicate the number of clonotypes to randomly sample from the library (no
   replacement).  Default: no subsampling.
 }
 }
