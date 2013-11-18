@@ -1,0 +1,4 @@
+<pre>
+> yassai_identifier(c(V='TRAV2', J='TRAJ61', dna='ATTGTGACTGACACAGGTACAGAATTAATAGGAAATTGGCA', pep='IVTDTGTELIGNW'))
+[1] "tg.integer(0)A2A61L13"
+</pre>
