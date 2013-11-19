@@ -12,14 +12,16 @@ Is it a bug in the software or a bug in the concept ?
 
 <pre>
 aAn.1A14-1A43L9
-GCAGCAGCTAACAACAATGCCCCACGA
-GCAGCAagtg
-    gcaaTAACAACAATGCCCCACGA
+ A   A   A   N   N   N   A   P   R
+GCA GCA GCT AAC AAC AAT GCC CCA CGA
+GCA GCA agt g
+     gc aaT AAC AAC AAT GCC CCA CGA
 </pre>
 
 <pre>
 aAn.1A14-1A43L9
-GCAGCTAATAACAACAATGCCCCACGA
-GCAGCaagtg
-    gcAATAACAACAATGCCCCACGA
+ A   A   A   N   N   N   A   P   R
+GCA GCT AAT AAC AAC AAT GCC CCA CGA
+GCA GCa agt g
+     gc AAT AAC AAC AAT GCC CCA CGA
 </pre>
