@@ -1,53 +1,50 @@
-LOCUS       NG_006980             668076 bp    DNA     linear   CON 13-JUN-2011
-DEFINITION  Mus musculus T-cell receptor beta chain (Tcrb) on chromosome 6.
+LOCUS       NG_006980             668076 bp    DNA     linear   CON 05-NOV-2013
+DEFINITION  Mus musculus T cell receptor beta chain (Tcrb) on chromosome 6.
 ACCESSION   NG_006980
 VERSION     NG_006980.1  GI:158037406
-KEYWORDS    .
+KEYWORDS    RefSeq.
 SOURCE      Mus musculus (house mouse)
   ORGANISM  Mus musculus
             Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
             Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
             Sciurognathi; Muroidea; Muridae; Murinae; Mus; Mus.
 REFERENCE   1  (bases 1 to 668076)
-  AUTHORS   Houston,E.G. Jr., Higdon,L.E. and Fink,P.J.
-  TITLE     Recent thymic emigrants are preferentially incorporated only into
-            the depleted T-cell pool
-  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 108 (13), 5366-5371 (2011)
-   PUBMED   21402911
+  AUTHORS   Hess,C., Winkler,A., Lorenz,A.K., Holecska,V., Blanchard,V.,
+            Eiglmeier,S., Schoen,A.L., Bitterling,J., Stoehr,A.D., Petzold,D.,
+            Schommartz,T., Mertes,M.M., Schoen,C.T., Tiburzy,B., Herrmann,A.,
+            Kohl,J., Manz,R.A., Madaio,M.P., Berger,M., Wardemann,H. and
+            Ehlers,M.
+  TITLE     T cell-independent B cell activation induces immunosuppressive
+            sialylated IgG antibodies
+  JOURNAL   J. Clin. Invest. 123 (9), 3788-3796 (2013)
+   PUBMED   23979161
 REFERENCE   2  (bases 1 to 668076)
-  AUTHORS   Bruce,D. and Cantorna,M.T.
-  TITLE     Intrinsic requirement for the vitamin D receptor in the development
-            of CD8alphaalpha-expressing T cells
-  JOURNAL   J. Immunol. 186 (5), 2819-2825 (2011)
-   PUBMED   21270396
-  REMARK    GeneRIF: Intrinsic defects occur during the development of vitamin
-            D receptor-deficient TCRbeta-expressing T cells that result in
-            impaired development of these cells in the intestinal mucosa.
+  AUTHORS   Hickey,A.J., Lin,J.S., Kummer,L.W., Szaba,F.M., Duso,D.K.,
+            Tighe,M., Parent,M.A. and Smiley,S.T.
+  TITLE     Intranasal prophylaxis with CpG oligodeoxynucleotide can protect
+            against Yersinia pestis infection
+  JOURNAL   Infect. Immun. 81 (6), 2123-2132 (2013)
+   PUBMED   23545300
 REFERENCE   3  (bases 1 to 668076)
-  AUTHORS   Tezuka,H., Abe,Y., Asano,J., Sato,T., Liu,J., Iwata,M. and
-            Ohteki,T.
-  TITLE     Prominent role for plasmacytoid dendritic cells in mucosal T
-            cell-independent IgA induction
-  JOURNAL   Immunity 34 (2), 247-257 (2011)
-   PUBMED   21333555
+  AUTHORS   Archer,N.K., Harro,J.M. and Shirtliff,M.E.
+  TITLE     Clearance of Staphylococcus aureus nasal carriage is T cell
+            dependent and mediated through interleukin-17A expression and
+            neutrophil influx
+  JOURNAL   Infect. Immun. 81 (6), 2070-2075 (2013)
+   PUBMED   23529621
 REFERENCE   4  (bases 1 to 668076)
-  AUTHORS   Feng,N., Vegh,P., Rothenberg,E.V. and Yui,M.A.
-  TITLE     Lineage divergence at the first TCR-dependent checkpoint:
-            preferential gammadelta and impaired alphabeta T cell development
-            in nonobese diabetic mice
-  JOURNAL   J. Immunol. 186 (2), 826-837 (2011)
-   PUBMED   21148803
-  REMARK    GeneRIF: Precursor T cells in a nonobese diabetic (NOD) mouse
-            colony exhibit impaired development of rearranged T cell receptor
-            beta-type lineage, whereas differentiation of rearranged gamma- and
-            delta-receptor type T cells is strongly enhanced.
+  AUTHORS   Larson,R.P., Comeau,M.R. and Ziegler,S.F.
+  TITLE     Cutting edge: allergen-specific CD4 T cells respond indirectly to
+            thymic stromal lymphopoietin to promote allergic responses in the
+            skin
+  JOURNAL   J. Immunol. 190 (9), 4474-4477 (2013)
+   PUBMED   23543759
 REFERENCE   5  (bases 1 to 668076)
-  AUTHORS   Ohigashi,I., Yamasaki,Y., Hirashima,T. and Takahama,Y.
-  TITLE     Identification of the transgenic integration site in
-            immunodeficient tgepsilon26 human CD3epsilon transgenic mice
-  JOURNAL   PLoS ONE 5 (12), E14391 (2010)
-   PUBMED   21203507
-  REMARK    Publication Status: Online-Only
+  AUTHORS   Brady,B.L., Rupp,L.J. and Bassing,C.H.
+  TITLE     Requirement for dicer in survival of proliferating thymocytes
+            experiencing DNA double-strand breaks
+  JOURNAL   J. Immunol. 190 (7), 3256-3266 (2013)
+   PUBMED   23427252
 REFERENCE   6  (bases 1 to 668076)
   AUTHORS   Acha-Orbea,H., Scarpellino,L., Shakhov,A.N., Held,W. and
             MacDonald,H.R.
@@ -111,7 +108,7 @@ COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
             deoxynucleotidyltransferase. Several V segments of the beta locus
             are known to be incapable of encoding a protein and are considered
             pseudogenes. The beta locus also includes several trypsinogen
-            genes. [provided by RefSeq].
+            genes. [provided by RefSeq, Jul 2008].
             
             Publication Note:  This RefSeq record includes a subset of the
             publications that are available for this gene. Please see the Gene
@@ -130,17 +127,17 @@ FEATURES             Location/Qualifiers
                      /mol_type="genomic DNA"
                      /db_xref="taxon:10090"
                      /chromosome="6"
-                     /map="6 20.5 cM"
+                     /map="6"
      gene            502..667577
                      /gene="Tcrb"
                      /gene_synonym="TCRbeta; Tib"
-                     /note="T-cell receptor beta chain"
+                     /note="T cell receptor beta chain"
                      /db_xref="GeneID:21577"
                      /db_xref="MGI:98578"
      gene            502..1091
                      /gene="Trbv1"
                      /gene_synonym="621968; Gm6273; Tcrb-V2; TCRBV2S1"
-                     /note="T-cell receptor beta, variable 1"
+                     /note="T cell receptor beta, variable 1"
                      /db_xref="GeneID:621968"
                      /db_xref="IMGT/GENE-DB:TRBV1"
                      /db_xref="MGI:98594"
@@ -166,7 +163,7 @@ FEATURES             Location/Qualifiers
                      6933..7071,9260..9344,9478..9593))
                      /gene="Prss58"
                      /gene_synonym="1700020H15; Tryx3"
-                     /product="cDNA sequence BC048599"
+                     /product="protease, serine 58"
                      /transcript_id="NM_175020.3"
                      /db_xref="GI:146198660"
                      /db_xref="GeneID:232717"
@@ -176,8 +173,8 @@ FEATURES             Location/Qualifiers
                      /gene="Prss58"
                      /gene_synonym="1700020H15; Tryx3"
                      /EC_number="3.4.21.4"
-                     /note="putative trypsin-X3; putative inactive serine
-                     protease 58"
+                     /note="putative inactive serine protease 58; putative
+                     trypsin-X3"
                      /codon_start=1
                      /product="putative inactive serine protease 58 precursor"
                      /protein_id="NP_778185.1"
@@ -185,6 +182,11 @@ FEATURES             Location/Qualifiers
                      /db_xref="CCDS:CCDS20040.1"
                      /db_xref="GeneID:232717"
                      /db_xref="MGI:3608323"
+                     /translation="MKLAFLCILSTLLRTFAYNPDHIAGTTPPYLVYLKSDYLPCTGV
+                     LIHPLWVITAAHCNLPNLQVILGITNPADPMERDVEVSDYEKIFHHPNFLVSSISHDL
+                     LLIKLKRRIKHSNYAKAVKLPQHIVSVNAMCSVSTWAYNLCDVTKDPDSLQTVNVTVI
+                     SKAECRNAYKAFDITENMICVGIVPGRRLPCKEVTAAPAVCNGVLYGILSYADGCVLR
+                     ADVGIYASIFHYLPWIEDTMKNN"
      gene            complement(29666..49763)
                      /gene="1700074P13Rik"
                      /gene_synonym="AV047902; Tryx5"
@@ -210,12 +212,17 @@ FEATURES             Location/Qualifiers
                      /gene="1700074P13Rik"
                      /gene_synonym="AV047902; Tryx5"
                      /codon_start=1
-                     /product="trypsin X5"
+                     /product="trypsin X5 precursor"
                      /protein_id="NP_082826.1"
                      /db_xref="GI:21312106"
                      /db_xref="CCDS:CCDS20041.1"
                      /db_xref="GeneID:73481"
                      /db_xref="MGI:1920731"
+                     /translation="MKTFFIFTLLSLAVANTPKAVLKEYNNSEEYLPENFNVPYMVYL
+                     QSSPEPCVGTLIDPQWVLTAAHCSLPTKIRLGVYRPNIKNEKEQICNYSFTVVHPNFD
+                     AKLLKNDLMLIKLSYPATINMYVGTIAIAMEPMAFNESCFIPTWTWNNYKNLSDPDIL
+                     TWINEYSLSPSDCLDTLHQQKQETRINIMCIGHSLNAMSATKEVSAAPAICSGRVHGI
+                     LSWGKASVANGSKGFFTEIHPYARWILKMIRSH"
      gene            complement(57668..63558)
                      /gene="Gm4744"
                      /gene_synonym="EG194360; Tryx4"
@@ -242,12 +249,17 @@ FEATURES             Location/Qualifiers
                      /EC_number="3.4.21.4"
                      /note="trypsinogen 5"
                      /codon_start=1
-                     /product="RIKEN cDNA 1810009J06"
+                     /product="RIKEN cDNA 1810009J06 precursor"
                      /protein_id="NP_076196.1"
                      /db_xref="GI:12963793"
                      /db_xref="CCDS:CCDS20042.1"
                      /db_xref="GeneID:73626"
                      /db_xref="MGI:1920876"
+                     /translation="MKIITFFTFLGAAVALPANSDDKIVGGYTCPKHSVPYQVSLNDG
+                     ISHQCGGSLISDQWVLSAAHCYKRRLQVRLGEHNIDVLEGGEQFIDAEKIIRHPDYNK
+                     DTVDNDIMLIKLKSPAILNSQVSTVSLPRSCASTNAQCLVSGWGNTVSIGGKYPALLQ
+                     CLEAPVLSASSCKKSYPGQITSNMFCLGFLEGGKDSCDGDSGGPVVCNGEIQGIVSWG
+                     SVCAMRGKPGVYTKVCNYLSWIQETMANN"
      gene            complement(105028..108685)
                      /gene="Gm2663"
                      /gene_synonym="100040208"
@@ -258,7 +270,7 @@ FEATURES             Location/Qualifiers
                      106604..106857,107139..107301,108626..108685))
                      /gene="Gm2663"
                      /gene_synonym="100040208"
-                     /product="similar to trypsinogen 4"
+                     /product="predicted gene 2663"
                      /transcript_id="NM_001102660.1"
                      /db_xref="GI:156627585"
                      /db_xref="GeneID:100040208"
@@ -269,12 +281,17 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="100040208"
                      /note="trypsinogen 4"
                      /codon_start=1
-                     /product="trypsinogen 4"
+                     /product="trypsinogen 4 precursor"
                      /protein_id="NP_001096130.1"
                      /db_xref="GI:156627586"
                      /db_xref="CCDS:CCDS51756.1"
                      /db_xref="GeneID:100040208"
                      /db_xref="MGI:3780832"
+                     /translation="MKIIFFFTFLGAAVALPANSDDKIVGGYTCPKHSVPYQVSLNDG
+                     ISHQCGGSLINDQWVLSAAHCYKRRLQVRLGEHNIDVLEGGEQFIDAEKIIRHPDYNK
+                     DTVDNDIMLIKLKSPAILNSQVSTVSLPRSCASTNAQCLVSGWGNTVSIGGKYPALLQ
+                     CLEAPVLSASSCKKSYPGQITSNMFCLGFLEGGKDSCDGDSGGPVVCNGEIQGIVSWG
+                     SVCAMRGKPGVYTKVCNYLSWIQETMANN"
      gene            complement(139474..144715)
                      /gene="2210010C04Rik"
                      /gene_synonym="AV072249"
@@ -301,16 +318,21 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="AV072249"
                      /EC_number="3.4.21.4"
                      /codon_start=1
-                     /product="trypsinogen 7"
+                     /product="trypsinogen 7 precursor"
                      /protein_id="NP_075822.3"
                      /db_xref="GI:71043961"
                      /db_xref="CCDS:CCDS20043.1"
                      /db_xref="GeneID:67373"
                      /db_xref="MGI:1914623"
+                     /translation="MKTLIFLAFLGAAVALPLDDDDDKIVGGYTCQRNALPYQVSLNS
+                     GYHFCGGSLINSQWVVSAAHCYKSRIQVRLGEHNIDALEGGEQFIDAAKIIRHPNYNA
+                     NTYNNDIMLIKLKTAATLNSRVSTVALPRSCPSAGTRCLVSGWGNTLSSGTNYPSLLQ
+                     CLDAPVLSDSSCTSSYPGKITSNMFCLGFLEGGKDSCQGDSGGPVVCNGQLQGVVSWG
+                     YGCAQRGKPGVYTKVCKYVNWIQQTIAAN"
      gene            156762..157201
                      /gene="Trbv2"
                      /gene_synonym="Gm16752; Tcrb-V4"
-                     /note="T-cell receptor beta, variable 2"
+                     /note="T cell receptor beta, variable 2"
                      /db_xref="GeneID:100124659"
                      /db_xref="IMGT/GENE-DB:TRBV2"
                      /db_xref="MGI:98599"
@@ -329,7 +351,7 @@ FEATURES             Location/Qualifiers
      gene            157600..158030
                      /gene="Trbv3"
                      /gene_synonym="100039790; Gm2426; Tcrb-V16"
-                     /note="T-cell receptor beta, variable 3"
+                     /note="T cell receptor beta, variable 3"
                      /db_xref="GeneID:100039790"
                      /db_xref="IMGT/GENE-DB:TRBV3"
                      /db_xref="MGI:98590"
@@ -348,7 +370,7 @@ FEATURES             Location/Qualifiers
      gene            168649..169092
                      /gene="Trbv4"
                      /gene_synonym="Tcrb-V10"
-                     /note="T-cell receptor beta, variable 10"
+                     /note="T cell receptor beta, variable 10"
                      /db_xref="GeneID:100124660"
                      /db_xref="IMGT/GENE-DB:TRBV4"
                      /db_xref="MGI:98584"
@@ -367,7 +389,7 @@ FEATURES             Location/Qualifiers
      gene            171565..172009
                      /gene="Trbv5"
                      /gene_synonym="Tcrb-V1"
-                     /note="T-cell receptor beta, variable 5"
+                     /note="T cell receptor beta, variable 5"
                      /db_xref="GeneID:100124661"
                      /db_xref="IMGT/GENE-DB:TRBV5"
                      /db_xref="MGI:98583"
@@ -389,6 +411,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124662"
                      /db_xref="IMGT/GENE-DB:TRBV6"
+                     /db_xref="MGI:5009962"
      CDS             176077..176360
                      /gene="Trbv6"
                      /exception="rearrangement required for product"
@@ -396,6 +419,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124662"
                      /db_xref="IMGT/GENE-DB:TRBV6"
+                     /db_xref="MGI:5009962"
      V_segment       176077..176360
                      /gene="Trbv6"
                      /standard_name="TRBV6"
@@ -406,12 +430,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124663"
                      /db_xref="IMGT/GENE-DB:TRBV7"
+                     /db_xref="MGI:5009963"
      CDS             join(189459..189507,189563..189860)
                      /gene="Trbv7"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124663"
                      /db_xref="IMGT/GENE-DB:TRBV7"
+                     /db_xref="MGI:5009963"
      V_segment       join(189459..189507,189563..189860)
                      /gene="Trbv7"
                      /standard_name="TRBV7"
@@ -422,12 +448,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124664"
                      /db_xref="IMGT/GENE-DB:TRBV8"
+                     /db_xref="MGI:5009964"
      CDS             join(193875..193923,194019..194313)
                      /gene="Trbv8"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124664"
                      /db_xref="IMGT/GENE-DB:TRBV8"
+                     /db_xref="MGI:5009964"
      V_segment       join(193875..193923,194019..194313)
                      /gene="Trbv8"
                      /standard_name="TRBV8"
@@ -438,30 +466,37 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124665"
                      /db_xref="IMGT/GENE-DB:TRBV9"
+                     /db_xref="MGI:5009965"
      CDS             197197..197494
                      /gene="Trbv9"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124665"
                      /db_xref="IMGT/GENE-DB:TRBV9"
+                     /db_xref="MGI:5009965"
      V_segment       197197..197494
                      /gene="Trbv9"
                      /standard_name="Trbv9"
                      /pseudo
      gene            201141..201434
                      /gene="Trbv10"
+                     /gene_synonym="Gm17526"
                      /note="T cell receptor beta variable 10"
                      /pseudo
                      /db_xref="GeneID:100124670"
                      /db_xref="IMGT/GENE-DB:TRBV10"
+                     /db_xref="MGI:4937160"
      CDS             201141..201434
                      /gene="Trbv10"
+                     /gene_synonym="Gm17526"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124670"
                      /db_xref="IMGT/GENE-DB:TRBV10"
+                     /db_xref="MGI:4937160"
      V_segment       201141..201434
                      /gene="Trbv10"
+                     /gene_synonym="Gm17526"
                      /standard_name="TRBV10"
                      /pseudo
      gene            216011..216509
@@ -470,16 +505,21 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124671"
                      /db_xref="IMGT/GENE-DB:TRBV11"
+                     /db_xref="MGI:5009966"
      CDS             join(216011..216064,216242..216509)
                      /gene="Trbv11"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124671"
                      /db_xref="IMGT/GENE-DB:TRBV11"
+                     /db_xref="MGI:5009966"
+     V_segment       join(216011..216064,216242..216509)
+                     /gene="Trbv11"
+                     /pseudo
      gene            222773..223273
                      /gene="Trbv12-1"
                      /gene_synonym="Gm16753; Tcrb; Tcrb-V5.2"
-                     /note="T-cell receptor beta, variable 12-1"
+                     /note="T cell receptor beta, variable 12-1"
                      /db_xref="GeneID:100124672"
                      /db_xref="IMGT/GENE-DB:TRBV12-1"
                      /db_xref="MGI:98602"
@@ -503,7 +543,7 @@ FEATURES             Location/Qualifiers
      gene            225242..225674
                      /gene="Trbv13-1"
                      /gene_synonym="Tcrb; Tcrb-V8.3"
-                     /note="T-cell receptor beta, variable 13-1"
+                     /note="T cell receptor beta, variable 13-1"
                      /db_xref="GeneID:100124673"
                      /db_xref="IMGT/GENE-DB:TRBV13-1"
                      /db_xref="MGI:98609"
@@ -522,7 +562,7 @@ FEATURES             Location/Qualifiers
      gene            228070..228570
                      /gene="Trbv12-2"
                      /gene_synonym="Tcrb; Tcrb-V5.1"
-                     /note="T-cell receptor beta, variable 12-2"
+                     /note="T cell receptor beta, variable 12-2"
                      /db_xref="GeneID:100124674"
                      /db_xref="IMGT/GENE-DB:TRBV12-2"
                      /db_xref="MGI:98601"
@@ -541,7 +581,7 @@ FEATURES             Location/Qualifiers
      gene            230602..231038
                      /gene="Trbv13-2"
                      /gene_synonym="Tcrb; Tcrb-V8.2; TCRBV8S2"
-                     /note="T-cell receptor beta, variable 13-2"
+                     /note="T cell receptor beta, variable 13-2"
                      /db_xref="GeneID:100124675"
                      /db_xref="IMGT/GENE-DB:TRBV13-2"
                      /db_xref="MGI:98608"
@@ -565,7 +605,7 @@ FEATURES             Location/Qualifiers
      gene            236798..237282
                      /gene="Trbv12-3"
                      /gene_synonym="Tcrb; Tcrb-V5.3"
-                     /note="T-cell receptor beta, variable 12-3"
+                     /note="T cell receptor beta, variable 12-3"
                      /pseudo
                      /db_xref="GeneID:100124676"
                      /db_xref="IMGT/GENE-DB:TRBV12-3"
@@ -586,7 +626,7 @@ FEATURES             Location/Qualifiers
      gene            239353..239791
                      /gene="Trbv13-3"
                      /gene_synonym="Gm16777; Tcrb-V8; Tcrb-V8.1"
-                     /note="T-cell receptor beta, variable 13-3"
+                     /note="T cell receptor beta, variable 13-3"
                      /db_xref="GeneID:100124677"
                      /db_xref="IMGT/GENE-DB:TRBV13-3"
                      /db_xref="MGI:98607"
@@ -605,7 +645,7 @@ FEATURES             Location/Qualifiers
      gene            244373..244822
                      /gene="Trbv14"
                      /gene_synonym="BV13S1; Gm16910; Tcrb-V13"
-                     /note="T-cell receptor beta, variable 14"
+                     /note="T cell receptor beta, variable 14"
                      /db_xref="GeneID:100124678"
                      /db_xref="IMGT/GENE-DB:TRBV14"
                      /db_xref="MGI:98587"
@@ -624,7 +664,7 @@ FEATURES             Location/Qualifiers
      gene            250417..250864
                      /gene="Trbv15"
                      /gene_synonym="Gm16775; Tcrb-V12"
-                     /note="T-cell receptor beta, variable 15"
+                     /note="T cell receptor beta, variable 15"
                      /db_xref="GeneID:100124679"
                      /db_xref="IMGT/GENE-DB:TRBV15"
                      /db_xref="MGI:98586"
@@ -643,7 +683,7 @@ FEATURES             Location/Qualifiers
      gene            260997..261436
                      /gene="Trbv16"
                      /gene_synonym="Gm16776; Tcrb-V11"
-                     /note="T-cell receptor beta, variable 16"
+                     /note="T cell receptor beta, variable 16"
                      /db_xref="GeneID:100124680"
                      /db_xref="IMGT/GENE-DB:TRBV16"
                      /db_xref="MGI:98585"
@@ -662,7 +702,7 @@ FEATURES             Location/Qualifiers
      gene            272298..282762
                      /gene="Trbv17"
                      /gene_synonym="Gm16779; Tcrb-V9"
-                     /note="T-cell receptor beta, variable 17"
+                     /note="T cell receptor beta, variable 17"
                      /db_xref="GeneID:100124681"
                      /db_xref="IMGT/GENE-DB:TRBV17"
                      /db_xref="MGI:98610"
@@ -684,16 +724,21 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124682"
                      /db_xref="IMGT/GENE-DB:TRBV18"
+                     /db_xref="MGI:5009967"
      CDS             join(284343..284394,284521..284814)
                      /gene="Trbv18"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124682"
                      /db_xref="IMGT/GENE-DB:TRBV18"
+                     /db_xref="MGI:5009967"
+     V_segment       join(284343..284394,284521..284814)
+                     /gene="Trbv18"
+                     /pseudo
      gene            287795..288254
                      /gene="Trbv19"
                      /gene_synonym="Gm16780; Tcrb-V6"
-                     /note="T-cell receptor beta, variable 19"
+                     /note="T cell receptor beta, variable 19"
                      /db_xref="GeneID:100124684"
                      /db_xref="IMGT/GENE-DB:TRBV19"
                      /db_xref="MGI:98604"
@@ -722,7 +767,7 @@ FEATURES             Location/Qualifiers
      gene            297479..298183
                      /gene="Trbv20"
                      /gene_synonym="Gm16911; Tcrb-V15"
-                     /note="T-cell receptor beta, variable 20"
+                     /note="T cell receptor beta, variable 20"
                      /db_xref="GeneID:100124685"
                      /db_xref="IMGT/GENE-DB:TRBV20"
                      /db_xref="MGI:98589"
@@ -746,7 +791,7 @@ FEATURES             Location/Qualifiers
      gene            311793..312250
                      /gene="Trbv21"
                      /gene_synonym="Gm16778; Tcrb-V19"
-                     /note="T-cell receptor beta, variable 21"
+                     /note="T cell receptor beta, variable 21"
                      /db_xref="GeneID:100124686"
                      /db_xref="IMGT/GENE-DB:TRBV21"
                      /db_xref="MGI:98593"
@@ -768,12 +813,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124687"
                      /db_xref="IMGT/GENE-DB:TRBV22"
+                     /db_xref="MGI:5009968"
      CDS             join(321281..321329,321442..321740)
                      /gene="Trbv22"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124687"
                      /db_xref="IMGT/GENE-DB:TRBV22"
+                     /db_xref="MGI:5009968"
      V_segment       join(321329..321381,321442..321740)
                      /gene="Trbv22"
                      /standard_name="TRBV22"
@@ -781,7 +828,7 @@ FEATURES             Location/Qualifiers
      gene            325279..325732
                      /gene="Trbv23"
                      /gene_synonym="Tcrb-V20; VB20"
-                     /note="T-cell receptor beta, variable V23"
+                     /note="T cell receptor beta, variable V23"
                      /db_xref="GeneID:100124688"
                      /db_xref="IMGT/GENE-DB:TRBV23"
                      /db_xref="MGI:98595"
@@ -800,7 +847,7 @@ FEATURES             Location/Qualifiers
      gene            327297..327763
                      /gene="Trbv24"
                      /gene_synonym="Tcrb; Tcrb-V17; Tcrb-V3.2; VB17a(cz)"
-                     /note="T-cell receptor beta, variable 24"
+                     /note="T cell receptor beta, variable 24"
                      /db_xref="GeneID:100124689"
                      /db_xref="IMGT/GENE-DB:TRBV24"
                      /db_xref="MGI:98591"
@@ -822,29 +869,36 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124690"
                      /db_xref="IMGT/GENE-DB:TRBV25"
+                     /db_xref="MGI:5009969"
      CDS             join(330880..330923,331140..331416)
                      /gene="Trbv25"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124690"
                      /db_xref="IMGT/GENE-DB:TRBV25"
+                     /db_xref="MGI:5009969"
      V_segment       join(330880..330923,331140..331416)
                      /gene="Trbv25"
                      /standard_name="TRBV25"
                      /pseudo
      gene            336731..337119
                      /gene="Trbv26"
-                     /note="T cell receptor beta variable 26"
-                     /db_xref="GeneID:100124691"
+                     /gene_synonym="Gm16909; Tcrb-V3; Tcrb-V3.1"
+                     /note="T cell receptor beta, variable 26"
+                     /db_xref="GeneID:110315"
                      /db_xref="IMGT/GENE-DB:TRBV26"
+                     /db_xref="MGI:98596"
      CDS             join(336731..336779,336902..337119)
                      /gene="Trbv26"
+                     /gene_synonym="Gm16909; Tcrb-V3; Tcrb-V3.1"
                      /exception="rearrangement required for product"
                      /codon_start=1
-                     /db_xref="GeneID:100124691"
+                     /db_xref="GeneID:110315"
                      /db_xref="IMGT/GENE-DB:TRBV26"
+                     /db_xref="MGI:98596"
      V_segment       join(336731..336779,336902..337119)
                      /gene="Trbv26"
+                     /gene_synonym="Gm16909; Tcrb-V3; Tcrb-V3.1"
                      /standard_name="TRBV26"
      gene            362434..363533
                      /gene="Gm2719"
@@ -859,12 +913,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124693"
                      /db_xref="IMGT/GENE-DB:trbv27"
+                     /db_xref="MGI:5009970"
      CDS             join(367327..367375,367501..367785)
                      /gene="Trbv27"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124693"
                      /db_xref="IMGT/GENE-DB:trbv27"
+                     /db_xref="MGI:5009970"
      V_segment       join(367327..367375,367501..367785)
                      /gene="Trbv27"
                      /standard_name="TRBV27"
@@ -875,12 +931,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124694"
                      /db_xref="IMGT/GENE-DB:TRBV28"
+                     /db_xref="MGI:5009971"
      CDS             join(375903..375951,376085..376356)
                      /gene="Trbv28"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124694"
                      /db_xref="IMGT/GENE-DB:TRBV28"
+                     /db_xref="MGI:5009971"
      V_segment       join(375903..375951,376085..376356)
                      /gene="Trbv28"
                      /standard_name="TRBV28"
@@ -888,7 +946,7 @@ FEATURES             Location/Qualifiers
      gene            380609..381087
                      /gene="Trbv29"
                      /gene_synonym="Gm16649; Tcrb-V7; Vbeta7"
-                     /note="T-cell receptor beta, variable 29"
+                     /note="T cell receptor beta, variable 29"
                      /db_xref="GeneID:100124698"
                      /db_xref="IMGT/GENE-DB:TRBV29"
                      /db_xref="MGI:98605"
@@ -907,7 +965,7 @@ FEATURES             Location/Qualifiers
      gene            390582..391196
                      /gene="Trbv30"
                      /gene_synonym="Gm16648; Tcrb-V18"
-                     /note="T-cell receptor beta, variable 30"
+                     /note="T cell receptor beta, variable 30"
                      /db_xref="GeneID:100124699"
                      /db_xref="IMGT/GENE-DB:TRBV30"
                      /db_xref="MGI:98592"
@@ -944,25 +1002,28 @@ FEATURES             Location/Qualifiers
                      /gene="Try4"
                      /gene_synonym="0910001B19Rik; Td"
                      /codon_start=1
-                     /product="trypsin 4"
+                     /product="trypsin 4 precursor"
                      /protein_id="NP_035776.1"
                      /db_xref="GI:6755893"
                      /db_xref="CCDS:CCDS20044.1"
                      /db_xref="GeneID:22074"
                      /db_xref="MGI:102757"
+                     /translation="MRALLFLALVGAAVAFPVDDDDKIVGGYTCRENSVPYQVSLNSG
+                     YHFCGGSLINDQWVVSAAHCYKSRIQVRLGEHNINVLEGNEQFVNSAKIIKHPNFNSR
+                     TLNNDIMLIKLASPVTLNARVATVALPSSCAPAGTQCLISGWGNTLSFGVNNPDLLQC
+                     LDAPLLPQADCEASYPGKITNNMICVGFLEGGKDSCQGDSGGPVVCNGQLQGIVSWGY
+                     GCALKDNPGVYTKVCNYVDWIQNTIAAN"
      gene            complement(420438..423916)
                      /gene="Try5"
-                     /gene_synonym="1810049H19Rik; MGC170847; MGC170850; Tc;
-                     Tesp4"
+                     /gene_synonym="1810049H19Rik; Tc; Tesp4"
                      /note="trypsin 5"
                      /db_xref="GeneID:103964"
                      /db_xref="MGI:102756"
      mRNA            complement(join(420438..420632,420899..421035,
                      421393..421646,422555..422714,423862..423916))
                      /gene="Try5"
-                     /gene_synonym="1810049H19Rik; MGC170847; MGC170850; Tc;
-                     Tesp4"
-                     /product="RIKEN cDNA 1810049H19 gene"
+                     /gene_synonym="1810049H19Rik; Tc; Tesp4"
+                     /product="trypsin 5"
                      /exception="unclassified transcription discrepancy"
                      /transcript_id="NM_001003405.4"
                      /db_xref="GI:156713464"
@@ -971,15 +1032,19 @@ FEATURES             Location/Qualifiers
      CDS             complement(join(420483..420632,420899..421035,
                      421393..421646,422555..422714,423862..423901))
                      /gene="Try5"
-                     /gene_synonym="1810049H19Rik; MGC170847; MGC170850; Tc;
-                     Tesp4"
+                     /gene_synonym="1810049H19Rik; Tc; Tesp4"
                      /codon_start=1
-                     /product="trypsin 5"
+                     /product="trypsin 5 precursor"
                      /protein_id="NP_001003405.1"
                      /db_xref="GI:51010909"
                      /db_xref="CCDS:CCDS20045.1"
                      /db_xref="GeneID:103964"
                      /db_xref="MGI:102756"
+                     /translation="MNSLLFLALVGAAVAFPVDDDDKIVGGYTCRENSIPYQVSLNSG
+                     YHFCGGSLINDQWVVSAAHCYKTRIQVRLGEHNINVLEGNEQFVNSAKIIKHPNFNSR
+                     TLNNDIMLIKLASPVTLNARVATVALPSSCAPAGTQCLISGWGNTLSFGVNNPDLLQC
+                     LDAPLLPQADCEASYPGKITNNMICVGFLEGGKDSCQGDSGGPVVCNGQLQGIVSWGY
+                     GCALKDNPGVYTKVCNYVDWIQDTIAAN"
      gene            463311..467150
                      /gene="Try10"
                      /note="trypsin 10"
@@ -998,22 +1063,27 @@ FEATURES             Location/Qualifiers
                      /gene="Try10"
                      /note="trypsinogen 10"
                      /codon_start=1
-                     /product="trypsin 10"
+                     /product="trypsin 10 precursor"
                      /protein_id="NP_001034085.1"
                      /db_xref="GI:84781771"
                      /db_xref="CCDS:CCDS20046.1"
                      /db_xref="GeneID:436522"
                      /db_xref="MGI:3687012"
+                     /translation="MSTLLFLALVGAAVAFPVDDDDKIVGGYTCRENSVPYQVSLNSG
+                     YHFCGGSLINDQWVVSAAHCYKSRIQVRLGEHNINVLEGNEQFIDAANIIKHPKFKKK
+                     TLDNDIMLIKLSSPVTLNARVATVALPSSCAAAGTQCLISGWGNTLSSGVNNPDLLQC
+                     LDAPLLPQADCEASYPGKITKNMICVGFLEGGKDSCQGDSGGPVVCNGQLQGIVSWGY
+                     GCAQKDNPGVYTKVCNYVDWIQNTIAAN"
      gene            complement(482965..486819)
                      /gene="Prss3"
-                     /gene_synonym="MGC176265; MTG; Tb; Try3; TRY4"
+                     /gene_synonym="MTG; Tb; Try3; TRY4"
                      /note="protease, serine, 3"
                      /db_xref="GeneID:22073"
                      /db_xref="MGI:102758"
      mRNA            complement(join(482965..483169,483433..483569,
                      484080..484333,486014..486173,486764..486819))
                      /gene="Prss3"
-                     /gene_synonym="MGC176265; MTG; Tb; Try3; TRY4"
+                     /gene_synonym="MTG; Tb; Try3; TRY4"
                      /product="protease, serine, 3"
                      /transcript_id="NM_011645.2"
                      /db_xref="GI:157058292"
@@ -1022,16 +1092,21 @@ FEATURES             Location/Qualifiers
      CDS             complement(join(483020..483169,483433..483569,
                      484080..484333,486014..486173,486764..486803))
                      /gene="Prss3"
-                     /gene_synonym="MGC176265; MTG; Tb; Try3; TRY4"
+                     /gene_synonym="MTG; Tb; Try3; TRY4"
                      /EC_number="3.4.21.4"
                      /note="trypsin 3; trypsinogen 15"
                      /codon_start=1
-                     /product="mesotrypsin"
+                     /product="mesotrypsin precursor"
                      /protein_id="NP_035775.1"
                      /db_xref="GI:6755891"
                      /db_xref="CCDS:CCDS20047.1"
                      /db_xref="GeneID:22073"
                      /db_xref="MGI:102758"
+                     /translation="MNALLILALVGAAVAFPVDDDDKIVGGYTCQENSVPYQVSLNSG
+                     YHFCGGSLINDQWVVSAAHCYKTRIQVRLGEHNINVLEGNEQFVNAAKIIKHPNFNRK
+                     TLNNDIMLLKLSSPVTLNARVATVALPSSCAPAGTQCLISGWGNTLSFGVSEPDLLQC
+                     LDAPLLPQADCEASYPGKITGNMVCAGFLEGGKDSCQGDSGGPVVCNRELQGIVSWGY
+                     GCALPDNPGVYTKVCNYVDWIQDTIAAN"
      gene            501562..506462
                      /gene="Gm5771"
                      /gene_synonym="EG436523"
@@ -1042,7 +1117,7 @@ FEATURES             Location/Qualifiers
                      505862..505998,506260..506462)
                      /gene="Gm5771"
                      /gene_synonym="EG436523"
-                     /product="predicted gene, EG436523"
+                     /product="predicted gene 5771"
                      /transcript_id="NM_001038997.2"
                      /db_xref="GI:157058293"
                      /db_xref="GeneID:436523"
@@ -1053,12 +1128,17 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="EG436523"
                      /note="trypsinogen 12"
                      /codon_start=1
-                     /product="trypsinogen 12"
+                     /product="trypsinogen 12 precursor"
                      /protein_id="NP_001034086.1"
                      /db_xref="GI:84781768"
                      /db_xref="CCDS:CCDS20048.1"
                      /db_xref="GeneID:436523"
                      /db_xref="MGI:3646222"
+                     /translation="MSALLFLALVGAAVAFPVDDDKIVGGYTCRENSVPYQVSLNSGY
+                     HFCGGSLINDQWVVSAAHCYKTRIQVRLGEHNIKVLEGNEQFVNAAKIIKHPNFNRKT
+                     LNNDIMLIKLSSPVTLNARVATVALPSSCAPAGTQCLISGWGNTLSFGVSEPDLLQCL
+                     DAPLLPQADCEASYPGKITGNMVCAGFLEGGKDSCQGDSGGPVVCNGELQGIVSWGYG
+                     CALADNPGVYTKVCNYVDWIQDTIAAN"
      gene            524513..528799
                      /gene="Gm5409"
                      /gene_synonym="EG386551; Try10l"
@@ -1069,7 +1149,7 @@ FEATURES             Location/Qualifiers
                      528246..528382,528649..528799)
                      /gene="Gm5409"
                      /gene_synonym="EG386551; Try10l"
-                     /product="predicted gene, EG386551"
+                     /product="predicted pseudogene 5409"
                      /transcript_id="NM_001003664.2"
                      /db_xref="GI:157058294"
                      /db_xref="GeneID:386551"
@@ -1080,11 +1160,16 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="EG386551; Try10l"
                      /note="Try10-like trypsinogen"
                      /codon_start=1
-                     /product="Try10-like trypsinogen"
+                     /product="Try10-like trypsinogen precursor"
                      /protein_id="NP_001003664.1"
                      /db_xref="GI:51092303"
                      /db_xref="GeneID:386551"
                      /db_xref="MGI:3643903"
+                     /translation="MQFLSQLLCSTALVAFPVDDDDRIVGGYTCRENSVPYQVSLNSG
+                     YHFCGDSLINDQWVVSAAHCYNSRIQVRLGEHNINVLEGNEQFIDAANIVKHPKFKKK
+                     TLDNDIMLIKLSSPVTLNARVATVAMPSSCALAGTQCLISGWGNTLSSGVNNPDLLQC
+                     LDAPLLPQADCEASYPGKITNNMICVGFLEGGKDSCQGDSDGPVVCNGQLQGIVSWGY
+                     GCAQKDNPGVYTKVCNYVDWIQNTIAAN"
      gene            complement(551420..555303)
                      /gene="Gm10334"
                      /gene_synonym="ENSMUSG00000071517"
@@ -1095,7 +1180,7 @@ FEATURES             Location/Qualifiers
                      552543..552796,554476..554635,555232..555303))
                      /gene="Gm10334"
                      /gene_synonym="ENSMUSG00000071517"
-                     /product="similar to trypsinogen 15"
+                     /product="predicted gene 10334"
                      /transcript_id="NM_001103153.1"
                      /db_xref="GI:157058297"
                      /db_xref="GeneID:100040233"
@@ -1105,12 +1190,17 @@ FEATURES             Location/Qualifiers
                      /gene="Gm10334"
                      /gene_synonym="ENSMUSG00000071517"
                      /codon_start=1
-                     /product="mesotrypsin-like"
+                     /product="mesotrypsin-like precursor"
                      /protein_id="NP_001096623.1"
                      /db_xref="GI:157058298"
                      /db_xref="CCDS:CCDS39468.1"
                      /db_xref="GeneID:100040233"
                      /db_xref="MGI:3641889"
+                     /translation="MNAFLILALVGAAVAFPVDDDDKIVGGYTCQENSVPYQVSLNSG
+                     YHFCGGSLINDQWVVSAAHCYKTRIQVRLGEHNINVLEGNEQFVNAAKIIKHPNFNRK
+                     TLNNDIMLIKLSSPVTLNARVATVALPSSCAPAGTQCLISGWGNTLSFGVSEPDLLQC
+                     LDAPLLPQADCEASYPGKITGNMVCAGFLEGGKDSCQGDSGGPVVCNGELQGIVSWGY
+                     GCALPDNPGVYTKVCNYVDWIQDTIAAN"
      gene            568136..572992
                      /gene="Prss1"
                      /gene_synonym="Try-1; Try1; Trygn16"
@@ -1121,7 +1211,7 @@ FEATURES             Location/Qualifiers
                      572391..572527,572790..572992)
                      /gene="Prss1"
                      /gene_synonym="Try-1; Try1; Trygn16"
-                     /product="protease, serine, 1"
+                     /product="protease, serine, 1 (trypsin 1)"
                      /transcript_id="NM_053243.2"
                      /db_xref="GI:157058295"
                      /db_xref="GeneID:114228"
@@ -1133,12 +1223,17 @@ FEATURES             Location/Qualifiers
                      /EC_number="3.4.21.4"
                      /note="trypsin 1; trypsinogen 16"
                      /codon_start=1
-                     /product="protease, serine, 1"
+                     /product="protease, serine, 1 precursor"
                      /protein_id="NP_444473.1"
                      /db_xref="GI:16716569"
                      /db_xref="CCDS:CCDS20049.1"
                      /db_xref="GeneID:114228"
                      /db_xref="MGI:98839"
+                     /translation="MSALLFLALVGAAVAFPVDDDDKIVGGYTCRENSVPYQVSLNSG
+                     YHFCGGSLINDQWVVSAAHCYKTRIQVRLGEHNINVLEGNEQFIDAAKIIKHPNFNRK
+                     TLNNDIMLIKLSSPVTLNARVATVALPSSCAPAGTQCLISGWGNTLSFGVSEPDLLQC
+                     LDAPLLPQADCEASYPGKITGNMVCAGFLEGGKDSCQGDSGGPVVCNGELQGIVSWGY
+                     GCALPDNPGVYTKVCNYVDWIQDTIAAN"
      gene            630982..634285
                      /gene="Prss2"
                      /gene_synonym="Ta; Tesp4; Try2; TRY8; TRYP"
@@ -1168,10 +1263,15 @@ FEATURES             Location/Qualifiers
                      /db_xref="CCDS:CCDS20050.1"
                      /db_xref="GeneID:22072"
                      /db_xref="MGI:102759"
+                     /translation="MSALLILALVGAAVAFPVDDDDKIVGGYTCRESSVPYQVSLNAG
+                     YHFCGGSLINDQWVVSAAHCYKYRIQVRLGEHNINVLEGNEQFVDSAKIIRHPNYNSW
+                     TLDNDIMLIKLASPVTLNARVASVPLPSSCAPAGTQCLISGWGNTLSNGVNNPDLLQC
+                     VDAPVLPQADCEASYPGDITNNMICVGFLEGGKDSCQGDSGGPVVCNGELQGIVSWGY
+                     GCAQPDAPGVYTKVCNYVDWIQNTIADN"
      gene            642407..642418
                      /gene="Trbd1"
                      /gene_synonym="Gm16647; Tcrb-D1"
-                     /note="T-cell receptor beta, D region 1"
+                     /note="T cell receptor beta, D region 1"
                      /db_xref="GeneID:100125246"
                      /db_xref="IMGT/GENE-DB:TRBD1"
                      /db_xref="MGI:4439571"
@@ -1328,7 +1428,7 @@ FEATURES             Location/Qualifiers
      gene            647425..648871
                      /gene="Trbc1"
                      /gene_synonym="Gm16802; Tcrb-C1"
-                     /note="T-cell receptor beta, constant region 1"
+                     /note="T cell receptor beta, constant region 1"
                      /db_xref="GeneID:100125262"
                      /db_xref="IMGT/GENE-DB:TRBC1"
                      /db_xref="MGI:4439726"
@@ -1349,7 +1449,7 @@ FEATURES             Location/Qualifiers
      gene            651369..651382
                      /gene="Trbd2"
                      /gene_synonym="Gm16803; Tcrb-D2"
-                     /note="T-cell receptor beta, D region 2"
+                     /note="T cell receptor beta, D region 2"
                      /db_xref="GeneID:100125247"
                      /db_xref="IMGT/GENE-DB:TRBD2"
                      /db_xref="MGI:4439727"
@@ -1462,17 +1562,22 @@ FEATURES             Location/Qualifiers
                      /standard_name="TRBJ2-5"
      gene            652804..652851
                      /gene="Trbj2-6"
+                     /gene_synonym="Gm17602"
                      /note="T cell receptor beta joining 2-6"
                      /db_xref="GeneID:100125260"
                      /db_xref="IMGT/GENE-DB:TRBJ2-6"
+                     /db_xref="MGI:4937236"
      CDS             652804..652851
                      /gene="Trbj2-6"
+                     /gene_synonym="Gm17602"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:100125260"
                      /db_xref="IMGT/GENE-DB:TRBJ2-6"
+                     /db_xref="MGI:4937236"
      J_segment       652804..652851
                      /gene="Trbj2-6"
+                     /gene_synonym="Gm17602"
                      /standard_name="TRBJ2-6"
      gene            653016..653062
                      /gene="Trbj2-7"
@@ -1496,7 +1601,7 @@ FEATURES             Location/Qualifiers
      gene            655936..657387
                      /gene="Trbc2"
                      /gene_synonym="BB153276; Tcrb-C2"
-                     /note="T-cell receptor beta, constant region 2"
+                     /note="T cell receptor beta, constant 2"
                      /db_xref="GeneID:100125263"
                      /db_xref="IMGT/GENE-DB:TRBC2"
                      /db_xref="MGI:4835227"
@@ -1527,7 +1632,7 @@ FEATURES             Location/Qualifiers
      gene            complement(666899..667577)
                      /gene="Trbv31"
                      /gene_synonym="Gm16809; Tcrb-V14"
-                     /note="T-cell receptor beta, variable 31"
+                     /note="T cell receptor beta, variable 31"
                      /db_xref="GeneID:269846"
                      /db_xref="IMGT/GENE-DB:TRBV31"
                      /db_xref="MGI:98588"

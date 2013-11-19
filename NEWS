@@ -1,3 +1,6 @@
+2013-11-19  Charles Plessy <plessy@riken.jp>
+	* New references from NCBI, updating TRDV5.
+
 2013-10-23  Charles Plessy <plessy@riken.jp>
 	* Commited 1.1.2 to Bioconductor.
 	* clonotype_table: new option to randomly "sample" libraries.
