@@ -29,5 +29,3 @@ GCA GCa agt g
 ----
 
 This is a collision (different colonotypes giving the same Yassai ID) rather than a bug in the implementation → [[done]].
-
-Will all the collisions always have the same translation ?
