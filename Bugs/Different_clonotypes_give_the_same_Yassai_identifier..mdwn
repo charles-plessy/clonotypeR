@@ -20,20 +20,14 @@ GCA GCA agt g
 
 <pre>
 aAn.1A14-1A43L9
- A   A   A   N   N   N   A   P   R
+ A   A   N   N   N   N   A   P   R
 GCA GCT AAT AAC AAC AAT GCC CCA CGA
 GCA GCa agt g
      gc AAT AAC AAC AAT GCC CCA CGA
 </pre>
 
 ----
-False positive, not a bug -> [[done]].
 
-Probably the bug is in the function that passed the data to `yassai_identifier()`.  It works fine otherwise.
+This is a collision (different colonotypes giving the same Yassai ID) rather than a bug in the implementation → [[done]].
 
-<pre>
-> yassai_identifier(c(V="TRAV14-1", J="TRAJ43", dna="GCAGCAGCTAACAACAATGCCCCACGA", pep="AAANNNAPR"))
-[1] "aAn.1A14-1A43L9"
-> yassai_identifier(c(V="TRAV14-1", J="TRAJ43", dna="GCAGCTAATAACAACAATGCCCCACGA", pep="AAANNNAPR"))
-[1] "aAa.1A14-1A43L9"
-</pre>
+Will all the collisions always have the same translation ?
