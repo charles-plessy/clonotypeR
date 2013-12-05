@@ -1,3 +1,6 @@
+Problem
+-------
+
 <pre>
 yassai_identifier(c(V="TRAV14N-3", J="TRAJ16", dna="GCAACTTCAAGTGGCCAGAAGCTGGTT", pep="ATSSGQKLV"))
 # takes ages
@@ -7,6 +10,9 @@ yassai_identifier(c(V="TRAV14N-3", J="TRAJ16", dna="GCAACTTCAAGTGGCCAGAAGCTGGTT"
 # returns immediately.
 </pre>
 
+
+Troubleshooting
+---------------
 
 The problematic clonotype comes from read `GWYEMNS10GHZUF`.
 
@@ -21,4 +27,48 @@ Here is the alignment made by clonotypeR
 
 <pre>
 GWYEMNS10GHZUF	16	TRAV14N-3	105	17	49S17M1I29M1I201M99S	*	0	0	NNNNNNNNNNNNNCNCNCCTATCCCCTGTGTGCCTTGTCTCCCACGACTCCAATCTCTGACAGTCTGGGGAAGGAGAGACCGCAATTCTGAACTGCTAGTTATGAGAACAGTGCTTTTGACTACTTCCCATGGTACCAGCAGTTCCCTGGGGAAGGCCCTGCTCTCCTGATAGCCATACGTTCAGTGTCCGATAAAAAGGAAGATGGACGATTCACAATCTTCTTCAATAAAAGGGAGAAAAATCTCTCCTTGCACATCAAAGACTCTCAGCCTGGAGACTCAGCCACCTACTTCTGTGCAACTTCAAGTGGCCAGAAGCTGGTTTTTGGCCAGGGGACCATATTAAAGGTGTACCTGCACATCCAGAACCCAGAACCTGCTGTGTACCAGTTAGTC	!!!!!!!!!!!!!,!,!00474,,,,22227766;;;62766622332.....9973335333133,,,,111155557623369;;:9986773329&lt;223366:...3933322223998&lt;444000&lt;&lt;&lt;&lt;&gt;&lt;&lt;&lt;?ABDD?????D;;;;DD???:::BBAAAABD:666FFFFFFDDFFFDDB8988A20//222&gt;&gt;&gt;=AAA&#64;BAA??==AAAAB==:;&lt;AA?88D==;;:::4F;7533??ABB5544&gt;&#64;&#64;&#64;&#64;&#64;?011==BBBBBDDFFFFFFFFFFFFCCCCCFFFFFFFFFFFFFFFFFDDDFDDDFDBAAA&gt;&gt;53310000226694445DFFFHIIIHHHIIIIIIIDFHFFDDDGGFF&lt;=666FHFFFHIIIIFFFFFFFF;;::FFF	AS:i:233	XS:i:218	XF:i:3	XE:i:4	XN:i:0
+</pre>
+
+Alignment of the V region is correct.
+
+<pre>
+GWYEMNS10GHZU      1 ------------------------------NNNNNNNNNNNNNCNCNCCT     20
+                                                                  | .||
+TRAV14N-3          1 atggacaagatcctgacagcattgttttta---------------cttct     35
+
+GWYEMNS10GHZU     21 A-----TCCCCT-----GTGTGCCTTGTCTCC--------CACGAC----     48
+                     |     ||.|||     |.|||..|.|.|..|        ||.|||    
+TRAV14N-3         36 aggtcttcacctagctggggtgagtggccagcaggagaaacatgaccagc     85
+
+GWYEMNS10GHZU     49 ------------------TCCAATCTCTGACAGTCTGGGGAAGGAGAGAC     80
+                                       .||||||||||||||||| |||||||||||||
+TRAV14N-3         86 agcaggtgagacaaagttcccaatctctgacagtct-gggaaggagagac    134
+
+GWYEMNS10GHZU     81 CGCAATTCTGAACTGCTAGTTATGAGAACAGTGCTTTTGACTACTTCCCA    130
+                     |||||||||||||||| |||||||||||||||||||||||||||||||||
+TRAV14N-3        135 cgcaattctgaactgc-agttatgagaacagtgcttttgactacttccca    183
+
+GWYEMNS10GHZU    131 TGGTACCAGCAGTTCCCTGGGGAAGGCCCTGCTCTCCTGATAGCCATACG    180
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+TRAV14N-3        184 tggtaccagcagttccctggggaaggccctgctctcctgatagccatacg    233
+
+GWYEMNS10GHZU    181 TTCAGTGTCCGATAAAAAGGAAGATGGACGATTCACAATCTTCTTCAATA    230
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+TRAV14N-3        234 ttcagtgtccgataaaaaggaagatggacgattcacaatcttcttcaata    283
+
+GWYEMNS10GHZU    231 AAAGGGAGAAAAATCTCTCCTTGCACATCAAAGACTCTCAGCCTGGAGAC    280
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+TRAV14N-3        284 aaagggagaaaaatctctccttgcacatcaaagactctcagcctggagac    333
+
+GWYEMNS10GHZU    281 TCAGCCACCTACTTCTGTGCAACTTCAAGTGGCCAGAAGCTGGTTTTTGG    330
+                     |||||||||||||||||||||   .||||||                   
+TRAV14N-3        334 tcagccacctacttctgtgca---gcaagtg-------------------    361
+
+GWYEMNS10GHZU    331 CCAGGGGACCATATTAAAGGTGTACCTGCACATCCAGAACCCAGAACCTG    380
+                                                                       
+TRAV14N-3        361 --------------------------------------------------    361
+
+GWYEMNS10GHZU    381 CTGTGTACCAGTTAGTC    397
+                                      
+TRAV14N-3        361 -----------------    361
 </pre>
