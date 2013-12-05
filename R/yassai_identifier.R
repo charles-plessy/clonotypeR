@@ -1,7 +1,7 @@
-setGeneric("yassai_identifier",
-            signature=c("data", "V_after_C", "J_before_FGxG"),
-            function(data, V_after_C, J_before_FGxG)
-                standardGeneric("yassai_identifier")
+setGeneric(
+    "yassai_identifier",
+    function(data, V_after_C, J_before_FGxG)
+        standardGeneric("yassai_identifier")
 )
 
 # Case of a single clonotype
