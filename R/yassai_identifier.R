@@ -1,6 +1,6 @@
 setGeneric(
     "yassai_identifier",
-    function(data, V_after_C, J_before_FGxG)
+    function(data, V_after_C, J_before_FGxG, long=FALSE)
     standardGeneric("yassai_identifier")
 )
 
@@ -9,12 +9,14 @@ setGeneric(
 
 setMethod(
     yassai_identifier,
-    c(data="character", V_after_C="data.frame", J_before_FGxG="data.frame"),
-    function(data, V_after_C, J_before_FGxG) {
+    c(data="character", V_after_C="data.frame", J_before_FGxG="data.frame", long="ANY"),
+    function(data, V_after_C, J_before_FGxG, long) {
+    if(missing(long)) long <- FALSE
     yassai_identifier(
         data.frame(t(data), stringsAsFactors=F),
         V_after_C,
-        J_before_FGxG)
+        J_before_FGxG,
+        long)
 })
 
 # Load default data if no V_after_C and J_before_FGxG tables are specified.
@@ -22,8 +24,8 @@ setMethod(
 
 setMethod(
     yassai_identifier,
-    c(data="ANY", V_after_C="missing", J_before_FGxG="missing"),
-    function(data) {
+    c(data="ANY", V_after_C="missing", J_before_FGxG="missing", long="ANY"),
+    function(data, long) {
     if ( file.exists("inst/extdata/V_after_C.txt.gz") ) {
         V_after_C <- read.table("inst/extdata/V_after_C.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
         warning("Loading custom data from 'inst/extdata/V_after_C.txt.gz'.")
@@ -36,15 +38,16 @@ setMethod(
     } else {
         J_before_FGxG <- read.table(system.file('extdata', 'J_before_FGxG.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE)
     }
-    yassai_identifier(data, V_after_C, J_before_FGxG)
+    if ( missing(long) ) long <- FALSE
+    yassai_identifier(data, V_after_C, J_before_FGxG, long)
 })
 
 # Main function.
 
 setMethod(
     yassai_identifier,
-    c(data="data.frame", V_after_C="data.frame", J_before_FGxG="data.frame"),
-    function(data, V_after_C, J_before_FGxG) {
+    c(data="data.frame", V_after_C="data.frame", J_before_FGxG="data.frame", long="logical"),
+    function(data, V_after_C, J_before_FGxG, long=FALSE) {
 
 if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 	if ( file.exists("inst/extdata/codon_ids.txt.gz") )
@@ -118,8 +121,15 @@ codon2id <- function (codons)
 CDR3aa <- toupper(pep) # Just in case
 substr(CDR3aa, 1, V_germline)              <- tolower(substr(CDR3aa, 1, V_germline))
 substr(CDR3aa, J_germline, nchar(CDR3aa))  <- tolower(substr(CDR3aa, J_germline, nchar(CDR3aa)))
-CDR3aa <- substring(CDR3aa, 1, J_germline)
-CDR3aa <- substring(CDR3aa, V_germline, nchar(CDR3aa))
+
+# The published version of the Yassai identifier has "collisions": clonotypes with different
+# DNA sequences but same identifiers.  As a workaround, the "long" option skips the trimming
+# of the leftmost and rightmost unmodified germline codons.
+
+if (long == FALSE) {
+    CDR3aa <- substring(CDR3aa, 1, J_germline)
+    CDR3aa <- substring(CDR3aa, V_germline, nchar(CDR3aa))
+}
 
 # Convert the V and J names
 V_name <- sub("TRAV","A",V_name)
