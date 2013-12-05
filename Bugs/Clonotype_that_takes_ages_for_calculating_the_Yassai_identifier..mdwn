@@ -72,3 +72,39 @@ GWYEMNS10GHZU    381 CTGTGTACCAGTTAGTC    397
                                       
 TRAV14N-3        361 -----------------    361
 </pre>
+
+Alignment to the J region is correct as well.
+
+<pre>
+GWYEMNS10GHZU      1 NNNNNNNNNNNNNCNCNCCTATCCCCTGTGTGCCTTGTCTCCCACGACTC     50
+                                                                       
+TRAJ16             0 --------------------------------------------------      0
+
+GWYEMNS10GHZU     51 CAATCTCTGACAGTCTGGGGAAGGAGAGACCGCAATTCTGAACTGCTAGT    100
+                                                                       
+TRAJ16             0 --------------------------------------------------      0
+
+GWYEMNS10GHZU    101 TATGAGAACAGTGCTTTTGACTACTTCCCATGGTACCAGCAGTTCCCTGG    150
+                                                                       
+TRAJ16             0 --------------------------------------------------      0
+
+GWYEMNS10GHZU    151 GGAAGGCCCTGCTCTCCTGATAGCCATACGTTCAGTGTCCGATAAAAAGG    200
+                                                                       
+TRAJ16             0 --------------------------------------------------      0
+
+GWYEMNS10GHZU    201 AAGATGGACGATTCACAATCTTCTTCAATAAAAGGGAGAAAAATCTCTCC    250
+                                                                       
+TRAJ16             0 --------------------------------------------------      0
+
+GWYEMNS10GHZU    251 TTGCACATCAAAGACTCTCAGCCTGGAGACTCAGCCACCTACTTCTGTGC    300
+                                                                     ||
+TRAJ16             1 ------------------------------------------------gc      2
+
+GWYEMNS10GHZU    301 AACTTCAAGTGGCCAGAAGCTGGTTTTTGGCCAGGGGACCATATTAAAGG    350
+                     ||||||||||||||||||||||||||||||||||||||||||||||||||
+TRAJ16             3 aacttcaagtggccagaagctggtttttggccaggggaccatattaaagg     52
+
+GWYEMNS10GHZU    351 TGTACCTGCACATCCAGAACCCAGAACCTGCTGTGTACCAGTTAGTC    397
+                     |||||||||                                      
+TRAJ16            53 tgtacctgc--------------------------------------     61
+</pre>
