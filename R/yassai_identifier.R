@@ -1,39 +1,50 @@
 setGeneric(
     "yassai_identifier",
     function(data, V_after_C, J_before_FGxG)
-        standardGeneric("yassai_identifier")
+    standardGeneric("yassai_identifier")
 )
 
-# Case of a single clonotype
-setMethod(yassai_identifier,
-          c(data="character", V_after_C="data.frame", J_before_FGxG="data.frame"),
-          function(data, V_after_C, J_before_FGxG) {
-              data <- data.frame(t(data), stringsAsFactors=F)
-              yassai_identifier(data, V_after_C, J_before_FGxG) }
-)
+# Case of a single clonotype:
+# convert the data vector to a one-line data frame and call the function again.
 
-# Load default or custom data.
-setMethod(yassai_identifier,
-          c(data="ANY", V_after_C="missing", J_before_FGxG="missing"),
-          function(data) {
-  if ( file.exists("inst/extdata/V_after_C.txt.gz") ) {
-    V_after_C <- read.table("inst/extdata/V_after_C.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
-    warning("Loading custom data from 'inst/extdata/V_after_C.txt.gz'.")
-  } else {
-    V_after_C <- read.table(system.file('extdata', 'V_after_C.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE) }
+setMethod(
+    yassai_identifier,
+    c(data="character", V_after_C="data.frame", J_before_FGxG="data.frame"),
+    function(data, V_after_C, J_before_FGxG) {
+    yassai_identifier(
+        data.frame(t(data), stringsAsFactors=F),
+        V_after_C,
+        J_before_FGxG)
+})
 
-  if ( file.exists("inst/extdata/J_before_FGxG.txt.gz") ) {
-    J_before_FGxG <- read.table("inst/extdata/J_before_FGxG.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
-    warning("Loading custom data from 'inst/extdata/J_before_FGxG.txt.gz'.")
-  } else {
-    J_before_FGxG <- read.table(system.file('extdata', 'J_before_FGxG.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE) }
-  yassai_identifier(data, V_after_C, J_before_FGxG)
+# Load default data if no V_after_C and J_before_FGxG tables are specified.
+# Custom data in "./inst/extdata/" has precedence.
+
+setMethod(
+    yassai_identifier,
+    c(data="ANY", V_after_C="missing", J_before_FGxG="missing"),
+    function(data) {
+    if ( file.exists("inst/extdata/V_after_C.txt.gz") ) {
+        V_after_C <- read.table("inst/extdata/V_after_C.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
+        warning("Loading custom data from 'inst/extdata/V_after_C.txt.gz'.")
+    } else {
+        V_after_C <- read.table(system.file('extdata', 'V_after_C.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE)
+    }
+    if ( file.exists("inst/extdata/J_before_FGxG.txt.gz") ) {
+        J_before_FGxG <- read.table("inst/extdata/J_before_FGxG.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
+        warning("Loading custom data from 'inst/extdata/J_before_FGxG.txt.gz'.")
+    } else {
+        J_before_FGxG <- read.table(system.file('extdata', 'J_before_FGxG.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE)
+    }
+    yassai_identifier(data, V_after_C, J_before_FGxG)
 })
 
 # Main function.
-setMethod(yassai_identifier,
-          c(data="data.frame", V_after_C="data.frame", J_before_FGxG="data.frame"),
-          function(data, V_after_C, J_before_FGxG) {
+
+setMethod(
+    yassai_identifier,
+    c(data="data.frame", V_after_C="data.frame", J_before_FGxG="data.frame"),
+    function(data, V_after_C, J_before_FGxG) {
 
 if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 	if ( file.exists("inst/extdata/codon_ids.txt.gz") )
