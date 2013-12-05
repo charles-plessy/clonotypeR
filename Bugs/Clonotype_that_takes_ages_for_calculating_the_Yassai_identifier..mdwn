@@ -1,0 +1,8 @@
+<pre>
+yassai_identifier(c(V="TRAV14N-3", J="TRAJ16", dna="GCAACTTCAAGTGGCCAGAAGCTGGTT", pep="ATSSGQKLV"))
+# takes ages
+
+> yassai_identifier(c(V="TRAV14N-3", J="TRAJ16", dna="GCAGCAACCGCAACTTCAAGTGGCCAGAAGCTGGTT", pep="AATATSSGQKLV"))
+[1] "aTa.2A14N3A16L12"
+# returns immediately.
+</pre>
