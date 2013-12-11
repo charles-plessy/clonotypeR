@@ -50,5 +50,7 @@ cdr <- read.table(
 
 cdr$unproductive        <- is_unproductive(cdr)
 
+cdr$ambiguous           <- grepl('N', cdr$dna)
+
 return(cdr)
 }
