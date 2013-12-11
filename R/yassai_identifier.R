@@ -74,6 +74,7 @@ pep    <- as.character(data$pep)
 
 # True if the reference and CDR3 codons are identical.
 is.germline <- function (ref,dna,pos) {
+	if (pos > nchar(dna)) return (FALSE)
 	answer <- toupper(substr(ref, 1, pos)) == toupper(substr(dna, 1, pos))
 	answer[is.na(answer)] <- FALSE  # Replace NA per FALSE; is.germline is used in a while loop.
 	return(answer)
