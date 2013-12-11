@@ -154,6 +154,20 @@ J_name <- sub("TRDJ","D",J_name)
 # Determine the ID for the remaining codons.
 IDs <- codon2id(tocodons(substr(dna,(V_germline * 3) + 1 , (J_germline -1) * 3 )))
 
+# Disambiguate blunt V/J recombinations where all codons are like either V or J germline.
+# These kind of collisions only happen with the "long" format.
+# Example:
+# > data
+#           V      J                            dna        pep
+# 1 TRAV14N-1 TRAJ56 GCAGCTACTGGAGGCAATAATAAGCTGACT AATGGNNKLT
+# 2 TRAV14N-1 TRAJ56 GCAGCAACTGGAGGCAATAATAAGCTGACT AATGGNNKLT
+# > yassai_identifier(data, long=T)
+# [1] "aatggnnklt.1A14N1A56L10" "aatggnnklt.2A14N1A56L10"
+# > yassai_identifier(data, long=F)
+# [1] "aa.1A14N1A56L10" "at.2A14N1A56L10"
+
+IDs[IDs == ''] <- V_germline[IDs == '']
+
 ## Different paste commands are needed if the input is one or multiple clonotypes.
 
 if ( nrow(data) == 1 )  {

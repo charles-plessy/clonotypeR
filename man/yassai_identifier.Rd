@@ -18,7 +18,8 @@ in \url{http://dx.doi.org/10.1007/s00251-009-0383-x}.
   \item{data}{A data frame or a character vector containing a clonotype(s) with proper row or element names.}
   \item{V_after_C}{(optional) A data frame indicating the aminoacids following the conserved cystein for each V segment.}
   \item{J_before_FGxG}{(optional) A data frame indicating the aminoacids preceding the conserved FGxG motif for each V segment.}
-  \item{long}{(optional) Display the codons that would be trimmed following the standard nomenclature.}
+  \item{long}{(optional) Avoids identifier collisions by displaying the codons,
+   and indicating the position of the V--J junction in ambiguous cases.}
 }
 
 \details{
@@ -28,8 +29,12 @@ in \url{http://dx.doi.org/10.1007/s00251-009-0383-x}.
   argument, or by installing them as \dQuote{./inst/extdata/V_after_C.txt.gz} and
   \dQuote{./inst/extdata/J_before_FGxG.txt.gz}.
 
-  The \sQuote{long} mode is needed when two colonotypes or more give the same
-  identifier.  See below for an example.
+  Some clonotypes have a different DNA sequence but the same identifier following
+  the original nomenclature (see below for examples).  The \sQuote{long} mode was
+  created to avoid these collisions.  First, it displays all codons, instead of
+  only the non-templated ones and their immediate neighbors.  Second, for the
+  clonotypes where all codons are identical to the V or J germline sequence, it
+  indicates the position of the V--J junction in place of the codon IDs.
 }
 
 \value{
@@ -68,6 +73,14 @@ yassai_identifier(c(V="TRAV14-1", J="TRAJ43", dna="GCAGCTAATAACAACAATGCCCCACGA",
 
 yassai_identifier(c(V="TRAV14-1", J="TRAJ43", dna="GCAGCAGCTAACAACAATGCCCCACGA", pep="AAANNNAPR"), long=TRUE)
 # [1] "aaAnnnapr.1A14-1A43L9"
+
+# The following two clonotypes would have the same identifier in long mode
+# if the position of the V-J junction would not be indicated in place of the
+# codon IDs.
+yassai_identifier(c(V="TRAV14N-1", J="TRAJ56", dna="GCAGCTACTGGAGGCAATAATAAGCTGACT", pep="AATGGNNKLT"), long=TRUE)
+# [1] "aatggnnklt.1A14N1A56L10"
+yassai_identifier(c(V="TRAV14N-1", J="TRAJ56", dna="GCAGCAACTGGAGGCAATAATAAGCTGACT", pep="AATGGNNKLT"), long=TRUE)
+# [1] "aatggnnklt.2A14N1A56L10"
 }
 
 
