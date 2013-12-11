@@ -9,7 +9,7 @@ Reads a clonotype_table and returns a data frame.
 Reads a clonotype_table in a TAB-separated or OSCT format, and returns a data frame
 that has eight columns, for library name, V and J segments names, sequence read
 identifier, DNA, sequence quality, aminoacid sequence of the CDR3 region, mark
-for unproductive recombinations.
+for unproductive recombinations, and mark for ambiguous sequences.
 }
 
 \usage{
@@ -36,6 +36,7 @@ read_clonotypes(filename, scores=TRUE, ...)
 \item{qual}{Quality values for the DNA sequence (character).}
 \item{pep}{Translation of the DNA sequence (character).}
 \item{unproductive}{Flag indicating stop codons or frame shifts (logical).}
+\item{ambiguous}{Flag indicating that the DNA sequences has ambiguous (\dQuote{N}) nucleotides (logical).}
 }
 
 \author{Charles Plessy}

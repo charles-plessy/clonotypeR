@@ -10,7 +10,7 @@ rearrangements are filtered out.
 }
 
 \usage{
-clonotype_table(libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1, sample=FALSE)
+clonotype_table(libs, feats=c("V","pep","J"), data, filter=(data$unproductive | data$ambiguous), minscore=0, minqual=1, sample=FALSE)
 }
 
 \arguments{
@@ -28,8 +28,9 @@ clonotype_table(libs, feats=c("V","pep","J"), data, filter=data$unproductive, mi
 }
   \item{filter}{
   Logical vector to filter out clonotypes.  By default it relies on the clonotypes
-  data frame to provide a \dQuote{unproductive} column, that indicates clonotypes with a
-  stop codon or a frame shift.
+  data frame to provide a \dQuote{unproductive} column that indicates clonotypes with a
+  stop codon or a frame shift, and a \dQuote{ambiguous} column that indicates clonotypes
+  where the DNA sequences has ambiguous (\dQuote{N}) nucleotides.
 }
   \item{minscore}{
   Minimum alignment score.  Clonotypes with an alignment score lower than this value are
@@ -40,7 +41,7 @@ clonotype_table(libs, feats=c("V","pep","J"), data, filter=data$unproductive, mi
   discarded.
 }
   \item{sample}{
-  Indicate the number of clonotypes to randombly sample from the library (no
+  Indicate the number of clonotypes to randomly sample from the library (no
   replacement).  Default: no subsampling.
 }
 }

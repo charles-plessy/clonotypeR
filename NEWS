@@ -1,3 +1,18 @@
+2013-12-11  Charles Plessy <plessy@riken>
+	* Commited 1.1.3 to Bioconductor.
+	* Fixed two bugs in yassai_identifier().
+	  - Infinite loop when the CDR3 is fully contained in the J segment.
+	  - Bogus 'integer(0)' output when there are only germline residues.
+	* Avoid more collisions by indicating the position of the V-J junction
+	  when there is no codon ID to indicate.
+	* Mark and filter out clonotypes with ambiguous ('N') nucleotides.
+
+2013-12-05  Charles Plessy <plessy@riken>
+	* New "long" option to yassai_identifier(), to avoid collisions.
+
+2013-11-19  Charles Plessy <plessy@riken.jp>
+	* New references from NCBI, updating TRDV5.
+
 2013-10-23  Charles Plessy <plessy@riken.jp>
 	* Commited 1.1.2 to Bioconductor.
 	* clonotype_table: new option to randomly "sample" libraries.

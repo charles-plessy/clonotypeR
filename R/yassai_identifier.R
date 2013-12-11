@@ -1,39 +1,53 @@
-setGeneric("yassai_identifier",
-            signature=c("data", "V_after_C", "J_before_FGxG"),
-            function(data, V_after_C, J_before_FGxG)
-                standardGeneric("yassai_identifier")
+setGeneric(
+    "yassai_identifier",
+    function(data, V_after_C, J_before_FGxG, long=FALSE)
+    standardGeneric("yassai_identifier")
 )
 
-# Case of a single clonotype
-setMethod(yassai_identifier,
-          c(data="character", V_after_C="data.frame", J_before_FGxG="data.frame"),
-          function(data, V_after_C, J_before_FGxG) {
-              data <- data.frame(t(data), stringsAsFactors=F)
-              yassai_identifier(data, V_after_C, J_before_FGxG) }
-)
+# Case of a single clonotype:
+# convert the data vector to a one-line data frame and call the function again.
 
-# Load default or custom data.
-setMethod(yassai_identifier,
-          c(data="ANY", V_after_C="missing", J_before_FGxG="missing"),
-          function(data) {
-  if ( file.exists("inst/extdata/V_after_C.txt.gz") ) {
-    V_after_C <- read.table("inst/extdata/V_after_C.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
-    warning("Loading custom data from 'inst/extdata/V_after_C.txt.gz'.")
-  } else {
-    V_after_C <- read.table(system.file('extdata', 'V_after_C.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE) }
+setMethod(
+    yassai_identifier,
+    c(data="character", V_after_C="data.frame", J_before_FGxG="data.frame", long="ANY"),
+    function(data, V_after_C, J_before_FGxG, long) {
+    if(missing(long)) long <- FALSE
+    yassai_identifier(
+        data.frame(t(data), stringsAsFactors=F),
+        V_after_C,
+        J_before_FGxG,
+        long)
+})
 
-  if ( file.exists("inst/extdata/J_before_FGxG.txt.gz") ) {
-    J_before_FGxG <- read.table("inst/extdata/J_before_FGxG.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
-    warning("Loading custom data from 'inst/extdata/J_before_FGxG.txt.gz'.")
-  } else {
-    J_before_FGxG <- read.table(system.file('extdata', 'J_before_FGxG.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE) }
-  yassai_identifier(data, V_after_C, J_before_FGxG)
+# Load default data if no V_after_C and J_before_FGxG tables are specified.
+# Custom data in "./inst/extdata/" has precedence.
+
+setMethod(
+    yassai_identifier,
+    c(data="ANY", V_after_C="missing", J_before_FGxG="missing", long="ANY"),
+    function(data, long) {
+    if ( file.exists("inst/extdata/V_after_C.txt.gz") ) {
+        V_after_C <- read.table("inst/extdata/V_after_C.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
+        warning("Loading custom data from 'inst/extdata/V_after_C.txt.gz'.")
+    } else {
+        V_after_C <- read.table(system.file('extdata', 'V_after_C.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE)
+    }
+    if ( file.exists("inst/extdata/J_before_FGxG.txt.gz") ) {
+        J_before_FGxG <- read.table("inst/extdata/J_before_FGxG.txt.gz", header=TRUE, row.names=1, stringsAsFactors=FALSE)
+        warning("Loading custom data from 'inst/extdata/J_before_FGxG.txt.gz'.")
+    } else {
+        J_before_FGxG <- read.table(system.file('extdata', 'J_before_FGxG.txt.gz', package = "clonotypeR"), stringsAsFactors=FALSE)
+    }
+    if ( missing(long) ) long <- FALSE
+    yassai_identifier(data, V_after_C, J_before_FGxG, long)
 })
 
 # Main function.
-setMethod(yassai_identifier,
-          c(data="data.frame", V_after_C="data.frame", J_before_FGxG="data.frame"),
-          function(data, V_after_C, J_before_FGxG) {
+
+setMethod(
+    yassai_identifier,
+    c(data="data.frame", V_after_C="data.frame", J_before_FGxG="data.frame", long="logical"),
+    function(data, V_after_C, J_before_FGxG, long=FALSE) {
 
 if ( ! ( exists("codon_ids") && class(codon_ids) == "data.frame" ) )
 	if ( file.exists("inst/extdata/codon_ids.txt.gz") )
@@ -60,6 +74,7 @@ pep    <- as.character(data$pep)
 
 # True if the reference and CDR3 codons are identical.
 is.germline <- function (ref,dna,pos) {
+	if (pos > nchar(dna)) return (FALSE)
 	answer <- toupper(substr(ref, 1, pos)) == toupper(substr(dna, 1, pos))
 	answer[is.na(answer)] <- FALSE  # Replace NA per FALSE; is.germline is used in a while loop.
 	return(answer)
@@ -88,9 +103,15 @@ J_germline <- ceiling( ( nchar(dna) - apply(cbind(J,dnarev), 1, function(X) germ
 tocodons <- function (sequences)
 	strsplit(sequences, "(?<=...)", perl=TRUE)
 
-codon2id <- function (codons)
-	sapply(codons, function(X) codon_ids[X,"id"])
-
+codon2id <- function (codons) {
+    sapply(codons, function(X) {
+        if (length(X) == 0) {
+            return('')
+        } else {
+            return(codon_ids[X,"id"])
+        }
+    })
+}
 ###################
 
 
@@ -107,8 +128,15 @@ codon2id <- function (codons)
 CDR3aa <- toupper(pep) # Just in case
 substr(CDR3aa, 1, V_germline)              <- tolower(substr(CDR3aa, 1, V_germline))
 substr(CDR3aa, J_germline, nchar(CDR3aa))  <- tolower(substr(CDR3aa, J_germline, nchar(CDR3aa)))
-CDR3aa <- substring(CDR3aa, 1, J_germline)
-CDR3aa <- substring(CDR3aa, V_germline, nchar(CDR3aa))
+
+# The published version of the Yassai identifier has "collisions": clonotypes with different
+# DNA sequences but same identifiers.  As a workaround, the "long" option skips the trimming
+# of the leftmost and rightmost unmodified germline codons.
+
+if (long == FALSE) {
+    CDR3aa <- substring(CDR3aa, 1, J_germline)
+    CDR3aa <- substring(CDR3aa, V_germline, nchar(CDR3aa))
+}
 
 # Convert the V and J names
 V_name <- sub("TRAV","A",V_name)
@@ -125,6 +153,20 @@ J_name <- sub("TRDJ","D",J_name)
 
 # Determine the ID for the remaining codons.
 IDs <- codon2id(tocodons(substr(dna,(V_germline * 3) + 1 , (J_germline -1) * 3 )))
+
+# Disambiguate blunt V/J recombinations where all codons are like either V or J germline.
+# These kind of collisions only happen with the "long" format.
+# Example:
+# > data
+#           V      J                            dna        pep
+# 1 TRAV14N-1 TRAJ56 GCAGCTACTGGAGGCAATAATAAGCTGACT AATGGNNKLT
+# 2 TRAV14N-1 TRAJ56 GCAGCAACTGGAGGCAATAATAAGCTGACT AATGGNNKLT
+# > yassai_identifier(data, long=T)
+# [1] "aatggnnklt.1A14N1A56L10" "aatggnnklt.2A14N1A56L10"
+# > yassai_identifier(data, long=F)
+# [1] "aa.1A14N1A56L10" "at.2A14N1A56L10"
+
+IDs[IDs == ''] <- V_germline[IDs == '']
 
 ## Different paste commands are needed if the input is one or multiple clonotypes.
 

@@ -1,4 +1,4 @@
-clonotype_table <- function (libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1, sample=FALSE) {
+clonotype_table <- function (libs, feats=c("V","pep","J"), data, filter=(data$unproductive | data$ambiguous), minscore=0, minqual=1, sample=FALSE) {
 
 if ( missing (libs) )
 	libs <- levels(data$lib)
@@ -14,6 +14,9 @@ if ( ! is.data.frame(data) )
 
 if ( ! is.logical(data$unproductive) )
 	stop ('Input missing "unproductive" column.')
+
+if ( ! is.logical(data$ambiguous) )
+	stop ('Input missing "ambiguous" column.')
 
 # The following function counts, for a single library, the occurrences of
 # segments, CDR3s or combinations of them, and return them as a simple data
