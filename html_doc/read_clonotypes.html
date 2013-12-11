@@ -15,7 +15,7 @@ Reads a clonotype_table and returns a data frame.
 <p>Reads a clonotype_table in a TAB-separated or OSCT format, and returns a data frame
 that has eight columns, for library name, V and J segments names, sequence read
 identifier, DNA, sequence quality, aminoacid sequence of the CDR3 region, mark
-for unproductive recombinations.
+for unproductive recombinations, and mark for ambiguous sequences.
 </p>
 
 
@@ -86,6 +86,10 @@ read_clonotypes(filename, scores=TRUE, ...)
 <tr valign="top"><td><code>unproductive</code></td>
 <td>
 <p>Flag indicating stop codons or frame shifts (logical).</p>
+</td></tr>
+<tr valign="top"><td><code>ambiguous</code></td>
+<td>
+<p>Flag indicating that the DNA sequences has ambiguous (&ldquo;N&rdquo;) nucleotides (logical).</p>
 </td></tr>
 </table>
 

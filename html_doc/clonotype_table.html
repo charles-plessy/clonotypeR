@@ -21,7 +21,7 @@ rearrangements are filtered out.
 <h3>Usage</h3>
 
 <pre>
-clonotype_table(libs, feats=c("V","pep","J"), data, filter=data$unproductive, minscore=0, minqual=1, sample=FALSE)
+clonotype_table(libs, feats=c("V","pep","J"), data, filter=(data$unproductive | data$ambiguous), minscore=0, minqual=1, sample=FALSE)
 </pre>
 
 
@@ -53,8 +53,9 @@ But it can also count single features, such as the V or J segments.
 <td>
 
 <p>Logical vector to filter out clonotypes.  By default it relies on the clonotypes
-data frame to provide a &ldquo;unproductive&rdquo; column, that indicates clonotypes with a
-stop codon or a frame shift.
+data frame to provide a &ldquo;unproductive&rdquo; column that indicates clonotypes with a
+stop codon or a frame shift, and a &ldquo;ambiguous&rdquo; column that indicates clonotypes
+where the DNA sequences has ambiguous (&ldquo;N&rdquo;) nucleotides.
 </p>
 </td></tr>
 <tr valign="top"><td><code>minscore</code></td>
