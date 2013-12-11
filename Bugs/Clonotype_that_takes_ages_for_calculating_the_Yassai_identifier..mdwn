@@ -5,8 +5,8 @@ Problem
 yassai_identifier(c(V="TRAV14N-3", J="TRAJ16", dna="GCAACTTCAAGTGGCCAGAAGCTGGTT", pep="ATSSGQKLV"))
 # takes ages
 
-> yassai_identifier(c(V="TRAV14N-3", J="TRAJ16", dna="GCAGCAACCGCAACTTCAAGTGGCCAGAAGCTGGTT", pep="AATATSSGQKLV"))
-[1] "aTa.2A14N3A16L12"
+yassai_identifier(c(V="TRAV14N-3", J="TRAJ16", dna="GCAGCAACCGCAACTTCAAGTGGCCAGAAGCTGGTT", pep="AATATSSGQKLV"))
+## [1] "aTa.2A14N3A16L12"
 # returns immediately.
 </pre>
 
@@ -46,3 +46,10 @@ TRAV14N-3      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 This triggered an infinite loop when calling `is.germline()`.
 
 [[Done]] in `42ab98729c5c77462b5929b00ee973074ae4c1c7`.
+
+Now the function should return as in the following example.
+
+<pre>
+yassai_identifier(c(V="TRAV14N-3", J="TRAJ16", dna="GCAACTTCAAGTGGCCAGAAGCTGGTT", pep="ATSSGQKLV"))
+## [1] "a.A14N3A16L9"
+</pre>
