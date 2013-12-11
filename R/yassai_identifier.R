@@ -103,9 +103,15 @@ J_germline <- ceiling( ( nchar(dna) - apply(cbind(J,dnarev), 1, function(X) germ
 tocodons <- function (sequences)
 	strsplit(sequences, "(?<=...)", perl=TRUE)
 
-codon2id <- function (codons)
-	sapply(codons, function(X) codon_ids[X,"id"])
-
+codon2id <- function (codons) {
+    sapply(codons, function(X) {
+        if (length(X) == 0) {
+            return('')
+        } else {
+            return(codon_ids[X,"id"])
+        }
+    })
+}
 ###################
 
 
