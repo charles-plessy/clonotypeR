@@ -1,0 +1,232 @@
+<!--
+%\VignetteEngine{knitr::knitr}
+%\VignetteIndexEntry{clonotypeR User's Guide}
+\usepackage[utf8]{inputenc}
+-->
+
+clonotypeR: Identify and analyse B and T cell receptors at a high throughput
+============================================================================
+
+    Author: Charles Plessy <plessy@riken.jp>
+    Date:   1 May 2013
+
+*clonotypeR* is a R package and accompanying scripts to identify and
+analyse clonotypes from high-throughput T cell receptors sequence
+libraries. *clonotypeR* is suited to process and organise very large
+number of clonotypes, in the order of millions, typically produced by
+Roche 454 instruments, and to prepare these sequences for differential
+expression analysis with the typical transcriptomics tools as well as
+for statistical analysis using existing R packages.
+
+The home page of *clonotypeR* is <http://clonotyper.branchable.com/>.
+
+
+clonotypeR's workflow
+---------------------
+
+Typically, the user receives the output of a next-generation sequencer and runs 
+some shell commands that are not part of the *clonotypeR* R package, but that are 
+distributed with it on <http://clonotyper.branchable.com/>.
+
+Currently, *clonotypeR* provides only support for mouse sequences, by providing
+pre-formatted sequences from `V` and `J` segments.  Support of human sequences
+is in preparation.  See <http://clonotyper.branchable.com/references/README>
+for more information.
+
+The workflow presented here summarises the different commands to run.  Other
+examples are available on line at
+<http://clonotyper.branchable.com/doc/workflow/>.
+
+*This example analysis assumes a
+[unix](https://en.wikipedia.org/wiki/Operating%5Fsystem%23UNIX%5Fand%5FUNIX%2Dlike%5Foperating%5Fsystems)
+system (Linux, Mac OS, …)*
+
+
+Test data
+---------
+
+ClonotypeR come with test data in the `R` package.  While it is not deep enough
+to discuss about biology, you can use it to familiarise yourself with the
+commands or test them.
+
+The R package is loaded as usual.
+
+```{r load_package}
+library(clonotypeR)
+````
+
+The data is a table of 120 clonotypes in the `extdata` folder of the package.
+The command `read_clonotypes` will parse it in a data frame.  The clonotypes
+are arbitrarly assigned to three libraries called `A`, `B`, and `C`.  The
+`read_clonotypes` comments determines at load time if the peptidic sequence has
+a stop codon or is frame-shifted, and records the information in the
+`unproductive` column.
+
+```{r load_data}
+clonotypes <- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
+summary(clonotypes)
+```
+
+The `clonotype_table` command counts how many times a given clonotype is found
+in each library.  It can also count simpler features, in particular `V` and `J`
+segments, or any combination of them.
+
+```{r clonotype_table}
+head(clonotype_table(levels(clonotypes$lib), data=clonotypes))
+head(clonotype_table(levels(clonotypes$lib), "V", data=clonotypes))
+head(clonotype_table(levels(clonotypes$lib), "J", data=clonotypes))
+```
+
+ClonotypeR provides other functions for further analysis.  `yassai_identifier`
+calculates a unique indentifier using the `V`, `J`, peptidic and nucleotidic
+information, following the work of [Yassai et al](http://dx.doi.org/10.1007/s00251-009-0383-x).
+
+```{r yassai_identifier}
+# Unique identifier
+head(yassai_identifier(clonotypes))
+```
+
+`unique_clonotypes` and `common_clonotypes` are typically used when comparing libraries.
+
+```{r other_functions}
+clonotypes <- clonotype_table(levels(clonotypes$lib), data=clonotypes)
+
+# First six clonotypes of library C
+head(unique_clonotypes("C", data=clonotypes))
+# Count clonotypes found in library A, and B or C.
+length(common_clonotypes(group1="A", group2=c("B","C"), data=clonotypes))
+# Matrix of numbers of common clonotypes
+common_clonotypes(data=clonotypes)
+```
+
+With deeper data, a typical follow-up would be to identify differentially
+represnted clonotypes between libraries, for instance with the `edgeR` package,
+or to calculate distance between libraries, for instance with the
+`vegan` package.
+
+
+Example data (3 × 2,000 reads)
+------------------------------
+
+The data provided on-line at <http://clonotyper.branchable.com/example_data/>
+is a sub-sample of three sequence librairies of mouse T cell receptors α (2,000
+reads each) made on the 454 Titanium or the 454 junior platforms.  The original
+libraries will be deposited in public databanks after publication in a
+peer-reviewed journal.
+
+These example libraries are called `A`, `B` and `C`, and are in FASTQ format,
+with entries like the following (the sequence was truncated for the convenience
+of the display).
+
+    @HKTLYLP01B0MTM
+    gactGTCCATCTTCCTTTTATCGGACACTGAAGTATGGATATCAGAAGTGCAgggccttcccacgggaacg
+    +
+    IIIIIIIIIIIHHFF::::G&gt;IIIGGGIIIIIIIIIGGIIIIIIFEBDCDC&lt;//-5522------
+
+
+### Detection of V segments
+
+Run the command `clonotyper detect A.fastq` in the same directory as a copy of
+the file `A.fastq`.
+
+The result is stored in a temporary directory called `extraction_files`, that
+will be created if it does not already exist.
+
+`clonotyper detect` compares the sequences to the reference V segments using
+BWA, and produces output like the following.
+
+    [bsw2_aln] read 2000 sequences/pairs (843395 bp)...
+    [samopen] SAM header is present: 167 sequences.
+    [main] Version: 0.6.2-r126
+    [main] CMD: bwa bwasw -t8 /usr/share/clonotypeR/references/V/index A.fastq
+    [main] Real time: 1.099 sec; CPU: 8.225 sec
+
+This indicates that 2,000 reads have been processed, representing 843,395 base
+pairs in total.  There were 167 reference V segments, and the version number of
+BWA was `0.6.2-r126`.  The whole process took less than 10 seconds.
+
+Process the example libraries `B` and `C` similarly with the commands
+`clonotyper detect C.fastq` and `clonotyper detect C.fastq`.
+
+
+### Extraction of CDR3 regions
+
+Run the command `clonotyper extract A` in the same directory as where you ran
+`clonotyper detect A.fastq`.  The result is a table stored in a directory
+called `clonotypes`, that will be created if it does not already exist.
+
+The output is quite voluminous, and indicates which *V* / *J* combinations are
+being found, like on the following.
+
+    TRAV14-3	233
+    	TRAJ61	0
+    	TRAJ60	0
+    	TRAJ59	0
+    	TRAJ58	1
+    	TRAJ57	39
+    	TRAJ56	2
+    	TRAJ55	0
+
+The format of the table is explained in the manual page of the function
+`read_clonotypes()` of the R package.
+
+For each library (`A`, `B` and `C`), one file is available in the `clonotypes`
+directory.  With BWA `0.6.2-r126`, the following numbers of clonotypes are found.
+
+      1072 clonotypes/A.tsv
+       924 clonotypes/B.tsv
+       689 clonotypes/C.tsv
+
+The files need to be concatenated before analysis in `R`, with the following command.
+
+    find clonotypes/ -name '*tsv' | xargs cat > clonotypes.tsv
+
+A copy of the result file is provided in `inst/extdata/clonotypes2.tsv.xz` for convenience.
+
+### Data analysis in R
+
+Load the clonotypeR library:
+
+```
+library(clonotypeR)
+```
+
+Load the data in a R object called *clonotypes*:
+
+```
+clonotypes <- read_clonotypes('clonotypes.tsv')
+```
+
+Alternatively, you can load the convenience copy from
+`inst/extdata/clonotypes2.tsv.xz` (see above).
+
+```{r load_data2}
+clonotypes <- read_clonotypes(system.file("extdata", "clonotypes2.tsv.xz", package = "clonotypeR"))
+```
+
+The command `summary(clonotypes)` already provides useful information.
+
+```{r summary_2}
+summary(clonotypes)
+```
+
+Identify unique clonotypes, count their sequences in the libraries `A`, `B` and `C`, and store the result as a table arbitrarly named `abc`. 
+
+```{r explore_data2}
+abc <- clonotype_table(c('A','B','C'), data=clonotypes)
+head(abc)
+summary(abc)
+```
+
+The summary shows that the most frequent clonotype is in `C`. Using `R` [index vectors](http://cran.r-project.org/doc/manuals/R-intro.html#Index-vectors), we can see that its CDR3 sequence is AASDSNNRIF and that it was not found in the other libraries.
+
+```{r explore_data2b}
+abc[abc$C == 124, ]
+```
+
+The `clonotype_table` function can also produce a count table for and combination of *V*, *CDR3* or *J* segments.
+
+```{r explore_data2v}
+clonotype_table(c('A','B','C'), "V", data=clonotypes)
+head(clonotype_table(c('A','B','C'), c("V","J"), data=clonotypes))
+```
