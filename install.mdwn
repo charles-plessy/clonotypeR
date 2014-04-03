@@ -10,16 +10,6 @@ scripts for processing the raw sequences, which are to be downloaded as
 explained below.
 
 
-### From file archive
-
-Download _clonotypeR_ as a [source archive](http://source.clonotyper.branchable.com/?p=source.git;a=tree;h=refs/heads/release;hb=refs/heads/release)
-and install it as explained above.
-The full source of this package is available as a Git repository
-at the following URL.
-
-    git://clonotyper.branchable.com/
-
-
 ### From source repository
 
 Install the requirements below, and then clone *clonotypeR* with [git](http://git-scm.com/), then build and install the R module
