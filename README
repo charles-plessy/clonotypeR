@@ -1,11 +1,45 @@
-clonotypeR is distributed as a R package, as a full source archive that
-contains more example data and the source of the website, or as a Git
-repository.
+ClontotypeR – Quantitative analysis of antigen receptor sequences
+=================================================================
+
+Please also visit the main homepage at <http://clonotyper.branchable.com>.
+
+
+ClonotypeR is distributed in two forms
+--------------------------------------
+
+ - A Bioconductor R package, that is intended to have a size smaller than 2 Mib.
+
+ - A Git repository containing the R package, plus scripts to process raw
+   sequence files before analysis in R,  plus example data and the source of
+   the website <http://clonotyper.branchable.com>.
 
 If you do not see directories such as `doc` (containing a wiki documentation)
 or `example_data` (containing 6,000 sequences in FASTQ format for testing
-purposes), then you can get them from the full source archive or the Git
-repository.
+purposes), then you only have the R package.
+
+
+Git branches, bug reports, …
+----------------------------
+
+The organisation of the source code is a bit complicated for historical
+reasons.  ClonotypeR is hosted from the beginning on
+[Branchable](http://www.branchable.com); its R part was then accepted as a
+package in [Bioconductor](http://www.bioconductor.org), which recently opened a
+bridge to [GitHub](https://github.com).
+
+ - On Branchable, the `master` branch of the Git repository contains the full
+   source, website, scripts and example data included.  The Bioconductor
+   source is on the `bioc` branch.
+
+ - On GitHub, the `master` branch contains the Bioconductor source, that is
+   the `bioc` branch on Branchable.
+
+The issue tracking on GitHub is disabled; please use the
+[Bugs](http://clonotyper.branchable.com/Bugs/) page on Branchable instead.
+
+
+License and acknowledgements
+----------------------------
 
 clonotypeR is developed in the RIKEN Yokohama institute by the Functional
 Genomics Technology Team of the Omics Science Center, and by the Division of
@@ -17,8 +51,6 @@ the Japanese Ministry of Education, Culture, Sports, Science and Technology
 a research grant from MEXT to the RIKEN Center for Life Science Technologies.
 
 clonotypeR is distributed under the Creative Commons Public Domain Dedication
-CC0 1.0 Universal (CC0 1.0), see http://creativecommons.org/publicdomain/zero/1.0/
+CC0 1.0 Universal (CC0 1.0), see <http://creativecommons.org/publicdomain/zero/1.0/>.
 
-For more information, see http://clonotyper.branchable.com
-
-  -- Charles Plessy <plessy@riken.jp>  Mon, 08 Apr 2013 13:41:35 +0900
+  -- Charles Plessy <plessy@riken.jp>  Thu, 03 Apr 2014 13:44:49 +0900
