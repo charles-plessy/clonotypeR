@@ -1,76 +1,28 @@
-2014-04-03  Charles Plessy <plessy@riken.jp>
-	* Version 1.1.5
-	* Mention the GitHub bridge in the documentation
+Changes in version 1.2.0
 
-2014-03-05  Bioc admins
-	* Version 1.1.4.
-	* Change biocviews to “Sequencing”,
+NEW FEATURES
 
-2013-12-11  Charles Plessy <plessy@riken>
-	* Commited 1.1.3 to Bioconductor.
-	* Fixed two bugs in yassai_identifier().
-	  - Infinite loop when the CDR3 is fully contained in the J segment.
-	  - Bogus 'integer(0)' output when there are only germline residues.
-	* Avoid more collisions by indicating the position of the V-J junction
-	  when there is no codon ID to indicate.
-	* Mark and filter out clonotypes with ambiguous ('N') nucleotides.
+    o   Added a “long” option to yassai_identifier(), where every amino acid is
+        represented.  This solves the problem of ID collisions, where a single
+        identifier could be produced by two different clonotypes.
 
-2013-12-05  Charles Plessy <plessy@riken>
-	* New "long" option to yassai_identifier(), to avoid collisions.
+    o   Added a new option to clonotype_table() for randomly sampling libraries.
 
-2013-11-19  Charles Plessy <plessy@riken.jp>
-	* New references from NCBI, updating TRDV5.
+    o   Added a new mode to common_clonotypes() for calculating the abundance
+        relatively to one library.
 
-2013-10-23  Charles Plessy <plessy@riken.jp>
-	* Commited 1.1.2 to Bioconductor.
-	* clonotype_table: new option to randomly "sample" libraries.
+    o   Unified the syntax of common_clonotypes() and unique_clonotypes().
 
-2013-10-17  Charles Plessy <plessy@riken.jp>
-	* Commited 1.1.1 to Bioconductor.
-	* common_clonotypes: new mode to calculate the "abundance" relatively
-	  to one library.
+BUG FIXES
 
-2013-10-07  Charles Plessy <plessy@riken.jp>
-	* Commited 0.99.6 to Bioconductor.
-	* Added unit tests for yassai_identifier(). 
+    o   Removed infinite loop in yassai_identifier() when the germinal V
+        sequence was completely absent from the CDR3.
 
-2013-08-01  Charles Plessy <plessy@riken.jp>
-	* Unified the syntax of common_clonotypes and unique_clonotypes.
+    o   Corrected output bug where “integer(0)” was returned if the V–J
+        boundary was a codon boundary.
 
-2013-05-07  Charles Plessy <plessy@riken.jp>
-	* Resubmitted 0.99.5 to Bioconductor.
-	* Distribute a copy of the clonotypes extracted from example_data.
-	* Execute all examples in the vignette.
+    o   yassai_identifier(): properly encode the names of the V and J segments.
 
-2013-05-01  Charles Plessy <plessy@riken.jp>
+Changes in version 1.0.0
 
-	* Resubmitted 0.99.4 to Bioconductor
-	* Moved the Markdown vignette to '/vignettes'.
-	* Added executable example with test data to the vignette.
-
-2013-04-26  Charles Plessy <plessy@riken.jp>
-
-	* Resubmitted 0.99.3 to Bioconductor
-	* Moved extra data to 'inst/extdata'.
-	* Moved the Markdown vignette to 'inst/vignettes'.
-
-2013-04-15  Charles Plessy <plessy@riken.jp>
-
-	* Resubmission after correcting yassai_identifier() and other warnings.
-
-2013-01-08  Charles Plessy <plessy@riken.jp>
-
-	* Leaner Bioconductor package, without the wiki documentation.
-
-2012-.....  Charles Plessy <plessy@riken.jp>
-
-	* Many entries missing.
-
-2012-10-10  Charles Plessy <plessy@riken.jp>
-
-	* Corrected Frenglish “improductive” with “unproductive”. 
-	  This can break backwards compatibility.
-
-2012-09-06  Charles Plessy <plessy@riken.jp>
-
-	* Initial release
+    o   Initial release in Bioconductor.
