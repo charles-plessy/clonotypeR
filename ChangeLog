@@ -1,3 +1,7 @@
+2014-04-08  Charles Plessy <plessy@riken.jp>
+	* Version 1.1.6
+	* Transfer “NEWS” to ChangeLog and add release notes to “NEWS”.
+
 2014-04-03  Charles Plessy <plessy@riken.jp>
 	* Version 1.1.5
 	* Mention the GitHub bridge in the documentation
