@@ -11,7 +11,7 @@
 	* Change biocviews to “Sequencing”,
 
 2013-12-11  Charles Plessy <plessy@riken>
-	* Commited 1.1.3 to Bioconductor.
+	* Committed 1.1.3 to Bioconductor.
 	* Fixed two bugs in yassai_identifier().
 	  - Infinite loop when the CDR3 is fully contained in the J segment.
 	  - Bogus 'integer(0)' output when there are only germline residues.
