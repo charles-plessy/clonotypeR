@@ -45,6 +45,8 @@ to try alternative solutions, you can have a look at
 
 ### Recent news
 
+ * March 2014: New stable version [1.2](http://www.bioconductor.org/packages/2.14/bioc/html/clonotypeR.html)
+   released on Bioconductor.
  * 11 December 2013: Version 1.1.3 adding a `long` option to `yassai_identifier`, solving
    the problem of ID collisions.
  * 23 October 2013: Version 1.1.2 adding a new option to `clonotype_table` for randomly
