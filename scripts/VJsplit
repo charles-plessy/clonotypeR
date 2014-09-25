@@ -49,7 +49,7 @@ do
     VECTORSTRIP_V_OUTFILE=$LIBRARY.${V_NAME//\//}.vectorstrip
   fi	
   echo -ne "$V_NAME\t" 1>&2
-  V_SEQ=$(seqret -filter $CLONOTYPER_REFERENCE/${V_LIB}-C.fa:$V_NAME[-20:] raw:stdout)
+  V_SEQ=$(seqret -filter $CLONOTYPER_REFERENCE/${V_LIB}-C.fa:${V_NAME//\//?}[-20:] raw:stdout)
   # Encode the mapping quality and alignment score in the sequence name
   samtools view $EXTRACT_DIR/$LIBRARY.bam $V_NAME |
     perl -ne '($score) = /AS:i:(\d+)\t/ ; ($mapq) = (split)[4] ; print "AS_${score}_MQ_${mapq}_$_"' > $LIBRARY-${V_NAME//\//}-filtered.sam
