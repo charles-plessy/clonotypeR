@@ -1,3 +1,9 @@
+Changes in version 1.4.0
+
+BUG FIXES
+
+    o   Minor packaging corrections (NAMESPACE, etc.).
+
 Changes in version 1.2.0
 
 NEW FEATURES
