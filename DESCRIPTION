@@ -1,7 +1,7 @@
 Package: clonotypeR
 Type: Package
 Title: High throughput analysis of T cell antigen receptor sequences
-Version: 1.3.1
+Version: 1.3.2
 Date: 2014-09-25
 Author: Charles Plessy <plessy@riken.jp>
 Maintainer: Charles Plessy <plessy@riken.jp>
