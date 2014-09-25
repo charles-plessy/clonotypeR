@@ -146,7 +146,7 @@ pairs in total.  There were 167 reference V segments, and the version number of
 BWA was `0.6.2-r126`.  The whole process took less than 10 seconds.
 
 Process the example libraries `B` and `C` similarly with the commands
-`clonotyper detect C.fastq` and `clonotyper detect C.fastq`.
+`clonotyper detect B.fastq` and `clonotyper detect C.fastq`.
 
 
 ### Extraction of CDR3 regions
