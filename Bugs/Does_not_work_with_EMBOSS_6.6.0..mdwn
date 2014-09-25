@@ -19,4 +19,4 @@ seqret test-1.fa:A stdout
 
 See also <http://lists.open-bio.org/pipermail/emboss/2014-June/008983.html>
 
-[[Done]] with the following workaround: the directory `references/V` was renamed `references/V-C` in [[!commit 055b6807d3f0e6fc6dda58f5699c6ac34fbc89c2]].
+[[Done]] with the following workaround: the directory `references/V` was renamed `references/V-C` in [[!commit 125524131bd57c084ee39374054b73784e6ae929]].
