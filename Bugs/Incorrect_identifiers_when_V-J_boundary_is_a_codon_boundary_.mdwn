@@ -1,0 +1,13 @@
+<pre>
+> yassai_identifier(c(V='TRAV2', J='TRAJ61', dna='ATTGTGACTGACACAGGTACAGAATTAATAGGAAATTGGCA', pep='IVTDTGTELIGNW'))
+[1] "tg.integer(0)A2A61L13"
+</pre>
+
+[[Done]] in  `2b8514d18f312f627255b0f2eb0ec1bf4ffa48dd`, by return an empty chain instead of `integer(0)` when receiving an empty chain.
+
+Result after correction:
+
+<pre>
+> yassai_identifier(c(V='TRAV2', J='TRAJ61', dna='ATTGTGACTGACACAGGTACAGAATTAATAGGAAATTGGCA', pep='IVTDTGTELIGNW'))
+[1] "tg.A2A61L13"
+</pre>

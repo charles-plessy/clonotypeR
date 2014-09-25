@@ -1,0 +1,38 @@
+# Clonotypes
+
+In the immune system, the *T cells* and *B cells* (or lymphocytes)
+recognize their targets by producing a large number of variable
+receptors, where the sequence diversity, not encoded directly in the
+germ line, originates through [[!wikipedia V(D)J_recombination
+desc="somatic recombination"]].  Each B or T cell expresses only one
+receptor variant, and the collection of all the different receptors in
+a cell population is called a *repertoire*.  Once the somatic
+recombination is done, the receptor is transmitted to daughter cells
+across divisions, and the collection of cells expressing the same
+receptor, and by extension the receptor itself, is called a
+*clonotype*.
+
+The processus of somatic recombination assembles a mature gene from
+arrays of *segments* on the genome.  The junction between the
+N-terminal *V* and the downstream *J* segments, with the possible
+inclusion of a *D* segment in the case of the T cell receptor β
+chain and the immunoglobulin heavy chain, is called the
+[[!wikipedia complementarity_determining_region desc="complementarity determining region 3"]]
+(*CDR3*) and is one of the key contact points with the antigen.
+
+In *clonotypeR*, we define clonotypes as unique combinations of *V*,
+*CDR3* and *J* segments at the nucleotide or protein level.  The *V*
+and *J* segments are encoded in the genome and are therefore called by
+their name, and the *CDR3* region is identified by its sequence.  For
+instance, each of the following lines define a different clonotype,
+not considering synonymous differences in the DNA sequence.
+
+<pre>
+TRAV14N-1_14D-1	AASVSGYQNFY		TRAJ49
+TRAV14N-1_14D-1	AASALYNAPR		TRAJ43
+TRAV14D-3/DV8	AGLASSSFSKLV	TRAJ50
+</pre>
+
+We use as boundaries between the *V*, *CDR3* and *J* segments the
+*conserved cystein* and the *FGxG* motif, which we do not include in
+the *CDR3*.

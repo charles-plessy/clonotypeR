@@ -1,0 +1,71 @@
+Reference sequences
+===================
+
+Mus musculus
+------------
+
+The references sequences are [TRA@.gb][Mmus_TRA], [TRB@.gb][Mmus_TRB] and
+[TRG@.gb][Mmus_TRG], downloaded in GenBank format from [RefSeq][].  The *V*, *(D)*, *J* and *C* segments were
+extracted with the command `make gb2fa`, wich uses the the [extractfeat][]
+program of the EMBOSS package. 
+
+This directory contains *V* and *J* segments aligned on conserved motifs in the
+files [[V.fa]] and [[J.fa]].  These alignments were made by hand using [SeaView][] and
+may need to be revised when the reference sequences change.
+
+[Mmus_TRA]: http://www.ncbi.nlm.nih.gov/nuccore/NG_007044 (Mus musculus T cell receptor alpha delta locus (Tcra/tcrd@) on chromosome 14)
+[Mmus_TRB]: http://www.ncbi.nlm.nih.gov/nuccore/NG_006980 (Mus musculus T cell receptor beta chain (Tcrb) on chromosome 6)
+[Mmus_TRG]: http://www.ncbi.nlm.nih.gov/nuccore/NG_007033 (Mus musculus T cell receptor gamma chain (Tcrg) on chromosome 13)
+
+[RefSeq]: http://www.ncbi.nlm.nih.gov/refseq
+[SeaView]:	http://pbil.univ-lyon1.fr/software/seaview	"multiplatform, graphical user interface for multiple sequence alignment and molecular phylogeny."
+[extractfeat]:	http://emboss.open-bio.org/wiki/Appdoc:Extractfeat	"extractfeat documentation on the EMBOSS wiki".
+
+The files [[V-C.fa]], [[V_after_C.fa]], [[J-FGxG.fa]], [[J_before_FGxG.fa]] are
+derived from the manually edited files [[V.fa]] and [[J.fa]] described above,
+by removing everything after or before their conserved motif, followed by
+degapping with `make degap`.
+
+A BWA index is provided for the *V* segments trunkated after the conserved
+cysteine, in the `V` directory, and can be refreshed with the command `make
+bwa-index`.  It is used by the command `clonotypeR detect`.
+
+
+Other organisms
+---------------
+
+Work to support the analysis of repertoires from other species is under way.
+The current workaround is to download reference loci from GenBank, overwrite
+the files `TRA@.gb`, `TRB@.gb` and `TRG@.gb`, and repeat the process described
+above for mouse sequences.  For human, the accession numbers are
+[NG_001332][Hsap_TRA], [NG_001333][Hsap_TRB], and [NG_001336][Hsap_TRG].
+
+[Hsap_TRA]: http://www.ncbi.nlm.nih.gov/nuccore/NG_001332 (Homo sapiens T cell receptor alpha delta locus (TCRA/TCRD) on chromosome 14)
+[Hsap_TRB]: http://www.ncbi.nlm.nih.gov/nuccore/NG_001333 (Homo sapiens T cell receptor beta locus (TRB) on chromosome 7)
+[Hsap_TRG]: http://www.ncbi.nlm.nih.gov/nuccore/NG_001336 (Homo sapiens T cell receptor gamma locus (TRG) on chromosome 7)
+
+
+Redundant sequences
+-------------------
+
+Some *V* segments have identical sequences.  This is incompatible with
+*clonotypeR*'s detection strategy, based on *mapping qualities*.
+
+[Mapping qualities](http://maq.sourceforge.net/qual.shtml#mapQ) are an
+estimation of the probability that a genomic alignment is incorrect.  If two
+*V* segments are identical, a read can align to both with equal probability,
+and therefore the mapping quality will be low, in the sense that it is
+impossible to know precisely from which *V* segment the RNA was transcribed.
+*ClonotypeR* uses mapping quality scores to distinguish between closely related
+*V* segments, and by default discards reads where the mapping quality is too
+low.  Therefore, redundant references sequences were removed from the `V.fa`
+alignment.
+
+Removed redundant *V* segments are recorded in the file [[V.removed]] and were
+detected with the command ` export SEQ_LIST=$(infoseq V.fa -filter -only -usa
+-noheading) ; for SEQ1 in $SEQ_LIST ; do for SEQ2 in $SEQ_LIST ; do if ! [
+$SEQ1 = $SEQ2 ]; then needle --filter $SEQ1 $SEQ2 2> /dev/null | grep -B10
+'100.0' ; fi; done; done`.  Note that with some PCR designs, more *V* segments
+appear identical.  You may need to correct `V.fa` and `V.removed`  accordingly,
+or turn off the use of mapping qualities in the `R` command `clonotype_table`.
+

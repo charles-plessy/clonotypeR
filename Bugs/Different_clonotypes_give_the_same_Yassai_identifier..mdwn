@@ -1,0 +1,31 @@
+Is it a bug in the software or a bug in the concept ?
+
+<pre>
+> rownames(dd)[grep('aAn.1A14-1A43L9', dd.yassai)]
+[1] "TRAV14-1 TRAJ43 GCAGCAGCTAACAACAATGCCCCACGA AAANNNAPR"
+[2] "TRAV14-1 TRAJ43 GCAGCTAATAACAACAATGCCCCACGA AANNNNAPR"
+> V_after_C['TRAV14-1',]
+[1] "GCAGCAAGTG"
+> J_before_FGxG['TRAJ43',]
+[1] "GCAATAACAACAATGCCCCACGA"
+</pre>
+
+<pre>
+aAn.1A14-1A43L9
+ A   A   A   N   N   N   A   P   R
+GCA GCA GCT AAC AAC AAT GCC CCA CGA
+GCA GCA agt g
+     gc aaT AAC AAC AAT GCC CCA CGA
+</pre>
+
+<pre>
+aAn.1A14-1A43L9
+ A   A   N   N   N   N   A   P   R
+GCA GCT AAT AAC AAC AAT GCC CCA CGA
+GCA GCa agt g
+     gc AAT AAC AAC AAT GCC CCA CGA
+</pre>
+
+----
+
+This is a collision (different colonotypes giving the same Yassai ID) rather than a bug in the implementation → [[done]].

@@ -1,0 +1,84 @@
+#!/bin/bash
+
+set -e
+
+# Path to the reference V and J segments defaults to /etc/clonotyper/references.
+
+if [ -z $CLONOTYPER_REFERENCE ]
+then
+	if [ -d /etc/clonotyper/references ]
+	then
+		CLONOTYPER_REFERENCE=/etc/clonotyper/references
+	else if [ -d /use/share/clonotyper/references ]
+	then
+		CLONOTYPER_REFERENCE=/use/share/clonotyper/references
+	else if [ -d ../references ]
+	then
+		CLONOTYPER_REFERENCE=../references
+	else
+		echo "CLONOTYPER_REFERENCE not set and could not autodetect reference files"
+		exit 1
+			fi
+		fi
+	fi
+fi
+
+# Path to VJsplit defaults to /usr/share/clonotyper.
+
+if [ -z $CLONOTYPER_SCRIPTS ]
+then
+	if [ -d /usr/share/clonotyper/scripts ]
+	then
+		CLONOTYPER_SCRIPTS=/usr/share/clonotyper/scripts
+	else if [ -d ../scripts ]
+	then
+		CLONOTYPER_SCRIPTS=../scripts
+	else
+		echo "CLONOTYPER_SCRIPTS not set and could not autodetect path to scripts"
+		fi
+	fi
+fi
+
+# Path to the BAM and temporary files defaults to extraction_files.
+EXTRACT_DIR=${EXTRACT_DIR:-extraction_files}
+
+# Auto-detect number of threads.
+THREADS=$([ -e /proc/cpuinfo ] && cat /proc/cpuinfo | grep -c processor)
+
+function test_extract_dir {
+	if ! [ -d $EXTRACT_DIR ]
+	then
+		mkdir $EXTRACT_DIR
+	fi
+}
+
+case $1 in
+	detect)
+		shift
+		test_extract_dir
+		for FASTQ_FILE in $*
+		do
+			LIBRARY=$(basename $FASTQ_FILE .fq)
+			LIBRARY=$(basename $FASTQ_FILE .fastq)
+			bwa bwasw -t${THREADS:-1} $CLONOTYPER_REFERENCE/V/index $FASTQ_FILE |
+				samtools view -Su - |
+				samtools sort - $EXTRACT_DIR/$LIBRARY
+			samtools index $EXTRACT_DIR/$LIBRARY.bam
+		done
+	;;
+	extract)
+		shift
+		test_extract_dir
+		for BAM_FILE in $*
+		do
+			LIBRARY=$(basename $BAM_FILE .bam)
+			CLONOTYPER_REFERENCE=$CLONOTYPER_REFERENCE $CLONOTYPER_SCRIPTS/VJsplit $LIBRARY
+		done
+	;;
+	*)
+		echo "Usage:"
+		echo "       clonotypeR detect  library1.fastq library2.fastq ..."
+		echo "       clonotypeR extract library1 library2 ..."
+		exit 1
+	;;
+esac
