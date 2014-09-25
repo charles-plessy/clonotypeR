@@ -57,7 +57,7 @@ library(clonotypeR)
 
 The data is a table of 120 clonotypes in the `extdata` folder of the package.
 The command `read_clonotypes` will parse it in a data frame.  The clonotypes
-are arbitrarly assigned to three libraries called `A`, `B`, and `C`.  The
+are arbitrarily assigned to three libraries called `A`, `B`, and `C`.  The
 `read_clonotypes` comments determines at load time if the peptidic sequence has
 a stop codon or is frame-shifted, and records the information in the
 `unproductive` column.
@@ -78,7 +78,7 @@ head(clonotype_table(levels(clonotypes$lib), "J", data=clonotypes))
 ```
 
 ClonotypeR provides other functions for further analysis.  `yassai_identifier`
-calculates a unique indentifier using the `V`, `J`, peptidic and nucleotidic
+calculates a unique identifier using the `V`, `J`, peptidic and nucleotidic
 information, following the work of [Yassai et al](http://dx.doi.org/10.1007/s00251-009-0383-x).
 
 ```{r yassai_identifier}
@@ -100,7 +100,7 @@ common_clonotypes(data=clonotypes)
 ```
 
 With deeper data, a typical follow-up would be to identify differentially
-represnted clonotypes between libraries, for instance with the `edgeR` package,
+represented clonotypes between libraries, for instance with the `edgeR` package,
 or to calculate distance between libraries, for instance with the
 `vegan` package.
 
@@ -109,7 +109,7 @@ Example data (3 x 2,000 reads)
 ------------------------------
 
 The data provided on-line at <http://clonotyper.branchable.com/example_data/>
-is a sub-sample of three sequence librairies of mouse T cell receptors &alpha; (2,000
+is a sub-sample of three sequence libraries of mouse T cell receptors &alpha; (2,000
 reads each) made on the 454 Titanium or the 454 junior platforms.  The original
 libraries will be deposited in public databanks after publication in a
 peer-reviewed journal.
@@ -210,7 +210,7 @@ The command `summary(clonotypes)` already provides useful information.
 summary(clonotypes)
 ```
 
-Identify unique clonotypes, count their sequences in the libraries `A`, `B` and `C`, and store the result as a table arbitrarly named `abc`. 
+Identify unique clonotypes, count their sequences in the libraries `A`, `B` and `C`, and store the result as a table arbitrarily named `abc`. 
 
 ```{r explore_data2}
 abc <- clonotype_table(c('A','B','C'), data=clonotypes)
