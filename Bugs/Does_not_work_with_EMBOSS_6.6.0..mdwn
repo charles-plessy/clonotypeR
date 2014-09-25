@@ -1,4 +1,4 @@
-The reason is the following bug in EMBOSS.
+In EMBOSS 6.6.6, sequence addresses with a dash and a colon cause are parsed as 'dbname:entry' instead of 'file:entry' when an appropriate directory name exists.
 
 <pre>
 echo -e '>A\nAAAAAA' > test-1.fa
@@ -16,3 +16,7 @@ seqret test-1.fa:A stdout
 # Error: Unable to read sequence 'test-1.fa:A'
 # Died: seqret terminated: Bad value for '-sequence' and no prompt
 </pre>
+
+See also <http://lists.open-bio.org/pipermail/emboss/2014-June/008983.html>
+
+[[Done]] with the following workaround: the directory `references/V` was renamed `references/V-C` in [[!commit 055b6807d3f0e6fc6dda58f5699c6ac34fbc89c2]].
