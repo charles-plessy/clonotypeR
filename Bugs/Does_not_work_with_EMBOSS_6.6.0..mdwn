@@ -1,4 +1,4 @@
-In EMBOSS 6.6.6, sequence addresses with a dash and a colon cause are parsed as 'dbname:entry' instead of 'file:entry' when an appropriate directory name exists.
+In EMBOSS 6.6.0, sequence addresses with a dash and a colon cause are parsed as 'dbname:entry' instead of 'file:entry' when an appropriate directory name exists.
 
 <pre>
 echo -e '>A\nAAAAAA' > test-1.fa
