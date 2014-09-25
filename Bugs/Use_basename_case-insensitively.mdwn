@@ -1,6 +1,0 @@
-Problem:
-
-    $ basename foo.fastq .fastq
-    foo
-    $ basename foo.FASTQ .fastq
-    foo.FASTQ
