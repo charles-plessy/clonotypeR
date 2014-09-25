@@ -64,6 +64,8 @@ This page controls what shortcut links the wiki supports.
 * [[!shortcut name=freebsdwiki url="http://wiki.freebsd.org/%s"]]
 * [[!shortcut name=hackage url="http://hackage.haskell.org/package/%s"]]
 
+* [[!shortcut name=commit url="http://source.clonotyper.branchable.com/?p=source.git;a=commitdiff;h=%s"]]
+
 To add a new shortcut, use the `shortcut`
 [[ikiwiki/directive]]. In the url, "%s" is replaced with the
 text passed to the named shortcut, after [[!wikipedia url_encoding]]
