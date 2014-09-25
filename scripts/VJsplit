@@ -72,7 +72,7 @@ do
     fi	
     echo -ne "\t$J_NAME\t" 1>&2
     J_SEQ=$(seqret -filter $CLONOTYPER_REFERENCE/${J_LIB}-FGxG.fa:$J_NAME[:20] raw:stdout)
-    vectorstrip -auto \
+    EMBOSS_WARNING=FALSE vectorstrip -auto \
         -readfile N \
         -mismatch $VS_MISMATCH \
         -blinker $(seqret -filter $CLONOTYPER_REFERENCE/${J_LIB}-FGxG.fa:$J_NAME[:20] raw:stdout) \
