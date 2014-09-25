@@ -1,3 +1,8 @@
+2014-09-25  Charles Plessy <plessy@riken.jp>
+	* Version 1.3.2
+	* Import “methods” instead of depending on.
+	* Corrected typos.
+
 2014-04-08  Charles Plessy <plessy@riken.jp>
 	* Version 1.1.6
 	* Transfer “NEWS” to ChangeLog and add release notes to “NEWS”.
@@ -8,7 +13,7 @@
 
 2014-03-05  Bioc admins
 	* Version 1.1.4.
-	* Change biocviews to “Sequencing”,
+	* Change biocviews to “Sequencing”.
 
 2013-12-11  Charles Plessy <plessy@riken>
 	* Committed 1.1.3 to Bioconductor.
