@@ -1,0 +1,101 @@
+#!/bin/bash
+
+set -e
+
+LIBRARY=$1
+V_LIB=${2-V}
+J_LIB=${3-J}
+
+# Adjust path to the reference V and J segments if it is relative.
+
+case $CLONOTYPER_REFERENCE in
+	/*) ;;
+	*) CLONOTYPER_REFERENCE=$(pwd)/$CLONOTYPER_REFERENCE ;;
+esac
+
+# Path to the BAM and temporary files defaults to extraction_files.
+if [ -z $DEBUG ]
+then
+  EXTRACT_DIR=$(pwd)/extraction_files
+fi
+
+TMPDIR=${TMPDIR:-extraction_files}
+
+# Path to clonotypes directory defaults to clonotypes.
+if [ -z $CLONOTYPES ]
+then
+  CLONOTYPES=$(pwd)/clonotypes
+fi
+
+if ! [ -d $CLONOTYPES ]
+then
+	mkdir $CLONOTYPES
+fi
+
+VS_MISMATCH=${VS_MISMATCH-0}
+
+rm -rf $TMPDIR/$LIBRARY.tmp ; mkdir $TMPDIR/$LIBRARY.tmp
+rm -f $CLONOTYPES/$LIBRARY.tsv
+cd $TMPDIR/$LIBRARY.tmp
+
+# ${V_NAME//\//} will remove all slashes in V_NAME.
+
+for V_NAME in $(samtools idxstats $EXTRACT_DIR/$LIBRARY.bam | awk '{if ($3 > 0) print $1}')
+do
+  if [ -z $DEBUG ]
+  then
+    VECTORSTRIP_V_OUTFILE=/dev/null
+  else
+    VECTORSTRIP_V_OUTFILE=$LIBRARY.${V_NAME//\//}.vectorstrip
+  fi	
+  echo -ne "$V_NAME\t" 1>&2
+  V_SEQ=$(seqret -filter $CLONOTYPER_REFERENCE/${V_LIB}-C.fa:$V_NAME[-20:] raw:stdout)
+  # Encode the mapping quality and alignment score in the sequence name
+  samtools view $EXTRACT_DIR/$LIBRARY.bam $V_NAME |
+    perl -ne '($score) = /AS:i:(\d+)\t/ ; ($mapq) = (split)[4] ; print "AS_${score}_MQ_${mapq}_$_"' > $LIBRARY-${V_NAME//\//}-filtered.sam
+  [ -s $LIBRARY-${V_NAME//\//}-filtered.sam ] && vectorstrip -auto \
+        -readfile N \
+        -mismatch $VS_MISMATCH \
+        -alinker $V_SEQ \
+        -sequence sam::$LIBRARY-${V_NAME//\//}-filtered.sam \
+        -outseq sam::stdout \
+        -outfile $VECTORSTRIP_V_OUTFILE |
+    tee $LIBRARY.${V_NAME//\//}-found.sam |
+    grep -v ^@ | wc -l - | cut -f1 -d' ' 1>&2
+  [ -s $LIBRARY.${V_NAME//\//}-found.sam ] && for J_NAME in $(infoseq -filter $CLONOTYPER_REFERENCE/${J_LIB}-FGxG.fa -only -name -heading N)
+  do
+    if [ -z $DEBUG ]
+    then
+      VECTORSTRIP_J_OUTFILE=/dev/null
+    else
+      VECTORSTRIP_J_OUTFILE=$LIBRARY-${V_NAME//\//}.$J_NAME.vectorstrip
+    fi	
+    echo -ne "\t$J_NAME\t" 1>&2
+    J_SEQ=$(seqret -filter $CLONOTYPER_REFERENCE/${J_LIB}-FGxG.fa:$J_NAME[:20] raw:stdout)
+    vectorstrip -auto \
+        -readfile N \
+        -mismatch $VS_MISMATCH \
+        -blinker $(seqret -filter $CLONOTYPER_REFERENCE/${J_LIB}-FGxG.fa:$J_NAME[:20] raw:stdout) \
+        -sequence sam::$LIBRARY.${V_NAME//\//}-found.sam \
+        -outseq sam::stdout \
+        -outfile $VECTORSTRIP_J_OUTFILE |
+      perl -MBio::Seq -E '
+        while (<STDIN>) {
+          next if /^@/ ;
+	  next if /^$/ ;
+          chomp ;
+          ($name, $seq, $qual) = (split "\t")[0, 9, 10] ;
+          $name =~ s/([.]*)_from.*/$1/ ;
+          $trans = new Bio::Seq(-seq => $seq )->translate->seq ;
+          say join ("\t", @ARGV[0], @ARGV[1], @ARGV[2], $name, $seq, $qual, $trans) ;
+        } ' $LIBRARY $V_NAME $J_NAME |
+      perl -pe 's/AS_(\d*)_/$1\t/ ; s/MQ_(\d*)_/$1\t/' |
+      tee -a $CLONOTYPES/$LIBRARY.tsv |
+      wc -l - | cut -f1 -d' ' 1>&2
+  done
+  if [ -z $DEBUG ]
+  then
+    rm --force $LIBRARY-${V_NAME//\//}-filtered.sam $LIBRARY.${V_NAME//\//}-found.sam
+  fi
+  echo
+done

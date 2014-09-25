@@ -1,0 +1,46 @@
+To do
+=====
+
+Reference sequences
+-------------------
+
+ * Add B cell receptors.
+
+ * Add a make target to refresh the reference sequences from RefSeq.
+
+ * Support multiple organisms.
+
+ * Define a versionned CDR3 file format and test it before reading in [[R/read_clonotypes.R]]
+
+read_clonotypes: do not hardcode column classe, but infer them from the name, that is inferred from the OSC header, or hardcoded as a fallback.
+
+OSCTable support
+----------------
+
+Define
+
+`##ProtocolREF = CP-Custom-v1.0`
+
+Correct in OSC file
+
+`##ParameterValue[qual] = Illumina`
+
+Is it correct to have same name for ParameterValue and ColumnName ?
+
+Do we need ?
+
+`##NameSpace = genomic_coordinate`
+
+ * Provide example AB1 and SFF files.
+
+Others
+------
+
+Get good default for CLONOTYPER_REFERENCE and other variables.
+
+Regression tests: make sure that the example data has a sharp sign in the FASTQ sequence (if valid), and
+compare the number of lines to what is expected.
+
+Support extraction of barcoded reads.
+
+Report the number of V segments found after `clonotypeR detect`.

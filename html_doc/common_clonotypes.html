@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Reports clonotypes common between libraries.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for common_clonotypes {clonotypeR}"><tr><td>common_clonotypes {clonotypeR}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>Reports clonotypes common between libraries.</h2>
+
+<h3>Description</h3>
+
+<p>When given one group of libraries, lists the clonotypes that have been observed
+at least in one library of that group.  The returned list can be used to subset
+a data frame produced by <code><a href="clonotype_table.html">clonotype_table</a></code>.
+</p>
+<p>When given two groups of libraries, lists the clonotypes that have been observed
+at least in one library of each group.  Groups can contain a single library, in
+which case the returned list is simply the clonotypes found in both libraries.
+</p>
+<p>When given a table of clonotypes, produces a matrix in which each cell reports
+quantitatively the overlap between each pair of libraries.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>common_clonotypes(group1, group2, mode, data)</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>group1</code></td>
+<td>
+<p>A character vector containing clonotype library names.</p>
+</td></tr>
+<tr valign="top"><td><code>group2</code></td>
+<td>
+<p>A character vector containing clonotype library names.</p>
+</td></tr>
+<tr valign="top"><td><code>mode</code></td>
+<td>
+<p>Only when producing a matrix of pairwise comparisions: &ldquo;count&rdquo; (default) or &ldquo;abundance&rdquo;, see below.</p>
+</td></tr>
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>A clonotype table where the data is stored.</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p>In &ldquo;count&rdquo; mode, each value in a matrix is the number of clonotypes seen
+in both of the two libraries considered.  The matrix is therefore symmetric.
+</p>
+<p>In &ldquo;abundance&rdquo; mode, each value indicates, for a given pair of
+libraries, the cumulative abundance of the common clonotypes (seen in both
+libraries), calculated for the library indicated by the row.  The matrix is
+therefore not symmetric.  For instance, a pair of libraries A and B can have
+100 sequences each in total, one clonotype in common, which is found 8 times in
+A, but 54 times in B.  </p>
+
+
+<h3>Author(s)</h3>
+
+<p>Charles Plessy</p>
+
+
+<h3>See Also</h3>
+
+<p><code><a href="clonotype_table.html">clonotype_table</a></code>, <code><a href="unique_clonotypes.html">unique_clonotypes</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+# Load example data
+clonotypes.long &lt;- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
+clonotypes &lt;- clonotype_table(levels(clonotypes.long$lib), data=clonotypes.long)
+summary(clonotypes)
+
+# List clonotypes found in library A, and B or C.
+common_clonotypes(group1="A", group2=c("B","C"), data=clonotypes)
+
+# Count clonotypes found in library A, and B or C.
+length(common_clonotypes(group1="A", group2=c("B","C"), data=clonotypes))
+
+# Matrix of numbers of common clonotypes
+common_clonotypes(data=clonotypes)
+
+# Matrix of abundance of common clonotypes
+common_clonotypes(data=clonotypes, mode="abundance")
+</pre>
+
+<hr><div align="center">[Package <em>clonotypeR</em> version 1.1.3 <a href="00Index.html">Index</a>]</div>
+</body></html>

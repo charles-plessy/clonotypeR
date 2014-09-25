@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: TCR clonotype identifier (Yassai et al.).</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for yassai_identifier {clonotypeR}"><tr><td>yassai_identifier {clonotypeR}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>TCR clonotype identifier (Yassai et al.).</h2>
+
+<h3>Description</h3>
+
+<p>The clonotype nomenclature defined by Yassai et al.
+in <a href="http://dx.doi.org/10.1007/s00251-009-0383-x">http://dx.doi.org/10.1007/s00251-009-0383-x</a>.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>yassai_identifier(data, V_after_C, J_before_FGxG, long=FALSE)</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>data</code></td>
+<td>
+<p>A data frame or a character vector containing a clonotype(s) with proper row or element names.</p>
+</td></tr>
+<tr valign="top"><td><code>V_after_C</code></td>
+<td>
+<p>(optional) A data frame indicating the aminoacids following the conserved cystein for each V segment.</p>
+</td></tr>
+<tr valign="top"><td><code>J_before_FGxG</code></td>
+<td>
+<p>(optional) A data frame indicating the aminoacids preceding the conserved FGxG motif for each V segment.</p>
+</td></tr>
+<tr valign="top"><td><code>long</code></td>
+<td>
+<p>(optional) Avoids identifier collisions by displaying the codons,
+and indicating the position of the V&ndash;J junction in ambiguous cases.</p>
+</td></tr>
+</table>
+
+
+<h3>Details</h3>
+
+<p>By default, <code>yassai_identifier()</code> assume mouse sequences and will load
+the V_after_C and J_before_FGxG tables distributed in this package.  It is
+possible to provide alternative tables either by passing them directly as
+argument, or by installing them as &ldquo;./inst/extdata/V_after_C.txt.gz&rdquo; and
+&ldquo;./inst/extdata/J_before_FGxG.txt.gz&rdquo;.
+</p>
+<p>Some clonotypes have a different DNA sequence but the same identifier following
+the original nomenclature (see below for examples).  The &lsquo;long&rsquo; mode was
+created to avoid these collisions.  First, it displays all codons, instead of
+only the non-templated ones and their immediate neighbors.  Second, for the
+clonotypes where all codons are identical to the V or J germline sequence, it
+indicates the position of the V&ndash;J junction in place of the codon IDs.
+</p>
+
+
+<h3>Value</h3>
+
+<p>The name (for instance sIRSSy.1456B19S1B27L11) consists of five segments:
+</p>
+
+<ol>
+<li><p> CDR3 amino acid identifier (ex. sIRSSy), followed by a dot ;
+</p>
+</li>
+<li><p> CDR3 nucleotide sequence identifier (ex. 1456) ;
+</p>
+</li>
+<li><p> variable (V) segment identifier (ex. BV19S1) ;
+</p>
+</li>
+<li><p> joining (J) segment identifier (ex. BJ2S7) ;
+</p>
+</li>
+<li><p> CDR3 length identifier (ex. L11).
+</p>
+</li></ol>
+
+
+
+<h3>Author(s)</h3>
+
+<p>Charles Plessy</p>
+
+
+<h3>See Also</h3>
+
+<p><code><a href="clonotyper_extdata.html">codon_ids</a></code>, <code><a href="clonotyper_extdata.html">J_before_FGxG</a></code>, <code><a href="clonotyper_extdata.html">V_after_C</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+clonotypes &lt;- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
+head(yassai_identifier(clonotypes))
+
+# The following two clonotypes have a the same identifier, and are
+# disambiguated by using the long mode
+
+yassai_identifier(c(V="TRAV14-1", J="TRAJ43", dna="GCAGCTAATAACAACAATGCCCCACGA", pep="AANNNNAPR"))
+# [1] "aAn.1A14-1A43L9"
+
+yassai_identifier(c(V="TRAV14-1", J="TRAJ43", dna="GCAGCAGCTAACAACAATGCCCCACGA", pep="AAANNNAPR"))
+# [1] "aAn.1A14-1A43L9"
+
+yassai_identifier(c(V="TRAV14-1", J="TRAJ43", dna="GCAGCTAATAACAACAATGCCCCACGA", pep="AANNNNAPR"), long=TRUE)
+# [1] "aAnnnnapr.1A14-1A43L9"
+
+yassai_identifier(c(V="TRAV14-1", J="TRAJ43", dna="GCAGCAGCTAACAACAATGCCCCACGA", pep="AAANNNAPR"), long=TRUE)
+# [1] "aaAnnnapr.1A14-1A43L9"
+
+# The following two clonotypes would have the same identifier in long mode
+# if the position of the V-J junction would not be indicated in place of the
+# codon IDs.
+yassai_identifier(c(V="TRAV14N-1", J="TRAJ56", dna="GCAGCTACTGGAGGCAATAATAAGCTGACT", pep="AATGGNNKLT"), long=TRUE)
+# [1] "aatggnnklt.1A14N1A56L10"
+yassai_identifier(c(V="TRAV14N-1", J="TRAJ56", dna="GCAGCAACTGGAGGCAATAATAAGCTGACT", pep="AATGGNNKLT"), long=TRUE)
+# [1] "aatggnnklt.2A14N1A56L10"
+</pre>
+
+<hr><div align="center">[Package <em>clonotypeR</em> version 1.1.3 <a href="00Index.html">Index</a>]</div>
+</body></html>

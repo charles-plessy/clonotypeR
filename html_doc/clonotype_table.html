@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>R: Create a table count of clonotypes or other features.</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="R.css">
+</head><body>
+
+<table width="100%" summary="page for clonotype_table {clonotypeR}"><tr><td>clonotype_table {clonotypeR}</td><td align="right">R Documentation</td></tr></table>
+
+<h2>Create a table count of clonotypes or other features.
+</h2>
+
+<h3>Description</h3>
+
+<p>Using a clonotype data frame loaded with <code><a href="read_clonotypes.html">read_clonotypes</a></code>,
+<code>clonotype_table</code> will create a table counting how many times each
+clonotypes have been seen in each libraries.  By default, the unproductive
+rearrangements are filtered out.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+clonotype_table(libs, feats=c("V","pep","J"), data, filter=(data$unproductive | data$ambiguous), minscore=0, minqual=1, sample=FALSE)
+</pre>
+
+
+<h3>Arguments</h3>
+
+<table summary="R argblock">
+<tr valign="top"><td><code>libs</code></td>
+<td>
+
+<p>A character vector containing the name of one or many libraries.  Same names
+must not appear twice.  If no library names are provided, all the libraries
+present in the clonotypes data frame will be used.
+</p>
+</td></tr>
+<tr valign="top"><td><code>feats</code></td>
+<td>
+
+<p>What to count.  By default, it counts clonotypes, defined as <code>c("V","pep","J")</code>.
+But it can also count single features, such as the V or J segments.
+</p>
+</td></tr>
+<tr valign="top"><td><code>data</code></td>
+<td>
+
+<p>Data frame as loaded by <code><a href="read_clonotypes.html">read_clonotypes</a></code>.
+</p>
+</td></tr>
+<tr valign="top"><td><code>filter</code></td>
+<td>
+
+<p>Logical vector to filter out clonotypes.  By default it relies on the clonotypes
+data frame to provide a &ldquo;unproductive&rdquo; column that indicates clonotypes with a
+stop codon or a frame shift, and a &ldquo;ambiguous&rdquo; column that indicates clonotypes
+where the DNA sequences has ambiguous (&ldquo;N&rdquo;) nucleotides.
+</p>
+</td></tr>
+<tr valign="top"><td><code>minscore</code></td>
+<td>
+
+<p>Minimum alignment score.  Clonotypes with an alignment score lower than this value are
+discarded.
+</p>
+</td></tr>
+<tr valign="top"><td><code>minqual</code></td>
+<td>
+
+<p>Minimum mapping quality.  Clonotypes with a mapping quality lower than this value are
+discarded.
+</p>
+</td></tr>
+<tr valign="top"><td><code>sample</code></td>
+<td>
+
+<p>Indicate the number of clonotypes to randomly sample from the library (no
+replacement).  Default: no subsampling.
+</p>
+</td></tr>
+</table>
+
+
+<h3>Value</h3>
+
+<p><code><a href="clonotype_table.html">clonotype_table</a></code> returns a data frame, where row names are features
+(clonotypes, segment names, ...), column names are libraries, and values are number
+of times each feature was found in each library.
+</p>
+
+
+<h3>Author(s)</h3>
+
+<p>Charles Plessy</p>
+
+
+<h3>See Also</h3>
+
+<p><code><a href="read_clonotypes.html">read_clonotypes</a></code>
+</p>
+
+
+<h3>Examples</h3>
+
+<pre>
+# Read the package's example data
+clonotypes &lt;- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
+
+# Inspect the alignment scores
+hist(clonotypes$score)
+
+# Count J segments
+j &lt;- clonotype_table(levels(clonotypes$lib), "J", data=clonotypes)
+
+# Normalise counts in parts per million
+J &lt;- data.frame(prop.table(as.matrix(j),2) * 1000000)
+</pre>
+
+<hr><div align="center">[Package <em>clonotypeR</em> version 1.1.3 <a href="00Index.html">Index</a>]</div>
+</body></html>
