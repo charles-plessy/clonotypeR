@@ -57,7 +57,7 @@ library(clonotypeR)
 
 The data is a table of 120 clonotypes in the `extdata` folder of the package.
 The command `read_clonotypes` will parse it in a data frame.  The clonotypes
-are arbitrarly assigned to three libraries called `A`, `B`, and `C`.  The
+are arbitrarily assigned to three libraries called `A`, `B`, and `C`.  The
 `read_clonotypes` comments determines at load time if the peptidic sequence has
 a stop codon or is frame-shifted, and records the information in the
 `unproductive` column.
@@ -78,7 +78,7 @@ head(clonotype_table(levels(clonotypes$lib), "J", data=clonotypes))
 ```
 
 ClonotypeR provides other functions for further analysis.  `yassai_identifier`
-calculates a unique indentifier using the `V`, `J`, peptidic and nucleotidic
+calculates a unique identifier using the `V`, `J`, peptidic and nucleotidic
 information, following the work of [Yassai et al](http://dx.doi.org/10.1007/s00251-009-0383-x).
 
 ```{r yassai_identifier}
@@ -100,7 +100,7 @@ common_clonotypes(data=clonotypes)
 ```
 
 With deeper data, a typical follow-up would be to identify differentially
-represnted clonotypes between libraries, for instance with the `edgeR` package,
+represented clonotypes between libraries, for instance with the `edgeR` package,
 or to calculate distance between libraries, for instance with the
 `vegan` package.
 
@@ -109,7 +109,7 @@ Example data (3 x 2,000 reads)
 ------------------------------
 
 The data provided on-line at <http://clonotyper.branchable.com/example_data/>
-is a sub-sample of three sequence librairies of mouse T cell receptors &alpha; (2,000
+is a sub-sample of three sequence libraries of mouse T cell receptors &alpha; (2,000
 reads each) made on the 454 Titanium or the 454 junior platforms.  The original
 libraries will be deposited in public databanks after publication in a
 peer-reviewed journal.
@@ -126,13 +126,13 @@ of the display).
 
 ### Detection of V segments
 
-Run the command `clonotyper detect A.fastq` in the same directory as a copy of
+Run the command `clonotypeR detect A.fastq` in the same directory as a copy of
 the file `A.fastq`.
 
 The result is stored in a temporary directory called `extraction_files`, that
 will be created if it does not already exist.
 
-`clonotyper detect` compares the sequences to the reference V segments using
+`clonotypeR detect` compares the sequences to the reference V segments using
 BWA, and produces output like the following.
 
     [bsw2_aln] read 2000 sequences/pairs (843395 bp)...
@@ -146,13 +146,13 @@ pairs in total.  There were 167 reference V segments, and the version number of
 BWA was `0.6.2-r126`.  The whole process took less than 10 seconds.
 
 Process the example libraries `B` and `C` similarly with the commands
-`clonotyper detect C.fastq` and `clonotyper detect C.fastq`.
+`clonotypeR detect B.fastq` and `clonotypeR detect C.fastq`.
 
 
 ### Extraction of CDR3 regions
 
-Run the command `clonotyper extract A` in the same directory as where you ran
-`clonotyper detect A.fastq`.  The result is a table stored in a directory
+Run the command `clonotypeR extract A` in the same directory as where you ran
+`clonotypeR detect A.fastq`.  The result is a table stored in a directory
 called `clonotypes`, that will be created if it does not already exist.
 
 The output is quite voluminous, and indicates which *V* / *J* combinations are
@@ -210,7 +210,7 @@ The command `summary(clonotypes)` already provides useful information.
 summary(clonotypes)
 ```
 
-Identify unique clonotypes, count their sequences in the libraries `A`, `B` and `C`, and store the result as a table arbitrarly named `abc`. 
+Identify unique clonotypes, count their sequences in the libraries `A`, `B` and `C`, and store the result as a table arbitrarily named `abc`. 
 
 ```{r explore_data2}
 abc <- clonotype_table(c('A','B','C'), data=clonotypes)

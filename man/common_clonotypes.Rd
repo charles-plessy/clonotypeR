@@ -29,7 +29,7 @@ quantitatively the overlap between each pair of libraries.
 \arguments{
   \item{group1}{A character vector containing clonotype library names.}
   \item{group2}{A character vector containing clonotype library names.}
-  \item{mode}{Only when producing a matrix of pairwise comparisions: \dQuote{count} (default) or \dQuote{abundance}, see below.}
+  \item{mode}{Only when producing a matrix of pairwise comparisons: \dQuote{count} (default) or \dQuote{abundance}, see below.}
   \item{data}{A clonotype table where the data is stored.}
 }
 
