@@ -60,7 +60,7 @@ case $1 in
 		do
 			LIBRARY=$(basename $FASTQ_FILE .fq)
 			LIBRARY=$(basename $FASTQ_FILE .fastq)
-			bwa bwasw -t${THREADS:-1} $CLONOTYPER_REFERENCE/V/index $FASTQ_FILE |
+			bwa bwasw -t${THREADS:-1} $CLONOTYPER_REFERENCE/V-C/index $FASTQ_FILE |
 				samtools view -Su - |
 				samtools sort - $EXTRACT_DIR/$LIBRARY
 			samtools index $EXTRACT_DIR/$LIBRARY.bam
