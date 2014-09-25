@@ -126,13 +126,13 @@ of the display).
 
 ### Detection of V segments
 
-Run the command `clonotyper detect A.fastq` in the same directory as a copy of
+Run the command `clonotypeR detect A.fastq` in the same directory as a copy of
 the file `A.fastq`.
 
 The result is stored in a temporary directory called `extraction_files`, that
 will be created if it does not already exist.
 
-`clonotyper detect` compares the sequences to the reference V segments using
+`clonotypeR detect` compares the sequences to the reference V segments using
 BWA, and produces output like the following.
 
     [bsw2_aln] read 2000 sequences/pairs (843395 bp)...
@@ -146,13 +146,13 @@ pairs in total.  There were 167 reference V segments, and the version number of
 BWA was `0.6.2-r126`.  The whole process took less than 10 seconds.
 
 Process the example libraries `B` and `C` similarly with the commands
-`clonotyper detect C.fastq` and `clonotyper detect C.fastq`.
+`clonotypeR detect B.fastq` and `clonotypeR detect C.fastq`.
 
 
 ### Extraction of CDR3 regions
 
-Run the command `clonotyper extract A` in the same directory as where you ran
-`clonotyper detect A.fastq`.  The result is a table stored in a directory
+Run the command `clonotypeR extract A` in the same directory as where you ran
+`clonotypeR detect A.fastq`.  The result is a table stored in a directory
 called `clonotypes`, that will be created if it does not already exist.
 
 The output is quite voluminous, and indicates which *V* / *J* combinations are
