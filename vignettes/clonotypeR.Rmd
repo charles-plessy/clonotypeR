@@ -39,7 +39,7 @@ examples are available on line at
 
 *This example analysis assumes a
 [unix](https://en.wikipedia.org/wiki/Operating%5Fsystem%23UNIX%5Fand%5FUNIX%2Dlike%5Foperating%5Fsystems)
-system (Linux, Mac OS, …)*
+system (Linux, Mac OS, ...)*
 
 
 Test data
@@ -105,11 +105,11 @@ or to calculate distance between libraries, for instance with the
 `vegan` package.
 
 
-Example data (3 × 2,000 reads)
+Example data (3 x 2,000 reads)
 ------------------------------
 
 The data provided on-line at <http://clonotyper.branchable.com/example_data/>
-is a sub-sample of three sequence librairies of mouse T cell receptors α (2,000
+is a sub-sample of three sequence librairies of mouse T cell receptors &alpha; (2,000
 reads each) made on the 454 Titanium or the 454 junior platforms.  The original
 libraries will be deposited in public databanks after publication in a
 peer-reviewed journal.
