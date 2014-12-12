@@ -10,7 +10,7 @@ extracted with the command `make gb2fa`, wich uses the the [extractfeat][]
 program of the EMBOSS package. 
 
 This directory contains *V* and *J* segments aligned on conserved motifs in the
-files [[V.fa]] and [[J.fa]].  These alignments were made by hand using [SeaView][] and
+files [[V.fa]] and [[J.fa]].  These alignments were made by hand using [[SeaView|doc/seaview]] and
 may need to be revised when the reference sequences change.
 
 [Mmus_TRA]: http://www.ncbi.nlm.nih.gov/nuccore/NG_007044 (Mus musculus T cell receptor alpha delta locus (Tcra/tcrd@) on chromosome 14)
