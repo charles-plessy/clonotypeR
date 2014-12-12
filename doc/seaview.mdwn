@@ -1,0 +1,22 @@
+# Alignment of V and J segements with SeaView.
+
+_Page in construction…_
+
+[SeaView](http://doua.prabi.fr/software/seaview) is a “multiplatform, graphical
+user interface for multiple sequence alignment and molecular phylogeny”.  In
+addition to the traditional display of nucleotides, it can color the alignment
+by codons, or display the DNA sequence translated as protein.  This makes it
+very useful for manual alignemnt of _V_ and _J_ segments.
+
+### Nucleotide view
+
+[[!img SeaView_nucleotides.png alt="SeaView displaying colored nucleotides."]]
+
+### Codon view
+
+[[!img SeaView_codons.png alt="SeaView displaying colored codons."]
+
+### Aminoacid view
+
+[[!img SeaView_aminoacids.png alt="SeaView displaying colored aminoacids translated from the DNA sequences."]]
+
