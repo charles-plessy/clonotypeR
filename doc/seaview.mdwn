@@ -2,8 +2,6 @@
 
 _Page in construction…_
 
-<span style="background: red; font-family: monospace">TTT</span>
-
 [SeaView](http://doua.prabi.fr/software/seaview) is a “multiplatform, graphical
 user interface for multiple sequence alignment and molecular phylogeny”.  In
 addition to the traditional display of nucleotides, it can color the alignment
