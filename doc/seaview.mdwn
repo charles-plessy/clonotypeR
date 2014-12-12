@@ -14,7 +14,7 @@ very useful for manual alignemnt of _V_ and _J_ segments.
 
 ### Codon view
 
-[[!img SeaView_codons.png alt="SeaView displaying colored codons."]
+[[!img SeaView_codons.png alt="SeaView displaying colored codons."]]
 
 ### Aminoacid view
 
