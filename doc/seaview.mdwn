@@ -12,13 +12,19 @@ very useful for manual alignemnt of _V_ and _J_ segments.
 
 ### Nucleotide view
 
+J segments must be aligned on the `FGxG` motif, but in the default view it is 
+not very obvious to see.  Switch to the codon view or the aminoacid view.
+
 [[!img SeaView_nucleotides.png alt="SeaView displaying colored nucleotides."]]
 
 ### Codon view
+
+Here, the `FGxG` motif stands out like for example “<span style="background: red; font-family: monospace">TTC</span><span style="background: lime; font-family: monospace">GGT</span><span style="background: olive; font-family: monospace">CAT</span><span style="background: lime; font-family: monospace">GGA</span>”.  This mode is very useful for finding the relevant reading frame, by adding or removing gaps before the first nucleotide.
 
 [[!img SeaView_codons.png alt="SeaView displaying colored codons."]]
 
 ### Aminoacid view
 
-[[!img SeaView_aminoacids.png alt="SeaView displaying colored aminoacids translated from the DNA sequences."]]
+This mode is very useful for aligning in-frame sequences, checking the final alignment, and spotting easily the stop codons in pseudogenised segments. 
 
+[[!img SeaView_aminoacids.png alt="SeaView displaying colored aminoacids translated from the DNA sequences."]]
