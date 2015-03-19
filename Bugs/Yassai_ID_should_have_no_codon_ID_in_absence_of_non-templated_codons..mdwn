@@ -1,0 +1,6 @@
+<pre>
+> yassai_identifier(c(V="TRAV14N-1", J="TRAJ56", dna="GCAGCTACTGGAGGCAATAATAAGCTGACT", pep="AATGGNNKLT"))
+[1] "aa.1A14N1A56L10"
+</pre>
+
+Should be `aa.A14N1A56L10`.
