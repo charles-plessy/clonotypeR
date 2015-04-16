@@ -1,0 +1,11 @@
+.*.mdwn
+.*.css
+^Bugs$
+^doc$
+^example_data$
+^.git$
+^html_doc$
+^.ikiwiki$
+Makefile
+^references$
+^scripts$
