@@ -8,7 +8,7 @@ in the order of millions, typically produced by Roche 454 instruments, and to
 prepare these sequences for differential expression analysis with the typical
 transcriptomics tools as well as for statistical analysis using existing [R][] packages.
 
-[Bioconductor]: http://www.bioconductor.org/packages/release/bioc/html/clonotypeR.html
+[Bioconductor]: https://www.bioconductor.org/packages/clonotypeR
 [R]: http://www.r-project.org/ "The R Project for Statistical Computing"
 
 *clonotypeR* is developed in the [RIKEN Yokohama Campus][RIKEN-Yokohama] by the
