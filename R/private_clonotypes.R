@@ -1,3 +1,19 @@
+#' private_clonotypes
+#' 
+#' List clonotypes found exclusively in one library.
+#' 
+#' @param ... Library names.
+#' @param data A clonotype table.
+#' 
+#' @return A vector of clonotype names.
+#' 
+#' @seealso \code{\link{clonotype_table}}
+#' 
+#' @examples
+#' clonotypes <- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
+#' clonotypes <- clonotype_table(levels(clonotypes$lib), data=clonotypes)
+#' private_clonotypes("C", data=clonotypes)
+
 private_clonotypes <- function (..., data) {
 
 libs <- c(...)
@@ -8,7 +24,7 @@ if ( ! is.character(libs) ) stop (
 )
 
 if ( ! is.data.frame(data) ) stop (
-	"Second argument must be a data frame of clonotypes."
+	"Data argument must be a data frame of clonotypes."
 )
 
 if ( FALSE %in% ( libs %in% colnames(data) ) ) stop (
