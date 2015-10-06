@@ -9,3 +9,5 @@
 Makefile
 ^references$
 ^scripts$
+^.*\.Rproj$
+^\.Rproj\.user$

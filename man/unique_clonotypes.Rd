@@ -16,10 +16,6 @@ clonotype_table.
   \item{data}{The name of the clonotype_table where the data is stored.}
 }
 
-\details{
-Uses the table called \dQuote{clonotypes} by default.
-}
-
 \value{
 Character vector of clonotype names.  Their order follows the original row name
 order of the clonotype_table.
