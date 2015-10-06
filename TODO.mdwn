@@ -44,3 +44,11 @@ compare the number of lines to what is expected.
 Support extraction of barcoded reads.
 
 Report the number of V segments found after `clonotypeR detect`.
+
+Clonotype algebra, like in:
+
+<pre>
+`+.clonotypeList` <- function(X, Y) structure( union(X, Y),     class='clonotypeList')
+`^.clonotypeList` <- function(X, Y) structure( intersect(X, Y), class='clonotypeList')
+`-.clonotypeList` <- function(X, Y) structure( setdiff(X, Y),   class='clonotypeList')
+</pre>

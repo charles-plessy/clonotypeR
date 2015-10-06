@@ -8,7 +8,7 @@ in the order of millions, typically produced by Roche 454 instruments, and to
 prepare these sequences for differential expression analysis with the typical
 transcriptomics tools as well as for statistical analysis using existing [R][] packages.
 
-[Bioconductor]: http://www.bioconductor.org/packages/release/bioc/html/clonotypeR.html
+[Bioconductor]: https://www.bioconductor.org/packages/clonotypeR
 [R]: http://www.r-project.org/ "The R Project for Statistical Computing"
 
 *clonotypeR* is developed in the [RIKEN Yokohama Campus][RIKEN-Yokohama] by the
@@ -36,8 +36,10 @@ Plessy|http://genome.gsc.riken.jp/osc/english/members/Charles_Plessy.html]] at
 RIKEN about shortcomings, limitations, or possible developments.  If you need
 to try alternative solutions, you can have a look at
 [[IMGTHighV-QUEST|http://www.imgt.org/IMGTindex/IMGTHighV-QUEST.html]],
-[Decombinator](http://pubmed.gov/23303508 "Bioinformatics. 2013 Mar 1;29(5):542-50"), or
-[MiTCR](http://mitcr.milaboratory.com/).
+[Decombinator](http://pubmed.gov/23303508 "Bioinformatics. 2013 Mar 1;29(5):542-50"),
+[MiTCR](http://mitcr.milaboratory.com/), or
+[MIGEC](http://migec.readthedocs.org/en/latest/cdrblast.html).
+See also the [OMICtool](http://omictools.com/rep-seq-c424-p1.html) website for a longer list of repertoire tools.
 
 *clonotypeR* is placed in the [public domain](http://creativecommons.org/publicdomain/zero/1.0/).
 
