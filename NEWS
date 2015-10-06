@@ -1,3 +1,9 @@
+Changes in version 1.8.0
+
+NEW FEATURES
+
+    o   Added a “private_clonotypes” function.
+
 Changes in version 1.4.0
 
 BUG FIXES
