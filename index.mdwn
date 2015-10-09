@@ -47,6 +47,7 @@ See also the [OMICtool](http://omictools.com/rep-seq-c424-p1.html) website for a
 
 ### Recent news
 
+ * October 2015: Application note preprint deposited in [bioRxiv](http://biorxiv.org/content/early/2015/10/08/028696).
  * October 2014: New stable version [1.4](http://www.bioconductor.org/packages/3.0/bioc/html/clonotypeR.html)
   released on Bioconductor.
  * 25 September 2014: version 1.3.2 compatible with EMBOSS 6.6.0.
