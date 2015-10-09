@@ -1,7 +1,7 @@
 clonotypeR's workflow
 =====================
 
-This workflow summarises the different commands to run.  Step-by-step examples using [[test data|doc/examples/with_test_data]] or the [[examples/GSE35626]] public dataset are also available for a more detailed explanation.
+This workflow summarises the different commands to run.  Step-by-step examples using [[test data|doc/examples/with_test_data]] or the [[examples/GSE35626]] public dataset are also available for a more detailed explanation.  See also the preprint of our [application note deposited in bioRxiv](http://biorxiv.org/content/early/2015/10/08/028696).
 
 Data preparation in the command line
 ------------------------------------
