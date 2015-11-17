@@ -5,9 +5,15 @@ Mus musculus
 ------------
 
 The references sequences are [TRA@.gb][Mmus_TRA], [TRB@.gb][Mmus_TRB] and
-[TRG@.gb][Mmus_TRG], downloaded in GenBank format from [RefSeq][].  The *V*, *(D)*, *J* and *C* segments were
-extracted with the command `make gb2fa`, wich uses the the [extractfeat][]
-program of the EMBOSS package. 
+[TRG@.gb][Mmus_TRG], downloaded in GenBank format from [RefSeq][].  To save the
+files with full information from the NCBI's website, select _Show sequence_ and
+_GenBank (full)_ as shown in the panels below.
+
+![How to select "Show sequence"](NCBI_Show_sequence.png)
+![How to select "GenBank (full)"](NCBI_Save_GenBank_full.png)
+
+The *V*, *(D)*, *J* and *C* segments were extracted with the command `make
+gb2fa`, wich uses the the [extractfeat][] program of the EMBOSS package. 
 
 This directory contains *V* and *J* segments aligned on conserved motifs in the
 files [[V.fa]] and [[J.fa]].  These alignments were made by hand using [[SeaView|doc/seaview]] and
