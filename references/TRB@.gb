@@ -1,4 +1,4 @@
-LOCUS       NG_006980             668076 bp    DNA     linear   CON 05-NOV-2013
+LOCUS       NG_006980             668076 bp    DNA     linear   CON 05-NOV-2015
 DEFINITION  Mus musculus T cell receptor beta chain (Tcrb) on chromosome 6.
 ACCESSION   NG_006980
 VERSION     NG_006980.1  GI:158037406
@@ -9,74 +9,88 @@ SOURCE      Mus musculus (house mouse)
             Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
             Sciurognathi; Muroidea; Muridae; Murinae; Mus; Mus.
 REFERENCE   1  (bases 1 to 668076)
-  AUTHORS   Hess,C., Winkler,A., Lorenz,A.K., Holecska,V., Blanchard,V.,
-            Eiglmeier,S., Schoen,A.L., Bitterling,J., Stoehr,A.D., Petzold,D.,
-            Schommartz,T., Mertes,M.M., Schoen,C.T., Tiburzy,B., Herrmann,A.,
-            Kohl,J., Manz,R.A., Madaio,M.P., Berger,M., Wardemann,H. and
-            Ehlers,M.
-  TITLE     T cell-independent B cell activation induces immunosuppressive
-            sialylated IgG antibodies
-  JOURNAL   J. Clin. Invest. 123 (9), 3788-3796 (2013)
-   PUBMED   23979161
+  AUTHORS   Mallis RJ, Bai K, Arthanari H, Hussey RE, Handley M, Li Z,
+            Chingozha L, Duke-Cohan JS, Lu H, Wang JH, Zhu C, Wagner G and
+            Reinherz EL.
+  TITLE     Pre-TCR ligand binding impacts thymocyte development before
+            alphabetaTCR expression
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 112 (27), 8373-8378 (2015)
+   PUBMED   26056289
+  REMARK    GeneRIF: Data show that the pre-T-cell receptor (preTCR), a
+            pTalpha-beta heterodimer appearing before alphabetaTCR expression,
+            directs initial phase of repertoire selection.
 REFERENCE   2  (bases 1 to 668076)
-  AUTHORS   Hickey,A.J., Lin,J.S., Kummer,L.W., Szaba,F.M., Duso,D.K.,
-            Tighe,M., Parent,M.A. and Smiley,S.T.
-  TITLE     Intranasal prophylaxis with CpG oligodeoxynucleotide can protect
-            against Yersinia pestis infection
-  JOURNAL   Infect. Immun. 81 (6), 2123-2132 (2013)
-   PUBMED   23545300
+  AUTHORS   Bergot AS, Chaara W, Ruggiero E, Mariotti-Ferrandiz E, Dulauroy S,
+            Schmidt M, von Kalle C, Six A and Klatzmann D.
+  TITLE     TCR sequences and tissue distribution discriminate the subsets of
+            naive and activated/memory Treg cells in mice
+  JOURNAL   Eur. J. Immunol. 45 (5), 1524-1534 (2015)
+   PUBMED   25726757
+  REMARK    GeneRIF: in deep- versus superficial lymph nodes, TCR-beta deep
+            sequencing revealed diversified naive Treg-cell and
+            activated-memory Treg-cell repertoires
 REFERENCE   3  (bases 1 to 668076)
-  AUTHORS   Archer,N.K., Harro,J.M. and Shirtliff,M.E.
-  TITLE     Clearance of Staphylococcus aureus nasal carriage is T cell
-            dependent and mediated through interleukin-17A expression and
-            neutrophil influx
-  JOURNAL   Infect. Immun. 81 (6), 2070-2075 (2013)
-   PUBMED   23529621
+  AUTHORS   Boudil A, Matei IR, Shih HY, Bogdanoski G, Yuan JS, Chang SG,
+            Montpellier B, Kowalski PE, Voisin V, Bashir S, Bader GD, Krangel
+            MS and Guidos CJ.
+  TITLE     IL-7 coordinates proliferation, differentiation and Tcra
+            recombination during thymocyte beta-selection
+  JOURNAL   Nat. Immunol. 16 (4), 397-405 (2015)
+   PUBMED   25729925
+  REMARK    GeneRIF: IL-7 critically acts cooperatively with signaling via the
+            pre-TCR and Notch1 to coordinate proliferation, differentiation and
+            TCRalpha recombination during beta-selection.
 REFERENCE   4  (bases 1 to 668076)
-  AUTHORS   Larson,R.P., Comeau,M.R. and Ziegler,S.F.
-  TITLE     Cutting edge: allergen-specific CD4 T cells respond indirectly to
-            thymic stromal lymphopoietin to promote allergic responses in the
-            skin
-  JOURNAL   J. Immunol. 190 (9), 4474-4477 (2013)
-   PUBMED   23543759
+  AUTHORS   Guenova E, Skabytska Y, Hoetzenecker W, Weindl G, Sauer K, Tham M,
+            Kim KW, Park JH, Seo JH, Ignatova D, Cozzio A, Levesque MP, Volz T,
+            Koberle M, Kaesler S, Thomas P, Mailhammer R, Ghoreschi K, Schakel
+            K, Amarov B, Eichner M, Schaller M, Clark RA, Rocken M and
+            Biedermann T.
+  TITLE     IL-4 abrogates T(H)17 cell-mediated inflammation by selective
+            silencing of IL-23 in antigen-presenting cells
+  JOURNAL   Proc. Natl. Acad. Sci. U.S.A. 112 (7), 2163-2168 (2015)
+   PUBMED   25646481
 REFERENCE   5  (bases 1 to 668076)
-  AUTHORS   Brady,B.L., Rupp,L.J. and Bassing,C.H.
-  TITLE     Requirement for dicer in survival of proliferating thymocytes
-            experiencing DNA double-strand breaks
-  JOURNAL   J. Immunol. 190 (7), 3256-3266 (2013)
-   PUBMED   23427252
+  AUTHORS   Khairnar V, Duhan V, Maney SK, Honke N, Shaabani N, Pandyra AA,
+            Seifert M, Pozdeev V, Xu HC, Sharma P, Baldin F, Marquardsen F,
+            Merches K, Lang E, Kirschning C, Westendorf AM, Haussinger D, Lang
+            F, Dittmer U, Kuppers R, Recher M, Hardt C, Scheffrahn I,
+            Beauchemin N, Gothert JR, Singer BB, Lang PA and Lang KS.
+  TITLE     CEACAM1 induces B-cell survival and is essential for protective
+            antiviral antibody production
+  JOURNAL   Nat Commun 6, 6217 (2015)
+   PUBMED   25692415
+  REMARK    Publication Status: Online-Only
 REFERENCE   6  (bases 1 to 668076)
-  AUTHORS   Acha-Orbea,H., Scarpellino,L., Shakhov,A.N., Held,W. and
-            MacDonald,H.R.
+  AUTHORS   Acha-Orbea H, Scarpellino L, Shakhov AN, Held W and MacDonald HR.
   TITLE     Inhibition of mouse mammary tumor virus-induced T cell responses in
             vivo by antibodies to an open reading frame protein
   JOURNAL   J. Exp. Med. 176 (6), 1769-1772 (1992)
    PUBMED   1334118
 REFERENCE   7  (bases 1 to 668076)
-  AUTHORS   Mombaerts,P., Clarke,A.R., Rudnicki,M.A., Iacomini,J., Itohara,S.,
-            Lafaille,J.J., Wang,L., Ichikawa,Y., Jaenisch,R., Hooper,M.L. et
-            al.
+  AUTHORS   Mombaerts P, Clarke AR, Rudnicki MA, Iacomini J, Itohara S,
+            Lafaille JJ, Wang L, Ichikawa Y, Jaenisch R, Hooper ML et al.
   TITLE     Mutations in T-cell antigen receptor genes alpha and beta block
             thymocyte development at different stages
   JOURNAL   Nature 360 (6401), 225-231 (1992)
    PUBMED   1359428
   REMARK    Erratum:[Nature 1992 Dec 3;360(6403):491]
 REFERENCE   8  (bases 1 to 668076)
-  AUTHORS   Ossendorp,F., Jacobs,H., van der Horst,G., de Vries,E., Berns,A.
-            and Borst,J.
+  AUTHORS   Ossendorp F, Jacobs H, van der Horst G, de Vries E, Berns A and
+            Borst J.
   TITLE     T cell receptor-alpha beta lacking the beta-chain V domain can be
             expressed at the cell surface but prohibits T cell maturation
   JOURNAL   J. Immunol. 148 (12), 3714-3722 (1992)
    PUBMED   1351085
 REFERENCE   9  (bases 1 to 668076)
-  AUTHORS   Suzuki,M., Koseki,H., Mizutani,Y., Kuribayashi,K., Kanno,M. and
-            Taniguchi,M.
+  AUTHORS   Suzuki M, Koseki H, Mizutani Y, Kuribayashi K, Kanno M and
+            Taniguchi M.
   TITLE     Expansion of murine T cells bearing a unique T cell receptor
             beta-chain in Friend virus-induced tumor in situ
   JOURNAL   J. Immunol. 148 (9), 2968-2973 (1992)
    PUBMED   1374106
 REFERENCE   10 (bases 1 to 668076)
-  AUTHORS   Waters,S.H., O'Neil,J.J., Melican,D.T. and Appel,M.C.
+  AUTHORS   Waters SH, O'Neil JJ, Melican DT and Appel MC.
   TITLE     Multiple TCR V beta usage by infiltrates of young NOD mouse islets
             of Langerhans. A polymerase chain reaction analysis
   JOURNAL   Diabetes 41 (3), 308-312 (1992)
@@ -114,13 +128,13 @@ COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
             publications that are available for this gene. Please see the Gene
             record to access additional publications.
 PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
-            1-40285             AC161887.5         187467-227751
-            40286-148984        AC161768.25        87370-196068
-            148985-267619       AC153851.27        99220-217854
-            267620-433004       AC125228.4         96216-261600
-            433005-559515       AC158659.6         1-126511            c
-            559516-635734       AC153854.7         105046-181264
-            635735-668076       AC117678.16        48698-81039
+            1-40285             AC157861.5         187467-227751
+            40286-148984        AC131072.25        87370-196068
+            148985-267619       AC131072.27        99220-217854
+            267620-433004       AC065536.4         96216-261600
+            433005-559515       AC131072.6         1-126511            c
+            559516-635734       AC131072.7         105046-181264
+            635735-668076       AC065536.16        48698-81039
 FEATURES             Location/Qualifiers
      source          1..668076
                      /organism="Mus musculus"
@@ -133,14 +147,14 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="TCRbeta; Tib"
                      /note="T cell receptor beta chain"
                      /db_xref="GeneID:21577"
-                     /db_xref="MGI:98578"
+                     /db_xref="MGI:MGI:98578"
      gene            502..1091
                      /gene="Trbv1"
                      /gene_synonym="621968; Gm6273; Tcrb-V2; TCRBV2S1"
                      /note="T cell receptor beta, variable 1"
                      /db_xref="GeneID:621968"
                      /db_xref="IMGT/GENE-DB:TRBV1"
-                     /db_xref="MGI:98594"
+                     /db_xref="MGI:MGI:98594"
      CDS             join(502..556,797..1091)
                      /gene="Trbv1"
                      /gene_synonym="621968; Gm6273; Tcrb-V2; TCRBV2S1"
@@ -148,7 +162,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:621968"
                      /db_xref="IMGT/GENE-DB:TRBV1"
-                     /db_xref="MGI:98594"
+                     /db_xref="MGI:MGI:98594"
      V_segment       join(502..556,797..1091)
                      /gene="Trbv1"
                      /gene_synonym="621968; Gm6273; Tcrb-V2; TCRBV2S1"
@@ -158,7 +172,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="1700020H15; Tryx3"
                      /note="protease, serine 58"
                      /db_xref="GeneID:232717"
-                     /db_xref="MGI:3608323"
+                     /db_xref="MGI:MGI:3608323"
      mRNA            complement(join(4468..4717,4801..4940,6511..6767,
                      6933..7071,9260..9344,9478..9593))
                      /gene="Prss58"
@@ -167,7 +181,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_175020.3"
                      /db_xref="GI:146198660"
                      /db_xref="GeneID:232717"
-                     /db_xref="MGI:3608323"
+                     /db_xref="MGI:MGI:3608323"
      CDS             complement(join(4568..4717,4801..4940,6511..6767,
                      6933..7071,9260..9299))
                      /gene="Prss58"
@@ -181,7 +195,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:33239437"
                      /db_xref="CCDS:CCDS20040.1"
                      /db_xref="GeneID:232717"
-                     /db_xref="MGI:3608323"
+                     /db_xref="MGI:MGI:3608323"
                      /translation="MKLAFLCILSTLLRTFAYNPDHIAGTTPPYLVYLKSDYLPCTGV
                      LIHPLWVITAAHCNLPNLQVILGITNPADPMERDVEVSDYEKIFHHPNFLVSSISHDL
                      LLIKLKRRIKHSNYAKAVKLPQHIVSVNAMCSVSTWAYNLCDVTKDPDSLQTVNVTVI
@@ -192,7 +206,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="AV047902; Tryx5"
                      /note="RIKEN cDNA 1700074P13 gene"
                      /db_xref="GeneID:73481"
-                     /db_xref="MGI:1920731"
+                     /db_xref="MGI:MGI:1920731"
      mRNA            complement(join(29666..30347,30913..31058,35183..35433,
                      37718..37886,38647..38772,48389..48456,49559..49763))
                      /gene="1700074P13Rik"
@@ -201,7 +215,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_028550.3"
                      /db_xref="GI:133893180"
                      /db_xref="GeneID:73481"
-                     /db_xref="MGI:1920731"
+                     /db_xref="MGI:MGI:1920731"
      STS             30154..30279
                      /gene="Tcrb"
                      /gene_synonym="TCRbeta; Tib"
@@ -217,7 +231,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:21312106"
                      /db_xref="CCDS:CCDS20041.1"
                      /db_xref="GeneID:73481"
-                     /db_xref="MGI:1920731"
+                     /db_xref="MGI:MGI:1920731"
                      /translation="MKTFFIFTLLSLAVANTPKAVLKEYNNSEEYLPENFNVPYMVYL
                      QSSPEPCVGTLIDPQWVLTAAHCSLPTKIRLGVYRPNIKNEKEQICNYSFTVVHPNFD
                      AKLLKNDLMLIKLSYPATINMYVGTIAIAMEPMAFNESCFIPTWTWNNYKNLSDPDIL
@@ -229,12 +243,12 @@ FEATURES             Location/Qualifiers
                      /note="predicted gene 4744"
                      /pseudo
                      /db_xref="GeneID:194360"
-                     /db_xref="MGI:3643181"
+                     /db_xref="MGI:MGI:3643181"
      gene            73978..77633
                      /gene="1810009J06Rik"
                      /note="RIKEN cDNA 1810009J06 gene"
                      /db_xref="GeneID:73626"
-                     /db_xref="MGI:1920876"
+                     /db_xref="MGI:MGI:1920876"
      mRNA            join(73978..74034,75369..75531,75813..76066,76616..76752,
                      77389..77633)
                      /gene="1810009J06Rik"
@@ -242,7 +256,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_023707.3"
                      /db_xref="GI:118130492"
                      /db_xref="GeneID:73626"
-                     /db_xref="MGI:1920876"
+                     /db_xref="MGI:MGI:1920876"
      CDS             join(73995..74034,75369..75531,75813..76066,76616..76752,
                      77389..77538)
                      /gene="1810009J06Rik"
@@ -254,7 +268,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:12963793"
                      /db_xref="CCDS:CCDS20042.1"
                      /db_xref="GeneID:73626"
-                     /db_xref="MGI:1920876"
+                     /db_xref="MGI:MGI:1920876"
                      /translation="MKIITFFTFLGAAVALPANSDDKIVGGYTCPKHSVPYQVSLNDG
                      ISHQCGGSLISDQWVLSAAHCYKRRLQVRLGEHNIDVLEGGEQFIDAEKIIRHPDYNK
                      DTVDNDIMLIKLKSPAILNSQVSTVSLPRSCASTNAQCLVSGWGNTVSIGGKYPALLQ
@@ -265,7 +279,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="100040208"
                      /note="predicted gene 2663"
                      /db_xref="GeneID:100040208"
-                     /db_xref="MGI:3780832"
+                     /db_xref="MGI:MGI:3780832"
      mRNA            complement(join(105028..105283,105920..106056,
                      106604..106857,107139..107301,108626..108685))
                      /gene="Gm2663"
@@ -274,7 +288,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_001102660.1"
                      /db_xref="GI:156627585"
                      /db_xref="GeneID:100040208"
-                     /db_xref="MGI:3780832"
+                     /db_xref="MGI:MGI:3780832"
      CDS             complement(join(105134..105283,105920..106056,
                      106604..106857,107139..107301,108626..108665))
                      /gene="Gm2663"
@@ -286,7 +300,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:156627586"
                      /db_xref="CCDS:CCDS51756.1"
                      /db_xref="GeneID:100040208"
-                     /db_xref="MGI:3780832"
+                     /db_xref="MGI:MGI:3780832"
                      /translation="MKIIFFFTFLGAAVALPANSDDKIVGGYTCPKHSVPYQVSLNDG
                      ISHQCGGSLINDQWVLSAAHCYKRRLQVRLGEHNIDVLEGGEQFIDAEKIIRHPDYNK
                      DTVDNDIMLIKLKSPAILNSQVSTVSLPRSCASTNAQCLVSGWGNTVSIGGKYPALLQ
@@ -297,7 +311,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="AV072249"
                      /note="RIKEN cDNA 2210010C04 gene"
                      /db_xref="GeneID:67373"
-                     /db_xref="MGI:1914623"
+                     /db_xref="MGI:MGI:1914623"
      mRNA            complement(join(139474..140990,141511..141647,
                      142148..142401,143450..143612,144645..144715))
                      /gene="2210010C04Rik"
@@ -306,7 +320,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_023333.4"
                      /db_xref="GI:71043960"
                      /db_xref="GeneID:67373"
-                     /db_xref="MGI:1914623"
+                     /db_xref="MGI:MGI:1914623"
      STS             139574..139696
                      /gene="Tcrb"
                      /gene_synonym="TCRbeta; Tib"
@@ -323,7 +337,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:71043961"
                      /db_xref="CCDS:CCDS20043.1"
                      /db_xref="GeneID:67373"
-                     /db_xref="MGI:1914623"
+                     /db_xref="MGI:MGI:1914623"
                      /translation="MKTLIFLAFLGAAVALPLDDDDDKIVGGYTCQRNALPYQVSLNS
                      GYHFCGGSLINSQWVVSAAHCYKSRIQVRLGEHNIDALEGGEQFIDAAKIIRHPNYNA
                      NTYNNDIMLIKLKTAATLNSRVSTVALPRSCPSAGTRCLVSGWGNTLSSGTNYPSLLQ
@@ -335,7 +349,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 2"
                      /db_xref="GeneID:100124659"
                      /db_xref="IMGT/GENE-DB:TRBV2"
-                     /db_xref="MGI:98599"
+                     /db_xref="MGI:MGI:98599"
      CDS             join(156762..156810,156907..157201)
                      /gene="Trbv2"
                      /gene_synonym="Gm16752; Tcrb-V4"
@@ -343,7 +357,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124659"
                      /db_xref="IMGT/GENE-DB:TRBV2"
-                     /db_xref="MGI:98599"
+                     /db_xref="MGI:MGI:98599"
      V_segment       join(156762..156810,156907..157201)
                      /gene="Trbv2"
                      /gene_synonym="Gm16752; Tcrb-V4"
@@ -354,7 +368,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 3"
                      /db_xref="GeneID:100039790"
                      /db_xref="IMGT/GENE-DB:TRBV3"
-                     /db_xref="MGI:98590"
+                     /db_xref="MGI:MGI:98590"
      CDS             join(157600..157648,157733..158030)
                      /gene="Trbv3"
                      /gene_synonym="100039790; Gm2426; Tcrb-V16"
@@ -362,7 +376,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100039790"
                      /db_xref="IMGT/GENE-DB:TRBV3"
-                     /db_xref="MGI:98590"
+                     /db_xref="MGI:MGI:98590"
      V_segment       join(157600..157648,157733..158030)
                      /gene="Trbv3"
                      /gene_synonym="100039790; Gm2426; Tcrb-V16"
@@ -373,7 +387,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 10"
                      /db_xref="GeneID:100124660"
                      /db_xref="IMGT/GENE-DB:TRBV4"
-                     /db_xref="MGI:98584"
+                     /db_xref="MGI:MGI:98584"
      CDS             join(168649..168697,168798..169092)
                      /gene="Trbv4"
                      /gene_synonym="Tcrb-V10"
@@ -381,7 +395,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124660"
                      /db_xref="IMGT/GENE-DB:TRBV4"
-                     /db_xref="MGI:98584"
+                     /db_xref="MGI:MGI:98584"
      V_segment       join(168649..168697,168798..169092)
                      /gene="Trbv4"
                      /gene_synonym="Tcrb-V10"
@@ -392,7 +406,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 5"
                      /db_xref="GeneID:100124661"
                      /db_xref="IMGT/GENE-DB:TRBV5"
-                     /db_xref="MGI:98583"
+                     /db_xref="MGI:MGI:98583"
      CDS             join(171565..171613,171718..172009)
                      /gene="Trbv5"
                      /gene_synonym="Tcrb-V1"
@@ -400,7 +414,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124661"
                      /db_xref="IMGT/GENE-DB:TRBV5"
-                     /db_xref="MGI:98583"
+                     /db_xref="MGI:MGI:98583"
      V_segment       join(171565..171613,171718..172009)
                      /gene="Trbv5"
                      /gene_synonym="Tcrb-V1"
@@ -411,7 +425,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124662"
                      /db_xref="IMGT/GENE-DB:TRBV6"
-                     /db_xref="MGI:5009962"
+                     /db_xref="MGI:MGI:5009962"
      CDS             176077..176360
                      /gene="Trbv6"
                      /exception="rearrangement required for product"
@@ -419,7 +433,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124662"
                      /db_xref="IMGT/GENE-DB:TRBV6"
-                     /db_xref="MGI:5009962"
+                     /db_xref="MGI:MGI:5009962"
      V_segment       176077..176360
                      /gene="Trbv6"
                      /standard_name="TRBV6"
@@ -430,14 +444,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124663"
                      /db_xref="IMGT/GENE-DB:TRBV7"
-                     /db_xref="MGI:5009963"
+                     /db_xref="MGI:MGI:5009963"
      CDS             join(189459..189507,189563..189860)
                      /gene="Trbv7"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124663"
                      /db_xref="IMGT/GENE-DB:TRBV7"
-                     /db_xref="MGI:5009963"
+                     /db_xref="MGI:MGI:5009963"
      V_segment       join(189459..189507,189563..189860)
                      /gene="Trbv7"
                      /standard_name="TRBV7"
@@ -448,14 +462,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124664"
                      /db_xref="IMGT/GENE-DB:TRBV8"
-                     /db_xref="MGI:5009964"
+                     /db_xref="MGI:MGI:5009964"
      CDS             join(193875..193923,194019..194313)
                      /gene="Trbv8"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124664"
                      /db_xref="IMGT/GENE-DB:TRBV8"
-                     /db_xref="MGI:5009964"
+                     /db_xref="MGI:MGI:5009964"
      V_segment       join(193875..193923,194019..194313)
                      /gene="Trbv8"
                      /standard_name="TRBV8"
@@ -466,14 +480,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124665"
                      /db_xref="IMGT/GENE-DB:TRBV9"
-                     /db_xref="MGI:5009965"
+                     /db_xref="MGI:MGI:5009965"
      CDS             197197..197494
                      /gene="Trbv9"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124665"
                      /db_xref="IMGT/GENE-DB:TRBV9"
-                     /db_xref="MGI:5009965"
+                     /db_xref="MGI:MGI:5009965"
      V_segment       197197..197494
                      /gene="Trbv9"
                      /standard_name="Trbv9"
@@ -485,7 +499,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124670"
                      /db_xref="IMGT/GENE-DB:TRBV10"
-                     /db_xref="MGI:4937160"
+                     /db_xref="MGI:MGI:4937160"
      CDS             201141..201434
                      /gene="Trbv10"
                      /gene_synonym="Gm17526"
@@ -493,7 +507,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124670"
                      /db_xref="IMGT/GENE-DB:TRBV10"
-                     /db_xref="MGI:4937160"
+                     /db_xref="MGI:MGI:4937160"
      V_segment       201141..201434
                      /gene="Trbv10"
                      /gene_synonym="Gm17526"
@@ -505,14 +519,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124671"
                      /db_xref="IMGT/GENE-DB:TRBV11"
-                     /db_xref="MGI:5009966"
+                     /db_xref="MGI:MGI:5009966"
      CDS             join(216011..216064,216242..216509)
                      /gene="Trbv11"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124671"
                      /db_xref="IMGT/GENE-DB:TRBV11"
-                     /db_xref="MGI:5009966"
+                     /db_xref="MGI:MGI:5009966"
      V_segment       join(216011..216064,216242..216509)
                      /gene="Trbv11"
                      /pseudo
@@ -522,7 +536,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 12-1"
                      /db_xref="GeneID:100124672"
                      /db_xref="IMGT/GENE-DB:TRBV12-1"
-                     /db_xref="MGI:98602"
+                     /db_xref="MGI:MGI:98602"
      CDS             join(222773..222851,222981..223273)
                      /gene="Trbv12-1"
                      /gene_synonym="Gm16753; Tcrb; Tcrb-V5.2"
@@ -530,7 +544,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124672"
                      /db_xref="IMGT/GENE-DB:TRBV12-1"
-                     /db_xref="MGI:98602"
+                     /db_xref="MGI:MGI:98602"
      V_segment       join(222773..222851,222981..223273)
                      /gene="Trbv12-1"
                      /gene_synonym="Gm16753; Tcrb; Tcrb-V5.2"
@@ -546,7 +560,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 13-1"
                      /db_xref="GeneID:100124673"
                      /db_xref="IMGT/GENE-DB:TRBV13-1"
-                     /db_xref="MGI:98609"
+                     /db_xref="MGI:MGI:98609"
      CDS             join(225242..225284,225381..225674)
                      /gene="Trbv13-1"
                      /gene_synonym="Tcrb; Tcrb-V8.3"
@@ -554,7 +568,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124673"
                      /db_xref="IMGT/GENE-DB:TRBV13-1"
-                     /db_xref="MGI:98609"
+                     /db_xref="MGI:MGI:98609"
      V_segment       join(225242..225284,225381..225674)
                      /gene="Trbv13-1"
                      /gene_synonym="Tcrb; Tcrb-V8.3"
@@ -565,7 +579,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 12-2"
                      /db_xref="GeneID:100124674"
                      /db_xref="IMGT/GENE-DB:TRBV12-2"
-                     /db_xref="MGI:98601"
+                     /db_xref="MGI:MGI:98601"
      CDS             join(228070..228148,228278..228570)
                      /gene="Trbv12-2"
                      /gene_synonym="Tcrb; Tcrb-V5.1"
@@ -573,7 +587,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124674"
                      /db_xref="IMGT/GENE-DB:TRBV12-2"
-                     /db_xref="MGI:98601"
+                     /db_xref="MGI:MGI:98601"
      V_segment       join(228070..228148,228278..228570)
                      /gene="Trbv12-2"
                      /gene_synonym="Tcrb; Tcrb-V5.1"
@@ -584,7 +598,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 13-2"
                      /db_xref="GeneID:100124675"
                      /db_xref="IMGT/GENE-DB:TRBV13-2"
-                     /db_xref="MGI:98608"
+                     /db_xref="MGI:MGI:98608"
      CDS             join(230602..230647,230745..231038)
                      /gene="Trbv13-2"
                      /gene_synonym="Tcrb; Tcrb-V8.2; TCRBV8S2"
@@ -592,7 +606,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124675"
                      /db_xref="IMGT/GENE-DB:TRBV13-2"
-                     /db_xref="MGI:98608"
+                     /db_xref="MGI:MGI:98608"
      V_segment       join(230602..230647,230745..231038)
                      /gene="Trbv13-2"
                      /gene_synonym="Tcrb; Tcrb-V8.2; TCRBV8S2"
@@ -609,7 +623,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124676"
                      /db_xref="IMGT/GENE-DB:TRBV12-3"
-                     /db_xref="MGI:98603"
+                     /db_xref="MGI:MGI:98603"
      CDS             join(236798..236876,236990..237282)
                      /gene="Trbv12-3"
                      /gene_synonym="Tcrb; Tcrb-V5.3"
@@ -617,7 +631,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124676"
                      /db_xref="IMGT/GENE-DB:TRBV12-3"
-                     /db_xref="MGI:98603"
+                     /db_xref="MGI:MGI:98603"
      V_segment       join(236798..236876,236990..237282)
                      /gene="Trbv12-3"
                      /gene_synonym="Tcrb; Tcrb-V5.3"
@@ -629,7 +643,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 13-3"
                      /db_xref="GeneID:100124677"
                      /db_xref="IMGT/GENE-DB:TRBV13-3"
-                     /db_xref="MGI:98607"
+                     /db_xref="MGI:MGI:98607"
      CDS             join(239353..239398,239498..239791)
                      /gene="Trbv13-3"
                      /gene_synonym="Gm16777; Tcrb-V8; Tcrb-V8.1"
@@ -637,7 +651,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124677"
                      /db_xref="IMGT/GENE-DB:TRBV13-3"
-                     /db_xref="MGI:98607"
+                     /db_xref="MGI:MGI:98607"
      V_segment       join(239353..239398,239498..239791)
                      /gene="Trbv13-3"
                      /gene_synonym="Gm16777; Tcrb-V8; Tcrb-V8.1"
@@ -648,7 +662,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 14"
                      /db_xref="GeneID:100124678"
                      /db_xref="IMGT/GENE-DB:TRBV14"
-                     /db_xref="MGI:98587"
+                     /db_xref="MGI:MGI:98587"
      CDS             join(244373..244421,244526..244822)
                      /gene="Trbv14"
                      /gene_synonym="BV13S1; Gm16910; Tcrb-V13"
@@ -656,7 +670,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124678"
                      /db_xref="IMGT/GENE-DB:TRBV14"
-                     /db_xref="MGI:98587"
+                     /db_xref="MGI:MGI:98587"
      V_segment       join(244373..244421,244526..244822)
                      /gene="Trbv14"
                      /gene_synonym="BV13S1; Gm16910; Tcrb-V13"
@@ -667,7 +681,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 15"
                      /db_xref="GeneID:100124679"
                      /db_xref="IMGT/GENE-DB:TRBV15"
-                     /db_xref="MGI:98586"
+                     /db_xref="MGI:MGI:98586"
      CDS             join(250417..250465,250567..250864)
                      /gene="Trbv15"
                      /gene_synonym="Gm16775; Tcrb-V12"
@@ -675,7 +689,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124679"
                      /db_xref="IMGT/GENE-DB:TRBV15"
-                     /db_xref="MGI:98586"
+                     /db_xref="MGI:MGI:98586"
      V_segment       join(250417..250465,250567..250864)
                      /gene="Trbv15"
                      /gene_synonym="Gm16775; Tcrb-V12"
@@ -686,7 +700,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 16"
                      /db_xref="GeneID:100124680"
                      /db_xref="IMGT/GENE-DB:TRBV16"
-                     /db_xref="MGI:98585"
+                     /db_xref="MGI:MGI:98585"
      CDS             join(260997..261045,261139..261436)
                      /gene="Trbv16"
                      /gene_synonym="Gm16776; Tcrb-V11"
@@ -694,7 +708,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124680"
                      /db_xref="IMGT/GENE-DB:TRBV16"
-                     /db_xref="MGI:98585"
+                     /db_xref="MGI:MGI:98585"
      V_segment       join(260997..261045,261139..261436)
                      /gene="Trbv16"
                      /gene_synonym="Gm16776; Tcrb-V11"
@@ -705,7 +719,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 17"
                      /db_xref="GeneID:100124681"
                      /db_xref="IMGT/GENE-DB:TRBV17"
-                     /db_xref="MGI:98610"
+                     /db_xref="MGI:MGI:98610"
      CDS             join(272298..272346,272468..272762)
                      /gene="Trbv17"
                      /gene_synonym="Gm16779; Tcrb-V9"
@@ -713,7 +727,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124681"
                      /db_xref="IMGT/GENE-DB:TRBV17"
-                     /db_xref="MGI:98610"
+                     /db_xref="MGI:MGI:98610"
      V_segment       join(272298..272346,272468..272762)
                      /gene="Trbv17"
                      /gene_synonym="Gm16779; Tcrb-V9"
@@ -724,14 +738,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124682"
                      /db_xref="IMGT/GENE-DB:TRBV18"
-                     /db_xref="MGI:5009967"
+                     /db_xref="MGI:MGI:5009967"
      CDS             join(284343..284394,284521..284814)
                      /gene="Trbv18"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124682"
                      /db_xref="IMGT/GENE-DB:TRBV18"
-                     /db_xref="MGI:5009967"
+                     /db_xref="MGI:MGI:5009967"
      V_segment       join(284343..284394,284521..284814)
                      /gene="Trbv18"
                      /pseudo
@@ -741,7 +755,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 19"
                      /db_xref="GeneID:100124684"
                      /db_xref="IMGT/GENE-DB:TRBV19"
-                     /db_xref="MGI:98604"
+                     /db_xref="MGI:MGI:98604"
      CDS             join(287795..287843,287952..288254)
                      /gene="Trbv19"
                      /gene_synonym="Gm16780; Tcrb-V6"
@@ -749,7 +763,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124684"
                      /db_xref="IMGT/GENE-DB:TRBV19"
-                     /db_xref="MGI:98604"
+                     /db_xref="MGI:MGI:98604"
      V_segment       join(287795..287843,287952..288254)
                      /gene="Trbv19"
                      /gene_synonym="Gm16780; Tcrb-V6"
@@ -770,7 +784,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 20"
                      /db_xref="GeneID:100124685"
                      /db_xref="IMGT/GENE-DB:TRBV20"
-                     /db_xref="MGI:98589"
+                     /db_xref="MGI:MGI:98589"
      CDS             join(297479..297509,297880..298183)
                      /gene="Trbv20"
                      /gene_synonym="Gm16911; Tcrb-V15"
@@ -778,7 +792,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124685"
                      /db_xref="IMGT/GENE-DB:TRBV20"
-                     /db_xref="MGI:98589"
+                     /db_xref="MGI:MGI:98589"
      V_segment       join(297479..297509,297880..298183)
                      /gene="Trbv20"
                      /gene_synonym="Gm16911; Tcrb-V15"
@@ -794,7 +808,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 21"
                      /db_xref="GeneID:100124686"
                      /db_xref="IMGT/GENE-DB:TRBV21"
-                     /db_xref="MGI:98593"
+                     /db_xref="MGI:MGI:98593"
      CDS             join(311793..311840,311953..312250)
                      /gene="Trbv21"
                      /gene_synonym="Gm16778; Tcrb-V19"
@@ -802,7 +816,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124686"
                      /db_xref="IMGT/GENE-DB:TRBV21"
-                     /db_xref="MGI:98593"
+                     /db_xref="MGI:MGI:98593"
      V_segment       join(311793..311840,311953..312250)
                      /gene="Trbv21"
                      /gene_synonym="Gm16778; Tcrb-V19"
@@ -813,14 +827,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124687"
                      /db_xref="IMGT/GENE-DB:TRBV22"
-                     /db_xref="MGI:5009968"
+                     /db_xref="MGI:MGI:5009968"
      CDS             join(321281..321329,321442..321740)
                      /gene="Trbv22"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124687"
                      /db_xref="IMGT/GENE-DB:TRBV22"
-                     /db_xref="MGI:5009968"
+                     /db_xref="MGI:MGI:5009968"
      V_segment       join(321329..321381,321442..321740)
                      /gene="Trbv22"
                      /standard_name="TRBV22"
@@ -831,7 +845,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable V23"
                      /db_xref="GeneID:100124688"
                      /db_xref="IMGT/GENE-DB:TRBV23"
-                     /db_xref="MGI:98595"
+                     /db_xref="MGI:MGI:98595"
      CDS             join(325279..325327,325435..325732)
                      /gene="Trbv23"
                      /gene_synonym="Tcrb-V20; VB20"
@@ -839,7 +853,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124688"
                      /db_xref="IMGT/GENE-DB:TRBV23"
-                     /db_xref="MGI:98595"
+                     /db_xref="MGI:MGI:98595"
      V_segment       join(325279..325327,325435..325732)
                      /gene="Trbv23"
                      /gene_synonym="Tcrb-V20; VB20"
@@ -850,7 +864,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 24"
                      /db_xref="GeneID:100124689"
                      /db_xref="IMGT/GENE-DB:TRBV24"
-                     /db_xref="MGI:98591"
+                     /db_xref="MGI:MGI:98591"
      CDS             join(327297..327345,327466..327763)
                      /gene="Trbv24"
                      /gene_synonym="Tcrb; Tcrb-V17; Tcrb-V3.2; VB17a(cz)"
@@ -858,7 +872,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124689"
                      /db_xref="IMGT/GENE-DB:TRBV24"
-                     /db_xref="MGI:98591"
+                     /db_xref="MGI:MGI:98591"
      V_segment       join(327297..327345,327466..327763)
                      /gene="Trbv24"
                      /gene_synonym="Tcrb; Tcrb-V17; Tcrb-V3.2; VB17a(cz)"
@@ -869,14 +883,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124690"
                      /db_xref="IMGT/GENE-DB:TRBV25"
-                     /db_xref="MGI:5009969"
+                     /db_xref="MGI:MGI:5009969"
      CDS             join(330880..330923,331140..331416)
                      /gene="Trbv25"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124690"
                      /db_xref="IMGT/GENE-DB:TRBV25"
-                     /db_xref="MGI:5009969"
+                     /db_xref="MGI:MGI:5009969"
      V_segment       join(330880..330923,331140..331416)
                      /gene="Trbv25"
                      /standard_name="TRBV25"
@@ -887,7 +901,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 26"
                      /db_xref="GeneID:110315"
                      /db_xref="IMGT/GENE-DB:TRBV26"
-                     /db_xref="MGI:98596"
+                     /db_xref="MGI:MGI:98596"
      CDS             join(336731..336779,336902..337119)
                      /gene="Trbv26"
                      /gene_synonym="Gm16909; Tcrb-V3; Tcrb-V3.1"
@@ -895,7 +909,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:110315"
                      /db_xref="IMGT/GENE-DB:TRBV26"
-                     /db_xref="MGI:98596"
+                     /db_xref="MGI:MGI:98596"
      V_segment       join(336731..336779,336902..337119)
                      /gene="Trbv26"
                      /gene_synonym="Gm16909; Tcrb-V3; Tcrb-V3.1"
@@ -906,21 +920,21 @@ FEATURES             Location/Qualifiers
                      /note="predicted pseudogene 2719"
                      /pseudo
                      /db_xref="GeneID:100040333"
-                     /db_xref="MGI:3780888"
+                     /db_xref="MGI:MGI:3780888"
      gene            367327..367785
                      /gene="Trbv27"
                      /note="T cell receptor beta variable 27"
                      /pseudo
                      /db_xref="GeneID:100124693"
                      /db_xref="IMGT/GENE-DB:trbv27"
-                     /db_xref="MGI:5009970"
+                     /db_xref="MGI:MGI:5009970"
      CDS             join(367327..367375,367501..367785)
                      /gene="Trbv27"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124693"
                      /db_xref="IMGT/GENE-DB:trbv27"
-                     /db_xref="MGI:5009970"
+                     /db_xref="MGI:MGI:5009970"
      V_segment       join(367327..367375,367501..367785)
                      /gene="Trbv27"
                      /standard_name="TRBV27"
@@ -931,44 +945,47 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124694"
                      /db_xref="IMGT/GENE-DB:TRBV28"
-                     /db_xref="MGI:5009971"
+                     /db_xref="MGI:MGI:5009971"
      CDS             join(375903..375951,376085..376356)
                      /gene="Trbv28"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124694"
                      /db_xref="IMGT/GENE-DB:TRBV28"
-                     /db_xref="MGI:5009971"
+                     /db_xref="MGI:MGI:5009971"
      V_segment       join(375903..375951,376085..376356)
                      /gene="Trbv28"
                      /standard_name="TRBV28"
                      /pseudo
      gene            380609..381087
                      /gene="Trbv29"
-                     /gene_synonym="Gm16649; Tcrb-V7; Vbeta7"
+                     /gene_synonym="Gm16649; Tcrb; Tcrb-V7; Vbeta7"
                      /note="T cell receptor beta, variable 29"
+                     /pseudo
                      /db_xref="GeneID:100124698"
                      /db_xref="IMGT/GENE-DB:TRBV29"
-                     /db_xref="MGI:98605"
+                     /db_xref="MGI:MGI:98605"
      CDS             join(380609..380657,380793..381087)
                      /gene="Trbv29"
-                     /gene_synonym="Gm16649; Tcrb-V7; Vbeta7"
+                     /gene_synonym="Gm16649; Tcrb; Tcrb-V7; Vbeta7"
                      /exception="rearrangement required for product"
+                     /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100124698"
                      /db_xref="IMGT/GENE-DB:TRBV29"
-                     /db_xref="MGI:98605"
+                     /db_xref="MGI:MGI:98605"
      V_segment       join(380609..380657,380793..381087)
                      /gene="Trbv29"
-                     /gene_synonym="Gm16649; Tcrb-V7; Vbeta7"
+                     /gene_synonym="Gm16649; Tcrb; Tcrb-V7; Vbeta7"
                      /standard_name="TRBV29"
+                     /pseudo
      gene            390582..391196
                      /gene="Trbv30"
                      /gene_synonym="Gm16648; Tcrb-V18"
                      /note="T cell receptor beta, variable 30"
                      /db_xref="GeneID:100124699"
                      /db_xref="IMGT/GENE-DB:TRBV30"
-                     /db_xref="MGI:98592"
+                     /db_xref="MGI:MGI:98592"
      CDS             join(390582..390615,390896..391196)
                      /gene="Trbv30"
                      /gene_synonym="Gm16648; Tcrb-V18"
@@ -976,7 +993,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124699"
                      /db_xref="IMGT/GENE-DB:TRBV30"
-                     /db_xref="MGI:98592"
+                     /db_xref="MGI:MGI:98592"
      V_segment       join(390582..390615,390896..391196)
                      /gene="Trbv30"
                      /gene_synonym="Gm16648; Tcrb-V18"
@@ -986,7 +1003,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="0910001B19Rik; Td"
                      /note="trypsin 4"
                      /db_xref="GeneID:22074"
-                     /db_xref="MGI:102757"
+                     /db_xref="MGI:MGI:102757"
      mRNA            join(411478..411530,412490..412649,413532..413785,
                      414142..414278,414545..414739)
                      /gene="Try4"
@@ -996,7 +1013,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_011646.5"
                      /db_xref="GI:146231973"
                      /db_xref="GeneID:22074"
-                     /db_xref="MGI:102757"
+                     /db_xref="MGI:MGI:102757"
      CDS             join(411491..411530,412490..412649,413532..413785,
                      414142..414278,414545..414694)
                      /gene="Try4"
@@ -1007,7 +1024,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:6755893"
                      /db_xref="CCDS:CCDS20044.1"
                      /db_xref="GeneID:22074"
-                     /db_xref="MGI:102757"
+                     /db_xref="MGI:MGI:102757"
                      /translation="MRALLFLALVGAAVAFPVDDDDKIVGGYTCRENSVPYQVSLNSG
                      YHFCGGSLINDQWVVSAAHCYKSRIQVRLGEHNINVLEGNEQFVNSAKIIKHPNFNSR
                      TLNNDIMLIKLASPVTLNARVATVALPSSCAPAGTQCLISGWGNTLSFGVNNPDLLQC
@@ -1018,7 +1035,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="1810049H19Rik; Tc; Tesp4"
                      /note="trypsin 5"
                      /db_xref="GeneID:103964"
-                     /db_xref="MGI:102756"
+                     /db_xref="MGI:MGI:102756"
      mRNA            complement(join(420438..420632,420899..421035,
                      421393..421646,422555..422714,423862..423916))
                      /gene="Try5"
@@ -1028,7 +1045,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_001003405.4"
                      /db_xref="GI:156713464"
                      /db_xref="GeneID:103964"
-                     /db_xref="MGI:102756"
+                     /db_xref="MGI:MGI:102756"
      CDS             complement(join(420483..420632,420899..421035,
                      421393..421646,422555..422714,423862..423901))
                      /gene="Try5"
@@ -1039,7 +1056,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:51010909"
                      /db_xref="CCDS:CCDS20045.1"
                      /db_xref="GeneID:103964"
-                     /db_xref="MGI:102756"
+                     /db_xref="MGI:MGI:102756"
                      /translation="MNSLLFLALVGAAVAFPVDDDDKIVGGYTCRENSIPYQVSLNSG
                      YHFCGGSLINDQWVVSAAHCYKTRIQVRLGEHNINVLEGNEQFVNSAKIIKHPNFNSR
                      TLNNDIMLIKLASPVTLNARVATVALPSSCAPAGTQCLISGWGNTLSFGVNNPDLLQC
@@ -1049,7 +1066,7 @@ FEATURES             Location/Qualifiers
                      /gene="Try10"
                      /note="trypsin 10"
                      /db_xref="GeneID:436522"
-                     /db_xref="MGI:3687012"
+                     /db_xref="MGI:MGI:3687012"
      mRNA            join(463311..463437,464658..464817,465729..465982,
                      466536..466672,466939..467150)
                      /gene="Try10"
@@ -1057,7 +1074,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_001038996.2"
                      /db_xref="GI:156713465"
                      /db_xref="GeneID:436522"
-                     /db_xref="MGI:3687012"
+                     /db_xref="MGI:MGI:3687012"
      CDS             join(463398..463437,464658..464817,465729..465982,
                      466536..466672,466939..467088)
                      /gene="Try10"
@@ -1068,7 +1085,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:84781771"
                      /db_xref="CCDS:CCDS20046.1"
                      /db_xref="GeneID:436522"
-                     /db_xref="MGI:3687012"
+                     /db_xref="MGI:MGI:3687012"
                      /translation="MSTLLFLALVGAAVAFPVDDDDKIVGGYTCRENSVPYQVSLNSG
                      YHFCGGSLINDQWVVSAAHCYKSRIQVRLGEHNINVLEGNEQFIDAANIIKHPKFKKK
                      TLDNDIMLIKLSSPVTLNARVATVALPSSCAAAGTQCLISGWGNTLSSGVNNPDLLQC
@@ -1077,31 +1094,31 @@ FEATURES             Location/Qualifiers
      gene            complement(482965..486819)
                      /gene="Prss3"
                      /gene_synonym="MTG; Tb; Try3; TRY4"
-                     /note="protease, serine, 3"
+                     /note="protease, serine 3"
                      /db_xref="GeneID:22073"
-                     /db_xref="MGI:102758"
+                     /db_xref="MGI:MGI:102758"
      mRNA            complement(join(482965..483169,483433..483569,
                      484080..484333,486014..486173,486764..486819))
                      /gene="Prss3"
                      /gene_synonym="MTG; Tb; Try3; TRY4"
-                     /product="protease, serine, 3"
+                     /product="protease, serine 3"
                      /transcript_id="NM_011645.2"
                      /db_xref="GI:157058292"
                      /db_xref="GeneID:22073"
-                     /db_xref="MGI:102758"
+                     /db_xref="MGI:MGI:102758"
      CDS             complement(join(483020..483169,483433..483569,
                      484080..484333,486014..486173,486764..486803))
                      /gene="Prss3"
                      /gene_synonym="MTG; Tb; Try3; TRY4"
                      /EC_number="3.4.21.4"
-                     /note="trypsin 3; trypsinogen 15"
+                     /note="trypsin 3; trypsinogen 15; protease, serine, 3"
                      /codon_start=1
                      /product="mesotrypsin precursor"
                      /protein_id="NP_035775.1"
                      /db_xref="GI:6755891"
                      /db_xref="CCDS:CCDS20047.1"
                      /db_xref="GeneID:22073"
-                     /db_xref="MGI:102758"
+                     /db_xref="MGI:MGI:102758"
                      /translation="MNALLILALVGAAVAFPVDDDDKIVGGYTCQENSVPYQVSLNSG
                      YHFCGGSLINDQWVVSAAHCYKTRIQVRLGEHNINVLEGNEQFVNAAKIIKHPNFNRK
                      TLNNDIMLLKLSSPVTLNARVATVALPSSCAPAGTQCLISGWGNTLSFGVSEPDLLQC
@@ -1112,7 +1129,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="EG436523"
                      /note="predicted gene 5771"
                      /db_xref="GeneID:436523"
-                     /db_xref="MGI:3646222"
+                     /db_xref="MGI:MGI:3646222"
      mRNA            join(501562..501634,503868..504024,505199..505452,
                      505862..505998,506260..506462)
                      /gene="Gm5771"
@@ -1121,7 +1138,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_001038997.2"
                      /db_xref="GI:157058293"
                      /db_xref="GeneID:436523"
-                     /db_xref="MGI:3646222"
+                     /db_xref="MGI:MGI:3646222"
      CDS             join(501595..501634,503868..504024,505199..505452,
                      505862..505998,506260..506409)
                      /gene="Gm5771"
@@ -1133,7 +1150,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:84781768"
                      /db_xref="CCDS:CCDS20048.1"
                      /db_xref="GeneID:436523"
-                     /db_xref="MGI:3646222"
+                     /db_xref="MGI:MGI:3646222"
                      /translation="MSALLFLALVGAAVAFPVDDDKIVGGYTCRENSVPYQVSLNSGY
                      HFCGGSLINDQWVVSAAHCYKTRIQVRLGEHNIKVLEGNEQFVNAAKIIKHPNFNRKT
                      LNNDIMLIKLSSPVTLNARVATVALPSSCAPAGTQCLISGWGNTLSFGVSEPDLLQCL
@@ -1144,7 +1161,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="EG386551; Try10l"
                      /note="predicted pseudogene 5409"
                      /db_xref="GeneID:386551"
-                     /db_xref="MGI:3643903"
+                     /db_xref="MGI:MGI:3643903"
      mRNA            join(524513..524555,526118..526277,527449..527702,
                      528246..528382,528649..528799)
                      /gene="Gm5409"
@@ -1153,7 +1170,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_001003664.2"
                      /db_xref="GI:157058294"
                      /db_xref="GeneID:386551"
-                     /db_xref="MGI:3643903"
+                     /db_xref="MGI:MGI:3643903"
      CDS             join(524516..524555,526118..526277,527449..527702,
                      528246..528382,528649..528798)
                      /gene="Gm5409"
@@ -1164,7 +1181,7 @@ FEATURES             Location/Qualifiers
                      /protein_id="NP_001003664.1"
                      /db_xref="GI:51092303"
                      /db_xref="GeneID:386551"
-                     /db_xref="MGI:3643903"
+                     /db_xref="MGI:MGI:3643903"
                      /translation="MQFLSQLLCSTALVAFPVDDDDRIVGGYTCRENSVPYQVSLNSG
                      YHFCGDSLINDQWVVSAAHCYNSRIQVRLGEHNINVLEGNEQFIDAANIVKHPKFKKK
                      TLDNDIMLIKLSSPVTLNARVATVAMPSSCALAGTQCLISGWGNTLSSGVNNPDLLQC
@@ -1175,7 +1192,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="ENSMUSG00000071517"
                      /note="predicted gene 10334"
                      /db_xref="GeneID:100040233"
-                     /db_xref="MGI:3641889"
+                     /db_xref="MGI:MGI:3641889"
      mRNA            complement(join(551420..551626,551890..552026,
                      552543..552796,554476..554635,555232..555303))
                      /gene="Gm10334"
@@ -1184,7 +1201,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_001103153.1"
                      /db_xref="GI:157058297"
                      /db_xref="GeneID:100040233"
-                     /db_xref="MGI:3641889"
+                     /db_xref="MGI:MGI:3641889"
      CDS             complement(join(551477..551626,551890..552026,
                      552543..552796,554476..554635,555232..555271))
                      /gene="Gm10334"
@@ -1195,7 +1212,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:157058298"
                      /db_xref="CCDS:CCDS39468.1"
                      /db_xref="GeneID:100040233"
-                     /db_xref="MGI:3641889"
+                     /db_xref="MGI:MGI:3641889"
                      /translation="MNAFLILALVGAAVAFPVDDDDKIVGGYTCQENSVPYQVSLNSG
                      YHFCGGSLINDQWVVSAAHCYKTRIQVRLGEHNINVLEGNEQFVNAAKIIKHPNFNRK
                      TLNNDIMLIKLSSPVTLNARVATVALPSSCAPAGTQCLISGWGNTLSFGVSEPDLLQC
@@ -1204,31 +1221,32 @@ FEATURES             Location/Qualifiers
      gene            568136..572992
                      /gene="Prss1"
                      /gene_synonym="Try-1; Try1; Trygn16"
-                     /note="protease, serine, 1 (trypsin 1)"
+                     /note="protease, serine 1 (trypsin 1)"
                      /db_xref="GeneID:114228"
-                     /db_xref="MGI:98839"
+                     /db_xref="MGI:MGI:98839"
      mRNA            join(568136..568188,570387..570546,571741..571994,
                      572391..572527,572790..572992)
                      /gene="Prss1"
                      /gene_synonym="Try-1; Try1; Trygn16"
-                     /product="protease, serine, 1 (trypsin 1)"
+                     /product="protease, serine 1 (trypsin 1)"
                      /transcript_id="NM_053243.2"
                      /db_xref="GI:157058295"
                      /db_xref="GeneID:114228"
-                     /db_xref="MGI:98839"
+                     /db_xref="MGI:MGI:98839"
      CDS             join(568149..568188,570387..570546,571741..571994,
                      572391..572527,572790..572939)
                      /gene="Prss1"
                      /gene_synonym="Try-1; Try1; Trygn16"
                      /EC_number="3.4.21.4"
-                     /note="trypsin 1; trypsinogen 16"
+                     /note="trypsin 1; trypsinogen 16; protease, serine, 1
+                     (trypsin 1)"
                      /codon_start=1
                      /product="protease, serine, 1 precursor"
                      /protein_id="NP_444473.1"
                      /db_xref="GI:16716569"
                      /db_xref="CCDS:CCDS20049.1"
                      /db_xref="GeneID:114228"
-                     /db_xref="MGI:98839"
+                     /db_xref="MGI:MGI:98839"
                      /translation="MSALLFLALVGAAVAFPVDDDDKIVGGYTCRENSVPYQVSLNSG
                      YHFCGGSLINDQWVVSAAHCYKTRIQVRLGEHNINVLEGNEQFIDAAKIIKHPNFNRK
                      TLNNDIMLIKLSSPVTLNARVATVALPSSCAPAGTQCLISGWGNTLSFGVSEPDLLQC
@@ -1237,32 +1255,33 @@ FEATURES             Location/Qualifiers
      gene            630982..634285
                      /gene="Prss2"
                      /gene_synonym="Ta; Tesp4; Try2; TRY8; TRYP"
-                     /note="protease, serine, 2"
+                     /note="protease, serine 2"
                      /db_xref="GeneID:22072"
-                     /db_xref="MGI:102759"
+                     /db_xref="MGI:MGI:102759"
      mRNA            join(630982..631049,632023..632182,633061..633314,
                      633659..633795,634079..634285)
                      /gene="Prss2"
                      /gene_synonym="Ta; Tesp4; Try2; TRY8; TRYP"
-                     /product="protease, serine, 2"
+                     /product="protease, serine 2"
                      /transcript_id="NM_009430.2"
                      /db_xref="GI:157058296"
                      /db_xref="GeneID:22072"
-                     /db_xref="MGI:102759"
+                     /db_xref="MGI:MGI:102759"
      CDS             join(631010..631049,632023..632182,633061..633314,
                      633659..633795,634079..634228)
                      /gene="Prss2"
                      /gene_synonym="Ta; Tesp4; Try2; TRY8; TRYP"
                      /EC_number="3.4.21.4"
                      /note="anionic trypsin-2; trypsinogen 20; pretrypsinogen
-                     II; serine protease 2; anionic trypsin II; trypsin 2"
+                     II; serine protease 2; anionic trypsin II; trypsin 2;
+                     protease, serine, 2"
                      /codon_start=1
                      /product="anionic trypsin-2 precursor"
                      /protein_id="NP_033456.1"
                      /db_xref="GI:6678439"
                      /db_xref="CCDS:CCDS20050.1"
                      /db_xref="GeneID:22072"
-                     /db_xref="MGI:102759"
+                     /db_xref="MGI:MGI:102759"
                      /translation="MSALLILALVGAAVAFPVDDDDKIVGGYTCRESSVPYQVSLNAG
                      YHFCGGSLINDQWVVSAAHCYKYRIQVRLGEHNINVLEGNEQFVDSAKIIRHPNYNSW
                      TLDNDIMLIKLASPVTLNARVASVPLPSSCAPAGTQCLISGWGNTLSNGVNNPDLLQC
@@ -1274,7 +1293,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, D region 1"
                      /db_xref="GeneID:100125246"
                      /db_xref="IMGT/GENE-DB:TRBD1"
-                     /db_xref="MGI:4439571"
+                     /db_xref="MGI:MGI:4439571"
      CDS             642407..642418
                      /gene="Trbd1"
                      /gene_synonym="Gm16647; Tcrb-D1"
@@ -1282,7 +1301,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125246"
                      /db_xref="IMGT/GENE-DB:TRBD1"
-                     /db_xref="MGI:4439571"
+                     /db_xref="MGI:MGI:4439571"
      D_segment       642407..642418
                      /gene="Trbd1"
                      /gene_synonym="Gm16647; Tcrb-D1"
@@ -1293,7 +1312,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta joining 1-1"
                      /db_xref="GeneID:100125248"
                      /db_xref="IMGT/GENE-DB:TRBJ1-1"
-                     /db_xref="MGI:4439570"
+                     /db_xref="MGI:MGI:4439570"
      CDS             643070..643117
                      /gene="Trbj1-1"
                      /gene_synonym="Gm16646"
@@ -1301,7 +1320,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125248"
                      /db_xref="IMGT/GENE-DB:TRBJ1-1"
-                     /db_xref="MGI:4439570"
+                     /db_xref="MGI:MGI:4439570"
      J_segment       643070..643117
                      /gene="Trbj1-1"
                      /gene_synonym="Gm16646"
@@ -1312,7 +1331,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta joining 1-2"
                      /db_xref="GeneID:100125249"
                      /db_xref="IMGT/GENE-DB:TRBJ1-2"
-                     /db_xref="MGI:4439569"
+                     /db_xref="MGI:MGI:4439569"
      CDS             643207..643254
                      /gene="Trbj1-2"
                      /gene_synonym="Gm16645"
@@ -1320,7 +1339,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125249"
                      /db_xref="IMGT/GENE-DB:TRBJ1-2"
-                     /db_xref="MGI:4439569"
+                     /db_xref="MGI:MGI:4439569"
      J_segment       643207..643254
                      /gene="Trbj1-2"
                      /gene_synonym="Gm16645"
@@ -1336,7 +1355,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta joining 1-3"
                      /db_xref="GeneID:100125250"
                      /db_xref="IMGT/GENE-DB:TRBJ1-3"
-                     /db_xref="MGI:4439568"
+                     /db_xref="MGI:MGI:4439568"
      CDS             643529..643578
                      /gene="Trbj1-3"
                      /gene_synonym="Gm16644"
@@ -1344,7 +1363,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125250"
                      /db_xref="IMGT/GENE-DB:TRBJ1-3"
-                     /db_xref="MGI:4439568"
+                     /db_xref="MGI:MGI:4439568"
      J_segment       643529..643578
                      /gene="Trbj1-3"
                      /gene_synonym="Gm16644"
@@ -1355,7 +1374,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta joining 1-4"
                      /db_xref="GeneID:100125251"
                      /db_xref="IMGT/GENE-DB:TRBJ1-4"
-                     /db_xref="MGI:4439567"
+                     /db_xref="MGI:MGI:4439567"
      CDS             644017..644067
                      /gene="Trbj1-4"
                      /gene_synonym="Gm16643"
@@ -1363,7 +1382,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125251"
                      /db_xref="IMGT/GENE-DB:TRBJ1-4"
-                     /db_xref="MGI:4439567"
+                     /db_xref="MGI:MGI:4439567"
      J_segment       644017..644067
                      /gene="Trbj1-4"
                      /gene_synonym="Gm16643"
@@ -1374,7 +1393,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta joining 1-5"
                      /db_xref="GeneID:100125252"
                      /db_xref="IMGT/GENE-DB:TRBJ1-5"
-                     /db_xref="MGI:4439566"
+                     /db_xref="MGI:MGI:4439566"
      CDS             644290..644339
                      /gene="Trbj1-5"
                      /gene_synonym="Gm16642"
@@ -1382,7 +1401,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125252"
                      /db_xref="IMGT/GENE-DB:TRBJ1-5"
-                     /db_xref="MGI:4439566"
+                     /db_xref="MGI:MGI:4439566"
      J_segment       644290..644339
                      /gene="Trbj1-5"
                      /gene_synonym="Gm16642"
@@ -1393,7 +1412,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta joining 1-6"
                      /db_xref="GeneID:100125253"
                      /db_xref="IMGT/GENE-DB:TRBJ1-6"
-                     /db_xref="MGI:4439575"
+                     /db_xref="MGI:MGI:4439575"
      CDS             644760..644812
                      /gene="Trbj1-6"
                      /gene_synonym="Gm16651"
@@ -1401,7 +1420,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125253"
                      /db_xref="IMGT/GENE-DB:TRBJ1-6"
-                     /db_xref="MGI:4439575"
+                     /db_xref="MGI:MGI:4439575"
      J_segment       644760..644812
                      /gene="Trbj1-6"
                      /gene_synonym="Gm16651"
@@ -1412,7 +1431,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta joining 1-7"
                      /db_xref="GeneID:100125254"
                      /db_xref="IMGT/GENE-DB:TRBJ1-7"
-                     /db_xref="MGI:4439574"
+                     /db_xref="MGI:MGI:4439574"
      CDS             644848..644893
                      /gene="Trbj1-7"
                      /gene_synonym="Gm16650"
@@ -1420,7 +1439,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125254"
                      /db_xref="IMGT/GENE-DB:TRBJ1-7"
-                     /db_xref="MGI:4439574"
+                     /db_xref="MGI:MGI:4439574"
      J_segment       644848..644893
                      /gene="Trbj1-7"
                      /gene_synonym="Gm16650"
@@ -1431,7 +1450,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, constant region 1"
                      /db_xref="GeneID:100125262"
                      /db_xref="IMGT/GENE-DB:TRBC1"
-                     /db_xref="MGI:4439726"
+                     /db_xref="MGI:MGI:4439726"
      CDS             join(647425..647799,648321..648336,648435..648541,
                      648851..648871)
                      /gene="Trbc1"
@@ -1440,7 +1459,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125262"
                      /db_xref="IMGT/GENE-DB:TRBC1"
-                     /db_xref="MGI:4439726"
+                     /db_xref="MGI:MGI:4439726"
      C_region        join(647425..647799,648321..648336,648435..648541,
                      648851..648871)
                      /gene="Trbc1"
@@ -1452,7 +1471,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, D region 2"
                      /db_xref="GeneID:100125247"
                      /db_xref="IMGT/GENE-DB:TRBD2"
-                     /db_xref="MGI:4439727"
+                     /db_xref="MGI:MGI:4439727"
      CDS             651369..651382
                      /gene="Trbd2"
                      /gene_synonym="Gm16803; Tcrb-D2"
@@ -1460,7 +1479,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125247"
                      /db_xref="IMGT/GENE-DB:TRBD2"
-                     /db_xref="MGI:4439727"
+                     /db_xref="MGI:MGI:4439727"
      D_segment       651369..651382
                      /gene="Trbd2"
                      /gene_synonym="Gm16803; Tcrb-D2"
@@ -1471,7 +1490,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta joining 2-1"
                      /db_xref="GeneID:100125255"
                      /db_xref="IMGT/GENE-DB:TRBJ2-1"
-                     /db_xref="MGI:4439728"
+                     /db_xref="MGI:MGI:4439728"
      CDS             651960..652009
                      /gene="Trbj2-1"
                      /gene_synonym="Gm16804"
@@ -1479,7 +1498,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125255"
                      /db_xref="IMGT/GENE-DB:TRBJ2-1"
-                     /db_xref="MGI:4439728"
+                     /db_xref="MGI:MGI:4439728"
      J_segment       651960..652009
                      /gene="Trbj2-1"
                      /gene_synonym="Gm16804"
@@ -1490,7 +1509,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta joining 2-2"
                      /db_xref="GeneID:100125256"
                      /db_xref="IMGT/GENE-DB:TRBJ2-2"
-                     /db_xref="MGI:4439729"
+                     /db_xref="MGI:MGI:4439729"
      CDS             652163..652213
                      /gene="Trbj2-2"
                      /gene_synonym="Gm16805"
@@ -1498,7 +1517,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125256"
                      /db_xref="IMGT/GENE-DB:TRBJ2-2"
-                     /db_xref="MGI:4439729"
+                     /db_xref="MGI:MGI:4439729"
      J_segment       652163..652213
                      /gene="Trbj2-2"
                      /gene_synonym="Gm16805"
@@ -1509,7 +1528,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta joining 2-3"
                      /db_xref="GeneID:100125257"
                      /db_xref="IMGT/GENE-DB:TRBJ2-3"
-                     /db_xref="MGI:4439898"
+                     /db_xref="MGI:MGI:4439898"
      CDS             652429..652477
                      /gene="Trbj2-3"
                      /gene_synonym="Gm16974"
@@ -1517,7 +1536,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125257"
                      /db_xref="IMGT/GENE-DB:TRBJ2-3"
-                     /db_xref="MGI:4439898"
+                     /db_xref="MGI:MGI:4439898"
      J_segment       652429..652477
                      /gene="Trbj2-3"
                      /gene_synonym="Gm16974"
@@ -1528,7 +1547,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta joining 2-4"
                      /db_xref="GeneID:100125258"
                      /db_xref="IMGT/GENE-DB:TRBJ2-4"
-                     /db_xref="MGI:4439730"
+                     /db_xref="MGI:MGI:4439730"
      CDS             652568..652616
                      /gene="Trbj2-4"
                      /gene_synonym="Gm16806"
@@ -1536,7 +1555,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125258"
                      /db_xref="IMGT/GENE-DB:TRBJ2-4"
-                     /db_xref="MGI:4439730"
+                     /db_xref="MGI:MGI:4439730"
      J_segment       652568..652616
                      /gene="Trbj2-4"
                      /gene_synonym="Gm16806"
@@ -1547,7 +1566,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta joining 2-5"
                      /db_xref="GeneID:100125259"
                      /db_xref="IMGT/GENE-DB:TRBJ2-5"
-                     /db_xref="MGI:4439899"
+                     /db_xref="MGI:MGI:4439899"
      CDS             652659..652707
                      /gene="Trbj2-5"
                      /gene_synonym="Gm16975"
@@ -1555,7 +1574,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125259"
                      /db_xref="IMGT/GENE-DB:TRBJ2-5"
-                     /db_xref="MGI:4439899"
+                     /db_xref="MGI:MGI:4439899"
      J_segment       652659..652707
                      /gene="Trbj2-5"
                      /gene_synonym="Gm16975"
@@ -1564,28 +1583,31 @@ FEATURES             Location/Qualifiers
                      /gene="Trbj2-6"
                      /gene_synonym="Gm17602"
                      /note="T cell receptor beta joining 2-6"
+                     /pseudo
                      /db_xref="GeneID:100125260"
                      /db_xref="IMGT/GENE-DB:TRBJ2-6"
-                     /db_xref="MGI:4937236"
+                     /db_xref="MGI:MGI:4937236"
      CDS             652804..652851
                      /gene="Trbj2-6"
                      /gene_synonym="Gm17602"
                      /exception="rearrangement required for product"
+                     /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100125260"
                      /db_xref="IMGT/GENE-DB:TRBJ2-6"
-                     /db_xref="MGI:4937236"
+                     /db_xref="MGI:MGI:4937236"
      J_segment       652804..652851
                      /gene="Trbj2-6"
                      /gene_synonym="Gm17602"
                      /standard_name="TRBJ2-6"
+                     /pseudo
      gene            653016..653062
                      /gene="Trbj2-7"
                      /gene_synonym="Gm16807"
                      /note="T cell receptor beta joining 2-7"
                      /db_xref="GeneID:100125261"
                      /db_xref="IMGT/GENE-DB:TRBJ2-7"
-                     /db_xref="MGI:4439731"
+                     /db_xref="MGI:MGI:4439731"
      CDS             653016..653062
                      /gene="Trbj2-7"
                      /gene_synonym="Gm16807"
@@ -1593,7 +1615,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125261"
                      /db_xref="IMGT/GENE-DB:TRBJ2-7"
-                     /db_xref="MGI:4439731"
+                     /db_xref="MGI:MGI:4439731"
      J_segment       653016..653062
                      /gene="Trbj2-7"
                      /gene_synonym="Gm16807"
@@ -1604,7 +1626,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, constant 2"
                      /db_xref="GeneID:100125263"
                      /db_xref="IMGT/GENE-DB:TRBC2"
-                     /db_xref="MGI:4835227"
+                     /db_xref="MGI:MGI:4835227"
      CDS             join(655936..656310,656817..656833,656978..657084,
                      657367..657387)
                      /gene="Trbc2"
@@ -1613,7 +1635,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100125263"
                      /db_xref="IMGT/GENE-DB:TRBC2"
-                     /db_xref="MGI:4835227"
+                     /db_xref="MGI:MGI:4835227"
      C_region        join(655936..656310,656817..656833,656978..657084,
                      657367..657387)
                      /gene="Trbc2"
@@ -1635,7 +1657,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor beta, variable 31"
                      /db_xref="GeneID:269846"
                      /db_xref="IMGT/GENE-DB:TRBV31"
-                     /db_xref="MGI:98588"
+                     /db_xref="MGI:MGI:98588"
      CDS             complement(join(666899..667190,667535..667577))
                      /gene="Trbv31"
                      /gene_synonym="Gm16809; Tcrb-V14"
@@ -1643,8 +1665,8 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:269846"
                      /db_xref="IMGT/GENE-DB:TRBV31"
-                     /db_xref="MGI:98588"
-     V_segment       complement(666899..667577)
+                     /db_xref="MGI:MGI:98588"
+     V_segment       complement(join(666899..667190,667535..667577))
                      /gene="Trbv31"
                      /gene_synonym="Gm16809; Tcrb-V14"
                      /standard_name="TRBV31"
