@@ -1,4 +1,4 @@
-LOCUS       NG_007044            1797232 bp    DNA     linear   CON 08-JUL-2013
+LOCUS       NG_007044            1797232 bp    DNA     linear   CON 30-SEP-2015
 DEFINITION  Mus musculus T cell receptor alpha delta locus (Tcra/tcrd@) on
             chromosome 14.
 ACCESSION   NG_007044
@@ -10,7 +10,7 @@ SOURCE      Mus musculus (house mouse)
             Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia;
             Sciurognathi; Muroidea; Muridae; Murinae; Mus; Mus.
 REFERENCE   1  (bases 1 to 1797232)
-  AUTHORS   Takeshita,S., Toda,M. and Yamagishi,H.
+  AUTHORS   Takeshita S, Toda M and Yamagishi H.
   TITLE     Excision products of the T cell receptor gene support a progressive
             rearrangement model of the alpha/delta locus
   JOURNAL   EMBO J. 8 (11), 3261-3270 (1989)
@@ -97,14 +97,14 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="Tcralpha"
                      /note="T cell receptor alpha chain"
                      /db_xref="GeneID:21473"
-                     /db_xref="MGI:98553"
+                     /db_xref="MGI:MGI:98553"
      gene            501..1410
                      /gene="Trav1"
                      /gene_synonym="Gm13987; OTTMUSG00000015242"
                      /note="T cell receptor alpha variable 1"
                      /db_xref="GeneID:627171"
                      /db_xref="IMGT/GENE-DB:TRAV1"
-                     /db_xref="MGI:3651476"
+                     /db_xref="MGI:MGI:3651476"
      CDS             join(501..549,1128..1410)
                      /gene="Trav1"
                      /gene_synonym="Gm13987; OTTMUSG00000015242"
@@ -112,7 +112,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:627171"
                      /db_xref="IMGT/GENE-DB:TRAV1"
-                     /db_xref="MGI:3651476"
+                     /db_xref="MGI:MGI:3651476"
      V_segment       join(501..549,1128..1410)
                      /gene="Trav1"
                      /gene_synonym="Gm13987; OTTMUSG00000015242"
@@ -122,7 +122,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="MOR244-3; Mor83; Or83"
                      /note="olfactory receptor 1509"
                      /db_xref="GeneID:57271"
-                     /db_xref="MGI:3031343"
+                     /db_xref="MGI:MGI:3031343"
      mRNA            22927..23936
                      /gene="Olfr1509"
                      /gene_synonym="MOR244-3; Mor83; Or83"
@@ -130,7 +130,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_020514.2"
                      /db_xref="GI:282394046"
                      /db_xref="GeneID:57271"
-                     /db_xref="MGI:3031343"
+                     /db_xref="MGI:MGI:3031343"
      STS             22927..23936
                      /gene="Olfr1509"
                      /gene_synonym="MOR244-3; Mor83; Or83"
@@ -146,7 +146,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:282394047"
                      /db_xref="CCDS:CCDS27060.1"
                      /db_xref="GeneID:57271"
-                     /db_xref="MGI:3031343"
+                     /db_xref="MGI:MGI:3031343"
                      /translation="MGALNQTRVTEFIFLGLTDNWVLEILFFVPFTVTYMLTLLGNFL
                      IVVTIVFTPRLHNPMYFFLSNLSFIDICHSSVTVPKMLEGLLLERKTISFDNCIAQLF
                      FLHLFACSEIFLLTIMAYDRYVAICIPLHYSNVMNMKVCVQLVFALWLGGTIHSLVQT
@@ -163,7 +163,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="Mor10; MOR244-2; MOR244-4; Or10"
                      /note="olfactory receptor 1508"
                      /db_xref="GeneID:57270"
-                     /db_xref="MGI:3031342"
+                     /db_xref="MGI:MGI:3031342"
      mRNA            complement(join(35255..36556,39430..39995))
                      /gene="Olfr1508"
                      /gene_synonym="Mor10; MOR244-2; MOR244-4; Or10"
@@ -172,7 +172,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_020513.2"
                      /db_xref="GI:112821657"
                      /db_xref="GeneID:57270"
-                     /db_xref="MGI:3031342"
+                     /db_xref="MGI:MGI:3031342"
      STS             35562..36634
                      /gene="Tcra"
                      /gene_synonym="Tcralpha"
@@ -188,7 +188,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:10048450"
                      /db_xref="CCDS:CCDS27061.1"
                      /db_xref="GeneID:57270"
-                     /db_xref="MGI:3031342"
+                     /db_xref="MGI:MGI:3031342"
                      /translation="MEKAVLINETSVMSFRLTGLSTNPLVQMAVFFIFLIFYVLTLVG
                      NILIVITIIYDRRLHTPMYFFLSNLSFIDVCHSTVTVPKMLSDTFSEEKLISFDACVV
                      QMFFLHLFACTEIFLLTVMAYDRYVAICKPLQYMTIMNWKVCMMLAAALWTGGTIHSI
@@ -204,7 +204,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="MOR244-1; Mor28; Or28"
                      /note="olfactory receptor 1507"
                      /db_xref="GeneID:57269"
-                     /db_xref="MGI:3031341"
+                     /db_xref="MGI:MGI:3031341"
      mRNA            complement(join(62469..63506,67663..68229))
                      /gene="Olfr1507"
                      /gene_synonym="MOR244-1; Mor28; Or28"
@@ -212,7 +212,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_001170918.1"
                      /db_xref="GI:283135127"
                      /db_xref="GeneID:57269"
-                     /db_xref="MGI:3031341"
+                     /db_xref="MGI:MGI:3031341"
      mRNA            complement(62469..63580)
                      /gene="Olfr1507"
                      /gene_synonym="MOR244-1; Mor28; Or28"
@@ -220,7 +220,7 @@ FEATURES             Location/Qualifiers
                      /transcript_id="NM_020512.2"
                      /db_xref="GI:283135125"
                      /db_xref="GeneID:57269"
-                     /db_xref="MGI:3031341"
+                     /db_xref="MGI:MGI:3031341"
      STS             62469..63580
                      /gene="Tcra"
                      /gene_synonym="Tcralpha"
@@ -236,7 +236,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:283135126"
                      /db_xref="CCDS:CCDS27062.1"
                      /db_xref="GeneID:57269"
-                     /db_xref="MGI:3031341"
+                     /db_xref="MGI:MGI:3031341"
                      /translation="MEKAVLINQTSVMSFRLTGLSTNPKVQMAIFFIFLIFYVLTLVG
                      NILIVITIIHDHRLHTPMYFFLSNLSFIDVCHSTVTVPKMLSDTFSEEKLISFDDCVV
                      QIFFLHLFACTEIFLLTVMAYDRYVAICKPLRYMTIMNWKVCMVLGGAMWTAGTIHSI
@@ -254,7 +254,7 @@ FEATURES             Location/Qualifiers
                      /db_xref="GI:283135128"
                      /db_xref="CCDS:CCDS27062.1"
                      /db_xref="GeneID:57269"
-                     /db_xref="MGI:3031341"
+                     /db_xref="MGI:MGI:3031341"
                      /translation="MEKAVLINQTSVMSFRLTGLSTNPKVQMAIFFIFLIFYVLTLVG
                      NILIVITIIHDHRLHTPMYFFLSNLSFIDVCHSTVTVPKMLSDTFSEEKLISFDDCVV
                      QIFFLHLFACTEIFLLTVMAYDRYVAICKPLRYMTIMNWKVCMVLGGAMWTAGTIHSI
@@ -272,14 +272,14 @@ FEATURES             Location/Qualifiers
                      /note="predicted gene 9537"
                      /pseudo
                      /db_xref="GeneID:671621"
-                     /db_xref="MGI:3779947"
+                     /db_xref="MGI:MGI:3779947"
      gene            111186..113410
                      /gene="Gm7122"
                      /gene_synonym="EG633692"
                      /note="predicted pseudogene 7122"
                      /pseudo
                      /db_xref="GeneID:633692"
-                     /db_xref="MGI:3644290"
+                     /db_xref="MGI:MGI:3644290"
      gene            139827..140587
                      /gene="Trav2"
                      /gene_synonym="ENSMUSG00000072561; ENSMUSG00000076759;
@@ -287,7 +287,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 2"
                      /db_xref="GeneID:100042372"
                      /db_xref="IMGT/GENE-DB:TRAV2"
-                     /db_xref="MGI:3642679"
+                     /db_xref="MGI:MGI:3642679"
      CDS             join(139827..139866,140298..140587)
                      /gene="Trav2"
                      /gene_synonym="ENSMUSG00000072561; ENSMUSG00000076759;
@@ -296,7 +296,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042372"
                      /db_xref="IMGT/GENE-DB:TRAV2"
-                     /db_xref="MGI:3642679"
+                     /db_xref="MGI:MGI:3642679"
      V_segment       join(139827..139866,140298..140587)
                      /gene="Trav2"
                      /gene_synonym="ENSMUSG00000072561; ENSMUSG00000076759;
@@ -308,7 +308,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 3-1"
                      /db_xref="GeneID:667441"
                      /db_xref="IMGT/GENE-DB:TRAV3-1"
-                     /db_xref="MGI:3644489"
+                     /db_xref="MGI:MGI:3644489"
      CDS             join(153296..153421,153457..153747)
                      /gene="Trav3-1"
                      /gene_synonym="EG667441; Gm8635"
@@ -316,7 +316,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667441"
                      /db_xref="IMGT/GENE-DB:TRAV3-1"
-                     /db_xref="MGI:3644489"
+                     /db_xref="MGI:MGI:3644489"
      V_segment       join(153296..153421,153457..153747)
                      /gene="Trav3-1"
                      /gene_synonym="EG667441; Gm8635"
@@ -328,7 +328,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100042384"
                      /db_xref="IMGT/GENE-DB:TRAV4-1"
-                     /db_xref="MGI:3781986"
+                     /db_xref="MGI:MGI:3781986"
      CDS             join(179841..179889,180061..180338)
                      /gene="Trav4-1"
                      /gene_synonym="100042384; Gm3814; Trav4-1p"
@@ -336,7 +336,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042384"
                      /db_xref="IMGT/GENE-DB:TRAV4-1"
-                     /db_xref="MGI:3781986"
+                     /db_xref="MGI:MGI:3781986"
      V_segment       join(179841..179889,180061..180338)
                      /gene="Trav4-1"
                      /gene_synonym="100042384; Gm3814; Trav4-1p"
@@ -348,7 +348,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 5-1"
                      /db_xref="GeneID:633740"
                      /db_xref="IMGT/GENE-DB:TRAV5-1"
-                     /db_xref="MGI:3815062"
+                     /db_xref="MGI:MGI:3815062"
      CDS             join(195100..195151,195326..195616)
                      /gene="Trav5-1"
                      /gene_synonym="633740; Gm7124"
@@ -356,7 +356,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:633740"
                      /db_xref="IMGT/GENE-DB:TRAV5-1"
-                     /db_xref="MGI:3815062"
+                     /db_xref="MGI:MGI:3815062"
      V_segment       join(195100..195151,195326..195616)
                      /gene="Trav5-1"
                      /gene_synonym="633740; Gm7124"
@@ -367,7 +367,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6-1"
                      /db_xref="GeneID:667449"
                      /db_xref="IMGT/GENE-DB:TRAV6-1"
-                     /db_xref="MGI:3644497"
+                     /db_xref="MGI:MGI:3644497"
      CDS             join(211049..211094,211205..211496)
                      /gene="Trav6-1"
                      /gene_synonym="EG667449; Gm8639"
@@ -375,7 +375,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667449"
                      /db_xref="IMGT/GENE-DB:TRAV6-1"
-                     /db_xref="MGI:3644497"
+                     /db_xref="MGI:MGI:3644497"
      V_segment       join(211049..211094,211205..211496)
                      /gene="Trav6-1"
                      /gene_synonym="EG667449; Gm8639"
@@ -386,7 +386,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7-1"
                      /db_xref="GeneID:671652"
                      /db_xref="IMGT/GENE-DB:TRAV7-1"
-                     /db_xref="MGI:3647460"
+                     /db_xref="MGI:MGI:3647460"
      CDS             join(227351..227399,227576..227863)
                      /gene="Trav7-1"
                      /gene_synonym="EG667457; Gm16452"
@@ -394,7 +394,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:671652"
                      /db_xref="IMGT/GENE-DB:TRAV7-1"
-                     /db_xref="MGI:3647460"
+                     /db_xref="MGI:MGI:3647460"
      V_segment       join(227351..227399,227576..227863)
                      /gene="Trav7-1"
                      /gene_synonym="EG667457; Gm16452"
@@ -405,7 +405,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6-2"
                      /db_xref="GeneID:436539"
                      /db_xref="IMGT/GENE-DB:TRAV6-2"
-                     /db_xref="MGI:3642602"
+                     /db_xref="MGI:MGI:3642602"
      CDS             join(239945..239993,240107..240398)
                      /gene="Trav6-2"
                      /gene_synonym="436539; ENSMUSG00000072556; Gm5772"
@@ -413,7 +413,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:436539"
                      /db_xref="IMGT/GENE-DB:TRAV6-2"
-                     /db_xref="MGI:3642602"
+                     /db_xref="MGI:MGI:3642602"
      V_segment       join(239945..239993,240107..240398)
                      /gene="Trav6-2"
                      /gene_synonym="436539; ENSMUSG00000072556; Gm5772"
@@ -424,7 +424,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7D-2"
                      /db_xref="GeneID:100042410"
                      /db_xref="IMGT/GENE-DB:TRAV7D-2"
-                     /db_xref="MGI:3711992"
+                     /db_xref="MGI:MGI:3711992"
      CDS             join(256498..256546,256719..257006)
                      /gene="Trav7d-2"
                      /gene_synonym="EG673730; Gm16483"
@@ -432,7 +432,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042410"
                      /db_xref="IMGT/GENE-DB:TRAV7D-2"
-                     /db_xref="MGI:3711992"
+                     /db_xref="MGI:MGI:3711992"
      V_segment       join(256498..256546,256719..257006)
                      /gene="Trav7d-2"
                      /gene_synonym="EG673730; Gm16483"
@@ -444,7 +444,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:546612"
                      /db_xref="IMGT/GENE-DB:TRAV4D-2"
-                     /db_xref="MGI:3650629"
+                     /db_xref="MGI:MGI:3650629"
      CDS             join(283451..283502,283658..283936)
                      /gene="Trav4d-2"
                      /gene_synonym="Gm13958; OTTMUSG00000015180"
@@ -452,7 +452,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:546612"
                      /db_xref="IMGT/GENE-DB:TRAV4D-2"
-                     /db_xref="MGI:3650629"
+                     /db_xref="MGI:MGI:3650629"
      V_segment       join(283451..283502,283658..283936)
                      /gene="Trav4d-2"
                      /gene_synonym="Gm13958; OTTMUSG00000015180"
@@ -464,7 +464,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6D-3"
                      /db_xref="GeneID:627394"
                      /db_xref="IMGT/GENE-DB:TRAV6D-3"
-                     /db_xref="MGI:3650097"
+                     /db_xref="MGI:MGI:3650097"
      CDS             join(297842..297887,299162..299453)
                      /gene="Trav6d-3"
                      /gene_synonym="Gm13955; OTTMUSG00000015177"
@@ -472,7 +472,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:627394"
                      /db_xref="IMGT/GENE-DB:TRAV6D-3"
-                     /db_xref="MGI:3650097"
+                     /db_xref="MGI:MGI:3650097"
      V_segment       join(297842..297887,299162..299453)
                      /gene="Trav6d-3"
                      /gene_synonym="Gm13955; OTTMUSG00000015177"
@@ -483,7 +483,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7D-3"
                      /db_xref="GeneID:100042419"
                      /db_xref="IMGT/GENE-DB:TRAV7D-3"
-                     /db_xref="MGI:3649861"
+                     /db_xref="MGI:MGI:3649861"
      CDS             join(316848..316896,317087..317372)
                      /gene="Trav7d-3"
                      /gene_synonym="Gm13956; OTTMUSG00000015178"
@@ -491,7 +491,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042419"
                      /db_xref="IMGT/GENE-DB:TRAV7D-3"
-                     /db_xref="MGI:3649861"
+                     /db_xref="MGI:MGI:3649861"
      V_segment       join(316848..316896,317087..317372)
                      /gene="Trav7d-3"
                      /gene_synonym="Gm13956; OTTMUSG00000015178"
@@ -502,7 +502,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6D-4"
                      /db_xref="GeneID:277146"
                      /db_xref="IMGT/GENE-DB:TRAV6D-4"
-                     /db_xref="MGI:2685547"
+                     /db_xref="MGI:MGI:2685547"
      CDS             join(325932..325980,326090..326380)
                      /gene="Trav6d-4"
                      /gene_synonym="Gm1796; Gm25; Gm291; Gm701"
@@ -510,7 +510,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:277146"
                      /db_xref="IMGT/GENE-DB:TRAV6D-4"
-                     /db_xref="MGI:2685547"
+                     /db_xref="MGI:MGI:2685547"
      V_segment       join(325932..325980,326090..326380)
                      /gene="Trav6d-4"
                      /gene_synonym="Gm1796; Gm25; Gm291; Gm701"
@@ -521,7 +521,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7D-4"
                      /db_xref="GeneID:382180"
                      /db_xref="IMGT/GENE-DB:TRAV7D-4"
-                     /db_xref="MGI:3651273"
+                     /db_xref="MGI:MGI:3651273"
      CDS             join(342397..342445,342635..342926)
                      /gene="Trav7d-4"
                      /gene_synonym="Gm13959; OTTMUSG00000015181"
@@ -529,7 +529,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:382180"
                      /db_xref="IMGT/GENE-DB:TRAV7D-4"
-                     /db_xref="MGI:3651273"
+                     /db_xref="MGI:MGI:3651273"
      V_segment       join(342397..342445,342635..342926)
                      /gene="Trav7d-4"
                      /gene_synonym="Gm13959; OTTMUSG00000015181"
@@ -540,14 +540,14 @@ FEATURES             Location/Qualifiers
                      /note="predicted pseudogene 5408"
                      /pseudo
                      /db_xref="GeneID:386506"
-                     /db_xref="MGI:3647344"
+                     /db_xref="MGI:MGI:3647344"
      gene            351044..351529
                      /gene="Trav8d-1"
                      /gene_synonym="Gm13957; OTTMUSG00000015179"
                      /note="T cell receptor alpha variable 8D-1"
                      /db_xref="GeneID:667476"
                      /db_xref="IMGT/GENE-DB:TRAV8D-1"
-                     /db_xref="MGI:3650121"
+                     /db_xref="MGI:MGI:3650121"
      CDS             join(351044..351095,351245..351529)
                      /gene="Trav8d-1"
                      /gene_synonym="Gm13957; OTTMUSG00000015179"
@@ -555,7 +555,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667476"
                      /db_xref="IMGT/GENE-DB:TRAV8D-1"
-                     /db_xref="MGI:3650121"
+                     /db_xref="MGI:MGI:3650121"
      V_segment       join(351044..351095,351245..351529)
                      /gene="Trav8d-1"
                      /gene_synonym="Gm13957; OTTMUSG00000015179"
@@ -571,7 +571,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 9D-1"
                      /db_xref="GeneID:671927"
                      /db_xref="IMGT/GENE-DB:TRAV9D-1"
-                     /db_xref="MGI:3650631"
+                     /db_xref="MGI:MGI:3650631"
      CDS             join(364850..364895,365021..365310)
                      /gene="Trav9d-1"
                      /gene_synonym="Gm13960; OTTMUSG00000015183"
@@ -579,7 +579,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:671927"
                      /db_xref="IMGT/GENE-DB:TRAV9D-1"
-                     /db_xref="MGI:3650631"
+                     /db_xref="MGI:MGI:3650631"
      V_segment       join(364850..364895,365021..365310)
                      /gene="Trav9d-1"
                      /gene_synonym="Gm13960; OTTMUSG00000015183"
@@ -590,7 +590,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6D-5"
                      /db_xref="GeneID:667481"
                      /db_xref="IMGT/GENE-DB:TRAV6D-5"
-                     /db_xref="MGI:3649416"
+                     /db_xref="MGI:MGI:3649416"
      CDS             join(367699..367744,367876..368167)
                      /gene="Trav6d-5"
                      /gene_synonym="Gm13969; OTTMUSG00000015205"
@@ -598,7 +598,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667481"
                      /db_xref="IMGT/GENE-DB:TRAV6D-5"
-                     /db_xref="MGI:3649416"
+                     /db_xref="MGI:MGI:3649416"
      V_segment       join(367699..367744,367876..368167)
                      /gene="Trav6d-5"
                      /gene_synonym="Gm13969; OTTMUSG00000015205"
@@ -608,14 +608,14 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 10D"
                      /db_xref="GeneID:100101486"
                      /db_xref="IMGT/GENE-DB:TRAV10D"
-                     /db_xref="MGI:5293417"
+                     /db_xref="MGI:MGI:5293417"
      CDS             join(383531..383571,383740..384030)
                      /gene="Trav10d"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:100101486"
                      /db_xref="IMGT/GENE-DB:TRAV10D"
-                     /db_xref="MGI:5293417"
+                     /db_xref="MGI:MGI:5293417"
      V_segment       join(383531..383571,383740..384030)
                      /gene="Trav10d"
                      /standard_name="TRAV10D"
@@ -625,7 +625,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6D-6"
                      /db_xref="GeneID:100042444"
                      /db_xref="IMGT/GENE-DB:TRAV6D-6"
-                     /db_xref="MGI:2686066"
+                     /db_xref="MGI:MGI:2686066"
      CDS             join(394456..394505,394596..394893)
                      /gene="Trav6d-6"
                      /gene_synonym="Gm1220"
@@ -633,7 +633,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042444"
                      /db_xref="IMGT/GENE-DB:TRAV6D-6"
-                     /db_xref="MGI:2686066"
+                     /db_xref="MGI:MGI:2686066"
      V_segment       join(394456..394505,394596..394893)
                      /gene="Trav6d-6"
                      /gene_synonym="Gm1220"
@@ -644,7 +644,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 11D"
                      /db_xref="GeneID:640196"
                      /db_xref="IMGT/GENE-DB:TRAV11D"
-                     /db_xref="MGI:3649423"
+                     /db_xref="MGI:MGI:3649423"
      CDS             join(396891..396942,397157..397447)
                      /gene="Trav11d"
                      /gene_synonym="Gm13970; OTTMUSG00000015208"
@@ -652,7 +652,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:640196"
                      /db_xref="IMGT/GENE-DB:TRAV11D"
-                     /db_xref="MGI:3649423"
+                     /db_xref="MGI:MGI:3649423"
      V_segment       join(396891..396942,397157..397447)
                      /gene="Trav11d"
                      /gene_synonym="Gm13970; OTTMUSG00000015208"
@@ -663,7 +663,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7D-5"
                      /db_xref="GeneID:627273"
                      /db_xref="IMGT/GENE-DB:TRAV7D-5"
-                     /db_xref="MGI:3649422"
+                     /db_xref="MGI:MGI:3649422"
      CDS             join(408395..408435,408634..408921)
                      /gene="Trav7d-5"
                      /gene_synonym="Gm13971; OTTMUSG00000015209"
@@ -671,7 +671,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:627273"
                      /db_xref="IMGT/GENE-DB:TRAV7D-5"
-                     /db_xref="MGI:3649422"
+                     /db_xref="MGI:MGI:3649422"
      V_segment       join(408395..408435,408634..408921)
                      /gene="Trav7d-5"
                      /gene_synonym="Gm13971; OTTMUSG00000015209"
@@ -682,7 +682,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 12D-1"
                      /db_xref="GeneID:100043177"
                      /db_xref="IMGT/GENE-DB:TRAV12D-1"
-                     /db_xref="MGI:3649417"
+                     /db_xref="MGI:MGI:3649417"
      CDS             join(417094..417139,417281..417575)
                      /gene="Trav12d-1"
                      /gene_synonym="Gm13968; OTTMUSG00000015204"
@@ -690,7 +690,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100043177"
                      /db_xref="IMGT/GENE-DB:TRAV12D-1"
-                     /db_xref="MGI:3649417"
+                     /db_xref="MGI:MGI:3649417"
      V_segment       join(417094..417139,417281..417575)
                      /gene="Trav12d-1"
                      /gene_synonym="Gm13968; OTTMUSG00000015204"
@@ -701,7 +701,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 13D-1"
                      /db_xref="GeneID:640931"
                      /db_xref="IMGT/GENE-DB:TRAV13D-1"
-                     /db_xref="MGI:3652171"
+                     /db_xref="MGI:MGI:3652171"
      CDS             join(423889..423940,424130..424400)
                      /gene="Trav13d-1"
                      /gene_synonym="Gm13978; OTTMUSG00000015222"
@@ -709,7 +709,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:640931"
                      /db_xref="IMGT/GENE-DB:TRAV13D-1"
-                     /db_xref="MGI:3652171"
+                     /db_xref="MGI:MGI:3652171"
      V_segment       join(423889..423940,424130..424400)
                      /gene="Trav13d-1"
                      /gene_synonym="Gm13978; OTTMUSG00000015222"
@@ -734,7 +734,7 @@ FEATURES             Location/Qualifiers
                      /note="predicted gene 6740"
                      /pseudo
                      /db_xref="GeneID:627232"
-                     /db_xref="MGI:3643503"
+                     /db_xref="MGI:MGI:3643503"
      gene            435899..436467
                      /gene="Trav15d-1-dv6d-1"
                      /gene_synonym="Gm13979; OTTMUSG00000015223; Tradv15d-1;
@@ -742,7 +742,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 15D-1-DV6D-1"
                      /db_xref="GeneID:436468"
                      /db_xref="IMGT/GENE-DB:TRAV15D-1/DV6D-1"
-                     /db_xref="MGI:3651288"
+                     /db_xref="MGI:MGI:3651288"
      CDS             join(435899..435947,436168..436467)
                      /gene="Trav15d-1-dv6d-1"
                      /gene_synonym="Gm13979; OTTMUSG00000015223; Tradv15d-1;
@@ -751,7 +751,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:436468"
                      /db_xref="IMGT/GENE-DB:TRAV15D-1/DV6D-1"
-                     /db_xref="MGI:3651288"
+                     /db_xref="MGI:MGI:3651288"
      V_segment       join(435899..435947,436168..436467)
                      /gene="Trav15d-1-dv6d-1"
                      /gene_synonym="Gm13979; OTTMUSG00000015223; Tradv15d-1;
@@ -764,7 +764,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100042470"
                      /db_xref="IMGT/GENE-DB:TRAV3D-2"
-                     /db_xref="MGI:3782032"
+                     /db_xref="MGI:MGI:3782032"
      CDS             join(460121..460176,460333..460614)
                      /gene="Trav3d-2"
                      /gene_synonym="100042470; Gm3860; Trav3d-2p"
@@ -773,7 +773,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042470"
                      /db_xref="IMGT/GENE-DB:TRAV3D-2"
-                     /db_xref="MGI:3782032"
+                     /db_xref="MGI:MGI:3782032"
      V_segment       join(460121..460176,460333..460614)
                      /gene="Trav3d-2"
                      /gene_synonym="100042470; Gm3860; Trav3d-2p"
@@ -785,7 +785,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 9D-2"
                      /db_xref="GeneID:328482"
                      /db_xref="IMGT/GENE-DB:TRAV9D-2"
-                     /db_xref="MGI:3704129"
+                     /db_xref="MGI:MGI:3704129"
      CDS             join(464720..464765,464859..465152)
                      /gene="Trav9d-2"
                      /gene_synonym="EG328482; Gm5090"
@@ -793,7 +793,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:328482"
                      /db_xref="IMGT/GENE-DB:TRAV9D-2"
-                     /db_xref="MGI:3704129"
+                     /db_xref="MGI:MGI:3704129"
      V_segment       join(464720..464765,464859..465152)
                      /gene="Trav9d-2"
                      /gene_synonym="EG328482; Gm5090"
@@ -805,7 +805,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 4D-3"
                      /db_xref="GeneID:100042479"
                      /db_xref="IMGT/GENE-DB:TRAV4D-3"
-                     /db_xref="MGI:3782037"
+                     /db_xref="MGI:MGI:3782037"
      CDS             join(472506..472554,472726..473004)
                      /gene="Trav4d-3"
                      /gene_synonym="100042479; ENSMUSG00000076782; Gm10887;
@@ -814,7 +814,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042479"
                      /db_xref="IMGT/GENE-DB:TRAV4D-3"
-                     /db_xref="MGI:3782037"
+                     /db_xref="MGI:MGI:3782037"
      V_segment       join(472506..472554,472726..473004)
                      /gene="Trav4d-3"
                      /gene_synonym="100042479; ENSMUSG00000076782; Gm10887;
@@ -826,21 +826,21 @@ FEATURES             Location/Qualifiers
                      /note="ribosomal protein S19, pseudogene 2"
                      /pseudo
                      /db_xref="GeneID:667525"
-                     /db_xref="MGI:3647073"
+                     /db_xref="MGI:MGI:3647073"
      gene            486951..487236
                      /gene="Trav5d-2"
                      /note="T cell receptor alpha variable 5D-2"
                      /pseudo
                      /db_xref="GeneID:100101488"
                      /db_xref="IMGT/GENE-DB:TRAV5D-2"
-                     /db_xref="MGI:5009954"
+                     /db_xref="MGI:MGI:5009954"
      CDS             486951..487236
                      /gene="Trav5d-2"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100101488"
                      /db_xref="IMGT/GENE-DB:TRAV5D-2"
-                     /db_xref="MGI:5009954"
+                     /db_xref="MGI:MGI:5009954"
      V_segment       486951..487236
                      /gene="Trav5d-2"
                      /standard_name="TRAV5D-2"
@@ -852,7 +852,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 12D-2"
                      /db_xref="GeneID:100043197"
                      /db_xref="IMGT/GENE-DB:TRAV12D-2"
-                     /db_xref="MGI:3642520"
+                     /db_xref="MGI:MGI:3642520"
      CDS             join(488449..488494,488669..488960)
                      /gene="Trav12d-2"
                      /gene_synonym="ENSMUSG00000072547; ENSMUSG00000076783;
@@ -861,7 +861,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100043197"
                      /db_xref="IMGT/GENE-DB:TRAV12D-2"
-                     /db_xref="MGI:3642520"
+                     /db_xref="MGI:MGI:3642520"
      V_segment       join(488449..488494,488669..488960)
                      /gene="Trav12d-2"
                      /gene_synonym="ENSMUSG00000072547; ENSMUSG00000076783;
@@ -878,7 +878,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 9D-3"
                      /db_xref="GeneID:100038850"
                      /db_xref="IMGT/GENE-DB:TRAV9D-3"
-                     /db_xref="MGI:3780142"
+                     /db_xref="MGI:MGI:3780142"
      CDS             join(493212..493257,493353..493644)
                      /gene="Trav9d-3"
                      /gene_synonym="100038850; A130082M07Rik;
@@ -887,7 +887,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100038850"
                      /db_xref="IMGT/GENE-DB:TRAV9D-3"
-                     /db_xref="MGI:3780142"
+                     /db_xref="MGI:MGI:3780142"
      V_segment       join(493212..493257,493353..493644)
                      /gene="Trav9d-3"
                      /gene_synonym="100038850; A130082M07Rik;
@@ -900,7 +900,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100101489"
                      /db_xref="IMGT/GENE-DB:TRAV5D-3"
-                     /db_xref="MGI:4936976"
+                     /db_xref="MGI:MGI:4936976"
      CDS             500854..501066
                      /gene="Trav5d-3"
                      /gene_synonym="Gm17342"
@@ -908,7 +908,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100101489"
                      /db_xref="IMGT/GENE-DB:TRAV5D-3"
-                     /db_xref="MGI:4936976"
+                     /db_xref="MGI:MGI:4936976"
      V_segment       500854..501066
                      /gene="Trav5d-3"
                      /gene_synonym="Gm17342"
@@ -921,7 +921,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 12D-3"
                      /db_xref="GeneID:667542"
                      /db_xref="IMGT/GENE-DB:TRAV12D-3"
-                     /db_xref="MGI:3704434"
+                     /db_xref="MGI:MGI:3704434"
      CDS             join(502323..502368,502521..502816)
                      /gene="Trav12d-3"
                      /gene_synonym="ENSMUSG00000072545; ENSMUSG00000076785;
@@ -930,7 +930,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667542"
                      /db_xref="IMGT/GENE-DB:TRAV12D-3"
-                     /db_xref="MGI:3704434"
+                     /db_xref="MGI:MGI:3704434"
      V_segment       join(502323..502368,502521..502816)
                      /gene="Trav12d-3"
                      /gene_synonym="ENSMUSG00000072545; ENSMUSG00000076785;
@@ -942,7 +942,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 13D-2"
                      /db_xref="GeneID:667547"
                      /db_xref="IMGT/GENE-DB:TRAV13D-2"
-                     /db_xref="MGI:3643151"
+                     /db_xref="MGI:MGI:3643151"
      CDS             join(515298..515349,515545..515823)
                      /gene="Trav13d-2"
                      /gene_synonym="EG667547; Gm8695"
@@ -950,7 +950,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667547"
                      /db_xref="IMGT/GENE-DB:TRAV13D-2"
-                     /db_xref="MGI:3643151"
+                     /db_xref="MGI:MGI:3643151"
      V_segment       join(515298..515349,515545..515823)
                      /gene="Trav13d-2"
                      /gene_synonym="EG667547; Gm8695"
@@ -960,14 +960,14 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="EG667553; Gm16454; Tcra-V2.1"
                      /note="T cell receptor alpha variable 14D-2"
                      /db_xref="GeneID:100043214"
-                     /db_xref="MGI:3646138"
+                     /db_xref="MGI:MGI:3646138"
      CDS             join(521202..521253,521392..521703)
                      /gene="Trav14d-2"
                      /gene_synonym="EG667553; Gm16454; Tcra-V2.1"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:100043214"
-                     /db_xref="MGI:3646138"
+                     /db_xref="MGI:MGI:3646138"
      V_segment       join(521202..521253,521392..521703)
                      /gene="Trav14d-2"
                      /gene_synonym="EG667553; Gm16454; Tcra-V2.1"
@@ -979,7 +979,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 15D-2-DV6D-2"
                      /db_xref="GeneID:100101491"
                      /db_xref="IMGT/GENE-DB:TRAV15D-2/DV6D-2"
-                     /db_xref="MGI:3800299"
+                     /db_xref="MGI:MGI:3800299"
      CDS             join(529362..529410,529642..529934)
                      /gene="Trav15d-2-dv6d-2"
                      /gene_synonym="ENSMUSG00000076788; Gm10891; Tradv15d-2;
@@ -988,7 +988,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100101491"
                      /db_xref="IMGT/GENE-DB:TRAV15D-2/DV6D-2"
-                     /db_xref="MGI:3800299"
+                     /db_xref="MGI:MGI:3800299"
      V_segment       join(529362..529410,529642..529934)
                      /gene="Trav15d-2-dv6d-2"
                      /gene_synonym="ENSMUSG00000076788; Gm10891; Tradv15d-2;
@@ -1000,14 +1000,14 @@ FEATURES             Location/Qualifiers
                      /note="predicted gene 8704"
                      /pseudo
                      /db_xref="GeneID:667562"
-                     /db_xref="MGI:3643203"
+                     /db_xref="MGI:MGI:3643203"
      gene            545066..545572
                      /gene="Trav3d-3"
                      /gene_synonym="100043202; ENSMUSG00000076789; Gm10892"
                      /note="T cell receptor alpha variable 3D-3"
                      /db_xref="GeneID:100043202"
                      /db_xref="IMGT/GENE-DB:TRAV3D-3"
-                     /db_xref="MGI:3782469"
+                     /db_xref="MGI:MGI:3782469"
      CDS             join(545066..545117,545282..545572)
                      /gene="Trav3d-3"
                      /gene_synonym="100043202; ENSMUSG00000076789; Gm10892"
@@ -1015,7 +1015,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100043202"
                      /db_xref="IMGT/GENE-DB:TRAV3D-3"
-                     /db_xref="MGI:3782469"
+                     /db_xref="MGI:MGI:3782469"
      V_segment       join(545066..545117,545282..545572)
                      /gene="Trav3d-3"
                      /gene_synonym="100043202; ENSMUSG00000076789; Gm10892"
@@ -1026,7 +1026,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 9D-4"
                      /db_xref="GeneID:667574"
                      /db_xref="IMGT/GENE-DB:TRAV9D-4"
-                     /db_xref="MGI:4889087"
+                     /db_xref="MGI:MGI:4889087"
      CDS             join(555990..556035,556131..556304)
                      /gene="Trav9d-4"
                      /gene_synonym="Gm13907"
@@ -1034,7 +1034,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667574"
                      /db_xref="IMGT/GENE-DB:TRAV9D-4"
-                     /db_xref="MGI:4889087"
+                     /db_xref="MGI:MGI:4889087"
      V_segment       join(555990..556035,556131..556304)
                      /gene="Trav9d-4"
                      /gene_synonym="Gm13907"
@@ -1045,7 +1045,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 4D-4"
                      /db_xref="GeneID:195296"
                      /db_xref="IMGT/GENE-DB:TRAV4D-4"
-                     /db_xref="MGI:2684872"
+                     /db_xref="MGI:MGI:2684872"
      CDS             join(563423..563474,563647..563923)
                      /gene="Trav4d-4"
                      /gene_synonym="Gm26"
@@ -1053,7 +1053,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:195296"
                      /db_xref="IMGT/GENE-DB:TRAV4D-4"
-                     /db_xref="MGI:2684872"
+                     /db_xref="MGI:MGI:2684872"
      V_segment       join(563423..563474,563647..563923)
                      /gene="Trav4d-4"
                      /gene_synonym="Gm26"
@@ -1064,7 +1064,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 5D-4"
                      /db_xref="GeneID:667583"
                      /db_xref="IMGT/GENE-DB:TRAV5D-4"
-                     /db_xref="MGI:3704130"
+                     /db_xref="MGI:MGI:3704130"
      CDS             join(574247..574298,574472..574765)
                      /gene="Trav5d-4"
                      /gene_synonym="EG667583; Gm8713"
@@ -1072,7 +1072,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667583"
                      /db_xref="IMGT/GENE-DB:TRAV5D-4"
-                     /db_xref="MGI:3704130"
+                     /db_xref="MGI:MGI:3704130"
      V_segment       join(574247..574298,574472..574765)
                      /gene="Trav5d-4"
                      /gene_synonym="EG667583; Gm8713"
@@ -1083,7 +1083,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6D-7"
                      /db_xref="GeneID:385047"
                      /db_xref="IMGT/GENE-DB:TRAV6D-7"
-                     /db_xref="MGI:2686335"
+                     /db_xref="MGI:MGI:2686335"
      CDS             join(580166..580211,580344..580632)
                      /gene="Trav6d-7"
                      /gene_synonym="Gm1489"
@@ -1091,7 +1091,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:385047"
                      /db_xref="IMGT/GENE-DB:TRAV6D-7"
-                     /db_xref="MGI:2686335"
+                     /db_xref="MGI:MGI:2686335"
      V_segment       join(580166..580211,580344..580632)
                      /gene="Trav6d-7"
                      /gene_synonym="Gm1489"
@@ -1102,7 +1102,7 @@ FEATURES             Location/Qualifiers
                      /note="RIKEN cDNA C920008G01 gene"
                      /db_xref="GeneID:320734"
                      /db_xref="IMGT/GENE-DB:TRAV7D-6"
-                     /db_xref="MGI:2444626"
+                     /db_xref="MGI:MGI:2444626"
      CDS             join(592993..593038,593238..593525)
                      /gene="C920008G01Rik"
                      /gene_synonym="TRAV7D-6"
@@ -1110,7 +1110,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:320734"
                      /db_xref="IMGT/GENE-DB:TRAV7D-6"
-                     /db_xref="MGI:2444626"
+                     /db_xref="MGI:MGI:2444626"
      V_segment       join(592993..593038,593238..593525)
                      /gene="C920008G01Rik"
                      /gene_synonym="TRAV7D-6"
@@ -1119,20 +1119,20 @@ FEATURES             Location/Qualifiers
                      /gene="5830410O09Rik"
                      /note="RIKEN cDNA 5830410O09 gene"
                      /db_xref="GeneID:74750"
-                     /db_xref="MGI:1922000"
+                     /db_xref="MGI:MGI:1922000"
      gene            605436..605953
                      /gene="Trav13d-3"
                      /note="T cell receptor alpha variable 13D-3"
                      /db_xref="GeneID:667596"
                      /db_xref="IMGT/GENE-DB:TRAV13D-3"
-                     /db_xref="MGI:5293419"
+                     /db_xref="MGI:MGI:5293419"
      CDS             join(605436..605487,605669..605953)
                      /gene="Trav13d-3"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:667596"
                      /db_xref="IMGT/GENE-DB:TRAV13D-3"
-                     /db_xref="MGI:5293419"
+                     /db_xref="MGI:MGI:5293419"
      V_segment       join(605436..605487,605669..605953)
                      /gene="Trav13d-3"
                      /standard_name="TRAV13D-3"
@@ -1142,7 +1142,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 8D-2"
                      /db_xref="GeneID:667604"
                      /db_xref="IMGT/GENE-DB:TRAV8D-2"
-                     /db_xref="MGI:3647760"
+                     /db_xref="MGI:MGI:3647760"
      CDS             join(614962..615013,615141..615425)
                      /gene="Trav8d-2"
                      /gene_synonym="EG667604; Gm8721"
@@ -1150,7 +1150,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667604"
                      /db_xref="IMGT/GENE-DB:TRAV8D-2"
-                     /db_xref="MGI:3647760"
+                     /db_xref="MGI:MGI:3647760"
      V_segment       join(614962..615013,615141..615425)
                      /gene="Trav8d-2"
                      /gene_synonym="EG667604; Gm8721"
@@ -1162,7 +1162,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 16D-DV11"
                      /db_xref="GeneID:547329"
                      /db_xref="IMGT/GENE-DB:TRAV16D/DV11"
-                     /db_xref="MGI:3704436"
+                     /db_xref="MGI:MGI:3704436"
      CDS             join(619821..619845,620055..620355)
                      /gene="Trav16d-dv11"
                      /gene_synonym="ENSMUSG00000072535; ENSMUSG00000076796;
@@ -1171,7 +1171,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:547329"
                      /db_xref="IMGT/GENE-DB:TRAV16D/DV11"
-                     /db_xref="MGI:3704436"
+                     /db_xref="MGI:MGI:3704436"
      V_segment       join(619821..619845,620055..620355)
                      /gene="Trav16d-dv11"
                      /gene_synonym="ENSMUSG00000072535; ENSMUSG00000076796;
@@ -1183,7 +1183,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 13D-4"
                      /db_xref="GeneID:639655"
                      /db_xref="IMGT/GENE-DB:TRAV13D-4"
-                     /db_xref="MGI:4440515"
+                     /db_xref="MGI:MGI:4440515"
      CDS             join(645297..645348,645524..645809)
                      /gene="Trav13d-4"
                      /gene_synonym="Gm17006; Trav13-4-dv7"
@@ -1191,7 +1191,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:639655"
                      /db_xref="IMGT/GENE-DB:TRAV13D-4"
-                     /db_xref="MGI:4440515"
+                     /db_xref="MGI:MGI:4440515"
      V_segment       join(645297..645348,645524..645809)
                      /gene="Trav13d-4"
                      /gene_synonym="Gm17006; Trav13-4-dv7"
@@ -1202,7 +1202,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 14D-3-DV8"
                      /db_xref="GeneID:634322"
                      /db_xref="IMGT/GENE-DB:TRAV14D-3/DV8"
-                     /db_xref="MGI:3822547"
+                     /db_xref="MGI:MGI:3822547"
      CDS             join(651081..651132,651271..651579)
                      /gene="Trav14d-3-dv8"
                      /gene_synonym="TCRAV2.5; TRAV14D-3; Trav14d-3/dv8"
@@ -1210,7 +1210,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:634322"
                      /db_xref="IMGT/GENE-DB:TRAV14D-3/DV8"
-                     /db_xref="MGI:3822547"
+                     /db_xref="MGI:MGI:3822547"
      V_segment       join(651081..651132,651271..651579)
                      /gene="Trav14d-3-dv8"
                      /gene_synonym="TCRAV2.5; TRAV14D-3; Trav14d-3/dv8"
@@ -1221,14 +1221,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100101934"
                      /db_xref="IMGT/GENE-DB:TRAV15D-3"
-                     /db_xref="MGI:5009955"
+                     /db_xref="MGI:MGI:5009955"
      CDS             join(654597..654634,654877..655056)
                      /gene="Trav15d-3"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100101934"
                      /db_xref="IMGT/GENE-DB:TRAV15D-3"
-                     /db_xref="MGI:5009955"
+                     /db_xref="MGI:MGI:5009955"
      V_segment       join(654597..654634,654877..655056)
                      /gene="Trav15d-3"
                      /standard_name="TRAV15D-3"
@@ -1239,7 +1239,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7N-4"
                      /db_xref="GeneID:636127"
                      /db_xref="IMGT/GENE-DB:TRAV7N-4"
-                     /db_xref="MGI:3644878"
+                     /db_xref="MGI:MGI:3644878"
      CDS             join(663880..663928,664119..664409)
                      /gene="Trav7n-4"
                      /gene_synonym="EG636127; Gm7174"
@@ -1247,7 +1247,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:636127"
                      /db_xref="IMGT/GENE-DB:TRAV7N-4"
-                     /db_xref="MGI:3644878"
+                     /db_xref="MGI:MGI:3644878"
      V_segment       join(663880..663928,664119..664409)
                      /gene="Trav7n-4"
                      /gene_synonym="EG636127; Gm7174"
@@ -1257,14 +1257,14 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="279872; Gm13951; Gm5074"
                      /note="T cell receptor alpha variable 9N-1"
                      /db_xref="GeneID:279872"
-                     /db_xref="MGI:3809200"
+                     /db_xref="MGI:MGI:3809200"
      CDS             join(674335..674380,674507..674799)
                      /gene="Trav9n-1"
                      /gene_synonym="279872; Gm13951; Gm5074"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:279872"
-                     /db_xref="MGI:3809200"
+                     /db_xref="MGI:MGI:3809200"
      V_segment       join(674335..674380,674507..674799)
                      /gene="Trav9n-1"
                      /gene_synonym="279872; Gm13951; Gm5074"
@@ -1276,7 +1276,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6N-5"
                      /db_xref="GeneID:100126451"
                      /db_xref="IMGT/GENE-DB:TRAV6N-5"
-                     /db_xref="MGI:3704437"
+                     /db_xref="MGI:MGI:3704437"
      CDS             join(677405..677448,677587..677878)
                      /gene="Trav6n-5"
                      /gene_synonym="ENSMUSG00000072087; ENSMUSG00000076800;
@@ -1285,7 +1285,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126451"
                      /db_xref="IMGT/GENE-DB:TRAV6N-5"
-                     /db_xref="MGI:3704437"
+                     /db_xref="MGI:MGI:3704437"
      V_segment       join(677405..677448,677587..677878)
                      /gene="Trav6n-5"
                      /gene_synonym="ENSMUSG00000072087; ENSMUSG00000076800;
@@ -1297,7 +1297,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 10N"
                      /db_xref="GeneID:667626"
                      /db_xref="IMGT/GENE-DB:TRAV10N"
-                     /db_xref="MGI:3647936"
+                     /db_xref="MGI:MGI:3647936"
      CDS             join(694648..694688,694854..695145)
                      /gene="Trav10n"
                      /gene_synonym="EG667626; Gm8736"
@@ -1305,7 +1305,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667626"
                      /db_xref="IMGT/GENE-DB:TRAV10N"
-                     /db_xref="MGI:3647936"
+                     /db_xref="MGI:MGI:3647936"
      V_segment       join(694648..694688,694854..695145)
                      /gene="Trav10n"
                      /gene_synonym="EG667626; Gm8736"
@@ -1317,7 +1317,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6N-6"
                      /db_xref="GeneID:620297"
                      /db_xref="IMGT/GENE-DB:TRAV6N-6"
-                     /db_xref="MGI:3642618"
+                     /db_xref="MGI:MGI:3642618"
      CDS             join(705234..705276,705374..705671)
                      /gene="Trav6n-6"
                      /gene_synonym="ENSMUSG00000063944; ENSMUSG00000076802;
@@ -1326,7 +1326,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:620297"
                      /db_xref="IMGT/GENE-DB:TRAV6N-6"
-                     /db_xref="MGI:3642618"
+                     /db_xref="MGI:MGI:3642618"
      V_segment       join(705234..705276,705374..705671)
                      /gene="Trav6n-6"
                      /gene_synonym="ENSMUSG00000063944; ENSMUSG00000076802;
@@ -1338,7 +1338,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 11N"
                      /db_xref="GeneID:100042560"
                      /db_xref="IMGT/GENE-DB:TRAV11N"
-                     /db_xref="MGI:3782076"
+                     /db_xref="MGI:MGI:3782076"
      CDS             join(707656..707707,707922..708212)
                      /gene="Trav11n"
                      /gene_synonym="100042560; Gm3904"
@@ -1346,7 +1346,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042560"
                      /db_xref="IMGT/GENE-DB:TRAV11N"
-                     /db_xref="MGI:3782076"
+                     /db_xref="MGI:MGI:3782076"
      V_segment       join(707656..707707,707922..708212)
                      /gene="Trav11n"
                      /gene_synonym="100042560; Gm3904"
@@ -1357,7 +1357,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7N-5"
                      /db_xref="GeneID:667635"
                      /db_xref="IMGT/GENE-DB:TRAV7N-5"
-                     /db_xref="MGI:3644782"
+                     /db_xref="MGI:MGI:3644782"
      CDS             join(719456..719496,719695..719982)
                      /gene="Trav7n-5"
                      /gene_synonym="EG667635; Gm8740"
@@ -1365,7 +1365,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667635"
                      /db_xref="IMGT/GENE-DB:TRAV7N-5"
-                     /db_xref="MGI:3644782"
+                     /db_xref="MGI:MGI:3644782"
      V_segment       join(719456..719496,719695..719982)
                      /gene="Trav7n-5"
                      /gene_synonym="EG667635; Gm8740"
@@ -1376,7 +1376,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 12N-1"
                      /db_xref="GeneID:100043218"
                      /db_xref="IMGT/GENE-DB:TRAV12N-1"
-                     /db_xref="MGI:3782477"
+                     /db_xref="MGI:MGI:3782477"
      CDS             join(728141..728186,728328..728622)
                      /gene="Trav12n-1"
                      /gene_synonym="100043218; ENSMUSG00000079098; Gm11046"
@@ -1384,7 +1384,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100043218"
                      /db_xref="IMGT/GENE-DB:TRAV12N-1"
-                     /db_xref="MGI:3782477"
+                     /db_xref="MGI:MGI:3782477"
      V_segment       join(728141..728186,728328..728622)
                      /gene="Trav12n-1"
                      /gene_synonym="100043218; ENSMUSG00000079098; Gm11046"
@@ -1394,14 +1394,14 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 13N-1"
                      /db_xref="GeneID:100042568"
                      /db_xref="IMGT/GENE-DB:TRAV13N-1"
-                     /db_xref="MGI:5009926"
+                     /db_xref="MGI:MGI:5009926"
      CDS             join(734933..734984,735166..735444)
                      /gene="Trav13n-1"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:100042568"
                      /db_xref="IMGT/GENE-DB:TRAV13N-1"
-                     /db_xref="MGI:5009926"
+                     /db_xref="MGI:MGI:5009926"
      V_segment       join(734933..734984,735166..735444)
                      /gene="Trav13n-1"
                      /standard_name="TRAV13N-1"
@@ -1412,7 +1412,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 14N-1"
                      /db_xref="GeneID:100043204"
                      /db_xref="IMGT/GENE-DB:TRAV14N-1"
-                     /db_xref="MGI:3642439"
+                     /db_xref="MGI:MGI:3642439"
      CDS             join(739211..739262,739401..739712)
                      /gene="Trav14n-1"
                      /gene_synonym="ENSMUSG00000072532; ENSMUSG00000076804;
@@ -1421,7 +1421,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100043204"
                      /db_xref="IMGT/GENE-DB:TRAV14N-1"
-                     /db_xref="MGI:3642439"
+                     /db_xref="MGI:MGI:3642439"
      V_segment       join(739211..739262,739401..739712)
                      /gene="Trav14n-1"
                      /gene_synonym="ENSMUSG00000072532; ENSMUSG00000076804;
@@ -1433,14 +1433,14 @@ FEATURES             Location/Qualifiers
                      /note="predicted gene 6755"
                      /pseudo
                      /db_xref="GeneID:627424"
-                     /db_xref="MGI:3645758"
+                     /db_xref="MGI:MGI:3645758"
      gene            746859..747430
                      /gene="Trav15n-1"
                      /gene_synonym="Gm16940"
                      /note="T cell receptor alpha variable 15N-1"
                      /db_xref="GeneID:100126452"
                      /db_xref="IMGT/GENE-DB:TRAV15N-1"
-                     /db_xref="MGI:4439864"
+                     /db_xref="MGI:MGI:4439864"
      CDS             join(746859..746907,747128..747430)
                      /gene="Trav15n-1"
                      /gene_synonym="Gm16940"
@@ -1448,7 +1448,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126452"
                      /db_xref="IMGT/GENE-DB:TRAV15N-1"
-                     /db_xref="MGI:4439864"
+                     /db_xref="MGI:MGI:4439864"
      V_segment       join(746859..746907,747128..747430)
                      /gene="Trav15n-1"
                      /gene_synonym="Gm16940"
@@ -1459,7 +1459,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 3N-2"
                      /db_xref="GeneID:100042574"
                      /db_xref="IMGT/GENE-DB:TRAV3N-2"
-                     /db_xref="MGI:3782082"
+                     /db_xref="MGI:MGI:3782082"
      CDS             join(771059..771110,771271..771552)
                      /gene="Trav3n-2"
                      /gene_synonym="100042574; Gm3909"
@@ -1467,7 +1467,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042574"
                      /db_xref="IMGT/GENE-DB:TRAV3N-2"
-                     /db_xref="MGI:3782082"
+                     /db_xref="MGI:MGI:3782082"
      V_segment       join(771059..771110,771271..771552)
                      /gene="Trav3n-2"
                      /gene_synonym="100042574; Gm3909"
@@ -1479,7 +1479,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 9N-2"
                      /db_xref="GeneID:667660"
                      /db_xref="IMGT/GENE-DB:TRAV9N-2"
-                     /db_xref="MGI:3704438"
+                     /db_xref="MGI:MGI:3704438"
      CDS             join(775656..775701,775795..776078)
                      /gene="Trav9n-2"
                      /gene_synonym="ENSMUSG00000072529; ENSMUSG00000076806;
@@ -1488,7 +1488,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667660"
                      /db_xref="IMGT/GENE-DB:TRAV9N-2"
-                     /db_xref="MGI:3704438"
+                     /db_xref="MGI:MGI:3704438"
      V_segment       join(775656..775701,775795..776078)
                      /gene="Trav9n-2"
                      /gene_synonym="ENSMUSG00000072529; ENSMUSG00000076806;
@@ -1500,7 +1500,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 4N-3"
                      /db_xref="GeneID:100042579"
                      /db_xref="IMGT/GENE-DB:TRAV4N-3"
-                     /db_xref="MGI:3782086"
+                     /db_xref="MGI:MGI:3782086"
      CDS             join(783440..783491,783663..783941)
                      /gene="Trav4n-3"
                      /gene_synonym="100042579; ENSMUSG00000076807; Gm10898"
@@ -1508,7 +1508,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042579"
                      /db_xref="IMGT/GENE-DB:TRAV4N-3"
-                     /db_xref="MGI:3782086"
+                     /db_xref="MGI:MGI:3782086"
      V_segment       join(783440..783491,783663..783941)
                      /gene="Trav4n-3"
                      /gene_synonym="100042579; ENSMUSG00000076807; Gm10898"
@@ -1519,21 +1519,21 @@ FEATURES             Location/Qualifiers
                      /note="ribosomal protein S19, pseudogene 1"
                      /pseudo
                      /db_xref="GeneID:100043269"
-                     /db_xref="MGI:3782508"
+                     /db_xref="MGI:MGI:3782508"
      gene            797927..798203
                      /gene="Trav5n-2"
                      /note="T cell receptor alpha variable 5N-2"
                      /pseudo
                      /db_xref="GeneID:100126454"
                      /db_xref="IMGT/GENE-DB:TRAV5N-2"
-                     /db_xref="MGI:5009974"
+                     /db_xref="MGI:MGI:5009974"
      CDS             797927..798203
                      /gene="Trav5n-2"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100126454"
                      /db_xref="IMGT/GENE-DB:TRAV5N-2"
-                     /db_xref="MGI:5009974"
+                     /db_xref="MGI:MGI:5009974"
      V_segment       797927..798203
                      /gene="Trav5n-2"
                      /standard_name="TRAV5N-2"
@@ -1544,7 +1544,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 12N-2"
                      /db_xref="GeneID:100043270"
                      /db_xref="IMGT/GENE-DB:TRAV12N-2"
-                     /db_xref="MGI:3644334"
+                     /db_xref="MGI:MGI:3644334"
      CDS             join(799418..799469,799643..799934)
                      /gene="Trav12n-2"
                      /gene_synonym="EG667677; Gm16460"
@@ -1552,7 +1552,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100043270"
                      /db_xref="IMGT/GENE-DB:TRAV12N-2"
-                     /db_xref="MGI:3644334"
+                     /db_xref="MGI:MGI:3644334"
      V_segment       join(799418..799469,799643..799934)
                      /gene="Trav12n-2"
                      /gene_synonym="EG667677; Gm16460"
@@ -1567,7 +1567,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 9N-3"
                      /db_xref="GeneID:100043274"
                      /db_xref="IMGT/GENE-DB:TRAV9N-3"
-                     /db_xref="MGI:3782511"
+                     /db_xref="MGI:MGI:3782511"
      CDS             join(804202..804247,804343..804636)
                      /gene="Trav9n-3"
                      /gene_synonym="100043274; ENSMUSG00000076809; Gm10899"
@@ -1575,7 +1575,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100043274"
                      /db_xref="IMGT/GENE-DB:TRAV9N-3"
-                     /db_xref="MGI:3782511"
+                     /db_xref="MGI:MGI:3782511"
      V_segment       join(804202..804247,804343..804636)
                      /gene="Trav9n-3"
                      /gene_synonym="100043274; ENSMUSG00000076809; Gm10899"
@@ -1587,7 +1587,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100126455"
                      /db_xref="IMGT/GENE-DB:TRAV5N-3"
-                     /db_xref="MGI:4937282"
+                     /db_xref="MGI:MGI:4937282"
      CDS             811818..812097
                      /gene="Trav5n-3"
                      /gene_synonym="Gm17648"
@@ -1595,7 +1595,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126455"
                      /db_xref="IMGT/GENE-DB:TRAV5N-3"
-                     /db_xref="MGI:4937282"
+                     /db_xref="MGI:MGI:4937282"
      V_segment       811818..812097
                      /gene="Trav5n-3"
                      /gene_synonym="Gm17648"
@@ -1607,7 +1607,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 12N-3"
                      /db_xref="GeneID:667681"
                      /db_xref="IMGT/GENE-DB:TRAV12N-3"
-                     /db_xref="MGI:3704131"
+                     /db_xref="MGI:MGI:3704131"
      CDS             join(813285..813330,813478..813778)
                      /gene="Trav12n-3"
                      /gene_synonym="EG667681; Gm8758"
@@ -1615,7 +1615,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667681"
                      /db_xref="IMGT/GENE-DB:TRAV12N-3"
-                     /db_xref="MGI:3704131"
+                     /db_xref="MGI:MGI:3704131"
      V_segment       join(813285..813330,813478..813778)
                      /gene="Trav12n-3"
                      /gene_synonym="EG667681; Gm8758"
@@ -1627,7 +1627,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 13N-2"
                      /db_xref="GeneID:100042593"
                      /db_xref="IMGT/GENE-DB:TRAV13N-2"
-                     /db_xref="MGI:3642345"
+                     /db_xref="MGI:MGI:3642345"
      CDS             join(826326..826377,826573..826851)
                      /gene="Trav13n-2"
                      /gene_synonym="ENSMUSG00000072525; ENSMUSG00000076811;
@@ -1636,7 +1636,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042593"
                      /db_xref="IMGT/GENE-DB:TRAV13N-2"
-                     /db_xref="MGI:3642345"
+                     /db_xref="MGI:MGI:3642345"
      V_segment       join(826326..826377,826573..826851)
                      /gene="Trav13n-2"
                      /gene_synonym="ENSMUSG00000072525; ENSMUSG00000076811;
@@ -1648,7 +1648,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 14N-2"
                      /db_xref="GeneID:193574"
                      /db_xref="IMGT/GENE-DB:TRAV14N-2"
-                     /db_xref="MGI:3645258"
+                     /db_xref="MGI:MGI:3645258"
      CDS             join(832212..832263,832402..832713)
                      /gene="Trav14n-2"
                      /gene_synonym="EG193574; Gm4743"
@@ -1656,7 +1656,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:193574"
                      /db_xref="IMGT/GENE-DB:TRAV14N-2"
-                     /db_xref="MGI:3645258"
+                     /db_xref="MGI:MGI:3645258"
      V_segment       join(832212..832263,832402..832713)
                      /gene="Trav14n-2"
                      /gene_synonym="EG193574; Gm4743"
@@ -1668,7 +1668,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 15N-2"
                      /db_xref="GeneID:547424"
                      /db_xref="IMGT/GENE-DB:TRAV15N-2"
-                     /db_xref="MGI:3649172"
+                     /db_xref="MGI:MGI:3649172"
      CDS             join(840497..840545,840767..841069)
                      /gene="Trav15n-2"
                      /gene_synonym="100101491; EG547424; ENSMUSG00000072523;
@@ -1677,7 +1677,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:547424"
                      /db_xref="IMGT/GENE-DB:TRAV15N-2"
-                     /db_xref="MGI:3649172"
+                     /db_xref="MGI:MGI:3649172"
      V_segment       join(840497..840545,840767..841069)
                      /gene="Trav15n-2"
                      /gene_synonym="100101491; EG547424; ENSMUSG00000072523;
@@ -1689,14 +1689,14 @@ FEATURES             Location/Qualifiers
                      /note="predicted gene 3922"
                      /pseudo
                      /db_xref="GeneID:100042601"
-                     /db_xref="MGI:3782096"
+                     /db_xref="MGI:MGI:3782096"
      gene            856203..856709
                      /gene="Trav3n-3"
                      /gene_synonym="100043282; ENSMUSG00000076814; Gm10901"
                      /note="T cell receptor alpha variable 3N-3"
                      /db_xref="GeneID:100043282"
                      /db_xref="IMGT/GENE-DB:TRAV3N-3"
-                     /db_xref="MGI:3782518"
+                     /db_xref="MGI:MGI:3782518"
      CDS             join(856203..856254,856419..856709)
                      /gene="Trav3n-3"
                      /gene_synonym="100043282; ENSMUSG00000076814; Gm10901"
@@ -1704,7 +1704,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100043282"
                      /db_xref="IMGT/GENE-DB:TRAV3N-3"
-                     /db_xref="MGI:3782518"
+                     /db_xref="MGI:MGI:3782518"
      V_segment       join(856203..856254,856419..856709)
                      /gene="Trav3n-3"
                      /gene_synonym="100043282; ENSMUSG00000076814; Gm10901"
@@ -1715,7 +1715,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 9N-4"
                      /db_xref="GeneID:279882"
                      /db_xref="IMGT/GENE-DB:TRAV9N-4"
-                     /db_xref="MGI:3583949"
+                     /db_xref="MGI:MGI:3583949"
      CDS             join(867130..867175,867271..867564)
                      /gene="Trav9n-4"
                      /gene_synonym="A130082M07Rik"
@@ -1723,7 +1723,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:279882"
                      /db_xref="IMGT/GENE-DB:TRAV9N-4"
-                     /db_xref="MGI:3583949"
+                     /db_xref="MGI:MGI:3583949"
      V_segment       join(867130..867175,867271..867564)
                      /gene="Trav9n-4"
                      /gene_synonym="A130082M07Rik"
@@ -1735,7 +1735,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 4N-4"
                      /db_xref="GeneID:100042607"
                      /db_xref="IMGT/GENE-DB:TRAV4N-4"
-                     /db_xref="MGI:3704439"
+                     /db_xref="MGI:MGI:3704439"
      CDS             join(874593..874644,874815..875093)
                      /gene="Trav4n-4"
                      /gene_synonym="ENSMUSG00000072522; ENSMUSG00000076816;
@@ -1744,7 +1744,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042607"
                      /db_xref="IMGT/GENE-DB:TRAV4N-4"
-                     /db_xref="MGI:3704439"
+                     /db_xref="MGI:MGI:3704439"
      V_segment       join(874593..874644,874815..875093)
                      /gene="Trav4n-4"
                      /gene_synonym="ENSMUSG00000072522; ENSMUSG00000076816;
@@ -1757,7 +1757,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 5N-4"
                      /db_xref="GeneID:100042614"
                      /db_xref="IMGT/GENE-DB:TRAV5N-4"
-                     /db_xref="MGI:3704440"
+                     /db_xref="MGI:MGI:3704440"
      CDS             join(885438..885493,885666..885956)
                      /gene="Trav5n-4"
                      /gene_synonym="ENSMUSG00000072521; ENSMUSG00000076817;
@@ -1766,7 +1766,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100042614"
                      /db_xref="IMGT/GENE-DB:TRAV5N-4"
-                     /db_xref="MGI:3704440"
+                     /db_xref="MGI:MGI:3704440"
      V_segment       join(885438..885493,885666..885956)
                      /gene="Trav5n-4"
                      /gene_synonym="ENSMUSG00000072521; ENSMUSG00000076817;
@@ -1793,7 +1793,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7N-6"
                      /db_xref="GeneID:100126457"
                      /db_xref="IMGT/GENE-DB:TRAV7N-6"
-                     /db_xref="MGI:3704442"
+                     /db_xref="MGI:MGI:3704442"
      CDS             join(897210..897262,897455..897742)
                      /gene="Trav7n-6"
                      /gene_synonym="ENSMUSG00000072519; ENSMUSG00000076819;
@@ -1802,7 +1802,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126457"
                      /db_xref="IMGT/GENE-DB:TRAV7N-6"
-                     /db_xref="MGI:3704442"
+                     /db_xref="MGI:MGI:3704442"
      V_segment       join(897210..897262,897455..897742)
                      /gene="Trav7n-6"
                      /gene_synonym="ENSMUSG00000072519; ENSMUSG00000076819;
@@ -1814,7 +1814,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 13N-3"
                      /db_xref="GeneID:547328"
                      /db_xref="IMGT/GENE-DB:TRAV13N-3"
-                     /db_xref="MGI:3645598"
+                     /db_xref="MGI:MGI:3645598"
      CDS             join(909656..909707,909889..910173)
                      /gene="Trav13n-3"
                      /gene_synonym="EG547328; Gm6033"
@@ -1822,7 +1822,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:547328"
                      /db_xref="IMGT/GENE-DB:TRAV13N-3"
-                     /db_xref="MGI:3645598"
+                     /db_xref="MGI:MGI:3645598"
      V_segment       join(909656..909707,909889..910173)
                      /gene="Trav13n-3"
                      /gene_synonym="EG547328; Gm6033"
@@ -1834,7 +1834,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 8n-2"
                      /db_xref="GeneID:100126458"
                      /db_xref="IMGT/GENE-DB:TRAV8N-2"
-                     /db_xref="MGI:3641705"
+                     /db_xref="MGI:MGI:3641705"
      CDS             join(918495..918546,918674..918958)
                      /gene="Trav8n-2"
                      /gene_synonym="ENSMUSG00000068935; ENSMUSG00000076821;
@@ -1843,7 +1843,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126458"
                      /db_xref="IMGT/GENE-DB:TRAV8N-2"
-                     /db_xref="MGI:3641705"
+                     /db_xref="MGI:MGI:3641705"
      V_segment       join(918495..918546,918674..918958)
                      /gene="Trav8n-2"
                      /gene_synonym="ENSMUSG00000068935; ENSMUSG00000076821;
@@ -1870,7 +1870,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 13N-4"
                      /db_xref="GeneID:100126460"
                      /db_xref="IMGT/GENE-DB:TRAV13N-4"
-                     /db_xref="MGI:3642678"
+                     /db_xref="MGI:MGI:3642678"
      CDS             join(934902..934953,936362..936640)
                      /gene="Trav13n-4"
                      /gene_synonym="ENSMUSG00000072517; ENSMUSG00000076823;
@@ -1879,7 +1879,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126460"
                      /db_xref="IMGT/GENE-DB:TRAV13N-4"
-                     /db_xref="MGI:3642678"
+                     /db_xref="MGI:MGI:3642678"
      V_segment       join(934902..934953,936362..936640)
                      /gene="Trav13n-4"
                      /gene_synonym="ENSMUSG00000072517; ENSMUSG00000076823;
@@ -1895,14 +1895,14 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 14N-3"
                      /db_xref="GeneID:100043308"
                      /db_xref="IMGT/GENE-DB:TRAV14N-3"
-                     /db_xref="MGI:3584039"
+                     /db_xref="MGI:MGI:3584039"
      CDS             join(942611..942662,942801..943109)
                      /gene="Trav14n-3"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:100043308"
                      /db_xref="IMGT/GENE-DB:TRAV14N-3"
-                     /db_xref="MGI:3584039"
+                     /db_xref="MGI:MGI:3584039"
      V_segment       join(942611..942662,942801..943109)
                      /gene="Trav14n-3"
                      /standard_name="TRAV14N-3"
@@ -1912,14 +1912,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100126461"
                      /db_xref="IMGT/GENE-DB:TRAV15N-3"
-                     /db_xref="MGI:5009975"
+                     /db_xref="MGI:MGI:5009975"
      CDS             join(947355..947403,947635..947812)
                      /gene="Trav15n-3"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100126461"
                      /db_xref="IMGT/GENE-DB:TRAV15N-3"
-                     /db_xref="MGI:5009975"
+                     /db_xref="MGI:MGI:5009975"
      V_segment       join(947355..947403,947635..947812)
                      /gene="Trav15n-3"
                      /standard_name="TRAV15N-3"
@@ -1930,7 +1930,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7-2"
                      /db_xref="GeneID:634132"
                      /db_xref="IMGT/GENE-DB:TRAV7-2"
-                     /db_xref="MGI:3649607"
+                     /db_xref="MGI:MGI:3649607"
      CDS             join(963167..963215,963388..963670)
                      /gene="Trav7-2"
                      /gene_synonym="Gm13952; OTTMUSG00000015165"
@@ -1938,7 +1938,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:634132"
                      /db_xref="IMGT/GENE-DB:TRAV7-2"
-                     /db_xref="MGI:3649607"
+                     /db_xref="MGI:MGI:3649607"
      V_segment       join(963167..963215,963388..963670)
                      /gene="Trav7-2"
                      /gene_synonym="Gm13952; OTTMUSG00000015165"
@@ -1949,7 +1949,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 4-2"
                      /db_xref="GeneID:100126462"
                      /db_xref="IMGT/GENE-DB:TRAV4-2"
-                     /db_xref="MGI:3649605"
+                     /db_xref="MGI:MGI:3649605"
      CDS             join(990922..990973,991126..991407)
                      /gene="Trav4-2"
                      /gene_synonym="Gm13953; OTTMUSG00000015166"
@@ -1957,7 +1957,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126462"
                      /db_xref="IMGT/GENE-DB:TRAV4-2"
-                     /db_xref="MGI:3649605"
+                     /db_xref="MGI:MGI:3649605"
      V_segment       join(990922..990973,991126..991407)
                      /gene="Trav4-2"
                      /gene_synonym="Gm13953; OTTMUSG00000015166"
@@ -1969,7 +1969,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6-3"
                      /db_xref="GeneID:328483"
                      /db_xref="IMGT/GENE-DB:TRAV6-3"
-                     /db_xref="MGI:3649610"
+                     /db_xref="MGI:MGI:3649610"
      CDS             join(1001295..1001340,1002620..1002911)
                      /gene="Trav6-3"
                      /gene_synonym="Gm13948; Gm193; Gm4; OTTMUSG00000015160;
@@ -1978,7 +1978,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:328483"
                      /db_xref="IMGT/GENE-DB:TRAV6-3"
-                     /db_xref="MGI:3649610"
+                     /db_xref="MGI:MGI:3649610"
      V_segment       join(1001295..1001340,1002620..1002911)
                      /gene="Trav6-3"
                      /gene_synonym="Gm13948; Gm193; Gm4; OTTMUSG00000015160;
@@ -1990,7 +1990,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7-3"
                      /db_xref="GeneID:547420"
                      /db_xref="IMGT/GENE-DB:TRAV7-3"
-                     /db_xref="MGI:3649556"
+                     /db_xref="MGI:MGI:3649556"
      CDS             join(1015848..1015896,1016086..1016373)
                      /gene="Trav7-3"
                      /gene_synonym="Gm13946; OTTMUSG00000015158"
@@ -1998,7 +1998,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:547420"
                      /db_xref="IMGT/GENE-DB:TRAV7-3"
-                     /db_xref="MGI:3649556"
+                     /db_xref="MGI:MGI:3649556"
      V_segment       join(1015848..1015896,1016086..1016373)
                      /gene="Trav7-3"
                      /gene_synonym="Gm13946; OTTMUSG00000015158"
@@ -2009,7 +2009,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6-4"
                      /db_xref="GeneID:100126463"
                      /db_xref="IMGT/GENE-DB:TRAV6-4"
-                     /db_xref="MGI:3702153"
+                     /db_xref="MGI:MGI:3702153"
      CDS             join(1026861..1026909,1027029..1027318)
                      /gene="Trav6-4"
                      /gene_synonym="Gm13945; OTTMUSG00000015157"
@@ -2017,7 +2017,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126463"
                      /db_xref="IMGT/GENE-DB:TRAV6-4"
-                     /db_xref="MGI:3702153"
+                     /db_xref="MGI:MGI:3702153"
      V_segment       join(1026861..1026909,1027029..1027318)
                      /gene="Trav6-4"
                      /gene_synonym="Gm13945; OTTMUSG00000015157"
@@ -2028,7 +2028,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7-4"
                      /db_xref="GeneID:386450"
                      /db_xref="IMGT/GENE-DB:TRAV7-4"
-                     /db_xref="MGI:3649611"
+                     /db_xref="MGI:MGI:3649611"
      CDS             join(1033743..1033791,1033981..1034272)
                      /gene="Trav7-4"
                      /gene_synonym="Gm13949; OTTMUSG00000015161"
@@ -2036,7 +2036,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:386450"
                      /db_xref="IMGT/GENE-DB:TRAV7-4"
-                     /db_xref="MGI:3649611"
+                     /db_xref="MGI:MGI:3649611"
      V_segment       join(1033743..1033791,1033981..1034272)
                      /gene="Trav7-4"
                      /gene_synonym="Gm13949; OTTMUSG00000015161"
@@ -2046,14 +2046,14 @@ FEATURES             Location/Qualifiers
                      /note="predicted gene, 18711"
                      /pseudo
                      /db_xref="GeneID:100417606"
-                     /db_xref="MGI:5010896"
+                     /db_xref="MGI:MGI:5010896"
      gene            1042290..1042765
                      /gene="Trav8-1"
                      /gene_synonym="Gm13950; OTTMUSG00000015162"
                      /note="T cell receptor alpha variable 8-1"
                      /db_xref="GeneID:674098"
                      /db_xref="IMGT/GENE-DB:TRAV8-1"
-                     /db_xref="MGI:3649608"
+                     /db_xref="MGI:MGI:3649608"
      CDS             join(1042290..1042312,1042482..1042765)
                      /gene="Trav8-1"
                      /gene_synonym="Gm13950; OTTMUSG00000015162"
@@ -2061,7 +2061,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:674098"
                      /db_xref="IMGT/GENE-DB:TRAV8-1"
-                     /db_xref="MGI:3649608"
+                     /db_xref="MGI:MGI:3649608"
      V_segment       join(1042290..1042312,1042482..1042765)
                      /gene="Trav8-1"
                      /gene_synonym="Gm13950; OTTMUSG00000015162"
@@ -2077,7 +2077,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 9-1"
                      /db_xref="GeneID:627324"
                      /db_xref="IMGT/GENE-DB:TRAV9-1"
-                     /db_xref="MGI:3650356"
+                     /db_xref="MGI:MGI:3650356"
      CDS             join(1060640..1060685,1060811..1061101)
                      /gene="Trav9-1"
                      /gene_synonym="Gm13947; OTTMUSG00000015159"
@@ -2085,7 +2085,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:627324"
                      /db_xref="IMGT/GENE-DB:TRAV9-1"
-                     /db_xref="MGI:3650356"
+                     /db_xref="MGI:MGI:3650356"
      V_segment       join(1060640..1060685,1060811..1061101)
                      /gene="Trav9-1"
                      /gene_synonym="Gm13947; OTTMUSG00000015159"
@@ -2096,7 +2096,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6-5"
                      /db_xref="GeneID:100126464"
                      /db_xref="IMGT/GENE-DB:TRAV6-5"
-                     /db_xref="MGI:3649609"
+                     /db_xref="MGI:MGI:3649609"
      CDS             join(1063686..1063731,1063865..1064156)
                      /gene="Trav6-5"
                      /gene_synonym="Gm13951; OTTMUSG00000015163"
@@ -2104,7 +2104,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126464"
                      /db_xref="IMGT/GENE-DB:TRAV6-5"
-                     /db_xref="MGI:3649609"
+                     /db_xref="MGI:MGI:3649609"
      V_segment       join(1063686..1063731,1063865..1064156)
                      /gene="Trav6-5"
                      /gene_synonym="Gm13951; OTTMUSG00000015163"
@@ -2115,7 +2115,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 10"
                      /db_xref="GeneID:667765"
                      /db_xref="IMGT/GENE-DB:TRAV10"
-                     /db_xref="MGI:3704132"
+                     /db_xref="MGI:MGI:3704132"
      CDS             join(1078324..1078365,1078530..1078820)
                      /gene="Trav10"
                      /gene_synonym="EG667765; Gm8800"
@@ -2123,7 +2123,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667765"
                      /db_xref="IMGT/GENE-DB:TRAV10"
-                     /db_xref="MGI:3704132"
+                     /db_xref="MGI:MGI:3704132"
      V_segment       join(1078324..1078365,1078530..1078820)
                      /gene="Trav10"
                      /gene_synonym="EG667765; Gm8800"
@@ -2139,7 +2139,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6-6"
                      /db_xref="GeneID:100126465"
                      /db_xref="IMGT/GENE-DB:TRAV6-6"
-                     /db_xref="MGI:4439905"
+                     /db_xref="MGI:MGI:4439905"
      CDS             join(1089463..1089508,1089603..1089900)
                      /gene="Trav6-6"
                      /gene_synonym="Gm16981"
@@ -2147,7 +2147,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126465"
                      /db_xref="IMGT/GENE-DB:TRAV6-6"
-                     /db_xref="MGI:4439905"
+                     /db_xref="MGI:MGI:4439905"
      V_segment       join(1089463..1089508,1089603..1089900)
                      /gene="Trav6-6"
                      /gene_synonym="Gm16981"
@@ -2159,7 +2159,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 11"
                      /db_xref="GeneID:100126466"
                      /db_xref="IMGT/GENE-DB:TRAV11"
-                     /db_xref="MGI:3642163"
+                     /db_xref="MGI:MGI:3642163"
      CDS             join(1091837..1091888,1092103..1092393)
                      /gene="Trav11"
                      /gene_synonym="ENSMUSG00000072509; ENSMUSG00000076836;
@@ -2168,7 +2168,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126466"
                      /db_xref="IMGT/GENE-DB:TRAV11"
-                     /db_xref="MGI:3642163"
+                     /db_xref="MGI:MGI:3642163"
      V_segment       join(1091837..1091888,1092103..1092393)
                      /gene="Trav11"
                      /gene_synonym="ENSMUSG00000072509; ENSMUSG00000076836;
@@ -2180,7 +2180,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7-5"
                      /db_xref="GeneID:630061"
                      /db_xref="IMGT/GENE-DB:TRAV7-5"
-                     /db_xref="MGI:3648929"
+                     /db_xref="MGI:MGI:3648929"
      CDS             join(1103320..1103360,1103560..1103847)
                      /gene="Trav7-5"
                      /gene_synonym="EG630061; Gm7024"
@@ -2188,7 +2188,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:630061"
                      /db_xref="IMGT/GENE-DB:TRAV7-5"
-                     /db_xref="MGI:3648929"
+                     /db_xref="MGI:MGI:3648929"
      V_segment       join(1103320..1103360,1103560..1103847)
                      /gene="Trav7-5"
                      /gene_synonym="EG630061; Gm7024"
@@ -2204,7 +2204,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 12-1"
                      /db_xref="GeneID:630086"
                      /db_xref="IMGT/GENE-DB:TRAV12-1"
-                     /db_xref="MGI:4440525"
+                     /db_xref="MGI:MGI:4440525"
      CDS             join(1110800..1110845,1110978..1111272)
                      /gene="Trav12-1"
                      /gene_synonym="Gm17011"
@@ -2212,7 +2212,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:630086"
                      /db_xref="IMGT/GENE-DB:TRAV12-1"
-                     /db_xref="MGI:4440525"
+                     /db_xref="MGI:MGI:4440525"
      V_segment       join(1110800..1110845,1110978..1111272)
                      /gene="Trav12-1"
                      /gene_synonym="Gm17011"
@@ -2223,7 +2223,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 13-1"
                      /db_xref="GeneID:100126469"
                      /db_xref="IMGT/GENE-DB:TRAV13-1"
-                     /db_xref="MGI:4439904"
+                     /db_xref="MGI:MGI:4439904"
      CDS             join(1117548..1117599,1117781..1118059)
                      /gene="Trav13-1"
                      /gene_synonym="Gm16980"
@@ -2231,7 +2231,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126469"
                      /db_xref="IMGT/GENE-DB:TRAV13-1"
-                     /db_xref="MGI:4439904"
+                     /db_xref="MGI:MGI:4439904"
      V_segment       join(1117548..1117599,1117781..1118059)
                      /gene="Trav13-1"
                      /gene_synonym="Gm16980"
@@ -2241,14 +2241,14 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="EG436467; Gm5770"
                      /note="T cell receptor alpha variable 14-1"
                      /db_xref="GeneID:436467"
-                     /db_xref="MGI:3646773"
+                     /db_xref="MGI:MGI:3646773"
      CDS             join(1126591..1126642,1126781..1127092)
                      /gene="Trav14-1"
                      /gene_synonym="EG436467; Gm5770"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:436467"
-                     /db_xref="MGI:3646773"
+                     /db_xref="MGI:MGI:3646773"
      V_segment       join(1126591..1126642,1126781..1127092)
                      /gene="Trav14-1"
                      /gene_synonym="EG436467; Gm5770"
@@ -2259,7 +2259,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 15-1-DV6-1"
                      /db_xref="GeneID:386446"
                      /db_xref="IMGT/GENE-DB:TRAV15-1/DV6-1"
-                     /db_xref="MGI:4439369"
+                     /db_xref="MGI:MGI:4439369"
      CDS             join(1132210..1132258,1132479..1132781)
                      /gene="Trav15-1-dv6-1"
                      /gene_synonym="Gm16591; Tradv15-1; Trav15-1/dv6-1"
@@ -2267,7 +2267,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:386446"
                      /db_xref="IMGT/GENE-DB:TRAV15-1/DV6-1"
-                     /db_xref="MGI:4439369"
+                     /db_xref="MGI:MGI:4439369"
      V_segment       join(1132210..1132258,1132479..1132781)
                      /gene="Trav15-1-dv6-1"
                      /gene_synonym="Gm16591; Tradv15-1; Trav15-1/dv6-1"
@@ -2277,14 +2277,14 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 3-2"
                      /db_xref="GeneID:100126470"
                      /db_xref="IMGT/GENE-DB:TRAV3-2"
-                     /db_xref="MGI:5009976"
+                     /db_xref="MGI:MGI:5009976"
      CDS             join(1159005..1159056,1159217..1159498)
                      /gene="Trav3-2"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:100126470"
                      /db_xref="IMGT/GENE-DB:TRAV3-2"
-                     /db_xref="MGI:5009976"
+                     /db_xref="MGI:MGI:5009976"
      V_segment       join(1159005..1159056,1159217..1159498)
                      /gene="Trav3-2"
                      /standard_name="TRAV3-2"
@@ -2294,7 +2294,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 9-2"
                      /db_xref="GeneID:436479"
                      /db_xref="IMGT/GENE-DB:TRAV9-2"
-                     /db_xref="MGI:4439903"
+                     /db_xref="MGI:MGI:4439903"
      CDS             join(1163614..1163659,1163755..1164038)
                      /gene="Trav9-2"
                      /gene_synonym="Gm16979"
@@ -2302,7 +2302,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:436479"
                      /db_xref="IMGT/GENE-DB:TRAV9-2"
-                     /db_xref="MGI:4439903"
+                     /db_xref="MGI:MGI:4439903"
      V_segment       join(1163614..1163659,1163755..1164038)
                      /gene="Trav9-2"
                      /gene_synonym="Gm16979"
@@ -2313,7 +2313,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 4-3"
                      /db_xref="GeneID:100126471"
                      /db_xref="IMGT/GENE-DB:TRAV4-3"
-                     /db_xref="MGI:4440478"
+                     /db_xref="MGI:MGI:4440478"
      CDS             join(1171445..1171493,1171666..1171944)
                      /gene="Trav4-3"
                      /gene_synonym="Gm17002; Trav4d-3"
@@ -2321,7 +2321,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126471"
                      /db_xref="IMGT/GENE-DB:TRAV4-3"
-                     /db_xref="MGI:4440478"
+                     /db_xref="MGI:MGI:4440478"
      V_segment       join(1171445..1171493,1171666..1171944)
                      /gene="Trav4-3"
                      /gene_synonym="Gm17002; Trav4d-3"
@@ -2333,7 +2333,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100126472"
                      /db_xref="IMGT/GENE-DB:TRAV5-2"
-                     /db_xref="MGI:5009977"
+                     /db_xref="MGI:MGI:5009977"
      CDS             1187470..1187758
                      /gene="Trav5-2"
                      /gene_synonym="TRAV5-2P"
@@ -2341,7 +2341,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126472"
                      /db_xref="IMGT/GENE-DB:TRAV5-2"
-                     /db_xref="MGI:5009977"
+                     /db_xref="MGI:MGI:5009977"
      V_segment       1187470..1187758
                      /gene="Trav5-2"
                      /gene_synonym="TRAV5-2P"
@@ -2352,14 +2352,14 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 12-2"
                      /db_xref="GeneID:100043322"
                      /db_xref="IMGT/GENE-DB:TRAV12-2"
-                     /db_xref="MGI:5293447"
+                     /db_xref="MGI:MGI:5293447"
      CDS             join(1188931..1188982,1189157..1189448)
                      /gene="Trav12-2"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:100043322"
                      /db_xref="IMGT/GENE-DB:TRAV12-2"
-                     /db_xref="MGI:5293447"
+                     /db_xref="MGI:MGI:5293447"
      V_segment       join(1188931..1188982,1189157..1189448)
                      /gene="Trav12-2"
                      /standard_name="TRAV12-2"
@@ -2373,7 +2373,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 12-3"
                      /db_xref="GeneID:654836"
                      /db_xref="IMGT/GENE-DB:TRAV12-3"
-                     /db_xref="MGI:3648633"
+                     /db_xref="MGI:MGI:3648633"
      CDS             join(1194286..1194331,1194479..1194779)
                      /gene="Trav12-3"
                      /gene_synonym="EG667790; Gm14498; OTTMUSG00000016859"
@@ -2381,7 +2381,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:654836"
                      /db_xref="IMGT/GENE-DB:TRAV12-3"
-                     /db_xref="MGI:3648633"
+                     /db_xref="MGI:MGI:3648633"
      V_segment       join(1194286..1194331,1194479..1194779)
                      /gene="Trav12-3"
                      /gene_synonym="EG667790; Gm14498; OTTMUSG00000016859"
@@ -2392,7 +2392,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 13-2"
                      /db_xref="GeneID:638566"
                      /db_xref="IMGT/GENE-DB:TRAV13-2"
-                     /db_xref="MGI:3651611"
+                     /db_xref="MGI:MGI:3651611"
      CDS             join(1207422..1207473,1207655..1207933)
                      /gene="Trav13-2"
                      /gene_synonym="Gm13918; OTTMUSG00000015063"
@@ -2400,7 +2400,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:638566"
                      /db_xref="IMGT/GENE-DB:TRAV13-2"
-                     /db_xref="MGI:3651611"
+                     /db_xref="MGI:MGI:3651611"
      V_segment       join(1207422..1207473,1207655..1207933)
                      /gene="Trav13-2"
                      /gene_synonym="Gm13918; OTTMUSG00000015063"
@@ -2411,7 +2411,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 14-2"
                      /db_xref="GeneID:667567"
                      /db_xref="IMGT/GENE-DB:TRAV14-2"
-                     /db_xref="MGI:3649206"
+                     /db_xref="MGI:MGI:3649206"
      CDS             1213309..1213759
                      /gene="Trav14-2"
                      /gene_synonym="Gm13927; OTTMUSG00000015102"
@@ -2419,7 +2419,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:667567"
                      /db_xref="IMGT/GENE-DB:TRAV14-2"
-                     /db_xref="MGI:3649206"
+                     /db_xref="MGI:MGI:3649206"
      V_segment       1213309..1213759
                      /gene="Trav14-2"
                      /gene_synonym="Gm13927; OTTMUSG00000015102"
@@ -2431,7 +2431,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 15-2-DV6-2"
                      /db_xref="GeneID:436545"
                      /db_xref="IMGT/GENE-DB:TRAV15-2/DV6-2"
-                     /db_xref="MGI:3702147"
+                     /db_xref="MGI:MGI:3702147"
      CDS             join(1221959..1222007,1222229..1222528)
                      /gene="Trav15-2-dv6-2"
                      /gene_synonym="Gm13926; OTTMUSG00000015101;
@@ -2440,7 +2440,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:436545"
                      /db_xref="IMGT/GENE-DB:TRAV15-2/DV6-2"
-                     /db_xref="MGI:3702147"
+                     /db_xref="MGI:MGI:3702147"
      V_segment       join(1221959..1222007,1222229..1222528)
                      /gene="Trav15-2-dv6-2"
                      /gene_synonym="Gm13926; OTTMUSG00000015101;
@@ -2451,25 +2451,25 @@ FEATURES             Location/Qualifiers
                      /note="predicted gene, 17792"
                      /pseudo
                      /db_xref="GeneID:100126591"
-                     /db_xref="MGI:5009978"
+                     /db_xref="MGI:MGI:5009978"
      gene            1238539..1239040
                      /gene="Trav3-3"
-                     /gene_synonym="Gm13917; OTTMUSG00000015062; Va10"
+                     /gene_synonym="A430107P09Rik; Gm13917; OTTMUSG00000015062"
                      /note="T cell receptor alpha variable 3-3"
                      /db_xref="GeneID:320898"
                      /db_xref="IMGT/GENE-DB:TRAV3-3"
-                     /db_xref="MGI:3702145"
+                     /db_xref="MGI:MGI:3702145"
      CDS             join(1238539..1238590,1238750..1239040)
                      /gene="Trav3-3"
-                     /gene_synonym="Gm13917; OTTMUSG00000015062; Va10"
+                     /gene_synonym="A430107P09Rik; Gm13917; OTTMUSG00000015062"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:320898"
                      /db_xref="IMGT/GENE-DB:TRAV3-3"
-                     /db_xref="MGI:3702145"
+                     /db_xref="MGI:MGI:3702145"
      V_segment       join(1238539..1238590,1238750..1239040)
                      /gene="Trav3-3"
-                     /gene_synonym="Gm13917; OTTMUSG00000015062; Va10"
+                     /gene_synonym="A430107P09Rik; Gm13917; OTTMUSG00000015062"
                      /standard_name="TRAV3-3"
      gene            1248730..1249162
                      /gene="Trav9-4"
@@ -2477,7 +2477,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 9-4"
                      /db_xref="GeneID:630461"
                      /db_xref="IMGT/GENE-DB:TRAV9-4"
-                     /db_xref="MGI:3702135"
+                     /db_xref="MGI:MGI:3702135"
      CDS             join(1248730..1248775,1248871..1249162)
                      /gene="Trav9-4"
                      /gene_synonym="Gm13907; OTTMUSG00000015050"
@@ -2485,7 +2485,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:630461"
                      /db_xref="IMGT/GENE-DB:TRAV9-4"
-                     /db_xref="MGI:3702135"
+                     /db_xref="MGI:MGI:3702135"
      V_segment       join(1248730..1248775,1248871..1249162)
                      /gene="Trav9-4"
                      /gene_synonym="Gm13907; OTTMUSG00000015050"
@@ -2496,7 +2496,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 4-4-DV10"
                      /db_xref="GeneID:100113414"
                      /db_xref="IMGT/GENE-DB:TRAV4-4/DV10"
-                     /db_xref="MGI:3702138"
+                     /db_xref="MGI:MGI:3702138"
      CDS             join(1256211..1256262,1256433..1256711)
                      /gene="Trav4-4-dv10"
                      /gene_synonym="Gm13908; OTTMUSG00000015051; Trav4-4/dv10"
@@ -2504,7 +2504,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100113414"
                      /db_xref="IMGT/GENE-DB:TRAV4-4/DV10"
-                     /db_xref="MGI:3702138"
+                     /db_xref="MGI:MGI:3702138"
      V_segment       join(1256211..1256262,1256433..1256711)
                      /gene="Trav4-4-dv10"
                      /gene_synonym="Gm13908; OTTMUSG00000015051; Trav4-4/dv10"
@@ -2515,7 +2515,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 5-4"
                      /db_xref="GeneID:21507"
                      /db_xref="IMGT/GENE-DB:TRAV5-4"
-                     /db_xref="MGI:1196221"
+                     /db_xref="MGI:MGI:1196221"
      CDS             join(1276541..1276596,1276758..1277048)
                      /gene="Trav5-4"
                      /gene_synonym="Tcra-V13.1"
@@ -2523,7 +2523,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:21507"
                      /db_xref="IMGT/GENE-DB:TRAV5-4"
-                     /db_xref="MGI:1196221"
+                     /db_xref="MGI:MGI:1196221"
      V_segment       join(1276541..1276596,1276758..1277048)
                      /gene="Trav5-4"
                      /gene_synonym="Tcra-V13.1"
@@ -2534,7 +2534,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 6-7-DV9"
                      /db_xref="GeneID:100113413"
                      /db_xref="IMGT/GENE-DB:TRAV6-7/DV9"
-                     /db_xref="MGI:3702143"
+                     /db_xref="MGI:MGI:3702143"
      CDS             join(1282477..1282522,1282632..1282953)
                      /gene="Trav6-7-dv9"
                      /gene_synonym="Gm13909; OTTMUSG00000015053; Trav6-7/dv9"
@@ -2542,7 +2542,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100113413"
                      /db_xref="IMGT/GENE-DB:TRAV6-7/DV9"
-                     /db_xref="MGI:3702143"
+                     /db_xref="MGI:MGI:3702143"
      V_segment       join(1282477..1282522,1282632..1282953)
                      /gene="Trav6-7-dv9"
                      /gene_synonym="Gm13909; OTTMUSG00000015053; Trav6-7/dv9"
@@ -2553,7 +2553,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 7-6"
                      /db_xref="GeneID:213480"
                      /db_xref="IMGT/GENE-DB:TRAV7-6"
-                     /db_xref="MGI:3702133"
+                     /db_xref="MGI:MGI:3702133"
      CDS             join(1289294..1289346,1289538..1289825)
                      /gene="Trav7-6"
                      /gene_synonym="Gm13906; OTTMUSG00000015049"
@@ -2561,7 +2561,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:213480"
                      /db_xref="IMGT/GENE-DB:TRAV7-6"
-                     /db_xref="MGI:3702133"
+                     /db_xref="MGI:MGI:3702133"
      V_segment       join(1289294..1289346,1289538..1289825)
                      /gene="Trav7-6"
                      /gene_synonym="Gm13906; OTTMUSG00000015049"
@@ -2572,7 +2572,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 13-3"
                      /db_xref="GeneID:432910"
                      /db_xref="IMGT/GENE-DB:TRAV13-3"
-                     /db_xref="MGI:3652331"
+                     /db_xref="MGI:MGI:3652331"
      CDS             join(1302092..1302143,1302325..1302608)
                      /gene="Trav13-3"
                      /gene_synonym="Gm13897; OTTMUSG00000015032"
@@ -2580,25 +2580,27 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:432910"
                      /db_xref="IMGT/GENE-DB:TRAV13-3"
-                     /db_xref="MGI:3652331"
+                     /db_xref="MGI:MGI:3652331"
      V_segment       join(1302092..1302143,1302325..1302608)
                      /gene="Trav13-3"
                      /gene_synonym="Gm13897; OTTMUSG00000015032"
                      /standard_name="TRAV13-3"
      gene            1310909..1311372
                      /gene="Trav8-2"
-                     /gene_synonym="Gm1799; Gm27"
+                     /gene_synonym="Gm14031; Gm1799; Gm27; OTTMUSG00000015441"
                      /note="T-cell receptor alpha variable 8-2"
                      /db_xref="GeneID:193587"
+                     /db_xref="MGI:MGI:3650859"
      CDS             join(1310909..1310960,1311088..1311372)
                      /gene="Trav8-2"
-                     /gene_synonym="Gm1799; Gm27"
+                     /gene_synonym="Gm14031; Gm1799; Gm27; OTTMUSG00000015441"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:193587"
+                     /db_xref="MGI:MGI:3650859"
      V_segment       join(1310909..1310960,1311088..1311372)
                      /gene="Trav8-2"
-                     /gene_synonym="Gm1799; Gm27"
+                     /gene_synonym="Gm14031; Gm1799; Gm27; OTTMUSG00000015441"
                      /standard_name="TRAV8-2"
      gene            1315708..1316239
                      /gene="Trav16n"
@@ -2606,7 +2608,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 16n"
                      /db_xref="GeneID:195297"
                      /db_xref="IMGT/GENE-DB:TRAV16"
-                     /db_xref="MGI:4439761"
+                     /db_xref="MGI:MGI:4439761"
      CDS             join(1315708..1315756,1315939..1316239)
                      /gene="Trav16n"
                      /gene_synonym="Gm16837; Trav16"
@@ -2614,7 +2616,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:195297"
                      /db_xref="IMGT/GENE-DB:TRAV16"
-                     /db_xref="MGI:4439761"
+                     /db_xref="MGI:MGI:4439761"
      V_segment       join(1315708..1315756,1315939..1316239)
                      /gene="Trav16n"
                      /gene_synonym="Gm16837; Trav16"
@@ -2626,7 +2628,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 13-4-DV7"
                      /db_xref="GeneID:100113412"
                      /db_xref="IMGT/GENE-DB:TRAV13-4/DV7"
-                     /db_xref="MGI:3702151"
+                     /db_xref="MGI:MGI:3702151"
      CDS             join(1329944..1329995,1330177..1330455)
                      /gene="Trav13-4-dv7"
                      /gene_synonym="Gm13934; OTTMUSG00000015125; Tradv13-4;
@@ -2635,7 +2637,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100113412"
                      /db_xref="IMGT/GENE-DB:TRAV13-4/DV7"
-                     /db_xref="MGI:3702151"
+                     /db_xref="MGI:MGI:3702151"
      V_segment       join(1329944..1329995,1330177..1330455)
                      /gene="Trav13-4-dv7"
                      /gene_synonym="Gm13934; OTTMUSG00000015125; Tradv13-4;
@@ -2647,7 +2649,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 14-3"
                      /db_xref="GeneID:547330"
                      /db_xref="IMGT/GENE-DB:TRAV14-3"
-                     /db_xref="MGI:3702149"
+                     /db_xref="MGI:MGI:3702149"
      CDS             join(1335730..1335781,1335920..1336228)
                      /gene="Trav14-3"
                      /gene_synonym="Gm13933; OTTMUSG00000015124"
@@ -2655,7 +2657,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:547330"
                      /db_xref="IMGT/GENE-DB:TRAV14-3"
-                     /db_xref="MGI:3702149"
+                     /db_xref="MGI:MGI:3702149"
      V_segment       join(1335730..1335781,1335920..1336228)
                      /gene="Trav14-3"
                      /gene_synonym="Gm13933; OTTMUSG00000015124"
@@ -2666,14 +2668,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100113411"
                      /db_xref="IMGT/GENE-DB:TRAV15-3"
-                     /db_xref="MGI:5009958"
+                     /db_xref="MGI:MGI:5009958"
      CDS             join(1339269..1339317,1339622..1339713)
                      /gene="Trav15-3"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100113411"
                      /db_xref="IMGT/GENE-DB:TRAV15-3"
-                     /db_xref="MGI:5009958"
+                     /db_xref="MGI:MGI:5009958"
      V_segment       join(1339269..1339317,1339622..1339713)
                      /gene="Trav15-3"
                      /standard_name="TRAV15-3"
@@ -2684,7 +2686,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 3-4"
                      /db_xref="GeneID:211027"
                      /db_xref="IMGT/GENE-DB:TRAV3-4"
-                     /db_xref="MGI:2684925"
+                     /db_xref="MGI:MGI:2684925"
      CDS             join(1349605..1349656,1349820..1350110)
                      /gene="Trav3-4"
                      /gene_synonym="A730076H11Rik; Gm28; Gm79"
@@ -2692,7 +2694,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:211027"
                      /db_xref="IMGT/GENE-DB:TRAV3-4"
-                     /db_xref="MGI:2684925"
+                     /db_xref="MGI:MGI:2684925"
      V_segment       join(1349605..1349656,1349820..1350110)
                      /gene="Trav3-4"
                      /gene_synonym="A730076H11Rik; Gm28; Gm79"
@@ -2703,14 +2705,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100101936"
                      /db_xref="IMGT/GENE-DB:TRAV12-4"
-                     /db_xref="MGI:5009956"
+                     /db_xref="MGI:MGI:5009956"
      CDS             1351137..1351379
                      /gene="Trav12-4"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100101936"
                      /db_xref="IMGT/GENE-DB:TRAV12-4"
-                     /db_xref="MGI:5009956"
+                     /db_xref="MGI:MGI:5009956"
      V_segment       1351137..1351379
                      /gene="Trav12-4"
                      /standard_name="TRAV12-4"
@@ -2721,7 +2723,7 @@ FEATURES             Location/Qualifiers
                      /note="RIKEN cDNA B230359F08 gene"
                      /db_xref="GeneID:219060"
                      /db_xref="IMGT/GENE-DB:TRAV13-5"
-                     /db_xref="MGI:3026946"
+                     /db_xref="MGI:MGI:3026946"
      CDS             join(1367989..1368040,1368222..1368497)
                      /gene="B230359F08Rik"
                      /gene_synonym="TRAV13-5"
@@ -2729,7 +2731,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:219060"
                      /db_xref="IMGT/GENE-DB:TRAV13-5"
-                     /db_xref="MGI:3026946"
+                     /db_xref="MGI:MGI:3026946"
      V_segment       join(1367989..1368040,1368222..1368497)
                      /gene="B230359F08Rik"
                      /gene_synonym="TRAV13-5"
@@ -2740,7 +2742,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 17"
                      /db_xref="GeneID:627777"
                      /db_xref="IMGT/GENE-DB:TRAV17"
-                     /db_xref="MGI:3702128"
+                     /db_xref="MGI:MGI:3702128"
      CDS             join(1379173..1379218,1379355..1379649)
                      /gene="Trav17"
                      /gene_synonym="OTTMUSG00000015028"
@@ -2748,7 +2750,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:627777"
                      /db_xref="IMGT/GENE-DB:TRAV17"
-                     /db_xref="MGI:3702128"
+                     /db_xref="MGI:MGI:3702128"
      V_segment       join(1379173..1379218,1379355..1379649)
                      /gene="Trav17"
                      /gene_synonym="OTTMUSG00000015028"
@@ -2759,7 +2761,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha variable 18"
                      /db_xref="GeneID:547427"
                      /db_xref="IMGT/GENE-DB:TRAV18"
-                     /db_xref="MGI:3649382"
+                     /db_xref="MGI:MGI:3649382"
      CDS             join(1403639..1403684,1404080..1404361)
                      /gene="Trav18"
                      /gene_synonym="Gm13894; Gm29; OTTMUSG00000015026"
@@ -2767,7 +2769,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:547427"
                      /db_xref="IMGT/GENE-DB:TRAV18"
-                     /db_xref="MGI:3649382"
+                     /db_xref="MGI:MGI:3649382"
      V_segment       join(1403639..1403684,1404080..1404361)
                      /gene="Trav18"
                      /gene_synonym="Gm13894; Gm29; OTTMUSG00000015026"
@@ -2777,14 +2779,14 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="Gm13893; MVA5T; OTTMUSG00000015025"
                      /note="T cell receptor alpha variable 19"
                      /db_xref="GeneID:547428"
-                     /db_xref="MGI:3649383"
+                     /db_xref="MGI:MGI:3649383"
      CDS             join(1417856..1417907,1418073..1418361)
                      /gene="Trav19"
                      /gene_synonym="Gm13893; MVA5T; OTTMUSG00000015025"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:547428"
-                     /db_xref="MGI:3649383"
+                     /db_xref="MGI:MGI:3649383"
      V_segment       join(1417856..1417907,1418073..1418361)
                      /gene="Trav19"
                      /gene_synonym="Gm13893; MVA5T; OTTMUSG00000015025"
@@ -2796,7 +2798,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100101939"
                      /db_xref="IMGT/GENE-DB:TRAV20"
-                     /db_xref="MGI:3702156"
+                     /db_xref="MGI:MGI:3702156"
      CDS             join(1435644..1435695,1435901..1436195)
                      /gene="Trav20"
                      /gene_synonym="Gm14030; OTTMUSG00000015427"
@@ -2804,25 +2806,30 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100101939"
                      /db_xref="IMGT/GENE-DB:TRAV20"
-                     /db_xref="MGI:3702156"
+                     /db_xref="MGI:MGI:3702156"
      V_segment       join(1435644..1435695,1435901..1436195)
                      /gene="Trav20"
                      /gene_synonym="Gm14030; OTTMUSG00000015427"
                      /standard_name="TRAV20"
                      /pseudo
      gene            1448550..1449286
-                     /gene="Trav21/dv12"
-                     /note="T cell receptor alpha variable 21/DV12"
+                     /gene="Trav21-dv12"
+                     /gene_synonym="Gm13892; OTTMUSG00000015007; Trav21/dv12"
+                     /note="T cell receptor alpha variable 21-DV12"
                      /db_xref="GeneID:100101940"
                      /db_xref="IMGT/GENE-DB:TRAV21/DV12"
+                     /db_xref="MGI:MGI:3652097"
      CDS             join(1448550..1448593,1448999..1449286)
-                     /gene="Trav21/dv12"
+                     /gene="Trav21-dv12"
+                     /gene_synonym="Gm13892; OTTMUSG00000015007; Trav21/dv12"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:100101940"
                      /db_xref="IMGT/GENE-DB:TRAV21/DV12"
+                     /db_xref="MGI:MGI:3652097"
      V_segment       join(1448550..1448593,1448999..1449286)
-                     /gene="Trav21/dv12"
+                     /gene="Trav21-dv12"
+                     /gene_synonym="Gm13892; OTTMUSG00000015007; Trav21/dv12"
                      /standard_name="TRAV21/DV12"
      gene            1454146..1454751
                      /gene="Trdv1"
@@ -2830,7 +2837,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor delta variable 1"
                      /db_xref="GeneID:627813"
                      /db_xref="IMGT/GENE-DB:TRDV1"
-                     /db_xref="MGI:3649381"
+                     /db_xref="MGI:MGI:3649381"
      CDS             join(1454146..1454197,1454467..1454751)
                      /gene="Trdv1"
                      /gene_synonym="Gm13895; OTTMUSG00000015027"
@@ -2838,7 +2845,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:627813"
                      /db_xref="IMGT/GENE-DB:TRDV1"
-                     /db_xref="MGI:3649381"
+                     /db_xref="MGI:MGI:3649381"
      V_segment       join(1454146..1454197,1454467..1454751)
                      /gene="Trdv1"
                      /gene_synonym="Gm13895; OTTMUSG00000015027"
@@ -2849,14 +2856,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100101941"
                      /db_xref="IMGT/GENE-DB:TRAV22"
-                     /db_xref="MGI:5009957"
+                     /db_xref="MGI:MGI:5009957"
      CDS             join(1499512..1499574,1499848..1500129)
                      /gene="Trav22"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100101941"
                      /db_xref="IMGT/GENE-DB:TRAV22"
-                     /db_xref="MGI:5009957"
+                     /db_xref="MGI:MGI:5009957"
      V_segment       join(1499512..1499574,1499848..1500129)
                      /gene="Trav22"
                      /standard_name="TRAV22"
@@ -2866,7 +2873,7 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="Tcrdelta"
                      /note="T cell receptor delta chain"
                      /db_xref="GeneID:110066"
-                     /db_xref="MGI:98611"
+                     /db_xref="MGI:MGI:98611"
      gene            1518607..1519194
                      /gene="Trdv2-1"
                      /gene_synonym="ENSMUSG00000068352; ENSMUSG00000076865;
@@ -2874,7 +2881,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor delta variable 2-1"
                      /db_xref="GeneID:100101942"
                      /db_xref="IMGT/GENE-DB:TRDV2-1"
-                     /db_xref="MGI:3642826"
+                     /db_xref="MGI:MGI:3642826"
      CDS             join(1518607..1518655,1518896..1519194)
                      /gene="Trdv2-1"
                      /gene_synonym="ENSMUSG00000068352; ENSMUSG00000076865;
@@ -2883,7 +2890,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100101942"
                      /db_xref="IMGT/GENE-DB:TRDV2-1"
-                     /db_xref="MGI:3642826"
+                     /db_xref="MGI:MGI:3642826"
      V_segment       join(1518607..1518655,1518896..1519194)
                      /gene="Trdv2-1"
                      /gene_synonym="ENSMUSG00000068352; ENSMUSG00000076865;
@@ -2895,7 +2902,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor delta variable 2-2"
                      /db_xref="GeneID:320913"
                      /db_xref="IMGT/GENE-DB:TRDV2-2"
-                     /db_xref="MGI:4819748"
+                     /db_xref="MGI:MGI:4819748"
      CDS             join(1533527..1533575,1533838..1534136)
                      /gene="Trdv2-2"
                      /gene_synonym="Gm17015"
@@ -2903,7 +2910,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:320913"
                      /db_xref="IMGT/GENE-DB:TRDV2-2"
-                     /db_xref="MGI:4819748"
+                     /db_xref="MGI:MGI:4819748"
      V_segment       join(1533527..1533575,1533838..1534136)
                      /gene="Trdv2-2"
                      /gene_synonym="Gm17015"
@@ -2914,14 +2921,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100113481"
                      /db_xref="IMGT/GENE-DB:TRAV23"
-                     /db_xref="MGI:5009959"
+                     /db_xref="MGI:MGI:5009959"
      CDS             join(1549687..1549729,1549909..1550212)
                      /gene="Trav23"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100113481"
                      /db_xref="IMGT/GENE-DB:TRAV23"
-                     /db_xref="MGI:5009959"
+                     /db_xref="MGI:MGI:5009959"
      V_segment       join(1549687..1549729,1549909..1550212)
                      /gene="Trav23"
                      /standard_name="TRAV23"
@@ -2932,14 +2939,14 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100114900"
                      /db_xref="IMGT/GENE-DB:TRDV3"
-                     /db_xref="MGI:5009960"
+                     /db_xref="MGI:MGI:5009960"
      CDS             1573482..1573787
                      /gene="Trdv3"
                      /pseudo
                      /codon_start=1
                      /db_xref="GeneID:100114900"
                      /db_xref="IMGT/GENE-DB:TRDV3"
-                     /db_xref="MGI:5009960"
+                     /db_xref="MGI:MGI:5009960"
      V_segment       1573482..1573787
                      /gene="Trdv3"
                      /standard_name="TRDV3"
@@ -2949,14 +2956,14 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor delta variable 4"
                      /db_xref="GeneID:100114901"
                      /db_xref="IMGT/GENE-DB:TRDV4"
-                     /db_xref="MGI:4887419"
+                     /db_xref="MGI:MGI:4887419"
      CDS             join(1647538..1647583,1647751..1648049)
                      /gene="Trdv4"
                      /exception="rearrangement required for product"
                      /codon_start=1
                      /db_xref="GeneID:100114901"
                      /db_xref="IMGT/GENE-DB:TRDV4"
-                     /db_xref="MGI:4887419"
+                     /db_xref="MGI:MGI:4887419"
      V_segment       join(1647538..1647583,1647751..1648049)
                      /gene="Trdv4"
                      /standard_name="TRDV4"
@@ -2971,7 +2978,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor delta diversity 1"
                      /db_xref="GeneID:100114902"
                      /db_xref="IMGT/GENE-DB:TRDD1"
-                     /db_xref="MGI:4439547"
+                     /db_xref="MGI:MGI:4439547"
      CDS             1686002..1686010
                      /gene="Trdd1"
                      /gene_synonym="Gm16623"
@@ -2979,7 +2986,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100114902"
                      /db_xref="IMGT/GENE-DB:TRDD1"
-                     /db_xref="MGI:4439547"
+                     /db_xref="MGI:MGI:4439547"
      D_segment       1686002..1686010
                      /gene="Trdd1"
                      /gene_synonym="Gm16623"
@@ -2995,7 +3002,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor delta diversity 2"
                      /db_xref="GeneID:100114904"
                      /db_xref="IMGT/GENE-DB:TRDD2"
-                     /db_xref="MGI:4439546"
+                     /db_xref="MGI:MGI:4439546"
      CDS             1694760..1694775
                      /gene="Trdd2"
                      /gene_synonym="Gm16622"
@@ -3003,7 +3010,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100114904"
                      /db_xref="IMGT/GENE-DB:TRDD2"
-                     /db_xref="MGI:4439546"
+                     /db_xref="MGI:MGI:4439546"
      V_segment       1694760..1694775
                      /gene="Trdd2"
                      /gene_synonym="Gm16622"
@@ -3014,7 +3021,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor delta joining 1"
                      /db_xref="GeneID:100115376"
                      /db_xref="IMGT/GENE-DB:TRDJ1"
-                     /db_xref="MGI:4819753"
+                     /db_xref="MGI:MGI:4819753"
      CDS             1695672..1695722
                      /gene="Trdj1"
                      /gene_synonym="Gm17016"
@@ -3022,7 +3029,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100115376"
                      /db_xref="IMGT/GENE-DB:TRDJ1"
-                     /db_xref="MGI:4819753"
+                     /db_xref="MGI:MGI:4819753"
      J_segment       1695672..1695722
                      /gene="Trdj1"
                      /gene_synonym="Gm17016"
@@ -3032,14 +3039,14 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor delta joining 2"
                      /db_xref="GeneID:100118398"
                      /db_xref="IMGT/GENE-DB:TRDJ2"
-                     /db_xref="MGI:4887422"
+                     /db_xref="MGI:MGI:4887422"
      CDS             1709313..1709371
                      /gene="Trdj2"
                      /exception="rearrangement required for product"
                      /codon_start=2
                      /db_xref="GeneID:100118398"
                      /db_xref="IMGT/GENE-DB:TRDJ2"
-                     /db_xref="MGI:4887422"
+                     /db_xref="MGI:MGI:4887422"
      J_segment       1709313..1709371
                      /gene="Trdj2"
                      /standard_name="TRDJ2"
@@ -3049,7 +3056,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor delta, constant region"
                      /db_xref="GeneID:100123473"
                      /db_xref="IMGT/GENE-DB:TRDC"
-                     /db_xref="MGI:98612"
+                     /db_xref="MGI:MGI:98612"
      CDS             join(1715385..1715663,1716305..1716370,1716737..1716853,
                      1718000..1718642)
                      /gene="Trdc"
@@ -3058,7 +3065,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100123473"
                      /db_xref="IMGT/GENE-DB:TRDC"
-                     /db_xref="MGI:98612"
+                     /db_xref="MGI:MGI:98612"
      C_region        join(1715385..1715663,1716305..1716370,1716737..1716853,
                      1718000..1718642)
                      /gene="Trdc"
@@ -3075,7 +3082,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor delta variable 5"
                      /db_xref="GeneID:626545"
                      /db_xref="IMGT/GENE-DB:TRDV5"
-                     /db_xref="MGI:3704133"
+                     /db_xref="MGI:MGI:3704133"
      CDS             complement(join(1721196..1721503,1721699..1721735))
                      /gene="Trdv5"
                      /gene_synonym="EG626545; Gm6683; Tcrd"
@@ -3083,7 +3090,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:626545"
                      /db_xref="IMGT/GENE-DB:TRDV5"
-                     /db_xref="MGI:3704133"
+                     /db_xref="MGI:MGI:3704133"
      V_segment       complement(join(1721196..1721503,1721699..1721735))
                      /gene="Trdv5"
                      /gene_synonym="EG626545; Gm6683; Tcrd"
@@ -3095,7 +3102,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124287"
                      /db_xref="IMGT/GENE-DB:TRAJ61"
-                     /db_xref="MGI:4936997"
+                     /db_xref="MGI:MGI:4936997"
      CDS             1727539..1727610
                      /gene="Traj61"
                      /gene_synonym="Gm17363"
@@ -3103,7 +3110,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124287"
                      /db_xref="IMGT/GENE-DB:TRAJ61"
-                     /db_xref="MGI:4936997"
+                     /db_xref="MGI:MGI:4936997"
      J_segment       1727539..1727610
                      /gene="Traj61"
                      /gene_synonym="Gm17363"
@@ -3116,7 +3123,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124288"
                      /db_xref="IMGT/GENE-DB:TRAJ60"
-                     /db_xref="MGI:4937168"
+                     /db_xref="MGI:MGI:4937168"
      CDS             1728467..1728519
                      /gene="Traj60"
                      /gene_synonym="Gm17534"
@@ -3124,7 +3131,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124288"
                      /db_xref="IMGT/GENE-DB:TRAJ60"
-                     /db_xref="MGI:4937168"
+                     /db_xref="MGI:MGI:4937168"
      J_segment       1728467..1728519
                      /gene="Traj60"
                      /gene_synonym="Gm17534"
@@ -3136,7 +3143,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 59"
                      /db_xref="GeneID:100124293"
                      /db_xref="IMGT/GENE-DB:TRAJ59"
-                     /db_xref="MGI:4439694"
+                     /db_xref="MGI:MGI:4439694"
      CDS             1728667..1728728
                      /gene="Traj59"
                      /gene_synonym="Gm16770"
@@ -3144,7 +3151,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124293"
                      /db_xref="IMGT/GENE-DB:TRAJ59"
-                     /db_xref="MGI:4439694"
+                     /db_xref="MGI:MGI:4439694"
      J_segment       1728667..1728728
                      /gene="Traj59"
                      /gene_synonym="Gm16770"
@@ -3155,7 +3162,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 58"
                      /db_xref="GeneID:100124294"
                      /db_xref="IMGT/GENE-DB:TRAJ58"
-                     /db_xref="MGI:4439695"
+                     /db_xref="MGI:MGI:4439695"
      CDS             1729814..1729876
                      /gene="Traj58"
                      /gene_synonym="Gm16771"
@@ -3163,7 +3170,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124294"
                      /db_xref="IMGT/GENE-DB:TRAJ58"
-                     /db_xref="MGI:4439695"
+                     /db_xref="MGI:MGI:4439695"
      J_segment       1729814..1729876
                      /gene="Traj58"
                      /gene_synonym="Gm16771"
@@ -3174,7 +3181,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 57"
                      /db_xref="GeneID:100124295"
                      /db_xref="IMGT/GENE-DB:TRAJ57"
-                     /db_xref="MGI:4439692"
+                     /db_xref="MGI:MGI:4439692"
      CDS             1731041..1731103
                      /gene="Traj57"
                      /gene_synonym="Gm16768"
@@ -3182,7 +3189,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124295"
                      /db_xref="IMGT/GENE-DB:TRAJ57"
-                     /db_xref="MGI:4439692"
+                     /db_xref="MGI:MGI:4439692"
      J_segment       1731041..1731103
                      /gene="Traj57"
                      /gene_synonym="Gm16768"
@@ -3193,7 +3200,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 56"
                      /db_xref="GeneID:100124296"
                      /db_xref="IMGT/GENE-DB:TRAJ56"
-                     /db_xref="MGI:4439693"
+                     /db_xref="MGI:MGI:4439693"
      CDS             1731797..1731859
                      /gene="Traj56"
                      /gene_synonym="Gm16769"
@@ -3201,7 +3208,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124296"
                      /db_xref="IMGT/GENE-DB:TRAJ56"
-                     /db_xref="MGI:4439693"
+                     /db_xref="MGI:MGI:4439693"
      J_segment       1731797..1731859
                      /gene="Traj56"
                      /gene_synonym="Gm16769"
@@ -3213,7 +3220,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124297"
                      /db_xref="IMGT/GENE-DB:TRAJ55"
-                     /db_xref="MGI:4937105"
+                     /db_xref="MGI:MGI:4937105"
      CDS             1733973..1734035
                      /gene="Traj55"
                      /gene_synonym="Gm17471"
@@ -3221,7 +3228,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124297"
                      /db_xref="IMGT/GENE-DB:TRAJ55"
-                     /db_xref="MGI:4937105"
+                     /db_xref="MGI:MGI:4937105"
      J_segment       1733973..1734035
                      /gene="Traj55"
                      /gene_synonym="Gm17471"
@@ -3234,7 +3241,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124333"
                      /db_xref="IMGT/GENE-DB:TRAJ54"
-                     /db_xref="MGI:4937113"
+                     /db_xref="MGI:MGI:4937113"
      CDS             1734524..1734577
                      /gene="Traj54"
                      /gene_synonym="Gm17479"
@@ -3242,7 +3249,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124333"
                      /db_xref="IMGT/GENE-DB:TRAJ54"
-                     /db_xref="MGI:4937113"
+                     /db_xref="MGI:MGI:4937113"
      J_segment       1734524..1734577
                      /gene="Traj54"
                      /gene_synonym="Gm17479"
@@ -3254,7 +3261,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 53"
                      /db_xref="GeneID:100124335"
                      /db_xref="IMGT/GENE-DB:TRAJ53"
-                     /db_xref="MGI:4439696"
+                     /db_xref="MGI:MGI:4439696"
      CDS             1735178..1735243
                      /gene="Traj53"
                      /gene_synonym="Gm16772"
@@ -3262,7 +3269,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124335"
                      /db_xref="IMGT/GENE-DB:TRAJ53"
-                     /db_xref="MGI:4439696"
+                     /db_xref="MGI:MGI:4439696"
      J_segment       1735178..1735243
                      /gene="Traj53"
                      /gene_synonym="Gm16772"
@@ -3273,7 +3280,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 52"
                      /db_xref="GeneID:100124336"
                      /db_xref="IMGT/GENE-DB:TRAJ52"
-                     /db_xref="MGI:4439697"
+                     /db_xref="MGI:MGI:4439697"
      CDS             1737850..1737915
                      /gene="Traj52"
                      /gene_synonym="Gm16773"
@@ -3281,7 +3288,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124336"
                      /db_xref="IMGT/GENE-DB:TRAJ52"
-                     /db_xref="MGI:4439697"
+                     /db_xref="MGI:MGI:4439697"
      J_segment       1737850..1737915
                      /gene="Traj52"
                      /gene_synonym="Gm16773"
@@ -3293,7 +3300,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124337"
                      /db_xref="IMGT/GENE-DB:TRAJ51"
-                     /db_xref="MGI:4439848"
+                     /db_xref="MGI:MGI:4439848"
      CDS             1738773..1738815
                      /gene="Traj51"
                      /gene_synonym="Gm16924"
@@ -3301,7 +3308,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124337"
                      /db_xref="IMGT/GENE-DB:TRAJ51"
-                     /db_xref="MGI:4439848"
+                     /db_xref="MGI:MGI:4439848"
      J_segment       1738773..1738815
                      /gene="Traj51"
                      /gene_synonym="Gm16924"
@@ -3313,7 +3320,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 50"
                      /db_xref="GeneID:100124338"
                      /db_xref="IMGT/GENE-DB:TRAJ50"
-                     /db_xref="MGI:4440517"
+                     /db_xref="MGI:MGI:4440517"
      CDS             1740124..1740186
                      /gene="Traj50"
                      /gene_synonym="Gm17007"
@@ -3321,7 +3328,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124338"
                      /db_xref="IMGT/GENE-DB:TRAJ50"
-                     /db_xref="MGI:4440517"
+                     /db_xref="MGI:MGI:4440517"
      J_segment       1740124..1740186
                      /gene="Traj50"
                      /gene_synonym="Gm17007"
@@ -3332,7 +3339,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 49"
                      /db_xref="GeneID:100124339"
                      /db_xref="IMGT/GENE-DB:TRAJ49"
-                     /db_xref="MGI:4440527"
+                     /db_xref="MGI:MGI:4440527"
      CDS             1741220..1741278
                      /gene="Traj49"
                      /gene_synonym="Gm17012"
@@ -3340,7 +3347,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124339"
                      /db_xref="IMGT/GENE-DB:TRAJ49"
-                     /db_xref="MGI:4440527"
+                     /db_xref="MGI:MGI:4440527"
      J_segment       1741220..1741278
                      /gene="Traj49"
                      /gene_synonym="Gm17012"
@@ -3351,7 +3358,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 48"
                      /db_xref="GeneID:100124340"
                      /db_xref="IMGT/GENE-DB:TRAJ48"
-                     /db_xref="MGI:4439847"
+                     /db_xref="MGI:MGI:4439847"
      CDS             1742342..1742402
                      /gene="Traj48"
                      /gene_synonym="Gm16923"
@@ -3359,7 +3366,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124340"
                      /db_xref="IMGT/GENE-DB:TRAJ48"
-                     /db_xref="MGI:4439847"
+                     /db_xref="MGI:MGI:4439847"
      J_segment       1742342..1742402
                      /gene="Traj48"
                      /gene_synonym="Gm16923"
@@ -3369,14 +3376,14 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 47"
                      /db_xref="GeneID:100124341"
                      /db_xref="IMGT/GENE-DB:TRAJ47"
-                     /db_xref="MGI:5009961"
+                     /db_xref="MGI:MGI:5009961"
      CDS             1744336..1744390
                      /gene="Traj47"
                      /exception="rearrangement required for product"
                      /codon_start=3
                      /db_xref="GeneID:100124341"
                      /db_xref="IMGT/GENE-DB:TRAJ47"
-                     /db_xref="MGI:5009961"
+                     /db_xref="MGI:MGI:5009961"
      J_segment       1744336..1744390
                      /gene="Traj47"
                      /standard_name="TRAJ47"
@@ -3386,7 +3393,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 46"
                      /db_xref="GeneID:100124342"
                      /db_xref="IMGT/GENE-DB:TRAJ46"
-                     /db_xref="MGI:4439852"
+                     /db_xref="MGI:MGI:4439852"
      CDS             1744872..1744932
                      /gene="Traj46"
                      /gene_synonym="Gm16928"
@@ -3394,7 +3401,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124342"
                      /db_xref="IMGT/GENE-DB:TRAJ46"
-                     /db_xref="MGI:4439852"
+                     /db_xref="MGI:MGI:4439852"
      J_segment       1744872..1744932
                      /gene="Traj46"
                      /gene_synonym="Gm16928"
@@ -3405,7 +3412,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 45"
                      /db_xref="GeneID:100124343"
                      /db_xref="IMGT/GENE-DB:TRAJ45"
-                     /db_xref="MGI:4439851"
+                     /db_xref="MGI:MGI:4439851"
      CDS             1745365..1745424
                      /gene="Traj45"
                      /gene_synonym="Gm16927"
@@ -3413,7 +3420,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124343"
                      /db_xref="IMGT/GENE-DB:TRAJ45"
-                     /db_xref="MGI:4439851"
+                     /db_xref="MGI:MGI:4439851"
      J_segment       1745365..1745424
                      /gene="Traj45"
                      /gene_synonym="Gm16927"
@@ -3424,7 +3431,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 44"
                      /db_xref="GeneID:100124344"
                      /db_xref="IMGT/GENE-DB:TRAJ44"
-                     /db_xref="MGI:4439850"
+                     /db_xref="MGI:MGI:4439850"
      CDS             1746224..1746284
                      /gene="Traj44"
                      /gene_synonym="Gm16926"
@@ -3432,7 +3439,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124344"
                      /db_xref="IMGT/GENE-DB:TRAJ44"
-                     /db_xref="MGI:4439850"
+                     /db_xref="MGI:MGI:4439850"
      J_segment       1746224..1746284
                      /gene="Traj44"
                      /gene_synonym="Gm16926"
@@ -3443,7 +3450,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 43"
                      /db_xref="GeneID:100124345"
                      /db_xref="IMGT/GENE-DB:TRAJ43"
-                     /db_xref="MGI:4439849"
+                     /db_xref="MGI:MGI:4439849"
      CDS             1747276..1747332
                      /gene="Traj43"
                      /gene_synonym="Gm16925"
@@ -3451,7 +3458,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124345"
                      /db_xref="IMGT/GENE-DB:TRAJ43"
-                     /db_xref="MGI:4439849"
+                     /db_xref="MGI:MGI:4439849"
      J_segment       1747276..1747332
                      /gene="Traj43"
                      /gene_synonym="Gm16925"
@@ -3462,7 +3469,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 42"
                      /db_xref="GeneID:100124346"
                      /db_xref="IMGT/GENE-DB:TRAJ42"
-                     /db_xref="MGI:4439846"
+                     /db_xref="MGI:MGI:4439846"
      CDS             1748307..1748370
                      /gene="Traj42"
                      /gene_synonym="Gm16922"
@@ -3470,7 +3477,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124346"
                      /db_xref="IMGT/GENE-DB:TRAJ42"
-                     /db_xref="MGI:4439846"
+                     /db_xref="MGI:MGI:4439846"
      J_segment       1748307..1748370
                      /gene="Traj42"
                      /gene_synonym="Gm16922"
@@ -3481,7 +3488,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 41"
                      /db_xref="GeneID:100124347"
                      /db_xref="IMGT/GENE-DB:TRAJ41"
-                     /db_xref="MGI:4439845"
+                     /db_xref="MGI:MGI:4439845"
      CDS             1748805..1748859
                      /gene="Traj41"
                      /gene_synonym="Gm16921"
@@ -3489,7 +3496,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124347"
                      /db_xref="IMGT/GENE-DB:TRAJ41"
-                     /db_xref="MGI:4439845"
+                     /db_xref="MGI:MGI:4439845"
      J_segment       1748805..1748859
                      /gene="Traj41"
                      /gene_synonym="Gm16921"
@@ -3500,7 +3507,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 40"
                      /db_xref="GeneID:100124348"
                      /db_xref="IMGT/GENE-DB:TRAJ40"
-                     /db_xref="MGI:4439592"
+                     /db_xref="MGI:MGI:4439592"
      CDS             1750455..1750515
                      /gene="Traj40"
                      /gene_synonym="Gm16668"
@@ -3508,7 +3515,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124348"
                      /db_xref="IMGT/GENE-DB:TRAJ40"
-                     /db_xref="MGI:4439592"
+                     /db_xref="MGI:MGI:4439592"
      J_segment       1750455..1750515
                      /gene="Traj40"
                      /gene_synonym="Gm16668"
@@ -3519,7 +3526,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 39"
                      /db_xref="GeneID:100124349"
                      /db_xref="IMGT/GENE-DB:TRAJ39"
-                     /db_xref="MGI:4439593"
+                     /db_xref="MGI:MGI:4439593"
      CDS             1752496..1752558
                      /gene="Traj39"
                      /gene_synonym="Gm16669"
@@ -3527,7 +3534,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124349"
                      /db_xref="IMGT/GENE-DB:TRAJ39"
-                     /db_xref="MGI:4439593"
+                     /db_xref="MGI:MGI:4439593"
      J_segment       1752496..1752558
                      /gene="Traj39"
                      /gene_synonym="Gm16669"
@@ -3538,7 +3545,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 38"
                      /db_xref="GeneID:100124351"
                      /db_xref="IMGT/GENE-DB:TRAJ38"
-                     /db_xref="MGI:4439594"
+                     /db_xref="MGI:MGI:4439594"
      CDS             1753108..1753169
                      /gene="Traj38"
                      /gene_synonym="Gm16670"
@@ -3546,7 +3553,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124351"
                      /db_xref="IMGT/GENE-DB:TRAJ38"
-                     /db_xref="MGI:4439594"
+                     /db_xref="MGI:MGI:4439594"
      J_segment       1753108..1753169
                      /gene="Traj38"
                      /gene_synonym="Gm16670"
@@ -3557,7 +3564,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 37"
                      /db_xref="GeneID:100124352"
                      /db_xref="IMGT/GENE-DB:TRAJ37"
-                     /db_xref="MGI:4439595"
+                     /db_xref="MGI:MGI:4439595"
      CDS             1754052..1754111
                      /gene="Traj37"
                      /gene_synonym="Gm16671"
@@ -3565,7 +3572,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124352"
                      /db_xref="IMGT/GENE-DB:TRAJ37"
-                     /db_xref="MGI:4439595"
+                     /db_xref="MGI:MGI:4439595"
      J_segment       1754052..1754111
                      /gene="Traj37"
                      /gene_synonym="Gm16671"
@@ -3577,7 +3584,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124353"
                      /db_xref="IMGT/GENE-DB:TRAJ36"
-                     /db_xref="MGI:4937244"
+                     /db_xref="MGI:MGI:4937244"
      CDS             1754936..1754998
                      /gene="Traj36"
                      /gene_synonym="Gm17610"
@@ -3585,7 +3592,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124353"
                      /db_xref="IMGT/GENE-DB:TRAJ36"
-                     /db_xref="MGI:4937244"
+                     /db_xref="MGI:MGI:4937244"
      J_segment       1754936..1754998
                      /gene="Traj36"
                      /gene_synonym="Gm17610"
@@ -3597,7 +3604,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 35"
                      /db_xref="GeneID:100124354"
                      /db_xref="IMGT/GENE-DB:TRAJ35"
-                     /db_xref="MGI:4439588"
+                     /db_xref="MGI:MGI:4439588"
      CDS             1756308..1756372
                      /gene="Traj35"
                      /gene_synonym="Gm16664"
@@ -3605,7 +3612,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124354"
                      /db_xref="IMGT/GENE-DB:TRAJ35"
-                     /db_xref="MGI:4439588"
+                     /db_xref="MGI:MGI:4439588"
      J_segment       1756308..1756372
                      /gene="Traj35"
                      /gene_synonym="Gm16664"
@@ -3616,7 +3623,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 34"
                      /db_xref="GeneID:100124355"
                      /db_xref="IMGT/GENE-DB:TRAJ34"
-                     /db_xref="MGI:4439589"
+                     /db_xref="MGI:MGI:4439589"
      CDS             1757233..1757290
                      /gene="Traj34"
                      /gene_synonym="Gm16665"
@@ -3624,7 +3631,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124355"
                      /db_xref="IMGT/GENE-DB:TRAJ34"
-                     /db_xref="MGI:4439589"
+                     /db_xref="MGI:MGI:4439589"
      J_segment       1757233..1757290
                      /gene="Traj34"
                      /gene_synonym="Gm16665"
@@ -3635,7 +3642,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 33"
                      /db_xref="GeneID:100124356"
                      /db_xref="IMGT/GENE-DB:TRAJ33"
-                     /db_xref="MGI:4439590"
+                     /db_xref="MGI:MGI:4439590"
      CDS             1757892..1757948
                      /gene="Traj33"
                      /gene_synonym="Gm16666"
@@ -3643,7 +3650,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124356"
                      /db_xref="IMGT/GENE-DB:TRAJ33"
-                     /db_xref="MGI:4439590"
+                     /db_xref="MGI:MGI:4439590"
      J_segment       1757892..1757948
                      /gene="Traj33"
                      /gene_synonym="Gm16666"
@@ -3654,7 +3661,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 32"
                      /db_xref="GeneID:100124357"
                      /db_xref="IMGT/GENE-DB:TRAV32"
-                     /db_xref="MGI:4439591"
+                     /db_xref="MGI:MGI:4439591"
      CDS             1758635..1758700
                      /gene="Traj32"
                      /gene_synonym="Gm16667"
@@ -3662,7 +3669,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124357"
                      /db_xref="IMGT/GENE-DB:TRAV32"
-                     /db_xref="MGI:4439591"
+                     /db_xref="MGI:MGI:4439591"
      J_segment       1758635..1758700
                      /gene="Traj32"
                      /gene_synonym="Gm16667"
@@ -3673,7 +3680,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 31"
                      /db_xref="GeneID:100124358"
                      /db_xref="IMGT/GENE-DB:TRAJ31"
-                     /db_xref="MGI:4440519"
+                     /db_xref="MGI:MGI:4440519"
      CDS             1760429..1760485
                      /gene="Traj31"
                      /gene_synonym="Gm17008"
@@ -3681,7 +3688,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124358"
                      /db_xref="IMGT/GENE-DB:TRAJ31"
-                     /db_xref="MGI:4440519"
+                     /db_xref="MGI:MGI:4440519"
      J_segment       1760429..1760485
                      /gene="Traj31"
                      /gene_synonym="Gm17008"
@@ -3692,7 +3699,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 30"
                      /db_xref="GeneID:100124359"
                      /db_xref="IMGT/GENE-DB:TRAJ30"
-                     /db_xref="MGI:4439596"
+                     /db_xref="MGI:MGI:4439596"
      CDS             1762400..1762458
                      /gene="Traj30"
                      /gene_synonym="Gm16672"
@@ -3700,7 +3707,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124359"
                      /db_xref="IMGT/GENE-DB:TRAJ30"
-                     /db_xref="MGI:4439596"
+                     /db_xref="MGI:MGI:4439596"
      J_segment       1762400..1762458
                      /gene="Traj30"
                      /gene_synonym="Gm16672"
@@ -3711,7 +3718,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 29"
                      /db_xref="GeneID:100124360"
                      /db_xref="IMGT/GENE-DB:TRAJ29"
-                     /db_xref="MGI:4439743"
+                     /db_xref="MGI:MGI:4439743"
      CDS             1763480..1763539
                      /gene="Traj29"
                      /gene_synonym="Gm16819"
@@ -3719,7 +3726,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124360"
                      /db_xref="IMGT/GENE-DB:TRAJ29"
-                     /db_xref="MGI:4439743"
+                     /db_xref="MGI:MGI:4439743"
      J_segment       1763480..1763539
                      /gene="Traj29"
                      /gene_synonym="Gm16819"
@@ -3730,7 +3737,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 28"
                      /db_xref="GeneID:100124361"
                      /db_xref="IMGT/GENE-DB:TRAJ28"
-                     /db_xref="MGI:4439744"
+                     /db_xref="MGI:MGI:4439744"
      CDS             1764195..1764259
                      /gene="Traj28"
                      /gene_synonym="Gm16820"
@@ -3738,7 +3745,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124361"
                      /db_xref="IMGT/GENE-DB:TRAJ28"
-                     /db_xref="MGI:4439744"
+                     /db_xref="MGI:MGI:4439744"
      J_segment       1764195..1764259
                      /gene="Traj28"
                      /gene_synonym="Gm16820"
@@ -3749,7 +3756,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 27"
                      /db_xref="GeneID:100124362"
                      /db_xref="IMGT/GENE-DB:TRAJ27"
-                     /db_xref="MGI:4439741"
+                     /db_xref="MGI:MGI:4439741"
      CDS             1764837..1764895
                      /gene="Traj27"
                      /gene_synonym="Gm16817"
@@ -3757,7 +3764,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124362"
                      /db_xref="IMGT/GENE-DB:TRAJ27"
-                     /db_xref="MGI:4439741"
+                     /db_xref="MGI:MGI:4439741"
      J_segment       1764837..1764895
                      /gene="Traj27"
                      /gene_synonym="Gm16817"
@@ -3773,7 +3780,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 26"
                      /db_xref="GeneID:100124363"
                      /db_xref="IMGT/GENE-DB:TRAJ26"
-                     /db_xref="MGI:4439742"
+                     /db_xref="MGI:MGI:4439742"
      CDS             1767024..1767083
                      /gene="Traj26"
                      /gene_synonym="Gm16818"
@@ -3781,7 +3788,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124363"
                      /db_xref="IMGT/GENE-DB:TRAJ26"
-                     /db_xref="MGI:4439742"
+                     /db_xref="MGI:MGI:4439742"
      J_segment       1767024..1767083
                      /gene="Traj26"
                      /gene_synonym="Gm16818"
@@ -3792,7 +3799,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 25"
                      /db_xref="GeneID:100124364"
                      /db_xref="IMGT/GENE-DB:TRAJ25"
-                     /db_xref="MGI:4439747"
+                     /db_xref="MGI:MGI:4439747"
      CDS             1767349..1767405
                      /gene="Traj25"
                      /gene_synonym="Gm16823"
@@ -3800,7 +3807,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124364"
                      /db_xref="IMGT/GENE-DB:TRAJ25"
-                     /db_xref="MGI:4439747"
+                     /db_xref="MGI:MGI:4439747"
      J_segment       1767349..1767405
                      /gene="Traj25"
                      /gene_synonym="Gm16823"
@@ -3811,7 +3818,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 24"
                      /db_xref="GeneID:100124365"
                      /db_xref="IMGT/GENE-DB:TRAJ24"
-                     /db_xref="MGI:4439748"
+                     /db_xref="MGI:MGI:4439748"
      CDS             1768179..1768234
                      /gene="Traj24"
                      /gene_synonym="Gm16824"
@@ -3819,7 +3826,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124365"
                      /db_xref="IMGT/GENE-DB:TRAJ24"
-                     /db_xref="MGI:4439748"
+                     /db_xref="MGI:MGI:4439748"
      J_segment       1768179..1768234
                      /gene="Traj24"
                      /gene_synonym="Gm16824"
@@ -3830,7 +3837,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 23"
                      /db_xref="GeneID:100124366"
                      /db_xref="IMGT/GENE-DB:TRAJ23"
-                     /db_xref="MGI:4439745"
+                     /db_xref="MGI:MGI:4439745"
      CDS             1768615..1768674
                      /gene="Traj23"
                      /gene_synonym="Gm16821"
@@ -3838,7 +3845,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124366"
                      /db_xref="IMGT/GENE-DB:TRAJ23"
-                     /db_xref="MGI:4439745"
+                     /db_xref="MGI:MGI:4439745"
      J_segment       1768615..1768674
                      /gene="Traj23"
                      /gene_synonym="Gm16821"
@@ -3849,7 +3856,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 22"
                      /db_xref="GeneID:100124367"
                      /db_xref="IMGT/GENE-DB:TRAJ22"
-                     /db_xref="MGI:4439746"
+                     /db_xref="MGI:MGI:4439746"
      CDS             1769782..1769841
                      /gene="Traj22"
                      /gene_synonym="Gm16822"
@@ -3857,7 +3864,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124367"
                      /db_xref="IMGT/GENE-DB:TRAJ22"
-                     /db_xref="MGI:4439746"
+                     /db_xref="MGI:MGI:4439746"
      J_segment       1769782..1769841
                      /gene="Traj22"
                      /gene_synonym="Gm16822"
@@ -3868,7 +3875,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 21"
                      /db_xref="GeneID:100124368"
                      /db_xref="IMGT/GENE-DB:TRAJ21"
-                     /db_xref="MGI:4439739"
+                     /db_xref="MGI:MGI:4439739"
      CDS             1771324..1771380
                      /gene="Traj21"
                      /gene_synonym="Gm16815"
@@ -3876,7 +3883,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124368"
                      /db_xref="IMGT/GENE-DB:TRAJ21"
-                     /db_xref="MGI:4439739"
+                     /db_xref="MGI:MGI:4439739"
      J_segment       1771324..1771380
                      /gene="Traj21"
                      /gene_synonym="Gm16815"
@@ -3887,7 +3894,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 20"
                      /db_xref="GeneID:100124369"
                      /db_xref="IMGT/GENE-DB:TRAJ20"
-                     /db_xref="MGI:4439740"
+                     /db_xref="MGI:MGI:4439740"
      CDS             1771975..1772032
                      /gene="Traj20"
                      /gene_synonym="Gm16816"
@@ -3895,7 +3902,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124369"
                      /db_xref="IMGT/GENE-DB:TRAJ20"
-                     /db_xref="MGI:4439740"
+                     /db_xref="MGI:MGI:4439740"
      J_segment       1771975..1772032
                      /gene="Traj20"
                      /gene_synonym="Gm16816"
@@ -3906,7 +3913,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 19"
                      /db_xref="GeneID:100124370"
                      /db_xref="IMGT/GENE-DB:TRAJ19"
-                     /db_xref="MGI:4439579"
+                     /db_xref="MGI:MGI:4439579"
      CDS             1772920..1772980
                      /gene="Traj19"
                      /gene_synonym="Gm16655"
@@ -3914,7 +3921,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124370"
                      /db_xref="IMGT/GENE-DB:TRAJ19"
-                     /db_xref="MGI:4439579"
+                     /db_xref="MGI:MGI:4439579"
      J_segment       1772920..1772980
                      /gene="Traj19"
                      /gene_synonym="Gm16655"
@@ -3925,7 +3932,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 18"
                      /db_xref="GeneID:100124371"
                      /db_xref="IMGT/GENE-DB:TRAJ18"
-                     /db_xref="MGI:4440521"
+                     /db_xref="MGI:MGI:4440521"
      CDS             1773311..1773376
                      /gene="Traj18"
                      /gene_synonym="Gm17009"
@@ -3933,7 +3940,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124371"
                      /db_xref="IMGT/GENE-DB:TRAJ18"
-                     /db_xref="MGI:4440521"
+                     /db_xref="MGI:MGI:4440521"
      J_segment       1773311..1773376
                      /gene="Traj18"
                      /gene_synonym="Gm17009"
@@ -3944,7 +3951,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 17"
                      /db_xref="GeneID:100124372"
                      /db_xref="IMGT/GENE-DB:TRAJ17"
-                     /db_xref="MGI:4440523"
+                     /db_xref="MGI:MGI:4440523"
      CDS             1774309..1774371
                      /gene="Traj17"
                      /gene_synonym="Gm17010"
@@ -3952,7 +3959,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124372"
                      /db_xref="IMGT/GENE-DB:TRAJ17"
-                     /db_xref="MGI:4440523"
+                     /db_xref="MGI:MGI:4440523"
      J_segment       1774309..1774371
                      /gene="Traj17"
                      /gene_synonym="Gm17010"
@@ -3963,7 +3970,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 16"
                      /db_xref="GeneID:100124387"
                      /db_xref="IMGT/GENE-DB:TRAJ16"
-                     /db_xref="MGI:4439580"
+                     /db_xref="MGI:MGI:4439580"
      CDS             1775668..1775728
                      /gene="Traj16"
                      /gene_synonym="Gm16656"
@@ -3971,7 +3978,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124387"
                      /db_xref="IMGT/GENE-DB:TRAJ16"
-                     /db_xref="MGI:4439580"
+                     /db_xref="MGI:MGI:4439580"
      J_segment       1775668..1775728
                      /gene="Traj16"
                      /gene_synonym="Gm16656"
@@ -3982,7 +3989,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 15"
                      /db_xref="GeneID:100124388"
                      /db_xref="IMGT/GENE-DB:TRAJ15"
-                     /db_xref="MGI:4439582"
+                     /db_xref="MGI:MGI:4439582"
      CDS             1776956..1777015
                      /gene="Traj15"
                      /gene_synonym="Gm16658"
@@ -3990,7 +3997,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124388"
                      /db_xref="IMGT/GENE-DB:TRAJ15"
-                     /db_xref="MGI:4439582"
+                     /db_xref="MGI:MGI:4439582"
      J_segment       1776956..1777015
                      /gene="Traj15"
                      /gene_synonym="Gm16658"
@@ -4002,7 +4009,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124389"
                      /db_xref="IMGT/GENE-DB:TRAJ14"
-                     /db_xref="MGI:4439581"
+                     /db_xref="MGI:MGI:4439581"
      CDS             1777645..1777678
                      /gene="Traj14"
                      /gene_synonym="Gm16657"
@@ -4010,7 +4017,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124389"
                      /db_xref="IMGT/GENE-DB:TRAJ14"
-                     /db_xref="MGI:4439581"
+                     /db_xref="MGI:MGI:4439581"
      J_segment       1777645..1777678
                      /gene="Traj14"
                      /gene_synonym="Gm16657"
@@ -4022,7 +4029,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 13"
                      /db_xref="GeneID:100124390"
                      /db_xref="IMGT/GENE-DB:TRAJ13"
-                     /db_xref="MGI:4439584"
+                     /db_xref="MGI:MGI:4439584"
      CDS             1778275..1778331
                      /gene="Traj13"
                      /gene_synonym="Gm16660"
@@ -4030,7 +4037,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124390"
                      /db_xref="IMGT/GENE-DB:TRAJ13"
-                     /db_xref="MGI:4439584"
+                     /db_xref="MGI:MGI:4439584"
      J_segment       1778275..1778331
                      /gene="Traj13"
                      /gene_synonym="Gm16660"
@@ -4041,7 +4048,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 12"
                      /db_xref="GeneID:100124391"
                      /db_xref="IMGT/GENE-DB:TRAJ12"
-                     /db_xref="MGI:4439583"
+                     /db_xref="MGI:MGI:4439583"
      CDS             1779086..1779144
                      /gene="Traj12"
                      /gene_synonym="Gm16659"
@@ -4049,7 +4056,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124391"
                      /db_xref="IMGT/GENE-DB:TRAJ12"
-                     /db_xref="MGI:4439583"
+                     /db_xref="MGI:MGI:4439583"
      J_segment       1779086..1779144
                      /gene="Traj12"
                      /gene_synonym="Gm16659"
@@ -4060,7 +4067,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 11"
                      /db_xref="GeneID:100124392"
                      /db_xref="IMGT/GENE-DB:TRAJ11"
-                     /db_xref="MGI:4439578"
+                     /db_xref="MGI:MGI:4439578"
      CDS             1779673..1779731
                      /gene="Traj11"
                      /gene_synonym="Gm16654"
@@ -4068,7 +4075,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124392"
                      /db_xref="IMGT/GENE-DB:TRAJ11"
-                     /db_xref="MGI:4439578"
+                     /db_xref="MGI:MGI:4439578"
      J_segment       1779673..1779731
                      /gene="Traj11"
                      /gene_synonym="Gm16654"
@@ -4079,7 +4086,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 9"
                      /db_xref="GeneID:100124393"
                      /db_xref="IMGT/GENE-DB:TRAJ9"
-                     /db_xref="MGI:4439577"
+                     /db_xref="MGI:MGI:4439577"
      CDS             1781927..1781984
                      /gene="Traj9"
                      /gene_synonym="Gm16653"
@@ -4087,7 +4094,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124393"
                      /db_xref="IMGT/GENE-DB:TRAJ9"
-                     /db_xref="MGI:4439577"
+                     /db_xref="MGI:MGI:4439577"
      J_segment       1781927..1781984
                      /gene="Traj9"
                      /gene_synonym="Gm16653"
@@ -4099,7 +4106,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124395"
                      /db_xref="IMGT/GENE-DB:TRAJ8"
-                     /db_xref="MGI:4439842"
+                     /db_xref="MGI:MGI:4439842"
      CDS             1782452..1782488
                      /gene="Traj8"
                      /gene_synonym="Gm16918"
@@ -4107,7 +4114,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100124395"
                      /db_xref="IMGT/GENE-DB:TRAJ8"
-                     /db_xref="MGI:4439842"
+                     /db_xref="MGI:MGI:4439842"
      J_segment       1782452..1782488
                      /gene="Traj8"
                      /gene_synonym="Gm16918"
@@ -4119,7 +4126,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 7"
                      /db_xref="GeneID:100124396"
                      /db_xref="IMGT/GENE-DB:TRAJ7"
-                     /db_xref="MGI:4439843"
+                     /db_xref="MGI:MGI:4439843"
      CDS             1784004..1784062
                      /gene="Traj7"
                      /gene_synonym="Gm16919"
@@ -4127,7 +4134,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124396"
                      /db_xref="IMGT/GENE-DB:TRAJ7"
-                     /db_xref="MGI:4439843"
+                     /db_xref="MGI:MGI:4439843"
      J_segment       1784004..1784062
                      /gene="Traj7"
                      /gene_synonym="Gm16919"
@@ -4138,7 +4145,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 6"
                      /db_xref="GeneID:100124397"
                      /db_xref="IMGT/GENE-DB:TRAJ6"
-                     /db_xref="MGI:4439844"
+                     /db_xref="MGI:MGI:4439844"
      CDS             1785222..1785283
                      /gene="Traj6"
                      /gene_synonym="Gm16920"
@@ -4146,7 +4153,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124397"
                      /db_xref="IMGT/GENE-DB:TRAJ6"
-                     /db_xref="MGI:4439844"
+                     /db_xref="MGI:MGI:4439844"
      J_segment       1785222..1785283
                      /gene="Traj6"
                      /gene_synonym="Gm16920"
@@ -4156,14 +4163,14 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 5"
                      /db_xref="GeneID:654839"
                      /db_xref="IMGT/GENE-DB:TRAJ5"
-                     /db_xref="MGI:4840258"
+                     /db_xref="MGI:MGI:4840258"
      CDS             1786311..1786372
                      /gene="Traj5"
                      /exception="rearrangement required for product"
                      /codon_start=2
                      /db_xref="GeneID:654839"
                      /db_xref="IMGT/GENE-DB:TRAJ5"
-                     /db_xref="MGI:4840258"
+                     /db_xref="MGI:MGI:4840258"
      J_segment       1786311..1786372
                      /gene="Traj5"
                      /standard_name="TRAJ5"
@@ -4173,7 +4180,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 4"
                      /db_xref="GeneID:100124398"
                      /db_xref="IMGT/GENE-DB:TRAJ4"
-                     /db_xref="MGI:4439839"
+                     /db_xref="MGI:MGI:4439839"
      CDS             1788825..1788887
                      /gene="Traj4"
                      /gene_synonym="Gm16915"
@@ -4181,7 +4188,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100124398"
                      /db_xref="IMGT/GENE-DB:TRAJ4"
-                     /db_xref="MGI:4439839"
+                     /db_xref="MGI:MGI:4439839"
      J_segment       1788825..1788887
                      /gene="Traj4"
                      /gene_synonym="Gm16915"
@@ -4192,7 +4199,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 3"
                      /db_xref="GeneID:100124399"
                      /db_xref="IMGT/GENE-DB:TRAJ3"
-                     /db_xref="MGI:4439840"
+                     /db_xref="MGI:MGI:4439840"
      CDS             1789826..1789891
                      /gene="Traj3"
                      /gene_synonym="Gm16916"
@@ -4200,7 +4207,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124399"
                      /db_xref="IMGT/GENE-DB:TRAJ3"
-                     /db_xref="MGI:4439840"
+                     /db_xref="MGI:MGI:4439840"
      J_segment       1789826..1789891
                      /gene="Traj3"
                      /gene_synonym="Gm16916"
@@ -4210,14 +4217,14 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha joining 2"
                      /db_xref="GeneID:654838"
                      /db_xref="IMGT/GENE-DB:TRAJ2"
-                     /db_xref="MGI:4840255"
+                     /db_xref="MGI:MGI:4840255"
      CDS             1790370..1790435
                      /gene="Traj2"
                      /exception="rearrangement required for product"
                      /codon_start=3
                      /db_xref="GeneID:654838"
                      /db_xref="IMGT/GENE-DB:TRAJ2"
-                     /db_xref="MGI:4840255"
+                     /db_xref="MGI:MGI:4840255"
      J_segment       1790370..1790435
                      /gene="Traj2"
                      /standard_name="TRAJ2"
@@ -4228,7 +4235,7 @@ FEATURES             Location/Qualifiers
                      /pseudo
                      /db_xref="GeneID:100124400"
                      /db_xref="IMGT/GENE-DB:TRAJ1"
-                     /db_xref="MGI:4439841"
+                     /db_xref="MGI:MGI:4439841"
      CDS             1791348..1791376
                      /gene="Traj1"
                      /gene_synonym="Gm16917"
@@ -4236,7 +4243,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=2
                      /db_xref="GeneID:100124400"
                      /db_xref="IMGT/GENE-DB:TRAJ1"
-                     /db_xref="MGI:4439841"
+                     /db_xref="MGI:MGI:4439841"
      J_segment       1791348..1791376
                      /gene="Traj1"
                      /gene_synonym="Gm16917"
@@ -4248,7 +4255,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor alpha constant"
                      /db_xref="GeneID:100101484"
                      /db_xref="IMGT/GENE-DB:TRAC"
-                     /db_xref="MGI:4439838"
+                     /db_xref="MGI:MGI:4439838"
      CDS             join(1793055..1793315,1794640..1794684,1795525..1795632,
                      1796220..1796732)
                      /gene="Trac"
@@ -4257,7 +4264,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=3
                      /db_xref="GeneID:100101484"
                      /db_xref="IMGT/GENE-DB:TRAC"
-                     /db_xref="MGI:4439838"
+                     /db_xref="MGI:MGI:4439838"
      C_region        join(1793055..1793315,1794649..1794684,1795525..1795632,
                      1796229..1796732)
                      /gene="Trac"
