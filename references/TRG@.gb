@@ -1,4 +1,4 @@
-LOCUS       NG_007033             179435 bp    DNA     linear   CON 03-NOV-2013
+LOCUS       NG_007033             179435 bp    DNA     linear   CON 29-DEC-2013
 DEFINITION  Mus musculus T cell receptor gamma chain (Tcrg) on chromosome 13.
 ACCESSION   NG_007033
 VERSION     NG_007033.1  GI:159120306
@@ -46,14 +46,15 @@ REFERENCE   4  (bases 1 to 179435)
   REMARK    GeneRIF: Gamma delta receptor loss in T-cells are involved in hair
             cycling defects.
 REFERENCE   5  (bases 1 to 179435)
-  AUTHORS   Jeong,S.P., Kang,J.A. and Park,S.G.
-  TITLE     Intestinal intraepithelial TCRgammadelta(+) T cells are activated
-            by normal commensal bacteria
-  JOURNAL   J. Microbiol. 50 (5), 837-841 (2012)
-   PUBMED   23124753
-  REMARK    GeneRIF: TCRgammadelta(+) T cell population attached to the
-            intestinal lumen is constitutively activated by normal commensal
-            bacteria.
+  AUTHORS   Laird,R.M., Wolf,B.J., Princiotta,M.F. and Hayes,S.M.
+  TITLE     gammadelta T cells acquire effector fates in the thymus and
+            differentiate into cytokine-producing effectors in a Listeria model
+            of infection independently of CD28 costimulation
+  JOURNAL   PLoS ONE 8 (5), E63178 (2013)
+   PUBMED   23671671
+  REMARK    GeneRIF: Data indicate that CD28 is dispensable for gammadelta
+            effector T cell development and differentiation.
+            Publication Status: Online-Only
 REFERENCE   6  (bases 1 to 179435)
   AUTHORS   Johnson,K.R. and Davisson,M.T.
   TITLE     A multipoint genetic linkage map of mouse chromosome 18
@@ -114,8 +115,8 @@ COMMENT     REVIEWED REFSEQ: This record has been curated by NCBI staff. The
             publications that are available for this gene. Please see the Gene
             record to access additional publications.
 PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
-            1-61826             AC122849.4         140943-202768
-            61827-179435        AC146604.5         30325-147933
+            1-61826             AC071805.4         140943-202768
+            61827-179435        AC131072.5         30325-147933
 FEATURES             Location/Qualifiers
      source          1..179435
                      /organism="Mus musculus"
@@ -128,14 +129,14 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="TCRGV1S1; TCRGV2S1; TCRGV3S1; TCRGV5S3"
                      /note="T cell receptor gamma chain"
                      /db_xref="GeneID:110067"
-                     /db_xref="MGI:98623"
+                     /db_xref="MGI:MGI:98623"
      gene            501..951
                      /gene="Tcrg-V7"
                      /gene_synonym="TRGV7; Vg7"
                      /note="T cell receptor gamma, variable 7"
                      /db_xref="GeneID:21641"
                      /db_xref="IMGT/GENE-DB:TRGV7"
-                     /db_xref="MGI:98637"
+                     /db_xref="MGI:MGI:98637"
      CDS             join(501..543,645..951)
                      /gene="Tcrg-V7"
                      /gene_synonym="TRGV7; Vg7"
@@ -143,7 +144,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:21641"
                      /db_xref="IMGT/GENE-DB:TRGV7"
-                     /db_xref="MGI:98637"
+                     /db_xref="MGI:MGI:98637"
      V_segment       join(501..543,645..951)
                      /gene="Tcrg-V7"
                      /gene_synonym="TRGV7; Vg7"
@@ -154,7 +155,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma, variable 4"
                      /db_xref="GeneID:21638"
                      /db_xref="IMGT/GENE-DB:TRGV4"
-                     /db_xref="MGI:98634"
+                     /db_xref="MGI:MGI:98634"
      CDS             join(7440..7551,7659..7965)
                      /gene="Tcrg-V4"
                      /gene_synonym="AI528624; TRGV4; Vg4"
@@ -162,7 +163,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:21638"
                      /db_xref="IMGT/GENE-DB:TRGV4"
-                     /db_xref="MGI:98634"
+                     /db_xref="MGI:MGI:98634"
      V_segment       join(7440..7551,7659..7965)
                      /gene="Tcrg-V4"
                      /gene_synonym="AI528624; TRGV4; Vg4"
@@ -173,7 +174,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma, variable 6"
                      /db_xref="GeneID:21640"
                      /db_xref="IMGT/GENE-DB:TRGV6"
-                     /db_xref="MGI:98636"
+                     /db_xref="MGI:MGI:98636"
      CDS             join(12827..12920,13077..13388)
                      /gene="Tcrg-V6"
                      /gene_synonym="TRGV6"
@@ -181,7 +182,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:21640"
                      /db_xref="IMGT/GENE-DB:TRGV6"
-                     /db_xref="MGI:98636"
+                     /db_xref="MGI:MGI:98636"
      V_segment       join(12827..12920,13077..13388)
                      /gene="Tcrg-V6"
                      /gene_synonym="TRGV6"
@@ -192,7 +193,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma, variable 5"
                      /db_xref="GeneID:21639"
                      /db_xref="IMGT/GENE-DB:TRGV5"
-                     /db_xref="MGI:98635"
+                     /db_xref="MGI:MGI:98635"
      CDS             join(14737..14779,14887..15184)
                      /gene="Tcrg-V5"
                      /gene_synonym="TRGV5"
@@ -200,7 +201,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:21639"
                      /db_xref="IMGT/GENE-DB:TRGV5"
-                     /db_xref="MGI:98635"
+                     /db_xref="MGI:MGI:98635"
      V_segment       join(14737..14779,14887..15184)
                      /gene="Tcrg-V5"
                      /gene_synonym="TRGV5"
@@ -211,7 +212,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma joining 1"
                      /db_xref="GeneID:100126431"
                      /db_xref="IMGT/GENE-DB:TRGJ1"
-                     /db_xref="MGI:4440480"
+                     /db_xref="MGI:MGI:4440480"
      CDS             32802..32861
                      /gene="Trgj1"
                      /gene_synonym="Gm17003"
@@ -219,7 +220,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126431"
                      /db_xref="IMGT/GENE-DB:TRGJ1"
-                     /db_xref="MGI:4440480"
+                     /db_xref="MGI:MGI:4440480"
      J_segment       32802..32861
                      /gene="Trgj1"
                      /gene_synonym="Gm17003"
@@ -230,7 +231,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma, constant 1"
                      /db_xref="GeneID:107573"
                      /db_xref="IMGT/GENE-DB:TRGC1"
-                     /db_xref="MGI:98625"
+                     /db_xref="MGI:MGI:98625"
      CDS             join(36562..36891,38323..38367,38935..39077)
                      /gene="Tcrg-C1"
                      /gene_synonym="Cgamma1; Gm17004; TRGC1"
@@ -238,7 +239,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:107573"
                      /db_xref="IMGT/GENE-DB:TRGC1"
-                     /db_xref="MGI:98625"
+                     /db_xref="MGI:MGI:98625"
      C_region        join(36562..36891,38323..38367,38935..39077)
                      /gene="Tcrg-C1"
                      /gene_synonym="Cgamma1; Gm17004; TRGC1"
@@ -248,7 +249,8 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="Cgamma1; Gm17004; TRGC1"
                      /standard_name="PMC156147P8"
                      /db_xref="UniSTS:271385"
-     enhancer        41876..42875
+     regulatory      41876..42875
+                     /regulatory_class="enhancer"
                      /gene="Tcrg"
                      /gene_synonym="TCRGV1S1; TCRGV2S1; TCRGV3S1; TCRGV5S3"
                      /note="gamma 1 enhancer"
@@ -258,7 +260,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma, variable 3"
                      /db_xref="GeneID:21637"
                      /db_xref="IMGT/GENE-DB:TRGV3"
-                     /db_xref="MGI:98633"
+                     /db_xref="MGI:MGI:98633"
      CDS             join(65304..65349,65454..65760)
                      /gene="Tcrg-V3"
                      /gene_synonym="TCRGV5S3; TRGV3; vgamma3"
@@ -266,7 +268,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:21637"
                      /db_xref="IMGT/GENE-DB:TRGV3"
-                     /db_xref="MGI:98633"
+                     /db_xref="MGI:MGI:98633"
      V_segment       join(65304..65349,65454..65760)
                      /gene="Tcrg-V3"
                      /gene_synonym="TCRGV5S3; TRGV3; vgamma3"
@@ -277,7 +279,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma joining 3"
                      /db_xref="GeneID:100126432"
                      /db_xref="IMGT/GENE-DB:TRGJ3"
-                     /db_xref="MGI:4439528"
+                     /db_xref="MGI:MGI:4439528"
      CDS             79576..79635
                      /gene="Trgj3"
                      /gene_synonym="Gm16604"
@@ -285,7 +287,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126432"
                      /db_xref="IMGT/GENE-DB:TRGJ3"
-                     /db_xref="MGI:4439528"
+                     /db_xref="MGI:MGI:4439528"
      J_segment       79576..79635
                      /gene="Trgj3"
                      /gene_synonym="Gm16604"
@@ -296,7 +298,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma, constant 3"
                      /db_xref="GeneID:107575"
                      /db_xref="IMGT/GENE-DB:TRGC3"
-                     /db_xref="MGI:98627"
+                     /db_xref="MGI:MGI:98627"
      CDS             join(83344..83673,85103..85146,85714..85856)
                      /gene="Tcrg-C3"
                      /gene_synonym="Gm17356; TRGC3"
@@ -304,7 +306,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:107575"
                      /db_xref="IMGT/GENE-DB:TRGC3"
-                     /db_xref="MGI:98627"
+                     /db_xref="MGI:MGI:98627"
      C_region        join(83344..83783,85103..85146,85714..85856)
                      /gene="Tcrg-C3"
                      /gene_synonym="Gm17356; TRGC3"
@@ -319,11 +321,13 @@ FEATURES             Location/Qualifiers
                      /gene_synonym="TCRGV1S1; TCRGV2S1; TCRGV3S1; TCRGV5S3"
                      /standard_name="M12839"
                      /db_xref="UniSTS:208894"
-     enhancer        95079..95985
+     regulatory      95079..95985
+                     /regulatory_class="enhancer"
                      /gene="Tcrg"
                      /gene_synonym="TCRGV1S1; TCRGV2S1; TCRGV3S1; TCRGV5S3"
                      /note="gamma 3 enhancer"
-     enhancer        complement(122960..123267)
+     regulatory      complement(122960..123267)
+                     /regulatory_class="enhancer"
                      /note="gamma 2 enhancer"
      gene            complement(127519..130011)
                      /gene="Tcrg-C2"
@@ -331,7 +335,7 @@ FEATURES             Location/Qualifiers
                      /note="T-cell receptor gamma, constant 2"
                      /db_xref="GeneID:107574"
                      /db_xref="IMGT/GENE-DB:TRGC2"
-                     /db_xref="MGI:98626"
+                     /db_xref="MGI:MGI:98626"
      CDS             complement(join(127519..127661,128228..128257,
                      129681..130010))
                      /gene="Tcrg-C2"
@@ -340,7 +344,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:107574"
                      /db_xref="IMGT/GENE-DB:TRGC2"
-                     /db_xref="MGI:98626"
+                     /db_xref="MGI:MGI:98626"
      C_region        complement(join(127519..127661,128228..128257,
                      129681..130010))
                      /gene="Tcrg-C2"
@@ -352,7 +356,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma joining 2"
                      /db_xref="GeneID:100126433"
                      /db_xref="IMGT/GENE-DB:TRGJ2"
-                     /db_xref="MGI:4439598"
+                     /db_xref="MGI:MGI:4439598"
      CDS             complement(133704..133763)
                      /gene="Trgj2"
                      /gene_synonym="Gm16674; TCRG"
@@ -360,7 +364,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126433"
                      /db_xref="IMGT/GENE-DB:TRGJ2"
-                     /db_xref="MGI:4439598"
+                     /db_xref="MGI:MGI:4439598"
      J_segment       complement(133704..133763)
                      /gene="Trgj2"
                      /gene_synonym="Gm16674; TCRG"
@@ -371,7 +375,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma variable 2"
                      /db_xref="GeneID:21636"
                      /db_xref="IMGT/GENE-DB:TRGV2"
-                     /db_xref="MGI:98632"
+                     /db_xref="MGI:MGI:98632"
      CDS             complement(join(159032..159338,159443..159485))
                      /gene="Trgv2"
                      /gene_synonym="Tcrg-V2; Vgamma2"
@@ -379,7 +383,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:21636"
                      /db_xref="IMGT/GENE-DB:TRGV2"
-                     /db_xref="MGI:98632"
+                     /db_xref="MGI:MGI:98632"
      V_segment       complement(159032..159485)
                      /gene="Trgv2"
                      /gene_synonym="Tcrg-V2; Vgamma2"
@@ -390,7 +394,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma, variable 1"
                      /db_xref="GeneID:21632"
                      /db_xref="IMGT/GENE-DB:TRGV1"
-                     /db_xref="MGI:98631"
+                     /db_xref="MGI:MGI:98631"
      CDS             join(162475..162517,162610..162913)
                      /gene="Tcrg-V1"
                      /gene_synonym="Gm16602; TRGV1"
@@ -398,7 +402,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:21632"
                      /db_xref="IMGT/GENE-DB:TRGV1"
-                     /db_xref="MGI:98631"
+                     /db_xref="MGI:MGI:98631"
      V_segment       join(162475..162517,162610..162913)
                      /gene="Tcrg-V1"
                      /gene_synonym="Gm16602; TRGV1"
@@ -409,7 +413,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma joining 4"
                      /db_xref="GeneID:100126434"
                      /db_xref="IMGT/GENE-DB:TRGJ4"
-                     /db_xref="MGI:4439597"
+                     /db_xref="MGI:MGI:4439597"
      CDS             164611..164671
                      /gene="Trgj4"
                      /gene_synonym="Gm16673"
@@ -417,7 +421,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:100126434"
                      /db_xref="IMGT/GENE-DB:TRGJ4"
-                     /db_xref="MGI:4439597"
+                     /db_xref="MGI:MGI:4439597"
      J_segment       164611..164671
                      /gene="Trgj4"
                      /gene_synonym="Gm16673"
@@ -428,7 +432,7 @@ FEATURES             Location/Qualifiers
                      /note="T cell receptor gamma, constant 4"
                      /db_xref="GeneID:107576"
                      /db_xref="IMGT/GENE-DB:TRGC4"
-                     /db_xref="MGI:98628"
+                     /db_xref="MGI:MGI:98628"
      CDS             join(167017..167346,171996..172048,172789..172833,
                      174660..174802)
                      /gene="Tcrg-C4"
@@ -437,7 +441,7 @@ FEATURES             Location/Qualifiers
                      /codon_start=1
                      /db_xref="GeneID:107576"
                      /db_xref="IMGT/GENE-DB:TRGC4"
-                     /db_xref="MGI:98628"
+                     /db_xref="MGI:MGI:98628"
      C_region        join(167017..167346,171996..172048,172789..172833,
                      174660..174802)
                      /gene="Tcrg-C4"
@@ -447,7 +451,8 @@ FEATURES             Location/Qualifiers
                      /gene="Tcrg"
                      /gene_synonym="TCRGV1S1; TCRGV2S1; TCRGV3S1; TCRGV5S3"
                      /db_xref="UniSTS:225365"
-     enhancer        178630..178935
+     regulatory      178630..178935
+                     /regulatory_class="enhancer"
                      /gene="Tcrg"
                      /gene_synonym="TCRGV1S1; TCRGV2S1; TCRGV3S1; TCRGV5S3"
                      /note="gamma 4 enhancer"
