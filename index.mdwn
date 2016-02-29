@@ -37,8 +37,9 @@ RIKEN about shortcomings, limitations, or possible developments.  If you need
 to try alternative solutions, you can have a look at
 [[IMGTHighV-QUEST|http://www.imgt.org/IMGTindex/IMGTHighV-QUEST.html]],
 [Decombinator](http://pubmed.gov/23303508 "Bioinformatics. 2013 Mar 1;29(5):542-50"),
-[MiTCR](http://mitcr.milaboratory.com/), or
-[MIGEC](http://migec.readthedocs.org/en/latest/cdrblast.html).
+[MiTCR](http://mitcr.milaboratory.com/),
+[MIGEC](http://migec.readthedocs.org/en/latest/cdrblast.html), or
+[LymAnalyzer](http://nar.oxfordjournals.org/content/44/4/e31.full).
 See also the [OMICtool](http://omictools.com/rep-seq-c424-p1.html) website for a longer list of repertoire tools.
 
 *clonotypeR* is placed in the [public domain](http://creativecommons.org/publicdomain/zero/1.0/).
