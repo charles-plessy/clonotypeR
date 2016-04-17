@@ -1,3 +1,10 @@
+2016-04-17  Charles Plessy <plessy@riken.jp>
+	* Added citation information.
+	* Point URL to the Branchable homepage.
+
+2015-02-05  Charles Plessy <plessy@riken.jp>
+	* Aded the function private_clonotypes().
+
 2014-09-25  Charles Plessy <plessy@riken.jp>
 	* Version 1.3.2
 	* Import “methods” instead of depending on.
