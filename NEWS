@@ -1,0 +1,46 @@
+Changes in version 1.10.0
+
+OTHER CHANGES
+
+    o   Minor metadata updates.
+
+Changes in version 1.8.0
+
+NEW FEATURES
+
+    o   Added a “private_clonotypes” function.
+
+Changes in version 1.4.0
+
+BUG FIXES
+
+    o   Minor packaging corrections (NAMESPACE, etc.).
+
+Changes in version 1.2.0
+
+NEW FEATURES
+
+    o   Added a “long” option to yassai_identifier(), where every amino acid is
+        represented.  This solves the problem of ID collisions, where a single
+        identifier could be produced by two different clonotypes.
+
+    o   Added a new option to clonotype_table() for randomly sampling libraries.
+
+    o   Added a new mode to common_clonotypes() for calculating the abundance
+        relatively to one library.
+
+    o   Unified the syntax of common_clonotypes() and unique_clonotypes().
+
+BUG FIXES
+
+    o   Removed infinite loop in yassai_identifier() when the germinal V
+        sequence was completely absent from the CDR3.
+
+    o   Corrected output bug where “integer(0)” was returned if the V–J
+        boundary was a codon boundary.
+
+    o   yassai_identifier(): properly encode the names of the V and J segments.
+
+Changes in version 1.0.0
+
+    o   Initial release in Bioconductor.
