@@ -40,6 +40,7 @@ to try alternative solutions, you can have a look at
 [MiTCR](http://mitcr.milaboratory.com/),
 [MIGEC](http://migec.readthedocs.org/en/latest/cdrblast.html),
 [LymAnalyzer](http://nar.oxfordjournals.org/content/44/4/e31.full),
+[tcR](https://imminfo.github.io/tcr/),
 [VDJviz](https://github.com/antigenomics/vdjviz), or
 [VDJtools](https://github.com/mikessh/vdjtools).
 See also the [OMICtool](http://omictools.com/rep-seq-c424-p1.html) website for a longer list of repertoire tools.
