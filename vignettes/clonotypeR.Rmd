@@ -138,7 +138,7 @@ BWA, and produces output like the following.
     [bsw2_aln] read 2000 sequences/pairs (843395 bp)...
     [samopen] SAM header is present: 167 sequences.
     [main] Version: 0.6.2-r126
-    [main] CMD: bwa bwasw -t8 /usr/share/clonotypeR/references/V/index A.fastq
+    [main] CMD: bwa bwasw -t8 /usr/share/clonotypeR/references/V-C/index A.fastq
     [main] Real time: 1.099 sec; CPU: 8.225 sec
 
 This indicates that 2,000 reads have been processed, representing 843,395 base
