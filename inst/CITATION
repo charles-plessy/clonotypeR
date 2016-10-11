@@ -1,0 +1,16 @@
+citEntry( entry       = "article"
+        , author      = "Plessy, Charles and Mariotti-Ferrandiz, Encarnita and Manabe, Ri-Ichiroh and Hori, Shohei"
+        , title       = "clonotypeR--high throughput analysis of T cell antigen receptor sequences"
+        , year        = "2015"
+        , doi         = "10.1101/028696"
+        , publisher   = "Cold Spring Harbor Labs Journals"
+        , abstract    = "Motivation The T cell receptors are expressed as millions of different rearrangements. Amplified as a complex mixture of PCR products, they can be sequenced directly on next-generation instruments without the need for cloning. This method is increasingly used to characterize, quantify and study these highly diverse receptors. Results We present here clonotypeR, a software package to identify and analyze antigen receptors from high-throughput sequence libraries. ClonotypeR is designed to process, organize and analyze very large numbers of sequences, in the order of millions, typically produced by Roche 454 or Illumina instruments, and is made of two parts. The first contains shell scripts and reference segment sequences to produce a data file where each line represents a the detection of a clonotype in a sequence read. The second part is a R module available from Bioconductor, to load and filter the data, and prepare clonotype abundance tables ready for analysis with third-party tools for differential representation analysis, sample clustering, etc. To analyze clonotype data at the nucleotide level, we introduce unique clonotype identifiers based on those developed by Yassai et al. (2009), that we corrected to avoid identifier collisions. Availability http://clonotyper.branchable.com (CC0 license)."
+        , URL         = "http://www.biorxiv.org/content/early/2015/10/08/028696"
+        , eprint      = "http://www.biorxiv.org/content/early/2015/10/08/028696.full.pdf"
+        , journal     = "bioRxiv"
+        , textVersion = paste( "clonotypeR--high throughput analysis of T cell antigen receptor sequences."
+                             , "Charles Plessy, Encarnita Mariotti-Ferrandiz, Ri-Ichiroh Manabe, Shohei Hori."
+                             , "bioRxiv doi: http://dx.doi.org/10.1101/028696"
+                             , "This article is a preprint and has not been peer-reviewed."
+                             )
+        )
