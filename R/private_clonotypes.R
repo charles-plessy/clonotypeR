@@ -13,6 +13,8 @@
 #' clonotypes <- read_clonotypes(system.file('extdata', 'clonotypes.txt.gz', package = "clonotypeR"))
 #' clonotypes <- clonotype_table(levels(clonotypes$lib), data=clonotypes)
 #' private_clonotypes("C", data=clonotypes)
+#' 
+#' @export
 
 private_clonotypes <- function (..., data) {
 
